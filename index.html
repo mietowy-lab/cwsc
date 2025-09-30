@@ -1,0 +1,753 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozszerzony Raport Cyberbezpieczeństwa - 2025-09-30</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .container { max-width: 1400px; margin: 0 auto; background-color: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; }
+        .header h1 { margin: 0; font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .content { padding: 30px; }
+        .summary { background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 25px; border-radius: 10px; margin-bottom: 30px; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+        .stat-box { text-align: center; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .stat-number { font-size: 2.5em; font-weight: bold; color: #1976d2; }
+        .section { margin: 30px 0; }
+        .section h2 { color: #1976d2; border-bottom: 3px solid #1976d2; padding-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; }
+        .news-item { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 5px solid #4caf50; transition: transform 0.3s ease; }
+        .news-item:hover { transform: translateY(-5px); }
+        .news-item.incident { border-left-color: #f44336; }
+        .news-item.threat { border-left-color: #ff9800; }
+        .news-item.vulnerability { border-left-color: #9c27b0; }
+        .news-title { font-weight: bold; color: #333; margin-bottom: 10px; font-size: 1.1em; }
+        .news-meta { color: #666; font-size: 0.9em; margin-bottom: 10px; display: flex; justify-content: space-between; }
+        .news-summary { color: #555; line-height: 1.5; margin-bottom: 15px; }
+        .news-link { color: #1976d2; text-decoration: none; font-weight: bold; }
+        .news-link:hover { text-decoration: underline; }
+        .source-tag { background: #e0e0e0; padding: 3px 8px; border-radius: 15px; font-size: 0.8em; }
+        .severity-high { background: #ffebee; color: #c62828; }
+        .severity-medium { background: #fff3e0; color: #ef6c00; }
+        .severity-low { background: #e8f5e8; color: #2e7d32; }
+        .cve-info { background: #f3e5f5; padding: 10px; border-radius: 5px; margin: 10px 0; }
+        .footer { background: #f5f5f5; padding: 20px; text-align: center; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ Rozszerzony Raport Cyberbezpieczeństwa</h1>
+            <p>Dane z RSS feeds i API | 2025-09-30</p>
+        </div>
+
+        <div class="content">
+            <div class="summary">
+                <h3>📊 Podsumowanie Dzienne</h3>
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="stat-number">62</div>
+                        <div>Incydenty Bezpieczeństwa</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">32</div>
+                        <div>Nowe Zagrożenia</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">357</div>
+                        <div>Wykryte Luki</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">451</div>
+                        <div>Łącznie Alertów</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🚨 Incydenty Bezpieczeństwa</h2>
+                <div class="news-grid">
+
+                    <div class="news-item incident">
+                        <div class="news-title">CROSS-X: Generalized and Stable Cross-Cache Attack on the Linux Kernel (to appear)</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Kaist Hacking Lab</span>
+                            <span>2025-10-01 00:00</span>
+                        </div>
+                        <div class="news-summary"></div>
+                        <a href="https://kaist-hacking.github.io/publication/kim-crossx/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">29th September – Threat Intelligence Report</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Checkpoint Research</span>
+                            <span>2025-09-29 12:43</span>
+                        </div>
+                        <div class="news-summary">For the latest discoveries in cyber research for the week of 29th September, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Stellantis, Automotive maker giant which owns Citroën, FIAT, Jeep, Chrysler, and Peugeot, has suffered a data breach that resulted in exposure of No...</div>
+                        <a href="https://research.checkpoint.com/2025/29th-september-threat-intelligence-report/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">What happens when you engage Cisco Talos Incident Response?</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Cisco Talos</span>
+                            <span>2025-09-24 10:00</span>
+                        </div>
+                        <div class="news-summary">What happens when you bring in a team of cybersecurity responders? How do we turn chaos into control, and what is the long-term value that Talos IR provides to the organizations we work with?</div>
+                        <a href="https://blog.talosintelligence.com/what-happens-when-you-engage-talos-ir/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">22nd September – Threat Intelligence Report</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Checkpoint Research</span>
+                            <span>2025-09-22 08:31</span>
+                        </div>
+                        <div class="news-summary">For the latest discoveries in cyber research for the week of 22nd September, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Several major European airports including Heathrow, Berlin, Brussels, Dublin, and Cork have experienced a cyber-attack, resulting in disruptions to ...</div>
+                        <a href="https://research.checkpoint.com/2025/22nd-september-threat-intelligence-report/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">Alex Ryan: From zero chill to quiet confidence</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Cisco Talos</span>
+                            <span>2025-09-18 10:00</span>
+                        </div>
+                        <div class="news-summary">Discover how a Cisco Talos Incident Response expert transitioned from philosophy to the high-stakes world of incident command, offering candid insights into managing burnout and finding a supportive team.</div>
+                        <a href="https://blog.talosintelligence.com/alex-ryan-from-zero-chill-to-quiet-confidence/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">Why a Cisco Talos Incident Response Retainer is a game-changer</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Cisco Talos</span>
+                            <span>2025-09-17 10:00</span>
+                        </div>
+                        <div class="news-summary">With a Cisco Talos IR Retainer, your organization can stay resilient and ahead of tomorrow's threats. Here's how.</div>
+                        <a href="https://blog.talosintelligence.com/why-a-cisco-talos-incident-response-retainer-is-a-game-changer/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">Cookie Chaos: How to bypass __Host and __Secure cookie prefixes</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Portswigger</span>
+                            <span>2025-09-03 14:46</span>
+                        </div>
+                        <div class="news-summary">Browsers added cookie prefixes to protect your sessions and stop attackers from setting harmful cookies. In this post, you’ll see how to bypass cookie defenses using discrepancies in browser and serve</div>
+                        <a href="https://portswigger.net/research/cookie-chaos-how-to-bypass-host-and-secure-cookie-prefixes" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">1st September – Threat Intelligence Report</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Checkpoint Research</span>
+                            <span>2025-09-01 11:50</span>
+                        </div>
+                        <div class="news-summary">For the latest discoveries in cyber research for the week of 1st September, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES American consumer credit reporting agency TransUnion has suffered a data breach that resulted in the exposure of sensitive personal information for o...</div>
+                        <a href="https://research.checkpoint.com/2025/1st-september-threat-intelligence-report/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">How Deep Research Agents Can Leak Your Data</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Embrace The Red</span>
+                            <span>2025-08-25 01:03</span>
+                        </div>
+                        <div class="news-summary">Recently, many of our favorite AI chatbots have gotten autonomous research capabilities. This allows the AI to go off for an extended period of time, while having access to tools, such as web search, integrations, connectors and also custom-built MCP servers.
+This post will explore and explain in de...</div>
+                        <a href="https://embracethered.com/blog/posts/2025/chatgpt-deep-research-connectors-data-spill-and-leaks/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">OpenAI Operator - Click on arbitrary origin by TOCTOU attack</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Google Security Research Advisories</span>
+                            <span>2025-08-18 00:00</span>
+                        </div>
+                        <div class="news-summary"></div>
+                        <a href="https://github.com/google/security-research/security/advisories/GHSA-mp56-7vrw-qxvf" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">Escaping the Matrix: Client-Side Deanonymization Attacks on Privacy Sandbox APIs</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Spaceraccoon</span>
+                            <span>2025-08-17 12:00</span>
+                        </div>
+                        <div class="news-summary">I recently presented at the DEF CON 33 Mainstage and the 12th Crypto & Privacy Village on weaknesses in implementations of Google’s Privacy Sandbox that subverted privacy protections and enabled deanonymization attacks.</div>
+                        <a href="https://spaceraccoon.dev/client-side-deanonymization-attacks-privacy-sandbox-apis/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">Getting a Shell on the LAU-G150-C Optical Network Terminal</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Spaceraccoon</span>
+                            <span>2025-07-27 12:00</span>
+                        </div>
+                        <div class="news-summary">Since the Link-All LAU-G150-C Optical Network Terminal isn’t documented anywhere, I thought this was a great opportunity to practice some hardware hacking…</div>
+                        <a href="https://spaceraccoon.dev/getting-shell-lau-g150-c-optical-network-terminal/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">Streaming Zero-Fi Shells to Your Smart Speaker</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Ret2 Systems</span>
+                            <span>2025-06-11 10:00</span>
+                        </div>
+                        <div class="news-summary">In October 2024, RET2 participated in the “Small Office / Home Office” (SOHO) flavor of Pwn2Own, a competition which challenges top security researchers to compromise consumer-focused network devices. This includes popular smart speakers, routers, IP cameras, printers, and network-attached storage (...</div>
+                        <a href="https://blog.ret2.io/2025/06/11/pwn2own-soho-2024-sonos-exploit/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">Automated Attack Synthesis for Constant Product Market Makers</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Kaist Hacking Lab</span>
+                            <span>2025-06-01 00:00</span>
+                        </div>
+                        <div class="news-summary"></div>
+                        <a href="https://kaist-hacking.github.io/publication/han-cpmm/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">The Windows Registry Adventure #7: Attack surface analysis</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Project Zero</span>
+                            <span>2025-05-23 09:05</span>
+                        </div>
+                        <div class="news-summary">Posted by Mateusz Jurczyk, Google Project Zero
+
+In the first three blog posts of this series, I sought to outline what the Windows Registry actually is, its role, history, and where to find further information about it. In the subsequent three posts, my goal was to describe in detail how this mechan...</div>
+                        <a href="https://googleprojectzero.blogspot.com/2025/05/the-windows-registry-adventure-7-attack-surface.html" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">Pwn2Own Berlin 2025: Day Three Results</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Zdi</span>
+                            <span>2025-05-17 09:40</span>
+                        </div>
+                        <div class="news-summary">Welcome to the third and final day of Pwn2Own Berlin 2025. We' start the day at $695,000 awarded for the contest. It will be interesting to see if we can breach the million dollar mark. Stay tuned for all of the results.
+
+And we are finished!! What an amazing three days of research. Today, we awarde...</div>
+                        <a href="https://www.thezdi.com/blog/2025/5/17/pwn2own-berlin-2025-day-three-results" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">Document My Pentest: you hack, the AI writes it up!</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Portswigger</span>
+                            <span>2025-04-23 13:17</span>
+                        </div>
+                        <div class="news-summary">Tired of repeating yourself? Automate your web security audit trail. In this post I'll introduce a new Burp AI extension that takes the boring bits out of your pen test. Web security testing can be a</div>
+                        <a href="https://portswigger.net/research/document-my-pentest" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">If the Person Who Finds a Web3 Hardware Wallet is a Hacker</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Darknavy</span>
+                            <span>2025-03-30 02:00</span>
+                        </div>
+                        <div class="news-summary">In 2024, Web3 security incidents caused by private key leaks have surged, resulting in estimated financial losses exceeding $855 million.
+Private keys function as the sole credentials for blockchain accounts, controlling access to all associated on-chain assets like cryptocurrencies and NFTs. Due to...</div>
+                        <a href="https://www.darknavy.org/blog/if_the_person_who_finds_a_web3_hardware_wallet_is_a_hacker/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">Reconstructing the $1.5 Billion Bybit Hack by North Korean Actors</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Darknavy</span>
+                            <span>2025-03-24 07:34</span>
+                        </div>
+                        <div class="news-summary">
+Both the Attackers and Victims Made Critical Mistakes
+
+On February 21, 2025, the cryptocurrency exchange Bybit experienced the most significant financial loss in Web3 history when nearly $1.5 billion was illicitly transferred from its multi-signature wallet by North Korean threat actors.
+The DARKNA...</div>
+                        <a href="https://www.darknavy.org/darknavy_insight/reconstructing_the_1.5_billion_bybit_hack_by_north_korean_actors/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item incident">
+                        <div class="news-title">Pwning Millions of Smart Weighing Machines with API and Hardware Hacking</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Spaceraccoon</span>
+                            <span>2025-03-24 00:03</span>
+                        </div>
+                        <div class="news-summary">Why hack one device, when you can hack all of them? By reverse-engineering and finding vulnerabilities in user-machine association flows for smart weighing machines, I was able to take over millions of internet-connected health devices. Hardware and web security are two halves of modern smart device...</div>
+                        <a href="https://spaceraccoon.dev/pwning-millions-smart-weighing-machines-api-hardware-hacking/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>⚠️ Nowe Zagrożenia</h2>
+                <div class="news-grid">
+
+                    <div class="news-item threat">
+                        <div class="news-title">Threat Profile: Conti Ransomware Group</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-30</span>
+                        </div>
+                        <div class="news-summary">Conti, a notorious ransomware operation identified in 2019, quickly gained infamy for its advanced encryption, rapid lateral movement, and double extortion tactics. Operated by the Russia-based Wizard Spider group, Conti evolved from Ryuk ransomware and maintained suspected ties to Russian state interests. Between 2019 and 2022, Conti targeted healthcare providers, governments, educational institu...</div>
+                        <a href="https://otx.alienvault.com/pulse/68db677b189fbc5307a5a270" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Eye of the Storm: Analyzing DarkCloud's Latest Capabilities</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-29</span>
+                        </div>
+                        <div class="news-summary">eSentire's Threat Response Unit detected a spear-phishing campaign targeting a manufacturing customer, attempting to deliver the DarkCloud information-stealing malware. The malware, distributed through a malicious zip archive, has undergone significant updates including a VB6 rewrite and enhanced evasion techniques. DarkCloud targets various data types including browser credentials, keystrokes, FT...</div>
+                        <a href="https://otx.alienvault.com/pulse/68da52920ea4c26c967e296b" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">From a Single Click: How Lunar Spider Enabled a Near Two-Month Intrusion</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-29</span>
+                        </div>
+                        <div class="news-summary">A user executed a malicious JavaScript file linked to Lunar Spider, initiating a two-month intrusion. The file downloaded a Brute Ratel DLL, which then injected Latrodectus malware. The threat actor used various tools including Cobalt Strike, BackConnect, and a custom .NET backdoor for persistence and lateral movement. They harvested credentials from multiple sources and exfiltrated data using Rcl...</div>
+                        <a href="https://otx.alienvault.com/pulse/68dab5b611126784770068b5" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">XWorm RAT Delivered via Shellcode: Multi-Stage Attack Analysis</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-29</span>
+                        </div>
+                        <div class="news-summary">This analysis details a sophisticated multi-stage attack delivering the XWorm RAT. The campaign begins with a phishing email containing a malicious .xlam file. The file harbors embedded shellcode that, when executed, retrieves a secondary payload. This payload is a .NET binary that reflectively loads a DLL into memory. The DLL, heavily obfuscated and encrypted, injects another DLL using reflective...</div>
+                        <a href="https://otx.alienvault.com/pulse/68da3ed188175c68ce3021fc" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Olymp Loader: A new Malware-as-a-Service written in Assembly</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-29</span>
+                        </div>
+                        <div class="news-summary">Olymp Loader is a recently emerged Malware-as-a-Service offering advertised on underground forums since June 2025. Developed by a team called OLYMPO, it's written in assembly language and marketed as fully undetectable. The loader executes other malware on victim systems and provides built-in stealer modules for browsers, Telegram, and crypto wallets. It enables rapid feature updates and fast adop...</div>
+                        <a href="https://otx.alienvault.com/pulse/68da3df06737479fcd9566b9" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Potentially Unwanted Applications (PUAs) weaponized for covert delivery</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-29</span>
+                        </div>
+                        <div class="news-summary">A malware distribution campaign leveraging digitally signed binaries, deceptive packaging, and browser hijackers has been uncovered. The campaign centers around two malicious applications, ImageLooker.exe and Calendaromatic.exe, delivered via self-extracting 7-Zip archives. These artifacts align with the TamperedChef malware campaign, which uses trojanized productivity tools for initial access and...</div>
+                        <a href="https://otx.alienvault.com/pulse/68da3d2fbeb1286aa4f67c07" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">New LockBit 5.0 Targets Windows, Linux, ESXi</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-29</span>
+                        </div>
+                        <div class="news-summary">Trend Research analyzed the latest version of LockBit ransomware, LockBit 5.0, which exhibits advanced obfuscation, anti-analysis techniques, and cross-platform capabilities for Windows, Linux, and ESXi systems. The Windows variant uses heavy obfuscation and packing, loading its payload through DLL reflection and implementing anti-analysis techniques. The Linux variant has similar functionality wi...</div>
+                        <a href="https://otx.alienvault.com/pulse/68da3f9ccd5b37095bdef492" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Gamaredon X Turla collaboration</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-27</span>
+                        </div>
+                        <div class="news-summary">ESET Research has uncovered collaboration between notorious APT groups Gamaredon and Turla, both associated with Russia's FSB, targeting high-profile victims in Ukraine. The research reveals Gamaredon tools being used to restart and deploy Turla's Kazuar backdoor on compromised machines. This marks the first known instance of cooperation between these groups, with Turla selectively choosing valuab...</div>
+                        <a href="https://otx.alienvault.com/pulse/68d7619adf1da670a581d376" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Update on Ongoing Akira Ransomware Campaign</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-27</span>
+                        </div>
+                        <div class="news-summary">The Akira ransomware campaign targeting SonicWall SSL VPN accounts has intensified since July 2025, with new infrastructure observed as recently as September 20. Threat actors are exploiting previously exfiltrated credentials, including those with OTP MFA, likely related to CVE-2024-40766. The attacks are characterized by extremely short dwell times, sometimes as brief as 55 minutes from access to...</div>
+                        <a href="https://otx.alienvault.com/pulse/68d74d70a57d9bf9567fcfcc" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Threat Hunting on potential APT35 Servers</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-27</span>
+                        </div>
+                        <div class="news-summary">The article discusses the discovery of two servers sharing similarities with those reported by Check Point on APT35, an Iranian threat group. The servers are active and resolve multiple domains used for phishing purposes. The analysis focuses on the HTML page displayed on some domains, which contains four colored dots. Using the SilentPush platform, the team crafted a query to hunt for similar pag...</div>
+                        <a href="https://otx.alienvault.com/pulse/68d7b01af9417544ec39f9e5" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">SVG Phishing hits Ukraine with Amatera Stealer, PureMiner</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-26</span>
+                        </div>
+                        <div class="news-summary">A phishing campaign targeting Ukrainian government entities uses malicious SVG files to initiate an infection chain. The attack begins with emails containing SVG attachments that redirect victims to a download site. A CHM file is then used to execute a remote HTA loader, which delivers two malware payloads: Amatera Stealer and PureMiner. Amatera Stealer harvests extensive information from infected...</div>
+                        <a href="https://otx.alienvault.com/pulse/68d6f22df576f8efbd6366e1" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Nimbus Manticore Deploys New Malware Targeting Europe</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Checkpoint Research</span>
+                            <span>2025-09-22 12:59</span>
+                        </div>
+                        <div class="news-summary">Nimbus Manticore Deploys New Malware Targeting Europe Key Findings Introduction Since early 2025, Check Point Research (CPR) has tracked waves of Nimbus Manticore activity. Known as UNC1549 or Smoke Sandstorm, Nimbus Manticore is a mature Iran-nexus APT group that primarily targets aerospace and def...</div>
+                        <a href="https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Put together an IR playbook — for your personal mental health and wellbeing</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Cisco Talos</span>
+                            <span>2025-09-18 18:00</span>
+                        </div>
+                        <div class="news-summary">This edition pulls the curtain aside to show the realities of the VPN Filter campaign. Joe reflects on the struggle to prevent burnout in a world constantly on fire.</div>
+                        <a href="https://blog.talosintelligence.com/put-together-an-ir-playbook/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Under the Pure Curtain: From RAT to Builder to Coder</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Checkpoint Research</span>
+                            <span>2025-09-16 12:57</span>
+                        </div>
+                        <div class="news-summary">Research by: Antonis Terefos (@Tera0017) Key Points Introduction The Pure malware family is a suite of malicious tools developed and sold by the author known as PureCoder. This suite includes PureHVNC RAT (a remote administration tool and predecessor to PureRAT), PureCrypter (a malware obfuscator), ...</div>
+                        <a href="https://research.checkpoint.com/2025/under-the-pure-curtain-from-rat-to-builder-to-coder/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">15th September – Threat Intelligence Report</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Checkpoint Research</span>
+                            <span>2025-09-15 12:43</span>
+                        </div>
+                        <div class="news-summary">For the latest discoveries in cyber research for the week of 15th September, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Panama’s Ministry of Economy and Finance (MEF) was hit by a ransomware attack that resulted in the theft of more than 1.5TB of data, including email...</div>
+                        <a href="https://research.checkpoint.com/2025/15th-september-threat-intelligence-report/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Beaches and breaches</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Cisco Talos</span>
+                            <span>2025-09-11 18:00</span>
+                        </div>
+                        <div class="news-summary">Thor examines why supply chain and identity attacks took center stage in this week’s headlines, rather than AI and ransomware.</div>
+                        <a href="https://blog.talosintelligence.com/beaches-and-breaches/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Stopping ransomware before it starts: Lessons from Cisco Talos Incident Response</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Cisco Talos</span>
+                            <span>2025-09-08 10:00</span>
+                        </div>
+                        <div class="news-summary">Explore lessons learned from over two years of Talos IR pre-ransomware engagements, highlighting the key security measures, indicators and recommendations that have proven effective in stopping ransomware attacks before they begin.</div>
+                        <a href="https://blog.talosintelligence.com/stopping-ransomware-before-it-starts/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">From a Fake AnyDesk Installer to MetaStealer</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-08-30</span>
+                        </div>
+                        <div class="news-summary">A recent attack mimicking ClickFix tactics used a fake AnyDesk installer to deploy MetaStealer. The infection chain involved a fake Cloudflare Turnstile lure, Windows search protocol, and an MSI package disguised as a PDF. Unlike traditional ClickFix attacks, this variant redirected users to Windows File Explorer instead of the Run dialog box. The attack cleverly grabbed the victim's hostname and ...</div>
+                        <a href="https://otx.alienvault.com/pulse/68b2bfe8d3d1e1257af3bb2f" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Unmasking the new Chaos RaaS group attacks</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-08-29</span>
+                        </div>
+                        <div class="news-summary">Cisco Talos Incident Response has observed attacks by Chaos, a new ransomware-as-a-service group conducting big-game hunting and double extortion attacks. The group uses spam flooding, voice-based social engineering, RMM tool abuse, and legitimate file-sharing software for data exfiltration. Their ransomware employs multi-threaded rapid selective encryption and anti-analysis techniques, targeting ...</div>
+                        <a href="https://otx.alienvault.com/pulse/68b1c325bd3b4a24b371dd29" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
+                        <div class="news-title">Hunting Laundry Bear: Infrastructure Analysis Guide and Findings</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-08-29</span>
+                        </div>
+                        <div class="news-summary">This analysis explores the infrastructure of Laundry Bear, a Russian state-sponsored APT group active since April 2024, targeting NATO countries and Ukraine. The investigation expands on initial indicators, using advanced pivoting techniques to uncover additional domains and infrastructure. Key findings include the discovery of multiple lookalike domains, similar registration patterns, and shared ...</div>
+                        <a href="https://otx.alienvault.com/pulse/68b19acb28e88648ad2c0ff1" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔓 Wykryte Luki w Zabezpieczeniach</h2>
+                <div class="news-grid">
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">CodeQL zero to hero part 5: Debugging queries</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Github Security Lab</span>
+                            <span>2025-09-29 15:00</span>
+                        </div>
+                        
+                        <div class="news-summary">Learn to debug and fix your CodeQL queries.
+The post CodeQL zero to hero part 5: Debugging queries appeared first on The GitHub Blog.</div>
+                        <a href="https://github.blog/security/vulnerability-research/codeql-zero-to-hero-part-5-debugging-queries/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">Pointer leaks through pointer-keyed data structures</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Project Zero</span>
+                            <span>2025-09-26 17:00</span>
+                        </div>
+                        
+                        <div class="news-summary">Posted by Jann Horn, Google Project Zero
+IntroductionSome time in 2024, during a Project Zero team discussion, we were talking about how remote ASLR leaks would be helpful or necessary for exploiting some types of memory corruption bugs, specifically in the context of Apple devices. Coming from the ...</div>
+                        <a href="https://googleprojectzero.blogspot.com/2025/09/pointer-leaks-through-pointer-keyed.html" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">Yet Another Random Story: VBScript's Randomize Internals</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Doyensec</span>
+                            <span>2025-09-25T00:00:00+02:00</span>
+                        </div>
+                        
+                        <div class="news-summary">In one of our recent posts, Dennis shared an interesting case study of C# exploitation that rode on Random-based password-reset tokens. He demonstrated how to use the single-packet attack, or a bit of old-school math, to beat the game. Recently, I performed a security test on a target which had a de...</div>
+                        <a href="https://blog.doyensec.com/2025/09/25/yet-another-random-story.html" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">It Is Bad (Exploitation of Fortra GoAnywhere MFT CVE-2025-10035) - Part 2</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Watchtowr Labs</span>
+                            <span>2025-09-25 19:26</span>
+                        </div>
+                        
+                        <div class="news-summary">We’re back, just over 24 hours later, to share our evolving understanding of CVE-2025-10035.Thanks to everyone who reached out after Part 1, and especially to the individual who shared credible intel that informed this update.In Part 1 we laid out an odd and worrying picture:A</div>
+                        <a href="https://labs.watchtowr.com/it-is-bad-exploitation-of-fortra-goanywhere-mft-cve-2025-10035-part-2/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">Cross-Agent Privilege Escalation: When Agents Free Each Other</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Embrace The Red</span>
+                            <span>2025-09-24 19:20</span>
+                        </div>
+                        
+                        <div class="news-summary">During the Month of AI Bugs, I described an emerging vulnerability pattern that shows how commonly agentic systems have a design flaw that allows an agent to overwrite its own configuration and security settings.
+This allows the agent to break out of its sandbox and escape by executing arbitrary cod...</div>
+                        <a href="https://embracethered.com/blog/posts/2025/cross-agent-privilege-escalation-agents-that-free-each-other/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">CVE-2025-23298: Getting Remote Code Execution in NVIDIA Merlin</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Zdi</span>
+                            <span>2025-09-24 16:41</span>
+                        </div>
+                        
+                        <div class="news-summary">While investigating the security posture of various machine learning (ML) and artificial intelligence (AI) frameworks, the Trend Micro Zero Day Initiative (ZDI) Threat Hunting Team discovered a critical vulnerability in the NVIDIA Merlin Transformers4Rec library that could allow an attacker to achie...</div>
+                        <a href="https://www.thezdi.com/blog/2025/9/23/cve-2025-23298-getting-remote-code-execution-in-nvidia-merlin" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">Is This Bad? This Feels Bad. (Fortra GoAnywhere CVE-2025-10035)</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Watchtowr Labs</span>
+                            <span>2025-09-24 13:01</span>
+                        </div>
+                        
+                        <div class="news-summary">File transfer used to be simple fun - fire up your favourite FTP client, log in to a glFTPd site, and you were done.Fast forward to 2025, and the same act requires a procurement team, a web interface, and a vendor proudly waving their Secure by Design pledge. Ever</div>
+                        <a href="https://labs.watchtowr.com/is-this-bad-this-feels-bad-goanywhere-cve-2025-10035/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">NVIDIA nvdisasm RELA section parsing out-of-bounds write vulnerability</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Talos Reports</span>
+                            <span>2025-09-24 00:00</span>
+                        </div>
+                        
+                        <div class="news-summary"></div>
+                        <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2172" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">NVIDIA nvdisasm symbol table parsing improper array index validation vulnerability</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Talos Reports</span>
+                            <span>2025-09-24 00:00</span>
+                        </div>
+                        
+                        <div class="news-summary"></div>
+                        <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2169" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">NVIDIA cuobjdump DWARF debug abbreviations parsing arbitrary code execution vulnerability</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Talos Reports</span>
+                            <span>2025-09-24 00:00</span>
+                        </div>
+                        
+                        <div class="news-summary"></div>
+                        <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2155" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">NVIDIA nvdisasm REL section header parsing heap-based buffer overflow vulnerability</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Talos Reports</span>
+                            <span>2025-09-24 00:00</span>
+                        </div>
+                        
+                        <div class="news-summary"></div>
+                        <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2191" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">NVIDIA nvdisasm REL section header parsing out-of-bounds write vulnerability</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Talos Reports</span>
+                            <span>2025-09-24 00:00</span>
+                        </div>
+                        
+                        <div class="news-summary"></div>
+                        <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2204" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">How RainyDay, Turian and a new PlugX variant abuse DLL search order hijacking</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Cisco Talos</span>
+                            <span>2025-09-23 18:00</span>
+                        </div>
+                        
+                        <div class="news-summary">Talos discovered that a new PlugX variant’s features overlap with both the RainyDay and Turian backdoors</div>
+                        <a href="https://blog.talosintelligence.com/how-rainyday-turian-and-a-new-plugx-variant-abuse-dll-search-order-hijacking/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">Our plan for a more secure npm supply chain</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Github Security Lab</span>
+                            <span>2025-09-23 00:29</span>
+                        </div>
+                        
+                        <div class="news-summary">Addressing a surge in package registry attacks, GitHub is strengthening npm's security with stricter authentication, granular tokens, and enhanced trusted publishing to restore trust in the open source ecosystem.
+The post Our plan for a more secure npm supply chain appeared first on The GitHub Blog.</div>
+                        <a href="https://github.blog/security/supply-chain-security/our-plan-for-a-more-secure-npm-supply-chain/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">The Phantom Extension: Backdooring chrome through uncharted pathways</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Synacktiv</span>
+                            <span>2025-09-23 00:00</span>
+                        </div>
+                        
+                        <div class="news-summary">
+
+
+
+ 
+
+
+
+
+
+The Phantom Extension: Backdooring chrome through uncharted pathways
+
+
+23/09/2025
+
+
+Pentest
+
+
+                   The increasing hardening of traditional Windows components such as LSASS has pushed attackers to explore alternative entry points. Among these, web browsers have emerged as hig...</div>
+                        <a href="https://www.synacktiv.com/en/publications/the-phantom-extension-backdooring-chrome-through-uncharted-pathways" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">Adobe Acrobat Reader Page Property Use-After-Free Vulnerability</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Talos Reports</span>
+                            <span>2025-09-23 00:00</span>
+                        </div>
+                        
+                        <div class="news-summary"></div>
+                        <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2222" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability severity-medium">
+                        <div class="news-title">CVE-2024-4598 - MEDIUM (6.5)</div>
+                        <div class="news-meta">
+                            <span class="source-tag">NVD (NIST)</span>
+                            <span>2025-09-23</span>
+                        </div>
+                        <div class="cve-info">CVE ID: CVE-2024-4598 | CVSS: 6.5 | Severity: MEDIUM</div>
+                        <div class="news-summary">An information disclosure vulnerability exists in multiple WSO2 products due to improper implementation of the enrich mediator. Authenticated users may be able to view unintended business data from other mediation contexts because the internal state is not properly isolated or cleared between execut...</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-4598" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">CVE-2025-9962 - N/A (N/A)</div>
+                        <div class="news-meta">
+                            <span class="source-tag">NVD (NIST)</span>
+                            <span>2025-09-23</span>
+                        </div>
+                        <div class="cve-info">CVE ID: CVE-2025-9962 | CVSS: N/A | Severity: N/A</div>
+                        <div class="news-summary">A buffer overflow vulnerability in Novakon P series allows attackers to gain root permission without prior authentication.This issue affects P series: P – V2001.A.C518o2.</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9962" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability severity-high">
+                        <div class="news-title">CVE-2025-10244 - HIGH (8.7)</div>
+                        <div class="news-meta">
+                            <span class="source-tag">NVD (NIST)</span>
+                            <span>2025-09-23</span>
+                        </div>
+                        <div class="cve-info">CVE ID: CVE-2025-10244 | CVSS: 8.7 | Severity: HIGH</div>
+                        <div class="news-summary">A maliciously crafted HTML payload, when rendered by the Autodesk Fusion desktop application, can trigger a Stored Cross-site Scripting (XSS) vulnerability. A malicious actor may leverage this vulnerability to read local files or execute arbitrary code in the context of the current process.</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10244" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">CVE-2025-9963 - N/A (N/A)</div>
+                        <div class="news-meta">
+                            <span class="source-tag">NVD (NIST)</span>
+                            <span>2025-09-23</span>
+                        </div>
+                        <div class="cve-info">CVE ID: CVE-2025-9963 | CVSS: N/A | Severity: N/A</div>
+                        <div class="news-summary">A path traversal vulnerability in Novakon P series allows to expose the root file system "/" and modify all files with root permissions. This way the system can also be compromized.This issue affects P series: P – V2001.A.C518o2.</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9963" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p><strong>Źródła danych:</strong></p>
+            <p>RSS: CERT.PL, Niebezpiecznik, Bleeping Computer, Security Affairs, Krebs Security, Threatpost, Dark Reading, InfoSecurity Magazine, Security Week, Cybersecurity News, HackRead, The Hacker News, CISA, SANS</p>
+            <p>API: National Vulnerability Database (NVD), VirusTotal, Shodan, AlienVault OTX</p>
+            <p>Raport wygenerowany: 2025-09-30 10:40:06</p>
+        </div>
+    </div>
+</body>
+</html>
