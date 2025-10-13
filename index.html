@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rozszerzony Raport Cyberbezpieczeństwa - 2025-10-12</title>
+    <title>Rozszerzony Raport Cyberbezpieczeństwa - 2025-10-13</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
         .container { max-width: 1400px; margin: 0 auto; background-color: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); overflow: hidden; }
@@ -40,7 +40,7 @@
     <div class="container">
         <div class="header">
             <h1>🛡️ Rozszerzony Raport Cyberbezpieczeństwa</h1>
-            <p>Dane z RSS feeds i API | 2025-10-12</p>
+            <p>Dane z RSS feeds i API | 2025-10-13</p>
         </div>
 
         <div class="content">
@@ -446,6 +446,16 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
                     </div>
 
                     <div class="news-item threat">
+                        <div class="news-title">Deconstructing a Cyber Deception: An Analysis of the Clickfix HijackLoader Phishing Campaign</div>
+                        <div class="news-meta">
+                            <span class="source-tag">AlienVault OTX</span>
+                            <span>2025-09-12</span>
+                        </div>
+                        <div class="news-summary">This analysis delves into the HijackLoader malware campaign, which has gained prominence since 2023 for its sophisticated payload delivery and evasion techniques. The campaign initiates with a CAPTCHA-based phishing attack, progressing through multiple stages of obfuscated PowerShell scripts. It employs advanced anti-analysis methods, including anti-VM checks and registry manipulation. The final p...</div>
+                        <a href="https://otx.alienvault.com/pulse/68c434b702367baa76c87ab9" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item threat">
                         <div class="news-title">Inside the 2025 Energy Phishing Wave: Chevron, Conoco, PBF, Phillips 66</div>
                         <div class="news-meta">
                             <span class="source-tag">AlienVault OTX</span>
@@ -495,22 +505,23 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
                         <a href="https://otx.alienvault.com/pulse/68c1a4c210fdbe8b2e7054b7" class="news-link" target="_blank">Czytaj więcej →</a>
                     </div>
 
-                    <div class="news-item threat">
-                        <div class="news-title">ZynorRAT technical analysis: Reverse engineering a novel, Turkish Go-based RAT</div>
-                        <div class="news-meta">
-                            <span class="source-tag">AlienVault OTX</span>
-                            <span>2025-09-10</span>
-                        </div>
-                        <div class="news-summary">ZynorRAT is a newly discovered Go-based Remote Access Trojan that provides a full suite of command and control capabilities for Linux and Windows systems. It was first identified in July 2025 and is believed to be of Turkish origin. The malware uses Telegram as its C2 infrastructure and offers features such as file exfiltration, system enumeration, screenshot capture, persistence through systemd s...</div>
-                        <a href="https://otx.alienvault.com/pulse/68c12ec5eb851e4417b21f49" class="news-link" target="_blank">Czytaj więcej →</a>
-                    </div>
-
                 </div>
             </div>
 
             <div class="section">
                 <h2>🔓 Wykryte Luki w Zabezpieczeniach</h2>
                 <div class="news-grid">
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">Hacking the Nokia Beacon 1 Router: UART, Command Injection, and Password Generation with Qiling</div>
+                        <div class="news-meta">
+                            <span class="source-tag">Spaceraccoon</span>
+                            <span>2025-10-13 00:00</span>
+                        </div>
+                        
+                        <div class="news-summary">The Nokia Beacon 1 proved to be an interesting journey covering the full spectrum of techniques from hardware debug interfaces to firmware extraction and finally both static and dynamic analysis. I was rewarded with interesting findings including a (now-patched) command injection.</div>
+                        <a href="https://spaceraccoon.dev/nokia-beacon-router-uart-command-injection/" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
 
                     <div class="news-item vulnerability ">
                         <div class="news-title">More Than DoS (Progress Telerik UI for ASP.NET AJAX Unsafe Reflection CVE-2025-3600)</div>
@@ -659,103 +670,104 @@ This three-part series reveals how tiny weights edits can implant stealthy back
                         <a href="https://labs.watchtowr.com/well-well-well-its-another-day-oracle-e-business-suite-pre-auth-rce-chain-cve-2025-61882well-well-well-its-another-day-oracle-e-business-suite-pre-auth-rce-chain-cve-2025-61882/" class="news-link" target="_blank">Czytaj więcej →</a>
                     </div>
 
-                    <div class="news-item vulnerability severity-medium">
-                        <div class="news-title">CVE-2025-11288 - MEDIUM (6.3)</div>
+                    <div class="news-item vulnerability severity-high">
+                        <div class="news-title">CVE-2025-11326 - HIGH (8.8)</div>
                         <div class="news-meta">
                             <span class="source-tag">NVD (NIST)</span>
-                            <span>2025-10-05</span>
+                            <span>2025-10-06</span>
                         </div>
-                        <div class="cve-info">CVE ID: CVE-2025-11288 | CVSS: 6.3 | Severity: MEDIUM</div>
-                        <div class="news-summary">A security flaw has been discovered in CRMEB up to 5.6. This issue affects some unknown processing of the file /adminapi/product/product of the component GET Parameter Handler. Performing manipulation of the argument cate_id results in sql injection. Remote exploitation of the attack is possible. Th...</div>
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11288" class="news-link" target="_blank">Czytaj więcej →</a>
-                    </div>
-
-                    <div class="news-item vulnerability severity-medium">
-                        <div class="news-title">CVE-2025-8406 - MEDIUM (6.3)</div>
-                        <div class="news-meta">
-                            <span class="source-tag">NVD (NIST)</span>
-                            <span>2025-10-05</span>
-                        </div>
-                        <div class="cve-info">CVE ID: CVE-2025-8406 | CVSS: 6.3 | Severity: MEDIUM</div>
-                        <div class="news-summary">ZenML version 0.83.1 is affected by a path traversal vulnerability in the `PathMaterializer` class. The `load` function uses `is_path_within_directory` to validate files during `data.tar.gz` extraction, which fails to effectively detect symbolic and hard links. This vulnerability can lead to arbitra...</div>
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-8406" class="news-link" target="_blank">Czytaj więcej →</a>
-                    </div>
-
-                    <div class="news-item vulnerability severity-low">
-                        <div class="news-title">CVE-2025-11289 - LOW (2.4)</div>
-                        <div class="news-meta">
-                            <span class="source-tag">NVD (NIST)</span>
-                            <span>2025-10-05</span>
-                        </div>
-                        <div class="cve-info">CVE ID: CVE-2025-11289 | CVSS: 2.4 | Severity: LOW</div>
-                        <div class="news-summary">A vulnerability was determined in westboy CicadasCMS up to 2431154dac8d0735e04f1fd2a3c3556668fc8dab. The impacted element is the function Save of the file src/main/java/com/zhiliao/common/template/TemplateFileServiceImpl.java of the component Template Management Page. This manipulation causes cross ...</div>
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11289" class="news-link" target="_blank">Czytaj więcej →</a>
-                    </div>
-
-                    <div class="news-item vulnerability severity-medium">
-                        <div class="news-title">CVE-2025-8917 - MEDIUM (5.8)</div>
-                        <div class="news-meta">
-                            <span class="source-tag">NVD (NIST)</span>
-                            <span>2025-10-05</span>
-                        </div>
-                        <div class="cve-info">CVE ID: CVE-2025-8917 | CVSS: 5.8 | Severity: MEDIUM</div>
-                        <div class="news-summary">A vulnerability in allegroai/clearml version v2.0.1 allows for path traversal due to improper handling of symbolic and hard links in the `safe_extract` function. This flaw can lead to arbitrary file writes outside the intended directory, potentially resulting in remote code execution if critical fil...</div>
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-8917" class="news-link" target="_blank">Czytaj więcej →</a>
-                    </div>
-
-                    <div class="news-item vulnerability severity-medium">
-                        <div class="news-title">CVE-2025-11290 - MEDIUM (5.6)</div>
-                        <div class="news-meta">
-                            <span class="source-tag">NVD (NIST)</span>
-                            <span>2025-10-05</span>
-                        </div>
-                        <div class="cve-info">CVE ID: CVE-2025-11290 | CVSS: 5.6 | Severity: MEDIUM</div>
-                        <div class="news-summary">A vulnerability was identified in CRMEB up to 5.6.1. This affects an unknown function of the component JWT HMAC Secret Handler. Such manipulation of the argument secret with the input default leads to use of hard-coded cryptographic key . It is possible to launch the attack remotely. Attacks of thi...</div>
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11290" class="news-link" target="_blank">Czytaj więcej →</a>
-                    </div>
-
-                    <div class="news-item vulnerability severity-medium">
-                        <div class="news-title">CVE-2025-11291 - MEDIUM (4.3)</div>
-                        <div class="news-meta">
-                            <span class="source-tag">NVD (NIST)</span>
-                            <span>2025-10-05</span>
-                        </div>
-                        <div class="cve-info">CVE ID: CVE-2025-11291 | CVSS: 4.3 | Severity: MEDIUM</div>
-                        <div class="news-summary">A security flaw has been discovered in ixmaps website2017 up to 0c71cffa0162186bc057a76766bc97e9f5a3a2d0. This impacts an unknown function of the file /map.php of the component HTTP GET Request Handler. Performing manipulation of the argument trid results in cross site scripting. The attack can be i...</div>
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11291" class="news-link" target="_blank">Czytaj więcej →</a>
-                    </div>
-
-                    <div class="news-item vulnerability severity-medium">
-                        <div class="news-title">CVE-2025-11292 - MEDIUM (6.3)</div>
-                        <div class="news-meta">
-                            <span class="source-tag">NVD (NIST)</span>
-                            <span>2025-10-05</span>
-                        </div>
-                        <div class="cve-info">CVE ID: CVE-2025-11292 | CVSS: 6.3 | Severity: MEDIUM</div>
-                        <div class="news-summary">A weakness has been identified in Belkin F9K1015 1.00.10. Affected is an unknown function of the file /goform/formBSSetSitesurvey. Executing manipulation of the argument wan_ipaddr can lead to command injection. The attack can be launched remotely. The exploit has been made available to the public a...</div>
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11292" class="news-link" target="_blank">Czytaj więcej →</a>
+                        <div class="cve-info">CVE ID: CVE-2025-11326 | CVSS: 8.8 | Severity: HIGH</div>
+                        <div class="news-summary">A weakness has been identified in Tenda AC18 15.03.05.19(6318). This affects an unknown part of the file /goform/WifiMacFilterSet. Executing manipulation of the argument wifi_chkHz can lead to stack-based buffer overflow. The attack may be performed from remote. The exploit has been made available t...</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11326" class="news-link" target="_blank">Czytaj więcej →</a>
                     </div>
 
                     <div class="news-item vulnerability severity-high">
-                        <div class="news-title">CVE-2025-11293 - HIGH (8.8)</div>
+                        <div class="news-title">CVE-2025-11327 - HIGH (8.8)</div>
                         <div class="news-meta">
                             <span class="source-tag">NVD (NIST)</span>
-                            <span>2025-10-05</span>
+                            <span>2025-10-06</span>
                         </div>
-                        <div class="cve-info">CVE ID: CVE-2025-11293 | CVSS: 8.8 | Severity: HIGH</div>
-                        <div class="news-summary">A security vulnerability has been detected in Belkin F9K1015 1.00.10. Affected by this vulnerability is an unknown functionality of the file /goform/formConnectionSetting. The manipulation of the argument max_Conn leads to buffer overflow. The attack may be initiated remotely. The exploit has been d...</div>
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11293" class="news-link" target="_blank">Czytaj więcej →</a>
+                        <div class="cve-info">CVE ID: CVE-2025-11327 | CVSS: 8.8 | Severity: HIGH</div>
+                        <div class="news-summary">A security vulnerability has been detected in Tenda AC18 15.03.05.19(6318). This vulnerability affects unknown code of the file /goform/SetUpnpCfg. The manipulation of the argument upnpEn leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been discl...</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11327" class="news-link" target="_blank">Czytaj więcej →</a>
                     </div>
 
-                    <div class="news-item vulnerability severity-high">
-                        <div class="news-title">CVE-2025-11294 - HIGH (8.8)</div>
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">CVE-2025-59728 - N/A (N/A)</div>
                         <div class="news-meta">
                             <span class="source-tag">NVD (NIST)</span>
-                            <span>2025-10-05</span>
+                            <span>2025-10-06</span>
                         </div>
-                        <div class="cve-info">CVE ID: CVE-2025-11294 | CVSS: 8.8 | Severity: HIGH</div>
-                        <div class="news-summary">A vulnerability was detected in Belkin F9K1015 1.00.10. Affected by this issue is some unknown functionality of the file /goform/formL2TPSetup. The manipulation of the argument L2TPUserName results in buffer overflow. The attack may be launched remotely. The exploit is now public and may be used. Th...</div>
-                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11294" class="news-link" target="_blank">Czytaj więcej →</a>
+                        <div class="cve-info">CVE ID: CVE-2025-59728 | CVSS: N/A | Severity: N/A</div>
+                        <div class="news-summary">When calculating the content path in handling of MPEG-DASH manifests, there's an out-of-bounds NUL-byte write one byte past the end of the buffer.When we call xmlNodeGetContent below [0], it returns a buffer precisely allocated to match the string length, using strdup internally. If this buffer is n...</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59728" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">CVE-2025-59729 - N/A (N/A)</div>
+                        <div class="news-meta">
+                            <span class="source-tag">NVD (NIST)</span>
+                            <span>2025-10-06</span>
+                        </div>
+                        <div class="cve-info">CVE ID: CVE-2025-59729 | CVSS: N/A | Severity: N/A</div>
+                        <div class="news-summary">When parsing the header for a DHAV file, there's an integer underflow in offset calculation that leads to reading the duration from before the start of the allocated buffer.
+
+If we load a DHAV file that is larger than MAX_DURATION_BUFFER_SIZE bytes (0x100000) for example 0x101000 bytes, then at [0] ...</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59729" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">CVE-2025-59730 - N/A (N/A)</div>
+                        <div class="news-meta">
+                            <span class="source-tag">NVD (NIST)</span>
+                            <span>2025-10-06</span>
+                        </div>
+                        <div class="cve-info">CVE ID: CVE-2025-59730 | CVSS: N/A | Severity: N/A</div>
+                        <div class="news-summary">When decoding a frame for a SANM file (ANIM v0 variant), the decoded data can be larger than the buffer allocated for it.
+
+Frames encoded with codec 48 can specify their resolution (width x height). A buffer of appropriate size is allocated depending on the resolution.
+
+This codec can encode the fra...</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59730" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">CVE-2025-59731 - N/A (N/A)</div>
+                        <div class="news-meta">
+                            <span class="source-tag">NVD (NIST)</span>
+                            <span>2025-10-06</span>
+                        </div>
+                        <div class="cve-info">CVE ID: CVE-2025-59731 | CVSS: N/A | Severity: N/A</div>
+                        <div class="news-summary">When decoding an OpenEXR file that uses DWAA or DWAB compression, the specified raw length of run-length-encoded data is not checked when using it to calculate the output data.
+
+We read rle_raw_size from the input file at [0], we decompress and decode into the buffer td->rle_raw_data of size rle_raw...</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59731" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">CVE-2025-59732 - N/A (N/A)</div>
+                        <div class="news-meta">
+                            <span class="source-tag">NVD (NIST)</span>
+                            <span>2025-10-06</span>
+                        </div>
+                        <div class="cve-info">CVE ID: CVE-2025-59732 | CVSS: N/A | Severity: N/A</div>
+                        <div class="news-summary">When decoding an OpenEXR file that uses DWAA or DWAB compression, there's an implicit assumption that the height and width are divisible by 8.
+
+If the height or width of the image is not divisible by 8, the copy loops at [0] and [1] will continue to write until the next multiple of 8.
+
+The buffer td...</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59732" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+
+                    <div class="news-item vulnerability ">
+                        <div class="news-title">CVE-2025-59733 - N/A (N/A)</div>
+                        <div class="news-meta">
+                            <span class="source-tag">NVD (NIST)</span>
+                            <span>2025-10-06</span>
+                        </div>
+                        <div class="cve-info">CVE ID: CVE-2025-59733 | CVSS: N/A | Severity: N/A</div>
+                        <div class="news-summary">When decoding an OpenEXR file that uses DWAA or DWAB compression, there's an implicit assumption that all image channels have the same pixel type (and size), and that if there are four channels, the first four are "B", "G", "R" and "A". The channel parsing code can be found in decode_header. The buf...</div>
+                        <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59733" class="news-link" target="_blank">Czytaj więcej →</a>
                     </div>
 
                 </div>
@@ -767,7 +779,7 @@ This three-part series reveals how tiny weights edits can implant stealthy back
             <p><strong>Źródła danych:</strong></p>
             <p>RSS: CERT.PL, Niebezpiecznik, Bleeping Computer, Security Affairs, Krebs Security, Threatpost, Dark Reading, InfoSecurity Magazine, Security Week, Cybersecurity News, HackRead, The Hacker News, CISA, SANS</p>
             <p>API: National Vulnerability Database (NVD), VirusTotal, Shodan, AlienVault OTX</p>
-            <p>Raport przygotowany i wygenerowany przez Marek Ziemniewicz: 2025-10-12 08:03:55</p>
+            <p>Raport przygotowany i wygenerowany przez Marek Ziemniewicz: 2025-10-13 08:03:59</p>
         </div>
     </div>
 </body>
