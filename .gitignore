@@ -1,0 +1,4 @@
+# Ignoruj wszystko oprócz index.html
+*
+!index.html
+!.gitignore
