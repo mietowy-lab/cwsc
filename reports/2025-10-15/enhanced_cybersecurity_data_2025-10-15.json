@@ -34,6 +34,14 @@
       "category": "incident"
     },
     {
+      "source": "Cisco Talos",
+      "title": "What happens when you engage Cisco Talos Incident Response?",
+      "link": "https://blog.talosintelligence.com/what-happens-when-you-engage-talos-ir/",
+      "date": "2025-09-24 10:00",
+      "summary": "What happens when you bring in a team of cybersecurity responders? How do we turn chaos into control, and what is the long-term value that Talos IR provides to the organizations we work with?",
+      "category": "incident"
+    },
+    {
       "source": "Checkpoint Research",
       "title": "22nd September – Threat Intelligence Report",
       "link": "https://research.checkpoint.com/2025/22nd-september-threat-intelligence-report/",
@@ -631,105 +639,6 @@
     },
     {
       "source": "NVD (NIST)",
-      "title": "CVE-2025-11438 - MEDIUM (6.3)",
-      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11438",
-      "date": "2025-10-08",
-      "summary": "A vulnerability has been found in JhumanJ OpnForm up to 1.9.3. This vulnerability affects unknown code of the file /custom-domains of the component API Endpoint. Such manipulation leads to missing authorization. The attack may be launched remotely. The exploit has been disclosed to the public and ma...",
-      "category": "vulnerability",
-      "cvss_score": 6.3,
-      "severity": "MEDIUM",
-      "cve_id": "CVE-2025-11438"
-    },
-    {
-      "source": "NVD (NIST)",
-      "title": "CVE-2025-11439 - MEDIUM (4.3)",
-      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11439",
-      "date": "2025-10-08",
-      "summary": "A vulnerability was found in JhumanJ OpnForm up to 1.9.3. This issue affects some unknown processing of the file /show/integrations. Performing manipulation results in missing authorization. Remote exploitation of the attack is possible. The exploit has been made public and could be used. The patch ...",
-      "category": "vulnerability",
-      "cvss_score": 4.3,
-      "severity": "MEDIUM",
-      "cve_id": "CVE-2025-11439"
-    },
-    {
-      "source": "NVD (NIST)",
-      "title": "CVE-2025-11440 - MEDIUM (4.3)",
-      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11440",
-      "date": "2025-10-08",
-      "summary": "A vulnerability was determined in JhumanJ OpnForm up to 1.9.3. Impacted is an unknown function of the file /edit. Executing manipulation can lead to improper access controls. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. This patch is called b15e29...",
-      "category": "vulnerability",
-      "cvss_score": 4.3,
-      "severity": "MEDIUM",
-      "cve_id": "CVE-2025-11440"
-    },
-    {
-      "source": "NVD (NIST)",
-      "title": "CVE-2025-11441 - LOW (3.7)",
-      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11441",
-      "date": "2025-10-08",
-      "summary": "A vulnerability was identified in JhumanJ OpnForm up to 1.9.3. The affected element is an unknown function of the component HTTP Header Handler. The manipulation of the argument X-Forwarded-For leads to improper restriction of excessive authentication attempts. The attack is possible to be carried o...",
-      "category": "vulnerability",
-      "cvss_score": 3.7,
-      "severity": "LOW",
-      "cve_id": "CVE-2025-11441"
-    },
-    {
-      "source": "NVD (NIST)",
-      "title": "CVE-2025-48464 - MEDIUM (4.7)",
-      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-48464",
-      "date": "2025-10-08",
-      "summary": "Successful exploitation of the vulnerability could allow an unauthenticated attacker to gain access to a victim’s Sync account data such as account credentials and email protection information.",
-      "category": "vulnerability",
-      "cvss_score": 4.7,
-      "severity": "MEDIUM",
-      "cve_id": "CVE-2025-48464"
-    },
-    {
-      "source": "NVD (NIST)",
-      "title": "CVE-2025-11442 - MEDIUM (4.3)",
-      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11442",
-      "date": "2025-10-08",
-      "summary": "A security flaw has been discovered in JhumanJ OpnForm up to 1.9.3. The impacted element is an unknown function of the component API Endpoint. The manipulation results in cross-site request forgery. The attack may be performed from remote. The exploit has been released to the public and may be explo...",
-      "category": "vulnerability",
-      "cvss_score": 4.3,
-      "severity": "MEDIUM",
-      "cve_id": "CVE-2025-11442"
-    },
-    {
-      "source": "NVD (NIST)",
-      "title": "CVE-2025-11443 - LOW (3.7)",
-      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11443",
-      "date": "2025-10-08",
-      "summary": "A weakness has been identified in JhumanJ OpnForm up to 1.9.3. This affects an unknown function of the file /api/password/email of the component Forgotten Password Handler. This manipulation causes information exposure through discrepancy. It is possible to initiate the attack remotely. The attack i...",
-      "category": "vulnerability",
-      "cvss_score": 3.7,
-      "severity": "LOW",
-      "cve_id": "CVE-2025-11443"
-    },
-    {
-      "source": "NVD (NIST)",
-      "title": "CVE-2025-11444 - HIGH (8.8)",
-      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11444",
-      "date": "2025-10-08",
-      "summary": "A security vulnerability has been detected in TOTOLINK N600R up to 4.3.0cu.7866_B20220506. This impacts the function setWiFiBasicConfig of the file /cgi-bin/cstecgi.cgi of the component HTTP Request Handler. Such manipulation of the argument wepkey leads to buffer overflow. It is possible to launch ...",
-      "category": "vulnerability",
-      "cvss_score": 8.8,
-      "severity": "HIGH",
-      "cve_id": "CVE-2025-11444"
-    },
-    {
-      "source": "NVD (NIST)",
-      "title": "CVE-2025-11445 - MEDIUM (6.3)",
-      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11445",
-      "date": "2025-10-08",
-      "summary": "A vulnerability was detected in Kilo Code up to 4.86.0. Affected is the function ClineProvider of the file src/core/webview/ClineProvider.ts of the component Prompt Handler. Performing manipulation results in injection. The attack can be initiated remotely. The exploit is now public and may be used....",
-      "category": "vulnerability",
-      "cvss_score": 6.3,
-      "severity": "MEDIUM",
-      "cve_id": "CVE-2025-11445"
-    },
-    {
-      "source": "NVD (NIST)",
       "title": "CVE-2025-11469 - MEDIUM (6.3)",
       "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11469",
       "date": "2025-10-08",
@@ -848,6 +757,105 @@
       "cvss_score": 7.3,
       "severity": "HIGH",
       "cve_id": "CVE-2025-11475"
+    },
+    {
+      "source": "NVD (NIST)",
+      "title": "CVE-2025-43821 - N/A (N/A)",
+      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-43821",
+      "date": "2025-10-08",
+      "summary": "Cross-site scripting (XSS) vulnerability in the Commerce Product Comparison Table widget in Liferay Portal 7.4.0 through 7.4.3.111, and Liferay DXP 2023.Q4.0 through 2023.Q4.5, 2023.Q3.1 through 2023.Q3.8, and 7.4 GA through update 92 allows remote attackers to inject arbitrary web script or HTML vi...",
+      "category": "vulnerability",
+      "cvss_score": "N/A",
+      "severity": "N/A",
+      "cve_id": "CVE-2025-43821"
+    },
+    {
+      "source": "NVD (NIST)",
+      "title": "CVE-2025-60298 - MEDIUM (5.4)",
+      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-60298",
+      "date": "2025-10-08",
+      "summary": "Novel-Plus up to 5.2.4 was discovered to contain a Stored Cross-Site Scripting (XSS) vulnerability via the /author/updateIndexName endpoint. This vulnerability allows authenticated attackers to inject malicious JavaScript code through the indexName parameter, which gets stored in the database and ex...",
+      "category": "vulnerability",
+      "cvss_score": 5.4,
+      "severity": "MEDIUM",
+      "cve_id": "CVE-2025-60298"
+    },
+    {
+      "source": "NVD (NIST)",
+      "title": "CVE-2025-60299 - MEDIUM (5.4)",
+      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-60299",
+      "date": "2025-10-08",
+      "summary": "Novel-Plus with 5.2.0 was discovered to contain a Stored Cross-Site Scripting (XSS) vulnerability via the /book/addCommentReply endpoint. An authenticated user can inject malicious JavaScript through the replyContent parameter when replying to a book comment. The payload is stored in the database an...",
+      "category": "vulnerability",
+      "cvss_score": 5.4,
+      "severity": "MEDIUM",
+      "cve_id": "CVE-2025-60299"
+    },
+    {
+      "source": "NVD (NIST)",
+      "title": "CVE-2025-11476 - HIGH (7.3)",
+      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11476",
+      "date": "2025-10-08",
+      "summary": "A vulnerability was identified in SourceCodester Simple E-Commerce Bookstore 1.0. This affects an unknown part of the file /index.php. The manipulation of the argument login_username leads to sql injection. The attack may be initiated remotely. The exploit is publicly available and might be used.",
+      "category": "vulnerability",
+      "cvss_score": 7.3,
+      "severity": "HIGH",
+      "cve_id": "CVE-2025-11476"
+    },
+    {
+      "source": "NVD (NIST)",
+      "title": "CVE-2025-11477 - HIGH (7.3)",
+      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11477",
+      "date": "2025-10-08",
+      "summary": "A security flaw has been discovered in SourceCodester Wedding Reservation Management System 1.0. This vulnerability affects unknown code of the file /global.php. The manipulation of the argument User results in sql injection. The attack may be launched remotely. The exploit has been released to the ...",
+      "category": "vulnerability",
+      "cvss_score": 7.3,
+      "severity": "HIGH",
+      "cve_id": "CVE-2025-11477"
+    },
+    {
+      "source": "NVD (NIST)",
+      "title": "CVE-2025-11478 - MEDIUM (6.3)",
+      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11478",
+      "date": "2025-10-08",
+      "summary": "A weakness has been identified in SourceCodester Farm Management System 1.0. This issue affects some unknown processing of the file /myCart.php. This manipulation of the argument pid causes sql injection. Remote exploitation of the attack is possible. The exploit has been made available to the publi...",
+      "category": "vulnerability",
+      "cvss_score": 6.3,
+      "severity": "MEDIUM",
+      "cve_id": "CVE-2025-11478"
+    },
+    {
+      "source": "NVD (NIST)",
+      "title": "CVE-2025-43829 - N/A (N/A)",
+      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-43829",
+      "date": "2025-10-08",
+      "summary": "Stored cross-site scripting (XSS) vulnerability in diagram type products in Commerce in Liferay Portal 7.4.3.18 through 7.4.3.111, and Liferay DXP 2023.Q4.0 through 2023.Q4.5, 2023.Q3.1 through 2023.Q3.8, and 7.4 update 18 through update 92 allows remote attackers to inject arbitrary web script or H...",
+      "category": "vulnerability",
+      "cvss_score": "N/A",
+      "severity": "N/A",
+      "cve_id": "CVE-2025-43829"
+    },
+    {
+      "source": "NVD (NIST)",
+      "title": "CVE-2025-43830 - N/A (N/A)",
+      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-43830",
+      "date": "2025-10-08",
+      "summary": "Stored cross-site scripting (XSS) vulnerability in Forms in Liferay Portal 7.3.2 through 7.4.3.111, and Liferay DXP 2023.Q4.0 through 2023.Q4.5, 2023.Q3.1 through 2023.Q3.8, 7.4 GA through update 92, and 7.3 GA through update 35 allows remote attackers to inject arbitrary web script or HTML via a cr...",
+      "category": "vulnerability",
+      "cvss_score": "N/A",
+      "severity": "N/A",
+      "cve_id": "CVE-2025-43830"
+    },
+    {
+      "source": "NVD (NIST)",
+      "title": "CVE-2025-60314 - MEDIUM (5.4)",
+      "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-60314",
+      "date": "2025-10-08",
+      "summary": "Configuroweb Sistema Web de Inventario 1.0 is vulnerable to a Stored Cross-Site Scripting (XSS) due to the lack of input sanitization on the product name parameter (Nombre:Producto) allowing an authenticated attacker to inject malicious payloads and execute arbitrary JavaScript.",
+      "category": "vulnerability",
+      "cvss_score": 5.4,
+      "severity": "MEDIUM",
+      "cve_id": "CVE-2025-60314"
     },
     {
       "source": "Talos Reports",
@@ -1970,6 +1978,14 @@
       "category": "vulnerability"
     },
     {
+      "source": "Exploits Forsale",
+      "title": "Exploiting the NT Kernel in 24H2: New Bugs in Old Code & Side Channels Against KASLR ›",
+      "link": "https://exploits.forsale/",
+      "date": "2024-04-26 00:00",
+      "summary": "",
+      "category": "vulnerability"
+    },
+    {
       "source": "Mdsec",
       "title": "CVE-2024-21111 – Local Privilege Escalation in Oracle VirtualBox",
       "link": "https://www.mdsec.co.uk/2024/04/cve-2024-21111-local-privilege-escalation-in-oracle-virtualbox/",
@@ -2458,6 +2474,14 @@
       "category": "vulnerability"
     },
     {
+      "source": "Exploits Forsale",
+      "title": "CVE-2023-38146: Arbitrary Code Execution via Windows Themes ›",
+      "link": "https://exploits.forsale/",
+      "date": "2023-09-13 00:00",
+      "summary": "",
+      "category": "vulnerability"
+    },
+    {
       "source": "Meta Redteamx",
       "title": "CVE-2023-4039: GCC’s -fstack-protector fails to guard dynamic stack allocations on ARM64",
       "link": "https://rtx.meta.security/mitigation/2023/09/12/CVE-2023-4039.html",
@@ -2615,6 +2639,14 @@
       "link": "https://security.apple.com/blog/what-if-we-had-sockpuppet-in-ios16",
       "date": "2023-05-23 00:00",
       "summary": "",
+      "category": "vulnerability"
+    },
+    {
+      "source": "Pi3 Blog",
+      "title": "Bug bounties are broken – the story of “i915” bug, ChromeOS + Intel bounty programs, and beyond",
+      "link": "https://blog.pi3.com.pl/?p=931",
+      "date": "2023-05-17 15:16",
+      "summary": "At first, I didn’t plan to write an article about the problems with bug bounty programs. This was supposed to be a standard technical blogpost describing an interesting bug in the Linux Kernel i915 driver allowing for a linear Out-Of-Bound read and write access (CVE-2023-28410). Moreover, I’m not ev...",
       "category": "vulnerability"
     },
     {
@@ -3114,6 +3146,14 @@
       "category": "vulnerability"
     },
     {
+      "source": "Pi3 Blog",
+      "title": "LKRG 0.9.0 has been released!",
+      "link": "https://blog.pi3.com.pl/?p=890",
+      "date": "2021-04-12 21:54",
+      "summary": "During LKRG development and testing I’ve found 7 Linux kernel bugs, 4 of them have CVE numbers (however, 1 CVE number covers 2 bugs): CVE-2021-3411 - Linux kernel: broken KRETPROBES and OPTIMIZER CVE-2020-27825 - Linux kernel: Use-After-Free in the ftrace ring buffer resizing logic due to a race con...",
+      "category": "vulnerability"
+    },
+    {
       "source": "Xdavidhu",
       "title": "I Built a TV That Plays All of Your Private YouTube Videos",
       "link": "https://bugs.xdavidhu.me/google/2021/04/05/i-built-a-tv-that-plays-all-of-your-private-youtube-videos/",
@@ -3186,6 +3226,14 @@
       "category": "vulnerability"
     },
     {
+      "source": "Pi3 Blog",
+      "title": "CVE-2020-16898 – Exploiting “Bad Neighbor” vulnerability",
+      "link": "https://blog.pi3.com.pl/?p=780",
+      "date": "2020-10-16 18:57",
+      "summary": "Introduction During the last Patch Tuesday (13th of October 2020), Microsoft fixed a very interesting (and sexy) vulnerability: CVE-2020-16898 – Windows TCP/IP Remote Code Execution Vulnerability (link). Microsoft’s description of the vulnerability: “A remote code execution vulnerability exists when...",
+      "category": "vulnerability"
+    },
+    {
       "source": "Aleph Research Posts",
       "title": "Don't Ruck Us Again - The Exploit Returns",
       "link": "https://alephsecurity.com/2020/10/14/ruckus-wireless-2/",
@@ -3199,6 +3247,14 @@
       "link": "https://www.matteomalvica.com/blog/2020/09/24/weaponizing-cve-2020-17382/",
       "date": "2020-09-24 00:00",
       "summary": "Preamble - Why are drivers still a valuable target? Kernels are, no euphemism intended, complex piece of software and the Windows OS is no exception. Being one of the toughest to scrutinize due to its lack of source code and undocumented APIs, it is now being more documented thanks to the immense ef...",
+      "category": "vulnerability"
+    },
+    {
+      "source": "Pi3 Blog",
+      "title": "CVE: 2020-14356 & 2020-25220",
+      "link": "https://blog.pi3.com.pl/?p=720",
+      "date": "2020-09-11 05:35",
+      "summary": "The short story of 1 Linux Kernel Use-After-Free bug and 2 CVEs (CVE-2020-14356 and CVE-2020-25220) Name:     Linux kernel Cgroup BPF Use-After-FreeAuthor:   Adam Zabrocki (pi3@pi3.com.pl)Date:       May 27, 2020 First things first – short history: In 2019 Tejun Heo discovered a racing problem with ...",
       "category": "vulnerability"
     },
     {
@@ -3433,5 +3489,89 @@
       "summary": "When looking at bug bounty programs that have existed for a long time it’s often beneficial to assume that every public facing page has already been automatedly scanned to death. In many cases this isn’t valid because of the types of tools people use, different scopes people prefer, or the tendency ...",
       "category": "vulnerability"
     }
-  ]
+  ],
+  "summary": {
+    "total_incidents": 59,
+    "total_threats": 9,
+    "total_vulnerabilities": 360,
+    "sources_used": [
+      "web_insecurity_blog_rss",
+      "access_vector_rss",
+      "aleph_research_posts_rss",
+      "aleph_research_vulns_rss",
+      "alexander_popov_rss",
+      "android_offensive_security_rss",
+      "apple_security_research_rss",
+      "assetnote_rss",
+      "atredis_partners_rss",
+      "shielder_rss",
+      "brendon_tiszka_rss",
+      "checkpoint_research_rss",
+      "cisco_talos_rss",
+      "connor_mcgarr_rss",
+      "darknavy_rss",
+      "dfsec_research_rss",
+      "doar_e_rss",
+      "doyensec_rss",
+      "elttam_rss",
+      "embrace_the_red_rss",
+      "exploits_forsale_rss",
+      "grimm_blog_rss",
+      "gamozo_labs_rss",
+      "github_security_lab_rss",
+      "google_security_research_advisories_rss",
+      "guido_vranken_rss",
+      "hacktus_rss",
+      "impalabs_rss",
+      "intrigus_rss",
+      "isosceles_rss",
+      "johan_carlsson_rss",
+      "joseph_ravichandran_rss",
+      "keen_security_lab_rss",
+      "low_level_adventures_rss",
+      "mdsec_rss",
+      "matteo_malvica_rss",
+      "meta_redteam_advisories_rss",
+      "meta_redteamx_rss",
+      "microsoft_bvr_rss",
+      "mozilla_attack_defense_rss",
+      "ods_security_research_rss",
+      "oversecured_rss",
+      "itm4n_rss",
+      "pt_swarm_rss",
+      "portswigger_rss",
+      "positive_technologies_rss",
+      "slonser_notes_rss",
+      "project_zero_rss",
+      "project_zero_rca_rss",
+      "kaist_hacking_lab_rss",
+      "ret2_systems_rss",
+      "realmode_labs_rss",
+      "codean_labs_rss",
+      "rhino_security_labs_rss",
+      "sam_curry_rss",
+      "sean_heelan_rss",
+      "secfault_security_rss",
+      "renwa_rss",
+      "stratum_security_rss",
+      "synacktiv_rss",
+      "talos_reports_rss",
+      "taszk_rss",
+      "teddy_katz_rss",
+      "trenchant_rss",
+      "windows_internals_rss",
+      "youssef_sammouda_rss",
+      "zdi_rss",
+      "ysanatomic_rss",
+      "xdavidhu_rss",
+      "jub0bs_rss",
+      "kylebot_rss",
+      "pi3_blog_rss",
+      "securitum_rss",
+      "secret_club_rss",
+      "spaceraccoon_rss",
+      "watchtowr_labs_rss",
+      "nvd_api"
+    ]
+  }
 }

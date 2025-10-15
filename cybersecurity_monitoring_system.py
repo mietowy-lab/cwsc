@@ -1,90 +1,55 @@
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Rozszerzony System Monitorowania Cyberbezpieczeństwa — PRO (Matrix Dark Dashboard)
+Rozszerzony System Monitorowania Cyberbezpieczeństwa
 Autor: Marek Z, AI Assistant
-Data: 2025-10-14
+Data: 2025-09-16
 
-Funkcje:
-- Pobieranie danych z RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)
-- Klasyfikacja: incydenty / zagrożenia / luki
-- Dedup: usuwanie duplikatów po linku/tytule
-- Raport HTML w stylu dark cyber (+ filtry High/Medium/Low, sort Data/CVSS, przełącznik motywu Matrix/Neo)
-- Eksport JSON i CSV
+Program pobiera informacje o cyberbezpieczeństwie z RSS feeds i API,
+klasyfikuje je na incydenty, zagrożenia i luki, a następnie generuje
+profesjonalne raporty w formatach HTML, JSON i CSV.
 
 Wymagania:
-  pip install requests beautifulsoup4 feedparser
+- requests
+- beautifulsoup4
+- feedparser (opcjonalne, program działa bez tego)
 
-Klucze API (opcjonalne):
-  Ustaw jako zmienne środowiskowe przed uruchomieniem:
-    VT_API_KEY, SHODAN_API_KEY, OTX_API_KEY
+Instalacja:
+pip install requests beautifulsoup4 feedparser
 
 Użycie:
-  python cybersecurity_monitor_pro_matrix_final.py
+python cybersecurity_monitor.py
 """
 
-from __future__ import annotations
-
-import os
-import sys
-import csv
-import json
-import time
-import logging
-import random
-import xml.etree.ElementTree as ET
-from string import Template
-from typing import List, Dict, Any
-from datetime import datetime, timedelta
-
 import requests
+from bs4 import BeautifulSoup
+import json
+from datetime import datetime, timedelta
+import time
+import re
+from urllib.parse import urljoin, urlparse
+import csv
+import xml.etree.ElementTree as ET
+import random
+import logging
+import os
 
-# BeautifulSoup jest opcjonalny — jeśli brak, użyjemy regexu
-try:
-    from bs4 import BeautifulSoup  # type: ignore
-except Exception:
-    BeautifulSoup = None  # fallback w html2text
-
-# -------------------------------------------
-# Logowanie + konsola UTF-8 (Windows)
-# -------------------------------------------
+# Konfiguracja logowania
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger("CyberMonitorPRO")
-try:
-    if getattr(sys.stdout, "reconfigure", None):
-        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-except Exception:
-    pass
+logger = logging.getLogger(__name__)
 
-# -------------------------------------------
-# Helpery
-# -------------------------------------------
-def html2text(s: str) -> str:
-    """Bezpieczne usunięcie HTML (działa także bez bs4)."""
-    if not s:
-        return ''
-    try:
-        if BeautifulSoup is not None:
-            return BeautifulSoup(s, 'html.parser').get_text()
-    except Exception:
-        pass
-    import re
-    return re.sub(r'<[^>]+>', '', s)
-
-# -------------------------------------------
-# Klucze API — ENV lub set_api_key()
-# -------------------------------------------
-API_KEYS_DEFAULT = {
-    'virustotal': os.getenv('VT_API_KEY'),
-    'shodan': os.getenv('SHODAN_API_KEY'),
-    'alienvault': os.getenv('OTX_API_KEY'),
+# Klucze API (opcjonalne)
+API_KEYS = {
+    'virustotal': '8799778183788c0622a0782a4a3547c8ac731249f82db2b781ca941463a5747c',  # API
+    'shodan': 'f5VVSrXsZefbrELI3eAxCTd5E4wd2Quk',      # API
+    'alienvault': 'b3301fa1068227e3fb333c159dd16ab38c2263858a9e693a1972cb8bc95eebd7',  # API
 }
-
 
 class AdvancedCyberSecurityMonitor:
     def __init__(self):
-        # RSS — kompletna lista źródeł (Twoja baza)
-        self.rss_sources: Dict[str, str] = {
+        # RSS Feeds - kompletna lista źródeł
+        self.rss_sources = {
             'web_insecurity_blog_rss': 'https://security.lauritz-holtmann.de/index.xml',
             'access_vector_rss': 'https://accessvector.net/rss.xml',
             'aleph_research_posts_rss': 'http://little-canada.org/feeds/output/aleph-posts.rss',
@@ -101,7 +66,7 @@ class AdvancedCyberSecurityMonitor:
             'connor_mcgarr_rss': 'https://connormcgarr.github.io/feed.xml',
             'darknavy_rss': 'https://www.darknavy.org/index.xml',
             'dfsec_research_rss': 'https://blog.dfsec.com/feed.xml',
-            'doar_e_rss': 'https://doar-e.github.io/feeds/rss.xml?_=0',
+            'doar_e_rss': 'https://doar-e.github.io/feeds/rss.xml?_=',
             'doyensec_rss': 'https://blog.doyensec.com/atom.xml',
             'elttam_rss': 'https://little-canada.org/feeds/output/elttam.rss',
             'embrace_the_red_rss': 'https://embracethered.com/blog/index.xml',
@@ -140,7 +105,7 @@ class AdvancedCyberSecurityMonitor:
             'codean_labs_rss': 'https://codeanlabs.com/blog/category/research/feed/',
             'rhino_security_labs_rss': 'https://rhinosecuritylabs.com/feed/',
             'sam_curry_rss': 'https://samcurry.net/api/feed.rss',
-            'sean_heelan_rss': 'https://sean.heelan.io/feed/?_=',
+            'sean_heelan_rss': 'https://sean.heelan.io/feed/?_',
             'secfault_security_rss': 'https://secfault-security.com/feed.rss',
             'renwa_rss': 'https://medium.com/@renwa/feed',
             'stratum_security_rss': 'https://blog.stratumsecurity.com/rss/',
@@ -163,313 +128,266 @@ class AdvancedCyberSecurityMonitor:
             'watchtowr_labs_rss': 'https://labs.watchtowr.com/rss/'
         }
 
-        # NVD (okno 7 dni, UTC)
+        # API Sources
         self.api_sources = {
             'nvd_cve': {
                 'url': 'https://services.nvd.nist.gov/rest/json/cves/2.0',
                 'params': {
                     'resultsPerPage': 20,
                     'startIndex': 0,
-                    'pubStartDate': (datetime.utcnow() - timedelta(days=7)).strftime('%Y-%m-%dT%H:%M:%S.000'),
-                    'pubEndDate': datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.000')
+                    'pubStartDate': (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%dT%H:%M:%S.000'),
+                    'pubEndDate': datetime.now().strftime('%Y-%m-%dT%H:%M:%S.000')
                 }
+            },
+            'virustotal_api': {
+                'url': 'https://www.virustotal.com/vtapi/v2/file/report',
+                'requires_key': True,
+                'note': 'Wymaga klucza API z VirusTotal'
+            },
+            'shodan_api': {
+                'url': 'https://api.shodan.io/shodan/host/search',
+                'requires_key': True,
+                'note': 'Wymaga klucza API z Shodan'
             }
         }
 
-        # Rotacja UA
+        # Rotacja User-Agents dla obejścia blokad
         self.user_agents = [
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
             'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15',
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         ]
-        self.headers = {'User-Agent': random.choice(self.user_agents)}
 
-        # Kolekcje
-        self.incidents: List[Dict[str, Any]] = []
-        self.threats: List[Dict[str, Any]] = []
-        self.vulnerabilities: List[Dict[str, Any]] = []
+        self.headers = {
+            'User-Agent': random.choice(self.user_agents)
+        }
 
-        self.api_keys = API_KEYS_DEFAULT.copy()
+        self.incidents = []
+        self.threats = []
+        self.vulnerabilities = []
+        self.api_keys = API_KEYS
 
-    # ---------- Utils ----------
-    def set_api_key(self, service: str, key: str) -> None:
+    def set_api_key(self, service, key):
+        """Ustawia klucz API dla danego serwisu"""
         self.api_keys[service] = key
-        logger.info(f"✅ Ustawiono klucz API dla {service}")
+        print(f"✅ Ustawiono klucz API dla {service}")
 
-    # ---------- RSS ----------
-    def parse_simple_rss(self, url: str, source_name: str) -> List[Dict[str, Any]]:
+    def parse_simple_rss(self, url, source_name):
+        """Prosta implementacja parsera RSS bez feedparser"""
         try:
-            logger.info(f"📡 RSS (XML) → {source_name}")
-            r = requests.get(url, headers=self.headers, timeout=20)
-            if r.status_code != 200:
-                logger.warning(f"❌ HTTP {r.status_code} dla {source_name}")
+            print(f"📡 Pobieranie RSS z {source_name}...")
+            response = requests.get(url, headers=self.headers, timeout=15)
+
+            if response.status_code != 200:
+                print(f"❌ Błąd HTTP {response.status_code} dla {source_name}")
                 return []
+
+            # Parsowanie XML
             try:
-                root = ET.fromstring(r.content)
+                root = ET.fromstring(response.content)
             except ET.ParseError as e:
-                logger.warning(f"❌ XML parse dla {source_name}: {e}")
+                print(f"❌ Błąd parsowania XML dla {source_name}: {e}")
                 return []
+
             entries = []
-            for item in root.findall('.//item')[:10]:
+
+            # Znajdź wszystkie elementy <item>
+            items = root.findall('.//item')
+
+            for item in items[:10]:  # Maksymalnie 10 elementów
                 try:
-                    title = (item.findtext('title') or 'Brak tytułu')
-                    link = (item.findtext('link') or '')
-                    description = (item.findtext('description') or '')
-                    pub_date = (item.findtext('pubDate') or '')
+                    title_elem = item.find('title')
+                    link_elem = item.find('link')
+                    description_elem = item.find('description')
+                    pub_date_elem = item.find('pubDate')
+
+                    title = title_elem.text if title_elem is not None else 'Brak tytułu'
+                    link = link_elem.text if link_elem is not None else ''
+                    description = description_elem.text if description_elem is not None else ''
+                    pub_date = pub_date_elem.text if pub_date_elem is not None else 'Brak daty'
+
+                    # Oczyszczenie opisu z HTML
                     if description:
-                        description = html2text(description)
+                        description = BeautifulSoup(description, 'html.parser').get_text()
                         description = description[:300] + '...' if len(description) > 300 else description
-                    entries.append({
+
+                    news_item = {
                         'source': source_name,
                         'title': title,
                         'link': link,
                         'date': pub_date,
                         'summary': description,
-                        'category': self.classify_news(f"{title} {description}")
-                    })
+                        'category': self.classify_news(title + ' ' + description)
+                    }
+
+                    entries.append(news_item)
+
                 except Exception as e:
-                    logger.debug(f"⚠️ RSS elem err: {e}")
-            logger.info(f"✅ {source_name}: {len(entries)} wpisów")
+                    print(f"⚠️ Błąd podczas przetwarzania elementu RSS: {e}")
+                    continue
+
+            print(f"✅ Pobrano {len(entries)} wpisów z {source_name}")
             return entries
+
         except Exception as e:
-            logger.error(f"❌ RSS pobieranie {source_name}: {e}")
+            print(f"❌ Błąd podczas pobierania RSS z {source_name}: {e}")
             return []
 
-    def parse_with_feedparser(self, url: str, source_name: str) -> List[Dict[str, Any]]:
+    def parse_with_feedparser(self, url, source_name):
+        """Parsowanie RSS z użyciem feedparser (jeśli dostępny)"""
         try:
-            import feedparser  # lazy import
-            logger.info(f"📡 RSS (feedparser) → {source_name}")
+            import feedparser
+            print(f"📡 Pobieranie RSS z {source_name} (feedparser)...")
+
             feed = feedparser.parse(url)
+
+            if feed.bozo:
+                print(f"⚠️ Ostrzeżenie: Problemy z parsowaniem RSS dla {source_name}")
+
             entries = []
-            for entry in feed.entries[:10]:
-                title = entry.get('title', 'Brak tytułu')
-                link = entry.get('link', '')
-                published = entry.get('published', entry.get('updated', ''))
-                if hasattr(entry, 'published_parsed') and entry.published_parsed:
-                    published = datetime(*entry.published_parsed[:6]).strftime('%Y-%m-%d %H:%M')
-                summary = entry.get('summary', entry.get('description', ''))
-                if summary:
-                    summary = html2text(summary)
-                    summary = summary[:300] + '...' if len(summary) > 300 else summary
-                entries.append({
-                    'source': source_name,
-                    'title': title,
-                    'link': link,
-                    'date': published,
-                    'summary': summary,
-                    'category': self.classify_news(f"{title} {summary}")
-                })
-            logger.info(f"✅ {source_name}: {len(entries)} wpisów")
+            for entry in feed.entries[:10]:  # Ostatnie 10 wpisów
+                try:
+                    # Parsowanie daty
+                    published = entry.get('published', entry.get('updated', 'Brak daty'))
+                    if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                        published = datetime(*entry.published_parsed[:6]).strftime('%Y-%m-%d %H:%M')
+
+                    # Pobranie opisu
+                    summary = entry.get('summary', entry.get('description', ''))
+                    if summary:
+                        # Usunięcie tagów HTML
+                        summary = BeautifulSoup(summary, 'html.parser').get_text()
+                        summary = summary[:300] + '...' if len(summary) > 300 else summary
+
+                    news_item = {
+                        'source': source_name,
+                        'title': entry.get('title', 'Brak tytułu'),
+                        'link': entry.get('link', ''),
+                        'date': published,
+                        'summary': summary,
+                        'category': self.classify_news(entry.get('title', '') + ' ' + summary)
+                    }
+
+                    entries.append(news_item)
+
+                except Exception as e:
+                    print(f"⚠️ Błąd podczas przetwarzania wpisu RSS: {e}")
+                    continue
+
+            print(f"✅ Pobrano {len(entries)} wpisów z {source_name}")
             return entries
+
         except ImportError:
-            logger.info("feedparser brak — fallback XML")
+            print(f"⚠️ feedparser niedostępny, używam prostego parsera XML")
             return self.parse_simple_rss(url, source_name)
         except Exception as e:
-            logger.error(f"❌ RSS feedparser {source_name}: {e}")
+            print(f"❌ Błąd podczas pobierania RSS z {source_name}: {e}")
             return []
 
-    # ---------- API: NVD ----------
-    def fetch_nvd_cve_data(self) -> List[Dict[str, Any]]:
+    def fetch_nvd_cve_data(self):
+        """Pobiera dane CVE z National Vulnerability Database"""
         try:
-            logger.info("🔌 NVD CVE …")
-            r = requests.get(self.api_sources['nvd_cve']['url'], params=self.api_sources['nvd_cve']['params'], headers=self.headers, timeout=30)
-            if r.status_code != 200:
-                logger.warning(f"NVD HTTP {r.status_code}")
-                return []
-            data = r.json()
-            vulns: List[Dict[str, Any]] = []
-            for cve in data.get('vulnerabilities', []):
-                cve_data = cve.get('cve', {})
-                cve_id = cve_data.get('id', 'N/A')
-                published = cve_data.get('published', 'N/A')
-                # opis EN
-                description = ''
-                for desc in cve_data.get('descriptions', []):
-                    if desc.get('lang') == 'en':
-                        description = desc.get('value', '')
-                        break
-                metrics = cve_data.get('metrics', {})
-                cvss_score = 'N/A'
-                severity = 'N/A'
-                if 'cvssMetricV31' in metrics:
-                    cvss_data = metrics['cvssMetricV31'][0]['cvssData']
-                    cvss_score = cvss_data.get('baseScore', 'N/A')
-                    severity = cvss_data.get('baseSeverity', 'N/A')
-                elif 'cvssMetricV30' in metrics:
-                    cvss_data = metrics['cvssMetricV30'][0]['cvssData']
-                    cvss_score = cvss_data.get('baseScore', 'N/A')
-                    severity = cvss_data.get('baseSeverity', 'N/A')
-                vulns.append({
-                    'source': 'NVD (NIST)',
-                    'title': f"{cve_id} - {severity} ({cvss_score})",
-                    'link': f"https://nvd.nist.gov/vuln/detail/{cve_id}",
-                    'date': published[:10] if published != 'N/A' else 'N/A',
-                    'summary': (description[:300] + '...') if len(description) > 300 else description,
-                    'category': 'vulnerability',
-                    'cvss_score': cvss_score,
-                    'severity': severity,
-                    'cve_id': cve_id
-                })
-            logger.info(f"✅ NVD: {len(vulns)}")
-            return vulns
-        except Exception as e:
-            logger.error(f"❌ NVD err: {e}")
-            return []
+            print("🔌 Pobieranie danych CVE z NVD...")
+            response = requests.get(
+                self.api_sources['nvd_cve']['url'],
+                params=self.api_sources['nvd_cve']['params'],
+                headers=self.headers,
+                timeout=30
+            )
 
-    # ---------- API: VirusTotal ----------
-    def fetch_virustotal_data(self) -> List[Dict[str, Any]]:
-        key = self.api_keys.get('virustotal')
-        if not key:
-            logger.info("VT: brak klucza — pomijam")
-            return []
-        try:
-            logger.info("🔌 VirusTotal intelligence …")
-            headers = {'x-apikey': key, 'User-Agent': random.choice(self.user_agents)}
-            url = 'https://www.virustotal.com/api/v3/intelligence/search'
-            params = {'query': 'type:file positives:5+ fs:2024-09-01+', 'limit': 20}
-            r = requests.get(url, headers=headers, params=params, timeout=30)
-            if r.status_code != 200:
-                logger.warning(f"VT HTTP {r.status_code}")
-                return []
-            data = r.json()
-            threats: List[Dict[str, Any]] = []
-            for item in data.get('data', []):
-                attrs = item.get('attributes', {})
-                stats = attrs.get('last_analysis_stats', {})
-                total = sum(stats.values()) if stats else 0
-                threats.append({
-                    'source': 'VirusTotal',
-                    'title': f"Malware wykryty przez {stats.get('malicious', 0)} silników",
-                    'link': f"https://www.virustotal.com/gui/file/{item.get('id', '')}",
-                    'date': datetime.utcnow().strftime('%Y-%m-%d'),
-                    'summary': f"SHA256: {item.get('id','')[:16]}… | Wykrycia: {stats.get('malicious', 0)}/{total}",
-                    'category': 'threat'
-                })
-            logger.info(f"✅ VT: {len(threats)}")
-            return threats
-        except Exception as e:
-            logger.error(f"❌ VT err: {e}")
-            return []
+            if response.status_code == 200:
+                data = response.json()
+                vulnerabilities = []
 
-    # ---------- API: Shodan ----------
-    def fetch_shodan_data(self) -> List[Dict[str, Any]]:
-        key = self.api_keys.get('shodan')
-        if not key:
-            logger.info("Shodan: brak klucza — pomijam")
-            return []
-        try:
-            logger.info("🔌 Shodan host/search …")
-            url = 'https://api.shodan.io/shodan/host/search'
-            params = {'key': key, 'query': 'vuln:CVE-2024 country:PL', 'limit': 20}
-            r = requests.get(url, params=params, timeout=30)
-            if r.status_code != 200:
-                logger.warning(f"Shodan HTTP {r.status_code}")
-                return []
-            data = r.json()
-            vulns: List[Dict[str, Any]] = []
-            for match in data.get('matches', []):
-                for vuln_id in (match.get('vulns', []) or []):
-                    vulns.append({
-                        'source': 'Shodan',
-                        'title': f"Podatny system: {match.get('ip_str','N/A')} - {vuln_id}",
-                        'link': f"https://www.shodan.io/host/{match.get('ip_str','')}",
-                        'date': datetime.utcnow().strftime('%Y-%m-%d'),
-                        'summary': f"IP: {match.get('ip_str','N/A')} | Port: {match.get('port','N/A')} | Org: {match.get('org','N/A')} | Kraj: {match.get('location',{}).get('country_name','N/A')}",
+                for cve in data.get('vulnerabilities', []):
+                    cve_data = cve.get('cve', {})
+
+                    # Podstawowe informacje
+                    cve_id = cve_data.get('id', 'N/A')
+                    published = cve_data.get('published', 'N/A')
+
+                    # Opis
+                    descriptions = cve_data.get('descriptions', [])
+                    description = ''
+                    for desc in descriptions:
+                        if desc.get('lang') == 'en':
+                            description = desc.get('value', '')
+                            break
+
+                    # Metryki CVSS
+                    metrics = cve_data.get('metrics', {})
+                    cvss_score = 'N/A'
+                    severity = 'N/A'
+
+                    if 'cvssMetricV31' in metrics:
+                        cvss_data = metrics['cvssMetricV31'][0]['cvssData']
+                        cvss_score = cvss_data.get('baseScore', 'N/A')
+                        severity = cvss_data.get('baseSeverity', 'N/A')
+                    elif 'cvssMetricV30' in metrics:
+                        cvss_data = metrics['cvssMetricV30'][0]['cvssData']
+                        cvss_score = cvss_data.get('baseScore', 'N/A')
+                        severity = cvss_data.get('baseSeverity', 'N/A')
+
+                    vulnerability = {
+                        'source': 'NVD (NIST)',
+                        'title': f"{cve_id} - {severity} ({cvss_score})",
+                        'link': f"https://nvd.nist.gov/vuln/detail/{cve_id}",
+                        'date': published[:10] if published != 'N/A' else 'N/A',
+                        'summary': description[:300] + '...' if len(description) > 300 else description,
                         'category': 'vulnerability',
-                        'cve_id': vuln_id,
-                        'ip_address': match.get('ip_str','N/A'),
-                        'port': match.get('port','N/A')
-                    })
-            logger.info(f"✅ Shodan: {len(vulns)}")
-            return vulns
+                        'cvss_score': cvss_score,
+                        'severity': severity,
+                        'cve_id': cve_id
+                    }
+
+                    vulnerabilities.append(vulnerability)
+
+                print(f"✅ Pobrano {len(vulnerabilities)} luk z NVD")
+                return vulnerabilities
+
         except Exception as e:
-            logger.error(f"❌ Shodan err: {e}")
+            print(f"❌ Błąd podczas pobierania danych CVE: {e}")
             return []
 
-    # ---------- API: AlienVault OTX ----------
-    def fetch_alienvault_data(self) -> List[Dict[str, Any]]:
-        key = self.api_keys.get('alienvault')
-        if not key:
-            logger.info("OTX: brak klucza — pomijam")
-            return []
-        try:
-            logger.info("🔌 AlienVault OTX pulses …")
-            headers = {'X-OTX-API-KEY': key, 'User-Agent': random.choice(self.user_agents)}
-            url = 'https://otx.alienvault.com/api/v1/pulses/subscribed'
-            params = {'limit': 20, 'modified_since': (datetime.utcnow() - timedelta(days=7)).strftime('%Y-%m-%dT%H:%M:%S')}
-            r = requests.get(url, headers=headers, params=params, timeout=30)
-            if r.status_code != 200:
-                logger.warning(f"OTX HTTP {r.status_code}")
-                return []
-            data = r.json()
-            out: List[Dict[str, Any]] = []
-            for pulse in data.get('results', []):
-                desc = pulse.get('description', '') or 'Brak opisu'
-                out.append({
-                    'source': 'AlienVault OTX',
-                    'title': pulse.get('name', 'Brak nazwy'),
-                    'link': f"https://otx.alienvault.com/pulse/{pulse.get('id','')}",
-                    'date': (pulse.get('created','')[:10] or datetime.utcnow().strftime('%Y-%m-%d')),
-                    'summary': (desc[:400] + '…') if len(desc) > 400 else desc,
-                    'category': 'threat',
-                    'tags': ', '.join(pulse.get('tags', [])),
-                    'indicators_count': len(pulse.get('indicators', []))
-                })
-            logger.info(f"✅ OTX: {len(out)}")
-            return out
-        except Exception as e:
-            logger.error(f"❌ OTX err: {e}")
-            return []
-
-    # ---------- Kolekcja danych ----------
-    def fetch_api_data(self) -> List[Dict[str, Any]]:
-        data: List[Dict[str, Any]] = []
-        data.extend(self.fetch_virustotal_data())
-        data.extend(self.fetch_shodan_data())
-        data.extend(self.fetch_alienvault_data())
-        data.extend(self.fetch_nvd_cve_data())
-        return data
-
-    def collect_rss_news(self) -> List[Dict[str, Any]]:
-        all_entries: List[Dict[str, Any]] = []
-        for key, url in self.rss_sources.items():
-            entries = self.parse_with_feedparser(url, key.replace('_rss', '').replace('_', ' ').title())
-            all_entries.extend(entries)
-            time.sleep(1)  # throttling
-        for entry in all_entries:
-            self.add_to_category(entry, entry.get('category', 'general'))
-        return all_entries
-
-    def collect_api_data(self) -> None:
-        logger.info("🔌 API…")
-        items = self.fetch_api_data()
-        for it in items:
-            self.add_to_category(it, it.get('category', 'general'))
-        logger.info(f"✅ API razem: {len(items)}")
-
-    def collect_all_data(self) -> None:
-        logger.info("🔄 Start zbierania…")
-        self.collect_rss_news()
-        self.collect_api_data()
-        self.dedupe_entries()
-        logger.info(f"Zebrano → Incydenty: {len(self.incidents)} | Zagrożenia: {len(self.threats)} | Luki: {len(self.vulnerabilities)}")
-
-    # ---------- Klasyfikacja i deduplikacja ----------
-    def classify_news(self, text: str) -> str:
-        """Ujednolicona klasyfikacja (ta sama w każdym layoucie)."""
+    def classify_news(self, text):
+        """Klasyfikuje newsy na podstawie słów kluczowych"""
         if not text:
             return 'general'
-        t = text.lower()
-        if any(k in t for k in ['cve', 'luka', 'vulnerability', 'exploit', 'patch', 'update', 'zero-day', 'bug', 'security flaw', 'backdoor', 'buffer overflow', 'injection', 'xss', 'csrf', 'rce', 'remote code execution', 'privilege escalation', 'authentication bypass']):
-            return 'vulnerability'
-        if any(k in t for k in ['malware', 'ransomware', 'phishing', 'trojan', 'virus', 'botnet', 'apt', 'campaign', 'spyware', 'adware', 'rootkit', 'keylogger', 'worm', 'stealer', 'cryptojacking', 'ddos', 'social engineering']):
-            return 'threat'
-        if any(k in t for k in ['atak', 'attack', 'breach', 'hack', 'incydent', 'naruszenie', 'wyciek', 'leak', 'data breach', 'cyber attack', 'compromise', 'intrusion', 'unauthorized access', 'security incident', 'cyber incident']):
-            return 'incident'
-        return 'general'
 
-    def add_to_category(self, news_item: Dict[str, Any], category: str) -> None:
+        text_lower = text.lower()
+
+        vulnerability_keywords = [
+            'cve', 'luka', 'vulnerability', 'exploit', 'patch', 'update', 'zero-day', 'bug',
+            'security flaw', 'backdoor', 'buffer overflow', 'injection', 'xss', 'csrf',
+            'rce', 'remote code execution', 'privilege escalation', 'authentication bypass'
+        ]
+
+        threat_keywords = [
+            'malware', 'ransomware', 'phishing', 'trojan', 'virus', 'botnet', 'apt',
+            'campaign', 'spyware', 'adware', 'rootkit', 'keylogger', 'worm', 'stealer',
+            'cryptojacking', 'ddos', 'social engineering'
+        ]
+
+        incident_keywords = [
+            'atak', 'attack', 'breach', 'hack', 'incident', 'naruszenie', 'wyciek', 'leak',
+            'data breach', 'cyber attack', 'compromise', 'intrusion', 'unauthorized access',
+            'security incident', 'cyber incident'
+        ]
+
+        if any(keyword in text_lower for keyword in vulnerability_keywords):
+            return 'vulnerability'
+        elif any(keyword in text_lower for keyword in threat_keywords):
+            return 'threat'
+        elif any(keyword in text_lower for keyword in incident_keywords):
+            return 'incident'
+        else:
+            return 'general'
+
+    def add_to_category(self, news_item, category):
+        """Dodaje news do odpowiedniej kategorii"""
         if category == 'vulnerability':
             self.vulnerabilities.append(news_item)
         elif category == 'threat':
@@ -477,466 +395,480 @@ class AdvancedCyberSecurityMonitor:
         elif category == 'incident':
             self.incidents.append(news_item)
 
-    def dedupe_entries(self) -> None:
-        """Usuwa duplikaty po znormalizowanym linku (bez query) lub tytule."""
-        def norm(u: str) -> str:
-            u = (u or '').split('?')[0].strip().lower()
-            return u
-        def dedupe(col: List[Dict[str, Any]]):
-            seen = set(); out: List[Dict[str, Any]] = []
-            for it in col:
-                k = norm(it.get('link')) or (it.get('title','').strip().lower())
-                if k in seen:
-                    continue
-                seen.add(k); out.append(it)
-            return out
-        self.incidents = dedupe(self.incidents)
-        self.threats = dedupe(self.threats)
-        self.vulnerabilities = dedupe(self.vulnerabilities)
+    def collect_rss_news(self):
+        """Zbiera newsy ze wszystkich źródeł RSS"""
+        all_entries = []
 
-    # ---------- Raport HTML (Template: brak problemów z { } w f-stringach) ----------
-    def generate_enhanced_report(self) -> str:
-        today = datetime.now().strftime('%Y-%m-%d')
+        # Testuj wszystkie źródła RSS
+        for source_key, rss_url in self.rss_sources.items():
+            entries = self.parse_with_feedparser(rss_url, source_key.replace('_rss', '').replace('_', ' ').title())
+            all_entries.extend(entries)
+            time.sleep(2)  # Opóźnienie między requestami
+
+        # Klasyfikacja i dodanie do kategorii
+        for entry in all_entries:
+            self.add_to_category(entry, entry['category'])
+
+        return all_entries
+
+    def fetch_api_data(self):
+        """Pobiera dane ze wszystkich dostępnych API"""
+        all_api_data = []
+        
+        # 1. VirusTotal API
+        if self.api_keys.get('virustotal'):
+            vt_data = self.fetch_virustotal_data()
+            all_api_data.extend(vt_data)
+        
+        # 2. Shodan API
+        if self.api_keys.get('shodan'):
+            shodan_data = self.fetch_shodan_data()
+            all_api_data.extend(shodan_data)
+        
+        # 3. AlienVault (OTX) API
+        if self.api_keys.get('alienvault'):
+            otx_data = self.fetch_alienvault_data()
+            all_api_data.extend(otx_data)
+        
+        # 4. NVD API (bez klucza)
+        nvd_data = self.fetch_nvd_cve_data()
+        all_api_data.extend(nvd_data)
+        
+        return all_api_data
+
+    def fetch_virustotal_data(self):
+        """Pobiera dane z VirusTotal API"""
+        try:
+            logger.info("🔌 Pobieranie danych z VirusTotal...")
+            
+            headers = {
+                'x-apikey': self.api_keys['virustotal'],
+                'User-Agent': random.choice(self.user_agents)
+            }
+            
+            # Pobierz najnowsze malware samples
+            url = 'https://www.virustotal.com/api/v3/intelligence/search'
+            params = {
+                'query': 'type:file positives:5+ fs:2024-09-01+',
+                'limit': 20
+            }
+            
+            response = requests.get(url, headers=headers, params=params, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                threats = []
+                
+                for item in data.get('data', []):
+                    attributes = item.get('attributes', {})
+                    stats = attributes.get('last_analysis_stats', {})
+                    
+                    threat = {
+                        'source': 'VirusTotal',
+                        'title': f"Malware wykryty przez {stats.get('malicious', 0)} silników",
+                        'link': f"https://www.virustotal.com/gui/file/{item.get('id', '')}",
+                        'date': datetime.now().strftime('%Y-%m-%d'),
+                        'summary': f"SHA256: {item.get('id', '')[:16]}... | Wykrycia: {stats.get('malicious', 0)}/{sum(stats.values())}",
+                        'category': 'threat',
+                        'detection_ratio': f"{stats.get('malicious', 0)}/{sum(stats.values())}"
+                    }
+                    threats.append(threat)
+                
+                logger.info(f"✅ Pobrano {len(threats)} zagrożeń z VirusTotal")
+                return threats
+            else:
+                logger.error(f"❌ VirusTotal API - HTTP {response.status_code}")
+                return []
+                
+        except Exception as e:
+            logger.error(f"❌ Błąd VirusTotal API: {e}")
+            return []
+
+    def fetch_shodan_data(self):
+        """Pobiera dane z Shodan API"""
+        try:
+            logger.info("🔌 Pobieranie danych z Shodan...")
+            
+            # Wyszukaj podatne systemy
+            url = 'https://api.shodan.io/shodan/host/search'
+            params = {
+                'key': self.api_keys['shodan'],
+                'query': 'vuln:CVE-2024 country:PL',
+                'limit': 20
+            }
+            
+            response = requests.get(url, params=params, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                vulnerabilities = []
+                
+                for match in data.get('matches', []):
+                    vulns = match.get('vulns', [])
+                    
+                    for vuln_id in vulns:
+                        vulnerability = {
+                            'source': 'Shodan',
+                            'title': f"Podatny system: {match.get('ip_str', 'N/A')} - {vuln_id}",
+                            'link': f"https://www.shodan.io/host/{match.get('ip_str', '')}",
+                            'date': datetime.now().strftime('%Y-%m-%d'),
+                            'summary': f"IP: {match.get('ip_str', 'N/A')} | Port: {match.get('port', 'N/A')} | Organizacja: {match.get('org', 'N/A')} | Kraj: {match.get('location', {}).get('country_name', 'N/A')}",
+                            'category': 'vulnerability',
+                            'cve_id': vuln_id,
+                            'ip_address': match.get('ip_str', 'N/A'),
+                            'port': match.get('port', 'N/A')
+                        }
+                        vulnerabilities.append(vulnerability)
+                
+                logger.info(f"✅ Pobrano {len(vulnerabilities)} luk z Shodan")
+                return vulnerabilities
+            else:
+                logger.error(f"❌ Shodan API - HTTP {response.status_code}")
+                return []
+                
+        except Exception as e:
+            logger.error(f"❌ Błąd Shodan API: {e}")
+            return []
+
+    def fetch_alienvault_data(self):
+        """Pobiera dane z AlienVault OTX API"""
+        try:
+            logger.info("🔌 Pobieranie danych z AlienVault OTX...")
+            
+            headers = {
+                'X-OTX-API-KEY': self.api_keys['alienvault'],
+                'User-Agent': random.choice(self.user_agents)
+            }
+            
+            # Pobierz najnowsze pulsy (threat intelligence)
+            url = 'https://otx.alienvault.com/api/v1/pulses/subscribed'
+            params = {
+                'limit': 20,
+                'modified_since': (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%dT%H:%M:%S')
+            }
+            
+            response = requests.get(url, headers=headers, params=params, timeout=30)
+            
+            if response.status_code == 200:
+                data = response.json()
+                threats = []
+                
+                for pulse in data.get('results', []):
+                    threat = {
+                        'source': 'AlienVault OTX',
+                        'title': pulse.get('name', 'Brak nazwy'),
+                        'link': f"https://otx.alienvault.com/pulse/{pulse.get('id', '')}",
+                        'date': pulse.get('created', datetime.now().strftime('%Y-%m-%d'))[:10],
+                        'summary': pulse.get('description', 'Brak opisu')[:400] + ('...' if len(pulse.get('description', '')) > 400 else ''),
+                        'category': 'threat',
+                        'tags': ', '.join(pulse.get('tags', [])),
+                        'indicators_count': len(pulse.get('indicators', []))
+                    }
+                    threats.append(threat)
+                
+                logger.info(f"✅ Pobrano {len(threats)} zagrożeń z AlienVault OTX")
+                return threats
+            else:
+                logger.error(f"❌ AlienVault OTX API - HTTP {response.status_code}")
+                return []
+                
+        except Exception as e:
+            logger.error(f"❌ Błąd AlienVault OTX API: {e}")
+            return []
+
+    def collect_api_data(self):
+        """Zbiera dane ze wszystkich API"""
+        logger.info("🔌 Pobieranie danych z API...")
+        
+        # Sprawdź dostępne klucze API
+        available_apis = []
+        if self.api_keys.get('virustotal'):
+            available_apis.append('VirusTotal')
+        if self.api_keys.get('shodan'):
+            available_apis.append('Shodan')
+        if self.api_keys.get('alienvault'):
+            available_apis.append('AlienVault OTX')
+        available_apis.append('NVD (bez klucza)')
+        
+        logger.info(f"📋 Dostępne API: {', '.join(available_apis)}")
+        
+        # Pobierz dane ze wszystkich API
+        all_api_data = self.fetch_api_data()
+        
+        # Klasyfikuj i dodaj do odpowiednich kategorii
+        for item in all_api_data:
+            self.add_to_category(item, item['category'])
+        
+        logger.info(f"✅ Pobrano łącznie {len(all_api_data)} elementów z API")
+        time.sleep(2)
+
+    def collect_all_data(self):
+        """Zbiera wszystkie dane ze wszystkich źródeł"""
+        print("🔄 Rozpoczynanie zbierania danych...")
+
+        # RSS Feeds
+        print("\n📡 Pobieranie danych RSS...")
+        self.collect_rss_news()
+
+        # API Data
+        print("\n🔌 Pobieranie danych z API...")
+        self.collect_api_data()
+
+        print(f"\n✅ Zebrano łącznie:")
+        print(f"   - Incydenty: {len(self.incidents)}")
+        print(f"   - Zagrożenia: {len(self.threats)}")
+        print(f"   - Luki: {len(self.vulnerabilities)}")
+
+    def generate_enhanced_report(self):
+        """Generuje rozszerzony raport z danymi RSS i API"""
+        today = datetime.now().strftime("%Y-%m-%d")
+        # Tworzenie katalogu z datą
         report_dir = f"reports/{today}"
         os.makedirs(report_dir, exist_ok=True)
-        report_filename = f"{report_dir}/index.html"
 
-        def sort_by_date(items: List[Dict[str, Any]]):
-            try:
-                return sorted(items, key=lambda x: x.get('date', ''), reverse=True)
-            except Exception:
-                return items
+        report_filename = f"{report_dir}/index.html"
+        json_filename = f"{report_dir}/enhanced_cybersecurity_data_{today}.json"
+        csv_filename = f"{report_dir}/enhanced_cybersecurity_summary_{today}.csv"
+
+        # Sortowanie według daty (najnowsze pierwsze)
+        def sort_by_date(items):
+            return sorted(items, key=lambda x: x.get('date', ''), reverse=True)
 
         self.incidents = sort_by_date(self.incidents)
         self.threats = sort_by_date(self.threats)
         self.vulnerabilities = sort_by_date(self.vulnerabilities)
 
-        def to_iso_date(s: str) -> str:
-            if not s:
-                return ''
-            try:
-                if len(s) >= 10 and s[4] == '-' and s[7] == '-':
-                    return s[:10]
-                return datetime.fromisoformat(s[:19]).strftime('%Y-%m-%d')
-            except Exception:
-                return s[:10] if len(s) >= 10 else s
-
-        def cvss_num(item: Dict[str, Any]) -> float:
-            try:
-                sc = item.get('cvss_score', 'N/A')
-                return float(sc) if sc != 'N/A' else -1.0
-            except Exception:
-                return -1.0
-
-        # Karty: Incydenty
-        inc_cards: List[str] = []
-        for it in self.incidents[:20]:
-            iso = to_iso_date(it.get('date', ''))
-            inc_cards.append(
-                (
-                    '<div class="card news-item incident" data-sev="none" data-date="{iso}" data-cvss="-1">\n'
-                    '  <div class="news-title">{title}</div>\n'
-                    '  <div class="news-meta">\n'
-                    '    <span class="badge">{source}</span>\n'
-                    '    <span>{date}</span>\n'
-                    '  </div>\n'
-                    '  <div class="news-summary">{summary}</div>\n'
-                    '  <a href="{link}" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>\n'
-                    '</div>'
-                ).format(
-                    iso=iso,
-                    title=it.get('title',''),
-                    source=it.get('source',''),
-                    date=it.get('date',''),
-                    summary=it.get('summary',''),
-                    link=it.get('link','')
-                )
-            )
-
-        # Karty: Zagrożenia
-        thr_cards: List[str] = []
-        for it in self.threats[:20]:
-            iso = to_iso_date(it.get('date', ''))
-            thr_cards.append(
-                (
-                    '<div class="card news-item threat" data-sev="none" data-date="{iso}" data-cvss="-1">\n'
-                    '  <div class="news-title">{title}</div>\n'
-                    '  <div class="news-meta">\n'
-                    '    <span class="badge">{source}</span>\n'
-                    '    <span>{date}</span>\n'
-                    '  </div>\n'
-                    '  <div class="news-summary">{summary}</div>\n'
-                    '  <a href="{link}" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>\n'
-                    '</div>'
-                ).format(
-                    iso=iso,
-                    title=it.get('title',''),
-                    source=it.get('source',''),
-                    date=it.get('date',''),
-                    summary=it.get('summary',''),
-                    link=it.get('link','')
-                )
-            )
-
-        # Karty: Luki
-        vuln_cards: List[str] = []
-        for it in self.vulnerabilities[:20]:
-            sc = cvss_num(it)
-            sev_class = 'high' if sc >= 7.0 else ('medium' if sc >= 4.0 else 'low')
-            iso = to_iso_date(it.get('date', ''))
-            cve_info = ''
-            if it.get('cve_id'):
-                cve_info = (
-                    '  <div class="cve-info">CVE ID: {cve} | CVSS: {cvss} | Severity: {sev}</div>\n'
-                ).format(cve=it.get('cve_id',''), cvss=it.get('cvss_score','N/A'), sev=it.get('severity','N/A'))
-            vuln_cards.append(
-                (
-                    '<div class="card news-item vulnerability" data-sev="{sev_class}" data-date="{iso}" data-cvss="{cvss}">\n'
-                    '  <div class="news-title">{title}</div>\n'
-                    '  <div class="news-meta">\n'
-                    '    <span class="badge">{source}</span>\n'
-                    '    <span>{date}</span>\n'
-                    '  </div>\n'
-                    '{cve_info}'
-                    '  <div class="news-summary">{summary}</div>\n'
-                    '  <a href="{link}" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>\n'
-                    '</div>'
-                ).format(
-                    sev_class=sev_class,
-                    iso=iso,
-                    cvss=sc,
-                    title=it.get('title',''),
-                    source=it.get('source',''),
-                    date=it.get('date',''),
-                    cve_info=cve_info,
-                    summary=it.get('summary',''),
-                    link=it.get('link','')
-                )
-            )
-
-        html_tpl = Template(r'''<!DOCTYPE html>
+        html_content = f"""
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — $TODAY</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0d1117;
-      --panel: #0f1623;
-      --panel-2: #111a2a;
-      --text: #d7e2f0;
-      --muted: #8aa0b6;
-      --accent: #00bcd4;
-      --accent-2: #35e0ff;
-      --danger: #f44336;
-      --warn: #ff9800;
-      --violet: #9c27b0;
-      --glow: 0 0 25px rgba(0,188,212,0.25);
-      --border: 1px solid rgba(0,188,212,0.15);
-    }
-    body.matrix {
-      --bg: #071207;
-      --panel: #0a1a0a;
-      --panel-2: #0c210c;
-      --text: #e2ffe2;
-      --muted: #9bdea3;
-      --accent: #00ff84;
-      --accent-2: #6bffb0;
-      --danger: #ff6b6b;
-      --warn: #ffd166;
-      --violet: #7dffb5;
-      --glow: 0 0 22px rgba(0, 255, 132, .25);
-      --border: 1px solid rgba(0,255,132,.18);
-      background-image:
-        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-        repeating-linear-gradient( to bottom, rgba(0,255,132,.05) 0px, rgba(0,255,132,.05) 2px, transparent 2px, transparent 4px ),
-        radial-gradient(1200px 600px at 10% 0%, #051004 0%, #061006 55%, #041004 100%);
-      background-attachment: fixed;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0; background: radial-gradient(1200px 600px at 10% 0%, #0b1220 0%, #0d1117 55%, #0a0f18 100%);
-      color: var(--text); font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-    }
-    .topbar { position: sticky; top: 0; z-index: 999; backdrop-filter: blur(8px); background: rgba(13,17,23,0.7); border-bottom: var(--border); }
-    .nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; }
-    .brand { display:flex; align-items:center; gap:10px; }
-    .logo { width: 32px; height: 32px; border-radius: 8px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: var(--glow); }
-    .brand h1 { font-family: 'Orbitron', monospace; font-weight: 700; font-size: 1.05rem; letter-spacing: .06em; margin:0; color: #e6faff; text-shadow: 0 0 12px rgba(53,224,255,.25); }
-    body.matrix .brand h1 { color:#d8ffe6; text-shadow: 0 0 12px rgba(0,255,132,.3); }
-    .menu a { color: var(--text); text-decoration: none; margin-left: 12px; font-weight: 500; padding: 6px 10px; border-radius: 8px; border: var(--border); background: linear-gradient(180deg, rgba(0,188,212,0.06), rgba(0,188,212,0.03)); }
-    .menu a:hover { color:#e6faff; border-color: rgba(53,224,255,.45); box-shadow: var(--glow); }
-
-    .container { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
-    .hero { background: linear-gradient(180deg, rgba(0,188,212,0.06), rgba(0,188,212,0.02)); border: var(--border); border-radius: 16px; padding: 18px; box-shadow: var(--glow); }
-    .hero h2 { margin: 0 0 6px 0; font-family: 'Orbitron', monospace; letter-spacing:.05em; color:#e6faff; text-shadow: 0 0 18px rgba(53,224,255,.25); }
-    .sub { color: var(--muted); margin:0; }
-
-    .controls { display:flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 10px; }
-    .chip { display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; border: var(--border); background: linear-gradient(180deg, rgba(0,188,212,.08), rgba(0,188,212,.03)); color: var(--text); font-size: .92rem; }
-    .chip input { transform: translateY(1px); }
-    .select { padding:6px 10px; border-radius:10px; border: var(--border); background: linear-gradient(180deg, rgba(0,188,212,.06), rgba(0,188,212,.02)); color: var(--text); }
-    .btn { padding:6px 10px; border-radius:10px; border: var(--border); cursor:pointer; background: linear-gradient(180deg, rgba(0,188,212,.12), rgba(0,188,212,.05)); color: var(--text); }
-    .btn:hover { border-color: rgba(53,224,255,.45); box-shadow: var(--glow); }
-
-    .stats { display:grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 14px; margin-top: 14px; }
-    .card { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border: var(--border); border-radius: 14px; padding: 14px; transition: .2s; }
-    .card:hover { transform: translateY(-3px); border-color: rgba(53,224,255,.45); box-shadow: var(--glow); }
-    .kpi-num a { color: var(--accent-2); font-weight: 700; font-size: 1.9rem; text-decoration: none; }
-    .kpi-label { color: var(--muted); font-size:.95rem; margin-top: 4px; }
-
-    .section { margin-top: 22px; }
-    .section h3 { font-family:'Orbitron', monospace; letter-spacing:.04em; color:#e6faff; margin: 0 0 12px 0; text-shadow: 0 0 14px rgba(53,224,255,.22); display:flex; align-items:center; gap:8px; }
-    .news-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap: 14px; }
-
-    .news-item { border-left:5px solid #2bbbd0; }
-    .news-item.incident { border-left-color: var(--danger); }
-    .news-item.threat { border-left-color: var(--warn); }
-    .news-item.vulnerability { border-left-color: var(--violet); }
-
-    .news-title { font-weight:700; color:#e9f7ff; margin-bottom: 6px; }
-    .news-meta { font-size: .85rem; color: var(--muted); margin-bottom: 10px; display:flex; justify-content: space-between; }
-    .badge { background: rgba(0,188,212,.14); border: 1px solid rgba(0,188,212,.25); padding: 2px 8px; border-radius: 999px; }
-    .news-summary { color:#bfd2e6; line-height:1.45; }
-    .news-link { display:inline-block; margin-top: 8px; color: var(--accent-2); font-weight: 700; text-decoration:none; }
-    .news-link:hover { text-decoration: underline; }
-
-    .cve-info { background: rgba(156,39,176,.08); border: 1px solid rgba(156,39,176,.25); padding:8px; border-radius:8px; margin: 8px 0; color:#f2e6ff; }
-    body.matrix .cve-info { background: rgba(0,255,132,.08); border-color: rgba(0,255,132,.25); color:#dbffe8; }
-
-    .divider { height:1px; background: linear-gradient(90deg, rgba(0,188,212,.0), rgba(0,188,212,.35), rgba(0,188,212,.0)); margin: 18px 0; }
-    .back-top { display:inline-block; margin-top:12px; padding:8px 12px; border-radius:10px; border: var(--border); color:#e6faff; text-decoration:none; background: linear-gradient(180deg, rgba(0,188,212,0.12), rgba(0,188,212,0.05)); }
-    .back-top:hover { border-color: rgba(53,224,255,.45); box-shadow: var(--glow); }
-
-    .footer { margin-top:22px; color: var(--muted); font-size:.9rem; text-align:center; padding: 14px; border-top: var(--border); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozszerzony Raport Cyberbezpieczeństwa - {today}</title>
+    <style>
+        body {{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }}
+        .container {{ max-width: 1400px; margin: 0 auto; background-color: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); overflow: hidden; }}
+        .header {{ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; }}
+        .header h1 {{ margin: 0; font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }}
+        .content {{ padding: 30px; }}
+        .summary {{ background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 25px; border-radius: 10px; margin-bottom: 30px; }}
+        .stats {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }}
+        .stat-box {{ text-align: center; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }}
+        .stat-number {{ font-size: 2.5em; font-weight: bold; color: #1976d2; }}
+        .section {{ margin: 30px 0; }}
+        .section h2 {{ color: #1976d2; border-bottom: 3px solid #1976d2; padding-bottom: 10px; display: flex; align-items: center; gap: 10px; }}
+        .news-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; }}
+        .news-item {{ background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 5px solid #4caf50; transition: transform 0.3s ease; }}
+        .news-item:hover {{ transform: translateY(-5px); }}
+        .news-item.incident {{ border-left-color: #f44336; }}
+        .news-item.threat {{ border-left-color: #ff9800; }}
+        .news-item.vulnerability {{ border-left-color: #9c27b0; }}
+        .news-title {{ font-weight: bold; color: #333; margin-bottom: 10px; font-size: 1.1em; }}
+        .news-meta {{ color: #666; font-size: 0.9em; margin-bottom: 10px; display: flex; justify-content: space-between; }}
+        .news-summary {{ color: #555; line-height: 1.5; margin-bottom: 15px; }}
+        .news-link {{ color: #1976d2; text-decoration: none; font-weight: bold; }}
+        .news-link:hover {{ text-decoration: underline; }}
+        .source-tag {{ background: #e0e0e0; padding: 3px 8px; border-radius: 15px; font-size: 0.8em; }}
+        .severity-high {{ background: #ffebee; color: #c62828; }}
+        .severity-medium {{ background: #fff3e0; color: #ef6c00; }}
+        .severity-low {{ background: #e8f5e8; color: #2e7d32; }}
+        .cve-info {{ background: #f3e5f5; padding: 10px; border-radius: 5px; margin: 10px 0; }}
+        .footer {{ background: #f5f5f5; padding: 20px; text-align: center; color: #666; }}
+    </style>
 </head>
-<body id="top">
-  <div class="topbar">
-    <div class="nav">
-      <div class="brand">
-        <div class="logo"></div>
-        <h1>CYBERSEC • ROZSZERZONY RAPORT CYBER</h1>
-      </div>
-      <div class="menu">
-        <a href="#incidents">Incydenty</a>
-        <a href="#threats">Zagrożenia</a>
-        <a href="#vulnerabilities">Luki</a>
-        <a href="#top">Góra</a>
-      </div>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ Rozszerzony Raport Cyberbezpieczeństwa</h1>
+            <p>Dane z RSS feeds i API | {today}</p>
+        </div>
+
+        <div class="content">
+            <div class="summary">
+                <h3>📊 Podsumowanie Dzienne</h3>
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="stat-number">{len(self.incidents)}</div>
+                        <div>Incydenty Bezpieczeństwa</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">{len(self.threats)}</div>
+                        <div>Nowe Zagrożenia</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">{len(self.vulnerabilities)}</div>
+                        <div>Wykryte Luki</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">{len(self.incidents) + len(self.threats) + len(self.vulnerabilities)}</div>
+                        <div>Łącznie Alertów</div>
+                    </div>
+                </div>
+            </div>
+"""
+
+        # Sekcja incydentów
+        if self.incidents:
+            html_content += """
+            <div class="section">
+                <h2>🚨 Incydenty Bezpieczeństwa</h2>
+                <div class="news-grid">
+"""
+            for item in self.incidents[:20]:  # Maksymalnie 20 najnowszych
+                html_content += f"""
+                    <div class="news-item incident">
+                        <div class="news-title">{item['title']}</div>
+                        <div class="news-meta">
+                            <span class="source-tag">{item['source']}</span>
+                            <span>{item['date']}</span>
+                        </div>
+                        <div class="news-summary">{item['summary']}</div>
+                        <a href="{item['link']}" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+"""
+            html_content += """
+                </div>
+            </div>
+"""
+
+        # Sekcja zagrożeń
+        if self.threats:
+            html_content += """
+            <div class="section">
+                <h2>⚠️ Nowe Zagrożenia</h2>
+                <div class="news-grid">
+"""
+            for item in self.threats[:20]:
+                html_content += f"""
+                    <div class="news-item threat">
+                        <div class="news-title">{item['title']}</div>
+                        <div class="news-meta">
+                            <span class="source-tag">{item['source']}</span>
+                            <span>{item['date']}</span>
+                        </div>
+                        <div class="news-summary">{item['summary']}</div>
+                        <a href="{item['link']}" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+"""
+            html_content += """
+                </div>
+            </div>
+"""
+
+        # Sekcja luk
+        if self.vulnerabilities:
+            html_content += """
+            <div class="section">
+                <h2>🔓 Wykryte Luki w Zabezpieczeniach</h2>
+                <div class="news-grid">
+"""
+            for item in self.vulnerabilities[:20]:
+                severity_class = ''
+                if 'cvss_score' in item and item['cvss_score'] != 'N/A':
+                    try:
+                        score = float(item['cvss_score'])
+                        if score >= 7.0:
+                            severity_class = 'severity-high'
+                        elif score >= 4.0:
+                            severity_class = 'severity-medium'
+                        else:
+                            severity_class = 'severity-low'
+                    except:
+                        pass
+
+                cve_info = ''
+                if 'cve_id' in item:
+                    cve_info = f'<div class="cve-info">CVE ID: {item["cve_id"]} | CVSS: {item.get("cvss_score", "N/A")} | Severity: {item.get("severity", "N/A")}</div>'
+
+                html_content += f"""
+                    <div class="news-item vulnerability {severity_class}">
+                        <div class="news-title">{item['title']}</div>
+                        <div class="news-meta">
+                            <span class="source-tag">{item['source']}</span>
+                            <span>{item['date']}</span>
+                        </div>
+                        {cve_info}
+                        <div class="news-summary">{item['summary']}</div>
+                        <a href="{item['link']}" class="news-link" target="_blank">Czytaj więcej →</a>
+                    </div>
+"""
+            html_content += """
+                </div>
+            </div>
+"""
+
+        html_content += f"""
+        </div>
+
+        <div class="footer">
+            <p><strong>Źródła danych:</strong></p>
+            <p>RSS: CERT.PL, Niebezpiecznik, Bleeping Computer, Security Affairs, Krebs Security, Threatpost, Dark Reading, InfoSecurity Magazine, Security Week, Cybersecurity News, HackRead, The Hacker News, CISA, SANS</p>
+            <p>API: National Vulnerability Database (NVD), VirusTotal, Shodan, AlienVault OTX</p>
+            <p>Raport przygotowany i wygenerowany przez Marek Ziemniewicz: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p>
+        </div>
     </div>
-  </div>
-
-  <div class="container">
-    <div class="hero">
-      <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | $TODAY</p>
-
-      <div class="controls">
-        <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
-        <label class="chip"><input type="checkbox" id="filterMedium" checked> Medium</label>
-        <label class="chip"><input type="checkbox" id="filterLow" checked> Low</label>
-
-        <select id="sorter" class="select" title="Sortowanie">
-          <option value="date_desc">Sortuj: Data ↓</option>
-          <option value="date_asc">Sortuj: Data ↑</option>
-          <option value="cvss_desc">Sortuj: CVSS ↓</option>
-          <option value="cvss_asc">Sortuj: CVSS ↑</option>
-        </select>
-
-        <button class="btn" id="toggleTheme">Motyw: Matrix Green</button>
-      </div>
-
-      <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">$INC</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">$THR</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">$VULN</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">$TOTAL</a></div><div class="kpi-label">Łącznie</div></div>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa ($INC)</h3>
-      <div class="news-grid" data-grid="incidents">
-$INCIDENTS
-      </div>
-      <a href="#top" class="back-top">⬆ Powrót na górę</a>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia ($THR)</h3>
-      <div class="news-grid" data-grid="threats">
-$THREATS
-      </div>
-      <a href="#top" class="back-top">⬆ Powrót na górę</a>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki ($VULN)</h3>
-      <div class="news-grid" data-grid="vulnerabilities">
-$VULNERABILITIES
-      </div>
-      <a href="#top" class="back-top">⬆ Powrót na górę</a>
-    </div>
-
-    <div class="footer">
-      <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: $STAMP</div>
-    </div>
-  </div>
-
-  <script>
-    (function() {
-      const filterHigh = document.getElementById('filterHigh');
-      const filterMedium = document.getElementById('filterMedium');
-      const filterLow = document.getElementById('filterLow');
-      const sorter = document.getElementById('sorter');
-      const toggleTheme = document.getElementById('toggleTheme');
-
-      const vulnGrid = document.querySelector('[data-grid="vulnerabilities"]');
-
-      function applyFilters() {
-        if (!vulnGrid) return;
-        const cards = Array.from(vulnGrid.children);
-        cards.forEach(card => {
-          const sev = card.getAttribute('data-sev'); // high | medium | low
-          if (!sev || sev === 'none') {
-            card.style.display = '';
-            return;
-          }
-          let show = true;
-          if (sev === 'high' && !filterHigh.checked) show = false;
-          if (sev === 'medium' && !filterMedium.checked) show = false;
-          if (sev === 'low' && !filterLow.checked) show = false;
-          card.style.display = show ? '' : 'none';
-        });
-      }
-
-      function applySort() {
-        const mode = sorter.value; // date_desc | date_asc | cvss_desc | cvss_asc
-        const grids = document.querySelectorAll('[data-grid]');
-        grids.forEach(grid => {
-          const cards = Array.from(grid.children);
-          let cmp = null;
-
-          if (mode === 'cvss_desc' || mode === 'cvss_asc') {
-            // tylko dla sekcji luk
-            if (grid.getAttribute('data-grid') !== 'vulnerabilities') return;
-            cmp = (a, b) => {
-              const ca = Number(a.getAttribute('data-cvss') || '-1');
-              const cb = Number(b.getAttribute('data-cvss') || '-1');
-              if (isNaN(ca) && isNaN(cb)) return 0;
-              if (isNaN(ca)) return 1;
-              if (isNaN(cb)) return -1;
-              return mode === 'cvss_desc' ? (cb - ca) : (ca - cb);
-            };
-          } else {
-            // data dla wszystkich sekcji
-            const key = (el) => {
-              const s = (el.getAttribute('data-date') || '').replaceAll('/', '-');
-              if (!s) return 0;
-              const t = Date.parse(s);
-              return isNaN(t) ? 0 : t;
-            };
-            cmp = (a, b) => mode === 'date_desc' ? (key(b) - key(a)) : (key(a) - key(b));
-          }
-
-          if (cmp) cards.sort(cmp).forEach(c => grid.appendChild(c));
-        });
-      }
-
-      filterHigh.addEventListener('change', applyFilters);
-      filterMedium.addEventListener('change', applyFilters);
-      filterLow.addEventListener('change', applyFilters);
-      sorter.addEventListener('change', () => { applySort(); });
-
-      toggleTheme.addEventListener('click', () => {
-        document.body.classList.toggle('matrix');
-        toggleTheme.textContent = document.body.classList.contains('matrix') ? 'Motyw: Neo Turquoise' : 'Motyw: Matrix Green';
-      });
-
-      applyFilters();
-      applySort();
-    })();
-  </script>
 </body>
 </html>
-''')
+"""
 
-        html = html_tpl.substitute(
-            TODAY=today,
-            INC=len(self.incidents),
-            THR=len(self.threats),
-            VULN=len(self.vulnerabilities),
-            TOTAL=len(self.incidents) + len(self.threats) + len(self.vulnerabilities),
-            INCIDENTS="\n".join(inc_cards),
-            THREATS="\n".join(thr_cards),
-            VULNERABILITIES="\n".join(vuln_cards),
-            STAMP=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        )
-
+        # Zapisz raport HTML
         with open(report_filename, 'w', encoding='utf-8') as f:
-            f.write(html)
+            f.write(html_content)
 
-        # JSON + CSV
-        json_filename = f"{report_dir}/enhanced_cybersecurity_data_{today}.json"
-        csv_filename = f"{report_dir}/enhanced_cybersecurity_summary_{today}.csv"
+        # Zapisz dane JSON
         data = {
             'date': today,
             'incidents': self.incidents,
             'threats': self.threats,
-            'vulnerabilities': self.vulnerabilities
+            'vulnerabilities': self.vulnerabilities,
+            'summary': {
+                'total_incidents': len(self.incidents),
+                'total_threats': len(self.threats),
+                'total_vulnerabilities': len(self.vulnerabilities),
+                'sources_used': list(self.rss_sources.keys()) + ['nvd_api']
+            }
         }
+
         with open(json_filename, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
+
+        # Zapisz CSV
         with open(csv_filename, 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
             writer.writerow(['Kategoria', 'Źródło', 'Tytuł', 'Data', 'Link', 'Podsumowanie', 'CVE_ID', 'CVSS_Score', 'Severity'])
-            for item in self.incidents:
-                writer.writerow(['Incydent', item.get('source',''), item.get('title',''), item.get('date',''), item.get('link',''), item.get('summary',''), '', '', ''])
-            for item in self.threats:
-                writer.writerow(['Zagrożenie', item.get('source',''), item.get('title',''), item.get('date',''), item.get('link',''), item.get('summary',''), '', '', ''])
-            for item in self.vulnerabilities:
-                writer.writerow(['Luka', item.get('source',''), item.get('title',''), item.get('date',''), item.get('link',''), item.get('summary',''), item.get('cve_id',''), item.get('cvss_score',''), item.get('severity','')])
 
-        logger.info(f"✅ Raport wygenerowany: {report_filename}")
-        logger.info(f"📁 JSON: {json_filename}")
-        logger.info(f"📁 CSV:  {csv_filename}")
+            for item in self.incidents:
+                writer.writerow(['Incydent', item['source'], item['title'], item['date'], item['link'], item['summary'], '', '', ''])
+            for item in self.threats:
+                writer.writerow(['Zagrożenie', item['source'], item['title'], item['date'], item['link'], item['summary'], '', '', ''])
+            for item in self.vulnerabilities:
+                writer.writerow(['Luka', item['source'], item['title'], item['date'], item['link'], item['summary'], 
+                               item.get('cve_id', ''), item.get('cvss_score', ''), item.get('severity', '')])
+
+        print(f"✅ Rozszerzony raport został wygenerowany w katalogu: {report_dir}")
+        print(f"   - HTML: {report_filename}")
+        print(f"   - JSON: {json_filename}")
+        print(f"   - CSV: {csv_filename}")
+
         return report_filename
 
-
-# -------------------------------------------
-# main
-# -------------------------------------------
-
 def main():
-    import subprocess
+    """Funkcja główna programu"""
+    print("🛡️ Rozszerzony System Monitorowania Cyberbezpieczeństwa")
+    print("=" * 60)
 
-    print("🛡️ Rozszerzony System Monitorowania Cyberbezpieczeństwa — PRO (Matrix)")
-    print("=" * 80)
-
+    # Tworzenie instancji monitora
     monitor = AdvancedCyberSecurityMonitor()
 
-    # (opcjonalnie) ręczne ustawienie kluczy — NIE commitować prawdziwych!
-    # monitor.set_api_key('virustotal', 'YOUR_VT_KEY')
-    # monitor.set_api_key('shodan', 'YOUR_SHODAN_KEY')
-    # monitor.set_api_key('alienvault', 'YOUR_OTX_KEY')
+    # Opcjonalnie ustaw klucze API (jeśli masz)
+    # monitor.set_api_key('virustotal', '8799778183788c0622a0782a4a3547c8ac731249f82db2b781ca941463a5747c')
+    # monitor.set_api_key('shodan', 'f5VVSrXsZefbrELI3eAxCTd5E4wd2Quk')
 
     try:
+        # Zbieranie danych
         monitor.collect_all_data()
-        report_file = monitor.generate_enhanced_report()
 
-            # Generowanie raportu
+        # Generowanie raportu
         report_file = monitor.generate_enhanced_report()
 
         print(f"\n📊 Finalne podsumowanie:")
@@ -960,4 +892,3 @@ try:
     subprocess.run(["python", "auto_sync_to_github.py"], shell=True)
 except Exception as e:
     print("❌ Błąd podczas synchronizacji:", e)
-
