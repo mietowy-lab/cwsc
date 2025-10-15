@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Raport Cyberbezpieczeństwa — 2025-10-14</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #0f1623;
+      --panel-2: #111a2a;
+      --text: #d7e2f0;
+      --muted: #8aa0b6;
+      --accent: #00bcd4;
+      --accent-2: #35e0ff;
+      --danger: #f44336;
+      --warn: #ff9800;
+      --violet: #9c27b0;
+      --glow: 0 0 25px rgba(0,188,212,0.25);
+      --border: 1px solid rgba(0,188,212,0.15);
+    }
+    body.matrix {
+      --bg: #071207;
+      --panel: #0a1a0a;
+      --panel-2: #0c210c;
+      --text: #e2ffe2;
+      --muted: #9bdea3;
+      --accent: #00ff84;
+      --accent-2: #6bffb0;
+      --danger: #ff6b6b;
+      --warn: #ffd166;
+      --violet: #7dffb5;
+      --glow: 0 0 22px rgba(0, 255, 132, .25);
+      --border: 1px solid rgba(0,255,132,.18);
+      background-image:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+        repeating-linear-gradient( to bottom, rgba(0,255,132,.05) 0px, rgba(0,255,132,.05) 2px, transparent 2px, transparent 4px ),
+        radial-gradient(1200px 600px at 10% 0%, #051004 0%, #061006 55%, #041004 100%);
+      background-attachment: fixed;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: radial-gradient(1200px 600px at 10% 0%, #0b1220 0%, #0d1117 55%, #0a0f18 100%);
+      color: var(--text); font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    }
+    .topbar { position: sticky; top: 0; z-index: 999; backdrop-filter: blur(8px); background: rgba(13,17,23,0.7); border-bottom: var(--border); }
+    .nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; }
+    .brand { display:flex; align-items:center; gap:10px; }
+    .logo { width: 32px; height: 32px; border-radius: 8px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: var(--glow); }
+    .brand h1 { font-family: 'Orbitron', monospace; font-weight: 700; font-size: 1.05rem; letter-spacing: .06em; margin:0; color: #e6faff; text-shadow: 0 0 12px rgba(53,224,255,.25); }
+    body.matrix .brand h1 { color:#d8ffe6; text-shadow: 0 0 12px rgba(0,255,132,.3); }
+    .menu a { color: var(--text); text-decoration: none; margin-left: 12px; font-weight: 500; padding: 6px 10px; border-radius: 8px; border: var(--border); background: linear-gradient(180deg, rgba(0,188,212,0.06), rgba(0,188,212,0.03)); }
+    .menu a:hover { color:#e6faff; border-color: rgba(53,224,255,.45); box-shadow: var(--glow); }
+
+    .container { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+    .hero { background: linear-gradient(180deg, rgba(0,188,212,0.06), rgba(0,188,212,0.02)); border: var(--border); border-radius: 16px; padding: 18px; box-shadow: var(--glow); }
+    .hero h2 { margin: 0 0 6px 0; font-family: 'Orbitron', monospace; letter-spacing:.05em; color:#e6faff; text-shadow: 0 0 18px rgba(53,224,255,.25); }
+    .sub { color: var(--muted); margin:0; }
+
+    .controls { display:flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 10px; }
+    .chip { display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; border: var(--border); background: linear-gradient(180deg, rgba(0,188,212,.08), rgba(0,188,212,.03)); color: var(--text); font-size: .92rem; }
+    .chip input { transform: translateY(1px); }
+    .select { padding:6px 10px; border-radius:10px; border: var(--border); background: linear-gradient(180deg, rgba(0,188,212,.06), rgba(0,188,212,.02)); color: var(--text); }
+    .btn { padding:6px 10px; border-radius:10px; border: var(--border); cursor:pointer; background: linear-gradient(180deg, rgba(0,188,212,.12), rgba(0,188,212,.05)); color: var(--text); }
+    .btn:hover { border-color: rgba(53,224,255,.45); box-shadow: var(--glow); }
+
+    .stats { display:grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 14px; margin-top: 14px; }
+    .card { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border: var(--border); border-radius: 14px; padding: 14px; transition: .2s; }
+    .card:hover { transform: translateY(-3px); border-color: rgba(53,224,255,.45); box-shadow: var(--glow); }
+    .kpi-num a { color: var(--accent-2); font-weight: 700; font-size: 1.9rem; text-decoration: none; }
+    .kpi-label { color: var(--muted); font-size:.95rem; margin-top: 4px; }
+
+    .section { margin-top: 22px; }
+    .section h3 { font-family:'Orbitron', monospace; letter-spacing:.04em; color:#e6faff; margin: 0 0 12px 0; text-shadow: 0 0 14px rgba(53,224,255,.22); display:flex; align-items:center; gap:8px; }
+    .news-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap: 14px; }
+
+    .news-item { border-left:5px solid #2bbbd0; }
+    .news-item.incident { border-left-color: var(--danger); }
+    .news-item.threat { border-left-color: var(--warn); }
+    .news-item.vulnerability { border-left-color: var(--violet); }
+
+    .news-title { font-weight:700; color:#e9f7ff; margin-bottom: 6px; }
+    .news-meta { font-size: .85rem; color: var(--muted); margin-bottom: 10px; display:flex; justify-content: space-between; }
+    .badge { background: rgba(0,188,212,.14); border: 1px solid rgba(0,188,212,.25); padding: 2px 8px; border-radius: 999px; }
+    .news-summary { color:#bfd2e6; line-height:1.45; }
+    .news-link { display:inline-block; margin-top: 8px; color: var(--accent-2); font-weight: 700; text-decoration:none; }
+    .news-link:hover { text-decoration: underline; }
+
+    .cve-info { background: rgba(156,39,176,.08); border: 1px solid rgba(156,39,176,.25); padding:8px; border-radius:8px; margin: 8px 0; color:#f2e6ff; }
+    body.matrix .cve-info { background: rgba(0,255,132,.08); border-color: rgba(0,255,132,.25); color:#dbffe8; }
+
+    .divider { height:1px; background: linear-gradient(90deg, rgba(0,188,212,.0), rgba(0,188,212,.35), rgba(0,188,212,.0)); margin: 18px 0; }
+    .back-top { display:inline-block; margin-top:12px; padding:8px 12px; border-radius:10px; border: var(--border); color:#e6faff; text-decoration:none; background: linear-gradient(180deg, rgba(0,188,212,0.12), rgba(0,188,212,0.05)); }
+    .back-top:hover { border-color: rgba(53,224,255,.45); box-shadow: var(--glow); }
+
+    .footer { margin-top:22px; color: var(--muted); font-size:.9rem; text-align:center; padding: 14px; border-top: var(--border); }
+  </style>
+</head>
+<body id="top">
+  <div class="topbar">
+    <div class="nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>CYBERSEC • ROZSZERZONY RAPORT CYBER</h1>
+      </div>
+      <div class="menu">
+        <a href="#incidents">Incydenty</a>
+        <a href="#threats">Zagrożenia</a>
+        <a href="#vulnerabilities">Luki</a>
+        <a href="#top">Góra</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
+      <p class="sub">Dane z RSS i API | 2025-10-14</p>
+
+      <div class="controls">
+        <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
+        <label class="chip"><input type="checkbox" id="filterMedium" checked> Medium</label>
+        <label class="chip"><input type="checkbox" id="filterLow" checked> Low</label>
+
+        <select id="sorter" class="select" title="Sortowanie">
+          <option value="date_desc">Sortuj: Data ↓</option>
+          <option value="date_asc">Sortuj: Data ↑</option>
+          <option value="cvss_desc">Sortuj: CVSS ↓</option>
+          <option value="cvss_asc">Sortuj: CVSS ↑</option>
+        </select>
+
+        <button class="btn" id="toggleTheme">Motyw: Matrix Green</button>
+      </div>
+
+      <div class="stats">
+        <div class="card"><div class="kpi-num"><a href="#incidents">58</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">9</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">353</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">420</a></div><div class="kpi-label">Łącznie</div></div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section" id="incidents">
+      <h3>🚨 Incydenty Bezpieczeństwa (58)</h3>
+      <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2025-10-06" data-cvss="-1">
+  <div class="news-title">6th October – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2025-10-06 09:44</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 6th October, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Red Hat has confirmed a cyber attack that resulted in unauthorized access to one of its GitLab instances. The attackers, Crimson Collective, claim to h...</div>
+  <a href="https://research.checkpoint.com/2025/6th-october-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-10-02" data-cvss="-1">
+  <div class="news-title">What could go wrong when MySQL strict SQL mode is off?</div>
+  <div class="news-meta">
+    <span class="badge">Synacktiv</span>
+    <span>2025-10-02 00:00</span>
+  </div>
+  <div class="news-summary">
+
+
+
+ 
+
+
+
+
+
+What could go wrong when MySQL strict SQL mode is off?
+
+
+02/10/2025
+
+
+Pentest
+
+
+                   This article shows some examples of attacks that can abuse MySQL behavior when the strict SQL mode is disabled, especially when string characters are invalid in the current encoding. This ha...</div>
+  <a href="https://www.synacktiv.com/en/publications/what-could-go-wrong-when-mysql-strict-sql-mode-is-off" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-10-01" data-cvss="-1">
+  <div class="news-title">CROSS-X: Generalized and Stable Cross-Cache Attack on the Linux Kernel (to appear)</div>
+  <div class="news-meta">
+    <span class="badge">Kaist Hacking Lab</span>
+    <span>2025-10-01 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://kaist-hacking.github.io/publication/kim-crossx/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-09-29" data-cvss="-1">
+  <div class="news-title">29th September – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2025-09-29 12:43</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 29th September, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Stellantis, Automotive maker giant which owns Citroën, FIAT, Jeep, Chrysler, and Peugeot, has suffered a data breach that resulted in exposure of No...</div>
+  <a href="https://research.checkpoint.com/2025/29th-september-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-09-22" data-cvss="-1">
+  <div class="news-title">22nd September – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2025-09-22 08:31</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 22nd September, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Several major European airports including Heathrow, Berlin, Brussels, Dublin, and Cork have experienced a cyber-attack, resulting in disruptions to ...</div>
+  <a href="https://research.checkpoint.com/2025/22nd-september-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-09-03" data-cvss="-1">
+  <div class="news-title">Cookie Chaos: How to bypass __Host and __Secure cookie prefixes</div>
+  <div class="news-meta">
+    <span class="badge">Portswigger</span>
+    <span>2025-09-03 14:46</span>
+  </div>
+  <div class="news-summary">Browsers added cookie prefixes to protect your sessions and stop attackers from setting harmful cookies. In this post, you’ll see how to bypass cookie defenses using discrepancies in browser and serve</div>
+  <a href="https://portswigger.net/research/cookie-chaos-how-to-bypass-host-and-secure-cookie-prefixes" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-08-25" data-cvss="-1">
+  <div class="news-title">How Deep Research Agents Can Leak Your Data</div>
+  <div class="news-meta">
+    <span class="badge">Embrace The Red</span>
+    <span>2025-08-25 01:03</span>
+  </div>
+  <div class="news-summary">Recently, many of our favorite AI chatbots have gotten autonomous research capabilities. This allows the AI to go off for an extended period of time, while having access to tools, such as web search, integrations, connectors and also custom-built MCP servers.
+This post will explore and explain in de...</div>
+  <a href="https://embracethered.com/blog/posts/2025/chatgpt-deep-research-connectors-data-spill-and-leaks/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-08-18" data-cvss="-1">
+  <div class="news-title">OpenAI Operator - Click on arbitrary origin by TOCTOU attack</div>
+  <div class="news-meta">
+    <span class="badge">Google Security Research Advisories</span>
+    <span>2025-08-18 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://github.com/google/security-research/security/advisories/GHSA-mp56-7vrw-qxvf" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-08-17" data-cvss="-1">
+  <div class="news-title">Escaping the Matrix: Client-Side Deanonymization Attacks on Privacy Sandbox APIs</div>
+  <div class="news-meta">
+    <span class="badge">Spaceraccoon</span>
+    <span>2025-08-17 12:00</span>
+  </div>
+  <div class="news-summary">I recently presented at the DEF CON 33 Mainstage and the 12th Crypto & Privacy Village on weaknesses in implementations of Google’s Privacy Sandbox that subverted privacy protections and enabled deanonymization attacks.</div>
+  <a href="https://spaceraccoon.dev/client-side-deanonymization-attacks-privacy-sandbox-apis/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-07-27" data-cvss="-1">
+  <div class="news-title">Getting a Shell on the LAU-G150-C Optical Network Terminal</div>
+  <div class="news-meta">
+    <span class="badge">Spaceraccoon</span>
+    <span>2025-07-27 12:00</span>
+  </div>
+  <div class="news-summary">Since the Link-All LAU-G150-C Optical Network Terminal isn’t documented anywhere, I thought this was a great opportunity to practice some hardware hacking…</div>
+  <a href="https://spaceraccoon.dev/getting-shell-lau-g150-c-optical-network-terminal/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-06-11" data-cvss="-1">
+  <div class="news-title">Streaming Zero-Fi Shells to Your Smart Speaker</div>
+  <div class="news-meta">
+    <span class="badge">Ret2 Systems</span>
+    <span>2025-06-11 10:00</span>
+  </div>
+  <div class="news-summary">In October 2024, RET2 participated in the “Small Office / Home Office” (SOHO) flavor of Pwn2Own, a competition which challenges top security researchers to compromise consumer-focused network devices. This includes popular smart speakers, routers, IP cameras, printers, and network-attached storage (...</div>
+  <a href="https://blog.ret2.io/2025/06/11/pwn2own-soho-2024-sonos-exploit/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-06-01" data-cvss="-1">
+  <div class="news-title">Automated Attack Synthesis for Constant Product Market Makers</div>
+  <div class="news-meta">
+    <span class="badge">Kaist Hacking Lab</span>
+    <span>2025-06-01 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://kaist-hacking.github.io/publication/han-cpmm/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-05-23" data-cvss="-1">
+  <div class="news-title">The Windows Registry Adventure #7: Attack surface analysis</div>
+  <div class="news-meta">
+    <span class="badge">Project Zero</span>
+    <span>2025-05-23 09:05</span>
+  </div>
+  <div class="news-summary">Posted by Mateusz Jurczyk, Google Project Zero
+
+In the first three blog posts of this series, I sought to outline what the Windows Registry actually is, its role, history, and where to find further information about it. In the subsequent three posts, my goal was to describe in detail how this mechan...</div>
+  <a href="https://googleprojectzero.blogspot.com/2025/05/the-windows-registry-adventure-7-attack-surface.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-04-23" data-cvss="-1">
+  <div class="news-title">Document My Pentest: you hack, the AI writes it up!</div>
+  <div class="news-meta">
+    <span class="badge">Portswigger</span>
+    <span>2025-04-23 13:17</span>
+  </div>
+  <div class="news-summary">Tired of repeating yourself? Automate your web security audit trail. In this post I'll introduce a new Burp AI extension that takes the boring bits out of your pen test. Web security testing can be a</div>
+  <a href="https://portswigger.net/research/document-my-pentest" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-03-30" data-cvss="-1">
+  <div class="news-title">If the Person Who Finds a Web3 Hardware Wallet is a Hacker</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2025-03-30 02:00</span>
+  </div>
+  <div class="news-summary">In 2024, Web3 security incidents caused by private key leaks have surged, resulting in estimated financial losses exceeding $855 million.
+Private keys function as the sole credentials for blockchain accounts, controlling access to all associated on-chain assets like cryptocurrencies and NFTs. Due to...</div>
+  <a href="https://www.darknavy.org/blog/if_the_person_who_finds_a_web3_hardware_wallet_is_a_hacker/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-03-24" data-cvss="-1">
+  <div class="news-title">Reconstructing the $1.5 Billion Bybit Hack by North Korean Actors</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2025-03-24 07:34</span>
+  </div>
+  <div class="news-summary">
+Both the Attackers and Victims Made Critical Mistakes
+
+On February 21, 2025, the cryptocurrency exchange Bybit experienced the most significant financial loss in Web3 history when nearly $1.5 billion was illicitly transferred from its multi-signature wallet by North Korean threat actors.
+The DARKNA...</div>
+  <a href="https://www.darknavy.org/darknavy_insight/reconstructing_the_1.5_billion_bybit_hack_by_north_korean_actors/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-03-24" data-cvss="-1">
+  <div class="news-title">Pwning Millions of Smart Weighing Machines with API and Hardware Hacking</div>
+  <div class="news-meta">
+    <span class="badge">Spaceraccoon</span>
+    <span>2025-03-24 00:03</span>
+  </div>
+  <div class="news-summary">Why hack one device, when you can hack all of them? By reverse-engineering and finding vulnerabilities in user-machine association flows for smart weighing machines, I was able to take over millions of internet-connected health devices. Hardware and web security are two halves of modern smart device...</div>
+  <a href="https://spaceraccoon.dev/pwning-millions-smart-weighing-machines-api-hardware-hacking/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-03-21" data-cvss="-1">
+  <div class="news-title">Red Teaming with ServiceNow</div>
+  <div class="news-meta">
+    <span class="badge">Mdsec</span>
+    <span>2025-03-21 12:58</span>
+  </div>
+  <div class="news-summary">Introduction Over the course of numerous Red Team engagements MDSec has often gained privileged access to a target’s ServiceNow instance. This has, in turn, facilitated a variety of compromise actions...
+The post Red Teaming with ServiceNow appeared first on MDSec.</div>
+  <a href="https://www.mdsec.co.uk/2025/03/red-teaming-with-servicenow/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-03-21" data-cvss="-1">
+  <div class="news-title">Fatal Vulnerabilities Compromising DJI Control Devices</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2025-03-21 02:01</span>
+  </div>
+  <div class="news-summary">As logistics drones weave through buildings and surveying equipment delineates urban landscapes, the capillaries of the low-altitude economy are sketching the future with millimeter-level precision.
+DARKNAVY consistently focuses on the construction and breaching of drone security defenses. In this r...</div>
+  <a href="https://www.darknavy.org/blog/fatal_vulnerabilities_compromising_dji_control_devices/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2025-03-20" data-cvss="-1">
+  <div class="news-title">Last barrier destroyed, or compromise of Fuse Encryption Key for Intel Security Fuses</div>
+  <div class="news-meta">
+    <span class="badge">Pt Swarm</span>
+    <span>2025-03-20 18:12</span>
+  </div>
+  <div class="news-summary">Introduction As experts who have spent years researching the security of hardware platforms developed by Intel, we acknowledge that Intel’s Converged Security and Management Engine security architecture is highly reliable and was designed by top-notch professionals. From an architectural perspective...</div>
+  <a href="https://swarm.ptsecurity.com/last-barrier-destroyed-or-compromise-of-fuse-encryption-key-for-intel-security-fuses/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+      </div>
+      <a href="#top" class="back-top">⬆ Powrót na górę</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section" id="threats">
+      <h3>⚠️ Nowe Zagrożenia (9)</h3>
+      <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2025-10-13" data-cvss="-1">
+  <div class="news-title">13th October – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2025-10-13 08:53</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 13th October, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Qilin ransomware group has claimed responsibility for targeting Asahi, Japan’s largest brewing company, that had been hacked on September 29th. The at...</div>
+  <a href="https://research.checkpoint.com/2025/13th-october-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item threat" data-sev="none" data-date="2025-09-22" data-cvss="-1">
+  <div class="news-title">Nimbus Manticore Deploys New Malware Targeting Europe</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2025-09-22 12:59</span>
+  </div>
+  <div class="news-summary">Nimbus Manticore Deploys New Malware Targeting Europe Key Findings Introduction Since early 2025, Check Point Research (CPR) has tracked waves of Nimbus Manticore activity. Known as UNC1549 or Smoke Sandstorm, Nimbus Manticore is a mature Iran-nexus APT group that primarily targets aerospace and def...</div>
+  <a href="https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item threat" data-sev="none" data-date="2025-09-16" data-cvss="-1">
+  <div class="news-title">Under the Pure Curtain: From RAT to Builder to Coder</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2025-09-16 12:57</span>
+  </div>
+  <div class="news-summary">Research by: Antonis Terefos (@Tera0017) Key Points Introduction The Pure malware family is a suite of malicious tools developed and sold by the author known as PureCoder. This suite includes PureHVNC RAT (a remote administration tool and predecessor to PureRAT), PureCrypter (a malware obfuscator), ...</div>
+  <a href="https://research.checkpoint.com/2025/under-the-pure-curtain-from-rat-to-builder-to-coder/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item threat" data-sev="none" data-date="2025-09-15" data-cvss="-1">
+  <div class="news-title">15th September – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2025-09-15 12:43</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 15th September, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Panama’s Ministry of Economy and Finance (MEF) was hit by a ransomware attack that resulted in the theft of more than 1.5TB of data, including email...</div>
+  <a href="https://research.checkpoint.com/2025/15th-september-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item threat" data-sev="none" data-date="2024-08-19" data-cvss="-1">
+  <div class="news-title">Advisory Blog Series: Ransomware Readiness Part 2 – What Does it Really Mean to be Ready?</div>
+  <div class="news-meta">
+    <span class="badge">Atredis Partners</span>
+    <span>2024-08-19 11:00</span>
+  </div>
+  <div class="news-summary">We’ve all been asked at some point in our lives – “Are you ready?”. That usually strikes me as a somewhat loaded question, “ready for what?”. Chances are that if you’re being asked “are you ready”, it’s because it’s something you haven’t done before, or because that thing that you are supposed to be...</div>
+  <a href="https://www.atredis.com/blog/2024/8/15/ransomware-readiness-what-does-it-really-mean-to-be-ready" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item threat" data-sev="none" data-date="2022-01-03" data-cvss="-1">
+  <div class="news-title">IRQLs Close Encounters of the Rootkit Kind</div>
+  <div class="news-meta">
+    <span class="badge">Matteo Malvica</span>
+    <span>2022-01-03 00:00</span>
+  </div>
+  <div class="news-summary">IRQL Overview Present since the early stages of Windows NT, an Interrupt Request Level (IRQL) defines the current hardware priority at which a CPU runs at any given time. On a multi-processor architecture, each CPU can hold a different and independent IRQL value, which is stored inside the CR8 regis...</div>
+  <a href="https://www.matteomalvica.com/blog/2022/01/03/irqls-rootkits/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item threat" data-sev="none" data-date="2021-08-09" data-cvss="-1">
+  <div class="news-title">PHDays 10 IDS Bypass contest: writeup and solutions</div>
+  <div class="news-meta">
+    <span class="badge">Positive Technologies</span>
+    <span>2021-08-09 15:01</span>
+  </div>
+  <div class="news-summary">For the second time, the IDS Bypass contest was held at the Positive Hack Days conference. Just like last time (see blog.ptsecurity.com/2019/07/ids-bypass-contest-at-phdays-writeup.html), the players were supposed not only to find flaws in the six services and capture the flags, but also bypass the ...</div>
+  <a href="http://blog.ptsecurity.com/2021/08/phdays-10-ids-bypass-contest-writeup.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item threat" data-sev="none" data-date="2021-08-03" data-cvss="-1">
+  <div class="news-title">APT31 new dropper. Target destinations: Mongolia, Russia, the U.S., and elsewhere</div>
+  <div class="news-meta">
+    <span class="badge">Positive Technologies</span>
+    <span>2021-08-03 14:38</span>
+  </div>
+  <div class="news-summary">Our pros at the PT Expert Security Center regularly spot emerging threats to information security and track the activity of hacker groups. During such monitoring in April 2021, a mailing list with previously unknown malicious content was sent to Mongolia. Similar attacks were subsequently identified...</div>
+  <a href="http://blog.ptsecurity.com/2021/08/apt31-new-dropper-target-destinations.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item threat" data-sev="none" data-date="2021-01-01" data-cvss="-1">
+  <div class="news-title">Linked List in the Kernel: 'Practical Reverse Engineering' solutions - Part 1</div>
+  <div class="news-meta">
+    <span class="badge">Matteo Malvica</span>
+    <span>2021-01-01 00:00</span>
+  </div>
+  <div class="news-summary">Introduction Lately, I dusted off the marvelous ‘Practical Reverse Engineering’ book by Bruce Dang & Co. which made me realize it would be useful to structure notes along each chapter’s exercises. Could be a valuable reference for the future, especially anything related to Chapter 3 (Windows Kernel)...</div>
+  <a href="https://www.matteomalvica.com/blog/2021/01/01/practical-re-win-solutions-ch3-linked-lists/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+      </div>
+      <a href="#top" class="back-top">⬆ Powrót na górę</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section" id="vulnerabilities">
+      <h3>🔓 Wykryte Luki (353)</h3>
+      <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-14" data-cvss="-1.0">
+  <div class="news-title">About</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2025-10-14 08:33</span>
+  </div>
+  <div class="news-summary">DARKNAVY, headquartered in Singapore and Shanghai, is an independent cybersecurity research and services organization. We are pioneers in AVSS (Adversarial Vulnerability Scoring System) and quantitative security, as well as the founding team behind the international hacking competition GEEKCON.
+Foun...</div>
+  <a href="https://www.darknavy.org/about/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-13" data-cvss="-1.0">
+  <div class="news-title">Hacking the Nokia Beacon 1 Router: UART, Command Injection, and Password Generation with Qiling</div>
+  <div class="news-meta">
+    <span class="badge">Spaceraccoon</span>
+    <span>2025-10-13 00:00</span>
+  </div>
+  <div class="news-summary">The Nokia Beacon 1 proved to be an interesting journey covering the full spectrum of techniques from hardware debug interfaces to firmware extraction and finally both static and dynamic analysis. I was rewarded with interesting findings including a (now-patched) command injection.</div>
+  <a href="https://spaceraccoon.dev/nokia-beacon-router-uart-command-injection/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-10" data-cvss="-1.0">
+  <div class="news-title">More Than DoS (Progress Telerik UI for ASP.NET AJAX Unsafe Reflection CVE-2025-3600)</div>
+  <div class="news-meta">
+    <span class="badge">Watchtowr Labs</span>
+    <span>2025-10-10 14:13</span>
+  </div>
+  <div class="news-summary">Welcome back. We’re excited to yet again publish memes under the guise of research and inevitably receive hate mail. But today, we’ll be doing something slightly different to normal.“Wow, watchTowr, will you actually be publishing useful information instead of memes?”Today, instead of</div>
+  <a href="https://labs.watchtowr.com/more-than-dos-progress-telerik-ui-for-asp-net-ajax-unsafe-reflection-cve-2025-3600/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-09" data-cvss="-1.0">
+  <div class="news-title">Velociraptor leveraged in ransomware attacks</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2025-10-09 10:00</span>
+  </div>
+  <div class="news-summary">Cisco Talos has confirmed that ransomware operators are leveraging Velociraptor, an open-source digital forensics and incident response (DFIR) tool.</div>
+  <a href="https://blog.talosintelligence.com/velociraptor-leveraged-in-ransomware-attacks/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-08" data-cvss="-1.0">
+  <div class="news-title">ksmbd - Exploiting CVE-2025-37947 (3/3)</div>
+  <div class="news-meta">
+    <span class="badge">Doyensec</span>
+    <span>2025-10-08T00:00:00+02:00</span>
+  </div>
+  <div class="news-summary">Introduction
+This is the last of our posts about ksmbd. For the previous posts, see part1 and part2.
+Considering all discovered bugs and proof-of-concept exploits we reported, we had to select some suitable candidates for exploitation. In particular, we wanted to use something reported more recently...</div>
+  <a href="https://blog.doyensec.com/2025/10/08/ksmbd-3.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-08" data-cvss="-1.0">
+  <div class="news-title">Crafting a Full Exploit RCE from a Crash in Autodesk Revit RFA File Parsing</div>
+  <div class="news-meta">
+    <span class="badge">Zdi</span>
+    <span>2025-10-08 14:00</span>
+  </div>
+  <div class="news-summary">In April of 2025, my colleague Mat Powell was hunting for vulnerabilities in Autodesk Revit 2025. While fuzzing RFA files, he found the following crash (CVE-2025-5037 / ZDI-CAN-26922, addressed by Autodesk in July 2025):
+Is this an exploitable crash? From the debugger output crash point as seen abov...</div>
+  <a href="https://www.thezdi.com/blog/2025/10/6/crafting-a-full-exploit-rce-from-a-crash-in-autodesk-revit-rfa-file-parsing" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-08" data-cvss="-1.0">
+  <div class="news-title">LLM Poisoning [1/3] - Reading the Transformer's Thoughts</div>
+  <div class="news-meta">
+    <span class="badge">Synacktiv</span>
+    <span>2025-10-08 00:00</span>
+  </div>
+  <div class="news-summary">
+
+
+
+ 
+
+
+
+
+
+LLM Poisoning [1/3] - Reading the Transformer's Thoughts
+
+
+08/10/2025
+
+
+Development
+Exploit
+Reverse-engineering
+
+
+                   Your local LLM can hack you.
+
+This three-part series reveals how tiny weights edits can implant stealthy backdoors that stay dormant in everyday use, then f...</div>
+  <a href="https://www.synacktiv.com/en/publications/llm-poisoning-13-reading-the-transformers-thoughts" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-07" data-cvss="-1.0">
+  <div class="news-title">OpenPLC OpenPLC_v3 ModbusTCP server denial of service vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2025-10-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2223" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-07" data-cvss="-1.0">
+  <div class="news-title">Planet WGR-500 swctrl OS command injection vulnerabilities</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2025-10-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2227" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-07" data-cvss="-1.0">
+  <div class="news-title">Planet WGR-500 formPingCmd OS command injection vulnerabilities</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2025-10-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2229" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-07" data-cvss="-1.0">
+  <div class="news-title">Planet WGR-500 formPingCmd format string vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2025-10-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2228" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-07" data-cvss="-1.0">
+  <div class="news-title">Planet WGR-500 formPingCmd stack-based buffer overflow vulnerabilities</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2025-10-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2226" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-07" data-cvss="9.8">
+  <div class="news-title">CVE-2025-0603 - CRITICAL (9.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-07</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-0603 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Callvision Healthcare Callvision Emergency Code allows SQL Injection, Blind SQL Injection.This issue affects Callvision Emergency Code: before V3.0.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-0603" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-07" data-cvss="8.8">
+  <div class="news-title">CVE-2025-11389 - HIGH (8.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-07</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-11389 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A security flaw has been discovered in Tenda AC15 15.03.05.18. Affected is an unknown function of the file /goform/saveAutoQos. Performing manipulation of the argument enable results in stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been released to the p...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11389" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-07" data-cvss="4.3">
+  <div class="news-title">CVE-2025-11390 - MEDIUM (4.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-07</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-11390 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A weakness has been identified in PHPGurukul Cyber Cafe Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /search.php of the component POST Parameter Handler. Executing manipulation of the argument searchdata can lead to cross site scripting. The attack ca...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11390" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-07" data-cvss="7.3">
+  <div class="news-title">CVE-2025-11396 - HIGH (7.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-07</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-11396 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability was identified in code-projects Simple Food Ordering System 1.0. Impacted is an unknown function of the file /product.php. Such manipulation of the argument Category leads to sql injection. The attack can be launched remotely. The exploit is publicly available and might be used.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11396" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-07" data-cvss="7.9">
+  <div class="news-title">CVE-2025-3718 - HIGH (7.9)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-07</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-3718 | CVSS: 7.9 | Severity: HIGH</div>
+  <div class="news-summary">A client-side path traversal vulnerability was discovered in the web management interface front-end due to missing validation of an input parameter. An authenticated user with limited privileges can craft a malicious URL which, if visited by an authenticated victim, leads to a Cross-Site Scripting (...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3718" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-07" data-cvss="8.1">
+  <div class="news-title">CVE-2025-3719 - HIGH (8.1)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-07</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-3719 | CVSS: 8.1 | Severity: HIGH</div>
+  <div class="news-summary">An access control vulnerability was discovered in the CLI functionality due to a specific access restriction not being properly enforced for users with limited privileges. An authenticated user with limited privileges can issue administrative CLI commands, altering the device configuration, and/or a...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3719" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-07" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-40649 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-07</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-40649 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Stored Cross-Site Scripting (XSS) in Biobanking and Biomolecular Resources Negotiator v3.15.2 - European Research Infrastructure (BBMRI-ERIC), consisting of a stored XSS due to a lack of proper validation of user input by sending a POST request using parameter text in '/api/v3/negotiations/<postUID>...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40649" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-07" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-40676 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-07</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-40676 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Insecure Direct Object Reference (IDOR) in Negotiator v3.15.2 from Biobanking and Biomolecular Resources - European Research Infrastructure (BBMRI-ERIC). This vulnerability allows an attacker to access or modify unauthorised resources by manipulating requests that use the 'userID' parameter in '/api...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40676" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+      </div>
+      <a href="#top" class="back-top">⬆ Powrót na górę</a>
+    </div>
+
+    <div class="footer">
+      <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
+      <div>Raport wygenerowano: 2025-10-14 13:33:17</div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const filterHigh = document.getElementById('filterHigh');
+      const filterMedium = document.getElementById('filterMedium');
+      const filterLow = document.getElementById('filterLow');
+      const sorter = document.getElementById('sorter');
+      const toggleTheme = document.getElementById('toggleTheme');
+
+      const vulnGrid = document.querySelector('[data-grid="vulnerabilities"]');
+
+      function applyFilters() {
+        if (!vulnGrid) return;
+        const cards = Array.from(vulnGrid.children);
+        cards.forEach(card => {
+          const sev = card.getAttribute('data-sev'); // high | medium | low
+          if (!sev || sev === 'none') {
+            card.style.display = '';
+            return;
+          }
+          let show = true;
+          if (sev === 'high' && !filterHigh.checked) show = false;
+          if (sev === 'medium' && !filterMedium.checked) show = false;
+          if (sev === 'low' && !filterLow.checked) show = false;
+          card.style.display = show ? '' : 'none';
+        });
+      }
+
+      function applySort() {
+        const mode = sorter.value; // date_desc | date_asc | cvss_desc | cvss_asc
+        const grids = document.querySelectorAll('[data-grid]');
+        grids.forEach(grid => {
+          const cards = Array.from(grid.children);
+          let cmp = null;
+
+          if (mode === 'cvss_desc' || mode === 'cvss_asc') {
+            // tylko dla sekcji luk
+            if (grid.getAttribute('data-grid') !== 'vulnerabilities') return;
+            cmp = (a, b) => {
+              const ca = Number(a.getAttribute('data-cvss') || '-1');
+              const cb = Number(b.getAttribute('data-cvss') || '-1');
+              if (isNaN(ca) && isNaN(cb)) return 0;
+              if (isNaN(ca)) return 1;
+              if (isNaN(cb)) return -1;
+              return mode === 'cvss_desc' ? (cb - ca) : (ca - cb);
+            };
+          } else {
+            // data dla wszystkich sekcji
+            const key = (el) => {
+              const s = (el.getAttribute('data-date') || '').replaceAll('/', '-');
+              if (!s) return 0;
+              const t = Date.parse(s);
+              return isNaN(t) ? 0 : t;
+            };
+            cmp = (a, b) => mode === 'date_desc' ? (key(b) - key(a)) : (key(a) - key(b));
+          }
+
+          if (cmp) cards.sort(cmp).forEach(c => grid.appendChild(c));
+        });
+      }
+
+      filterHigh.addEventListener('change', applyFilters);
+      filterMedium.addEventListener('change', applyFilters);
+      filterLow.addEventListener('change', applyFilters);
+      sorter.addEventListener('change', () => { applySort(); });
+
+      toggleTheme.addEventListener('click', () => {
+        document.body.classList.toggle('matrix');
+        toggleTheme.textContent = document.body.classList.contains('matrix') ? 'Motyw: Neo Turquoise' : 'Motyw: Matrix Green';
+      });
+
+      applyFilters();
+      applySort();
+    })();
+  </script>
+</body>
+</html>
