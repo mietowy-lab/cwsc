@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2025-10-15</title>
+  <title>Raport Cyberbezpieczeństwa — 2025-10-16</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2025-10-15</p>
+      <p class="sub">Dane z RSS i API | 2025-10-16</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -138,8 +138,8 @@
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">58</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">9</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">354</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">421</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">355</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">422</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -454,8 +454,26 @@ DARKNAVY consistently focuses on the construction and breaching of drone securit
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (354)</h3>
+      <h3>🔓 Wykryte Luki (355)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-15" data-cvss="-1.0">
+  <div class="news-title">Open PLC and Planet vulnerabilities</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2025-10-15 17:39</span>
+  </div>
+  <div class="news-summary">Cisco Talos’ Vulnerability Discovery & Research team recently disclosed one vulnerability in the OpenPLC logic controller and four vulnerabilities in the Planet WGR-500 router.  For Snort coverage that can detect the exploitation of these vulnerabilities, download the latest rule sets from Snort.org...</div>
+  <a href="https://blog.talosintelligence.com/open-plc-and-planet-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-15" data-cvss="-1.0">
+  <div class="news-title">Exploit Development: Unveiling Windows ARM64 Pointer Authentication (PAC)</div>
+  <div class="news-meta">
+    <span class="badge">Connor Mcgarr</span>
+    <span>2025-10-15 00:00</span>
+  </div>
+  <div class="news-summary">Examining the implementation and implication of PAC in user-mode and kernel-mode on ARM64 Windows</div>
+  <a href="https://connormcgarr.github.io/windows-pac-arm64/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2025-10-14" data-cvss="-1.0">
   <div class="news-title">Microsoft Patch Tuesday for October 2025 — Snort rules and prominent vulnerabilities</div>
   <div class="news-meta">
@@ -547,148 +565,136 @@ LinkPro: eBPF rootkit analysis
   <div class="news-summary">Cisco Talos has confirmed that ransomware operators are leveraging Velociraptor, an open-source digital forensics and incident response (DFIR) tool.</div>
   <a href="https://blog.talosintelligence.com/velociraptor-leveraged-in-ransomware-attacks/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-08" data-cvss="-1.0">
-  <div class="news-title">ksmbd - Exploiting CVE-2025-37947 (3/3)</div>
-  <div class="news-meta">
-    <span class="badge">Doyensec</span>
-    <span>2025-10-08T00:00:00+02:00</span>
-  </div>
-  <div class="news-summary">Introduction
-This is the last of our posts about ksmbd. For the previous posts, see part1 and part2.
-Considering all discovered bugs and proof-of-concept exploits we reported, we had to select some suitable candidates for exploitation. In particular, we wanted to use something reported more recently...</div>
-  <a href="https://blog.doyensec.com/2025/10/08/ksmbd-3.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-08" data-cvss="-1.0">
-  <div class="news-title">Crafting a Full Exploit RCE from a Crash in Autodesk Revit RFA File Parsing</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2025-10-08 14:00</span>
-  </div>
-  <div class="news-summary">In April of 2025, my colleague Mat Powell was hunting for vulnerabilities in Autodesk Revit 2025. While fuzzing RFA files, he found the following crash (CVE-2025-5037 / ZDI-CAN-26922, addressed by Autodesk in July 2025):
-Is this an exploitable crash? From the debugger output crash point as seen abov...</div>
-  <a href="https://www.thezdi.com/blog/2025/10/6/crafting-a-full-exploit-rce-from-a-crash-in-autodesk-revit-rfa-file-parsing" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-08" data-cvss="-1.0">
-  <div class="news-title">LLM Poisoning [1/3] - Reading the Transformer's Thoughts</div>
-  <div class="news-meta">
-    <span class="badge">Synacktiv</span>
-    <span>2025-10-08 00:00</span>
-  </div>
-  <div class="news-summary">
-
-
-
- 
-
-
-
-
-
-LLM Poisoning [1/3] - Reading the Transformer's Thoughts
-
-
-08/10/2025
-
-
-Development
-Exploit
-Reverse-engineering
-
-
-                   Your local LLM can hack you.
-
-This three-part series reveals how tiny weights edits can implant stealthy backdoors that stay dormant in everyday use, then f...</div>
-  <a href="https://www.synacktiv.com/en/publications/llm-poisoning-13-reading-the-transformers-thoughts" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-08" data-cvss="6.5">
-  <div class="news-title">CVE-2025-10649 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-09" data-cvss="9.8">
+  <div class="news-title">CVE-2025-7526 - CRITICAL (9.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-08</span>
+    <span>2025-10-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-10649 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">The Welcart e-Commerce plugin for WordPress is vulnerable to SQL Injection via the cookie in all versions up to, and including, 2.11.21 due to insufficient escaping on the user supplied value and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attac...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10649" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-7526 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">The WP Travel Engine – Tour Booking Plugin – Tour Operator Software plugin for WordPress is vulnerable to arbitrary file deletion (via renaming) due to insufficient file path validation in the set_user_profile_image function in all versions up to, and including, 6.6.7. This makes it possible for una...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-7526" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-08" data-cvss="7.3">
-  <div class="news-title">CVE-2025-11471 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-09" data-cvss="9.8">
+  <div class="news-title">CVE-2025-7634 - CRITICAL (9.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-08</span>
+    <span>2025-10-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11471 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability was detected in SourceCodester Hotel and Lodge Management System 1.0. This affects an unknown function of the file /edit_customer.php. The manipulation of the argument ID results in sql injection. The attack may be performed from remote. The exploit is now public and may be used.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11471" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-7634 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">The WP Travel Engine – Tour Booking Plugin – Tour Operator Software plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 6.6.7 via the mode parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary .php files on the s...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-7634" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-08" data-cvss="7.3">
-  <div class="news-title">CVE-2025-11472 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-09" data-cvss="9.8">
+  <div class="news-title">CVE-2025-11522 - CRITICAL (9.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-08</span>
+    <span>2025-10-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11472 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A flaw has been found in SourceCodester Hotel and Lodge Management System 1.0. This impacts an unknown function of the file /edit_room.php. This manipulation of the argument ID causes sql injection. It is possible to initiate the attack remotely. The exploit has been published and may be used.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11472" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-11522 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">The Search & Go - Directory WordPress Theme theme for WordPress is vulnerable to Authentication Bypass via account takeover in all versions up to, and including, 2.7. This is due to insufficient user validation in the search_and_go_elated_check_facebook_user() function This makes it possible for una...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11522" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-08" data-cvss="7.3">
-  <div class="news-title">CVE-2025-11473 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-09" data-cvss="9.9">
+  <div class="news-title">CVE-2025-11539 - CRITICAL (9.9)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-08</span>
+    <span>2025-10-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11473 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability has been found in SourceCodester Hotel and Lodge Management System 1.0. Affected is an unknown function of the file /edit_curr.php. Such manipulation of the argument currsymbol leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11473" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-11539 | CVSS: 9.9 | Severity: CRITICAL</div>
+  <div class="news-summary">Grafana Image Renderer is vulnerable to remote code execution due to an arbitrary file write vulnerability. This is due to the fact that the /render/csv endpoint lacked validation of the filePath parameter that allowed an attacker to save a shared object to an arbitrary location that is then loaded ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11539" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-08" data-cvss="6.3">
-  <div class="news-title">CVE-2025-11474 - MEDIUM (6.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-09" data-cvss="7.5">
+  <div class="news-title">CVE-2025-10862 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-08</span>
+    <span>2025-10-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11474 | CVSS: 6.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A vulnerability was found in SourceCodester Hotel and Lodge Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /edit_booking.php. Performing manipulation of the argument Name results in sql injection. The attack can be initiated remotely. The exploit has be...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11474" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-10862 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The Popup builder with Gamification, Multi-Step Popups, Page-Level Targeting, and WooCommerce Triggers plugin for WordPress is vulnerable to SQL Injection in all versions up to, and including, 2.1.3. This is due to insufficient escaping on the 'id' parameter and lack of sufficient preparation on the...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10862" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-08" data-cvss="7.3">
-  <div class="news-title">CVE-2025-11475 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-39954 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-08</span>
+    <span>2025-10-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11475 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability was determined in projectworlds Advanced Library Management System 1.0. Affected by this issue is some unknown functionality of the file /view_member.php. Executing manipulation of the argument user_id can lead to sql injection. The attack can be launched remotely. The exploit has be...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11475" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-39954 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+clk: sunxi-ng: mp: Fix dual-divider clock rate readback
+
+When dual-divider clock support was introduced, the P divider offset was
+left out of the .recalc_rate readback function. This causes the clock
+rate to become bogus or even ze...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-39954" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-08" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-43821 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-39955 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-08</span>
+    <span>2025-10-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-43821 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Cross-site scripting (XSS) vulnerability in the Commerce Product Comparison Table widget in Liferay Portal 7.4.0 through 7.4.3.111, and Liferay DXP 2023.Q4.0 through 2023.Q4.5, 2023.Q3.1 through 2023.Q3.8, and 7.4 GA through update 92 allows remote attackers to inject arbitrary web script or HTML vi...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-43821" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-39955 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+tcp: Clear tcp_sk(sk)->fastopen_rsk in tcp_disconnect().
+
+syzbot reported the splat below where a socket had tcp_sk(sk)->fastopen_rsk
+in the TCP_ESTABLISHED state. [0]
+
+syzbot reused the server-side TCP Fast Open socket as a new cl...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-39955" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-08" data-cvss="5.4">
-  <div class="news-title">CVE-2025-60298 - MEDIUM (5.4)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-39956 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-08</span>
+    <span>2025-10-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-60298 | CVSS: 5.4 | Severity: MEDIUM</div>
-  <div class="news-summary">Novel-Plus up to 5.2.4 was discovered to contain a Stored Cross-Site Scripting (XSS) vulnerability via the /author/updateIndexName endpoint. This vulnerability allows authenticated attackers to inject malicious JavaScript code through the indexName parameter, which gets stored in the database and ex...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-60298" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-39956 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+igc: don't fail igc_probe() on LED setup error
+
+When igc_led_setup() fails, igc_probe() fails and triggers kernel panic
+in free_netdev() since unregister_netdev() is not called. [1]
+This behavior can be tested using fault-injection...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-39956" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-08" data-cvss="5.4">
-  <div class="news-title">CVE-2025-60299 - MEDIUM (5.4)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-39957 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-08</span>
+    <span>2025-10-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-60299 | CVSS: 5.4 | Severity: MEDIUM</div>
-  <div class="news-summary">Novel-Plus with 5.2.0 was discovered to contain a Stored Cross-Site Scripting (XSS) vulnerability via the /book/addCommentReply endpoint. An authenticated user can inject malicious JavaScript through the replyContent parameter when replying to a book comment. The payload is stored in the database an...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-60299" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-39957 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+wifi: mac80211: increase scan_ies_len for S1G
+
+Currently the S1G capability element is not taken into account
+for the scan_ies_len, which leads to a buffer length validation
+failure in ieee80211_prep_hw_scan() and subsequent WARN i...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-39957" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-39958 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-09</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-39958 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+iommu/s390: Make attach succeed when the device was surprise removed
+
+When a PCI device is removed with surprise hotplug, there may still be
+attempts to attach the device to the default domain as part of tear down
+via (__iommu_rele...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-39958" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -698,7 +704,7 @@ This three-part series reveals how tiny weights edits can implant stealthy back
       <strong>Źródła danych:</strong></p>
             <p>RSS: CERT.PL, Niebezpiecznik, Bleeping Computer, Security Affairs, Krebs Security, Threatpost, Dark Reading, InfoSecurity Magazine, Security Week, Cybersecurity News, HackRead, The Hacker News, CISA, SANS</p>
             <p>API: National Vulnerability Database (NVD), VirusTotal, Shodan, AlienVault OTX</p>
-            <p>Raport przygotowany i wygenerowany przez Marek Ziemniewicz: 2025-10-15 14:10:39</div>
+            <p>Raport przygotowany i wygenerowany przez Marek Ziemniewicz: 2025-10-16 08:02:33</div>
     </div>
   </div>
 
