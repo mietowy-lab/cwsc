@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2025-10-21</title>
+  <title>Raport Cyberbezpieczeństwa — 2025-10-22</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -119,7 +119,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2025-10-21</p>
+      <p class="sub">Dane z RSS i API | 2025-10-22</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -138,9 +138,9 @@
 
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">60</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">10</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">353</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">423</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">11</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">344</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">415</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -364,8 +364,17 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (10)</h3>
+      <h3>⚠️ Nowe Zagrożenia (11)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2025-10-21" data-cvss="-1">
+  <div class="news-title">Reducing abuse of Microsoft 365 Exchange Online’s Direct Send</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2025-10-21 10:00</span>
+  </div>
+  <div class="news-summary">Cisco Talos has observed increased activity by malicious actors leveraging Direct Send as part of phishing campaigns. Here's how to strengthen your defenses.</div>
+  <a href="https://blog.talosintelligence.com/reducing-abuse-of-microsoft-365-exchange-onlines-direct-send/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2025-10-16" data-cvss="-1">
   <div class="news-title">Ransomware attacks and how victims respond</div>
   <div class="news-meta">
@@ -463,7 +472,7 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (353)</h3>
+      <h3>🔓 Wykryte Luki (344)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
 <div class="card news-item vulnerability" data-sev="low" data-date="2025-10-20" data-cvss="-1.0">
   <div class="news-title">Truffle Security Co. TruffleHog git arbitrary code execution vulnerability</div>
@@ -473,15 +482,6 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
   </div>
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2243" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-16" data-cvss="-1.0">
-  <div class="news-title">Pwn2Own Automotive Returns to Tokyo with Expanded Chargers and More!</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2025-10-16 15:00</span>
-  </div>
-  <div class="news-summary">If you just want to read the rules, click here. Now entering its third year, Pwn2Own Automotive returns to Automotive World in Tokyo on January 21 – 23, 2026. Over the last two years, we’ve awarded more than $2,000,000 for the latest in automotive exploitations, and this year looks to be even better...</div>
-  <a href="https://www.thezdi.com/blog/2025/10/16/pwn2own-automotive-returns-to-tokyo-with-expanded-chargers-and-more" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2025-10-16" data-cvss="-1.0">
   <div class="news-title">Denial of Fuzzing: Rust in the Windows kernel</div>
@@ -546,129 +546,125 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
   <div class="news-summary">Examining the implementation and implication of PAC in user-mode and kernel-mode on ARM64 Windows</div>
   <a href="https://connormcgarr.github.io/windows-pac-arm64/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-14" data-cvss="-1.0">
-  <div class="news-title">Microsoft Patch Tuesday for October 2025 — Snort rules and prominent vulnerabilities</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2025-10-14 20:39</span>
-  </div>
-  <div class="news-summary">Microsoft has released its monthly security update for October 2025, addressing 175 Microsoft CVEs and 21 non-Microsoft CVEs. Among these, 17 vulnerabilities are considered critical and 11 are flagged as important and considered more likely to be exploited.</div>
-  <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-october-2025-snort-rules-and-prominent-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-14" data-cvss="-1.0">
-  <div class="news-title">The October 2025 Security Update Review</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2025-10-14 18:38</span>
-  </div>
-  <div class="news-summary">I’m currently in Cork, Ireland as we prepare for Pwn2Own Ireland, but that doesn’t stop patch Tuesday from coming. Take a break from your scheduled activities and let’s take a look at the latest security offerings from Adobe and Microsoft. IIf you’d rather watch the full video recap covering the ent...</div>
-  <a href="https://www.thezdi.com/blog/2025/10/14/the-october-2025-security-update-review" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-14" data-cvss="-1.0">
-  <div class="news-title">Depicting an iOS Vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Dfsec Research</span>
-    <span>2025-10-14 10:00</span>
-  </div>
-  <div class="news-summary">On March 31, 2025, Apple released iOS 18.4, reportedly fixing 76 vulnerabilities. One of those vulnerabilities was in IOGPUFamily, a kernel driver responsible for handling communication with the GPU. Apple describes the issue as an out-of-bounds write:
-
-IOGPUFamily
-Impact: An app may be able to caus...</div>
-  <a href="https://blog.dfsec.com/ios/2025/10/14/Depicting-an-iOS-Vulnerability/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-14" data-cvss="-1.0">
-  <div class="news-title">About</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2025-10-14 08:33</span>
-  </div>
-  <div class="news-summary">DARKNAVY, headquartered in Singapore and Shanghai, is an independent cybersecurity research and services organization. We are pioneers in AVSS (Adversarial Vulnerability Scoring System) and quantitative security, as well as the founding team behind the international hacking competition GEEKCON.
-Foun...</div>
-  <a href="https://www.darknavy.org/about/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-14" data-cvss="-1.0">
-  <div class="news-title">LinkPro: eBPF rootkit analysis</div>
-  <div class="news-meta">
-    <span class="badge">Synacktiv</span>
-    <span>2025-10-14 00:00</span>
-  </div>
-  <div class="news-summary">
-
-
-
- 
-
-
-
-
-
-LinkPro: eBPF rootkit analysis
-
-
-14/10/2025
-
-                   During a digital investigation related to the compromise of an AWS-hosted infrastructure, a stealthy backdoor targeting GNU/Linux systems was discovered. This backdoor features functionalities relying on the installation of t...</div>
-  <a href="https://www.synacktiv.com/en/publications/linkpro-ebpf-rootkit-analysis" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-14" data-cvss="6.1">
-  <div class="news-title">CVE-2025-10357 - MEDIUM (6.1)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-15" data-cvss="5.5">
+  <div class="news-title">CVE-2025-10406 - MEDIUM (5.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-14</span>
+    <span>2025-10-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-10357 | CVSS: 6.1 | Severity: MEDIUM</div>
-  <div class="news-summary">The Simple SEO WordPress plugin before 2.0.32 does not sanitise and escape some parameters when outputing them in the page, which could allow users with a role as low as contributor to perform Cross-Site Scripting attacks.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10357" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-10406 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">The BlindMatrix e-Commerce WordPress plugin before 3.1 does not validate some shortcode attributes before using them to generate paths passed to include function/s, allowing any authenticated users, such as contributors, to perform LFI attacks.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10406" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-14" data-cvss="4.3">
-  <div class="news-title">CVE-2025-10732 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-15" data-cvss="4.3">
+  <div class="news-title">CVE-2025-11176 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-14</span>
+    <span>2025-10-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-10732 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The SureForms – Drag and Drop Form Builder for WordPress plugin for WordPress is vulnerable to Sensitive Information Disclosure in all versions up to, and including, 1.12.1. This is due to improper access control implementation on the '/wp-json/sureforms/v1/srfm-global-settings' REST API endpoint. T...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10732" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-11176 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The Quick Featured Images plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 13.7.2 via the qfi_set_thumbnail and qfi_delete_thumbnail AJAX actions due to missing validation on a user controlled key. This makes it possible for authenticated a...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11176" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-14" data-cvss="3.1">
-  <div class="news-title">CVE-2025-11731 - LOW (3.1)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-15" data-cvss="7.8">
+  <div class="news-title">CVE-2025-26859 - HIGH (7.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-14</span>
+    <span>2025-10-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11731 | CVSS: 3.1 | Severity: LOW</div>
-  <div class="news-summary">A flaw was found in the exsltFuncResultComp() function of libxslt, which handles EXSLT <func:result> elements during stylesheet parsing. Due to improper type handling, the function may treat an XML document node as a regular XML element node, resulting in a type confusion. This can cause unexpected ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11731" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-26859 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">RemoteView PC Application Console versions prior to 6.0.2 contain an uncontrolled search path element vulnerability. If a crafted DLL is placed in the same folder with the affected product, it may cause an arbitrary code execution.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-26859" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-14" data-cvss="8.6">
-  <div class="news-title">CVE-2025-59889 - HIGH (8.6)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-15" data-cvss="7.8">
+  <div class="news-title">CVE-2025-26860 - HIGH (7.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-14</span>
+    <span>2025-10-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-59889 | CVSS: 8.6 | Severity: HIGH</div>
-  <div class="news-summary">Improper authentication of library files in the Eaton IPP software installer could lead to arbitrary code execution of an attacker with the access to the software package.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59889" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-26860 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">RemoteCall Remote Support Program (for Operator) versions prior to 5.1.0 contain an uncontrolled search path element vulnerability. If a crafted DLL is placed in the same folder with the affected product, it may cause an arbitrary code execution.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-26860" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-14" data-cvss="3.8">
-  <div class="news-title">CVE-2025-8594 - LOW (3.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-15" data-cvss="7.8">
+  <div class="news-title">CVE-2025-26861 - HIGH (7.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-14</span>
+    <span>2025-10-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-8594 | CVSS: 3.8 | Severity: LOW</div>
-  <div class="news-summary">The Pz-LinkCard WordPress plugin before 2.5.7 does not validate a parameter before making a request to it, which could allow users with a role as low as Contributor to perform SSRF attack.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-8594" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-26861 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">RemoteCall Remote Support Program (for Operator) versions prior to 5.3.0 contain an uncontrolled search path element vulnerability. If a crafted DLL is placed in the same folder with the affected product, it may cause an arbitrary code execution.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-26861" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-14" data-cvss="7.5">
-  <div class="news-title">CVE-2025-41703 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-15" data-cvss="6.8">
+  <div class="news-title">CVE-2025-31702 - MEDIUM (6.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-14</span>
+    <span>2025-10-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-41703 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">An unauthenticated remote attacker can cause a Denial of Service by turning off the output of the UPS via Modbus command.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41703" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-31702 | CVSS: 6.8 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability exists in certain Dahua embedded products. Third-party malicious attacker with obtained normal user credentials could exploit the vulnerability to access certain data which are restricted to admin privileges, such as system-sensitive files through specific HTTP request. This may caus...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-31702" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-15" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-55080 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-15</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-55080 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In Eclipse ThreadX before 6.4.3, when memory protection is enabled, syscall parameters verification wasn't enough, allowing an attacker to obtain an arbitrary memory read/write.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-55080" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-15" data-cvss="7.3">
+  <div class="news-title">CVE-2025-6042 - HIGH (7.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-15</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-6042 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">The Lisfinity Core - Lisfinity Core plugin used for pebas® Lisfinity WordPress theme plugin for WordPress is vulnerable to privilege escalation in all versions up to, and including, 1.4.0. This is due to the plugin assigning the editor role by default. While limitations with respect to capabilities ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-6042" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-15" data-cvss="6.4">
+  <div class="news-title">CVE-2025-8561 - MEDIUM (6.4)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-15</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-8561 | CVSS: 6.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The Ova Advent plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's shortcodes in all versions up to, and including, 1.1.7 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with co...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-8561" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-15" data-cvss="6.4">
+  <div class="news-title">CVE-2025-11160 - MEDIUM (6.4)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-15</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-11160 | CVSS: 6.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The WPBakery Page Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Custom JS module in all versions up to, and including, 8.6.1. This is due to insufficient input sanitization and output escaping of user-supplied JavaScript code in the Custom JS module. This makes it...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11160" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-15" data-cvss="6.4">
+  <div class="news-title">CVE-2025-11161 - MEDIUM (6.4)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-15</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-11161 | CVSS: 6.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The WPBakery Page Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the vc_custom_heading shortcode in all versions up to, and including, 8.6.1. This is due to insufficient restriction of allowed HTML tags and improper sanitization of user-supplied attributes in the font_...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11161" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-15" data-cvss="7.5">
+  <div class="news-title">CVE-2025-11501 - HIGH (7.5)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-15</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-11501 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The Dynamically Display Posts plugin for WordPress is vulnerable to SQL Injection via the 'tax_query' parameter in all versions up to, and including, 1.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11501" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -678,7 +674,7 @@ LinkPro: eBPF rootkit analysis
       <strong>Źródła danych:</strong></p>
             <p>RSS: CERT.PL, Niebezpiecznik, Bleeping Computer, Security Affairs, Krebs Security, Threatpost, Dark Reading, InfoSecurity Magazine, Security Week, Cybersecurity News, HackRead, The Hacker News, CISA, SANS</p>
             <p>API: National Vulnerability Database (NVD), VirusTotal, Shodan, AlienVault OTX</p>
-            <p>Raport przygotowany i wygenerowany przez Marek Ziemniewicz: 2025-10-21 08:02:33</div>
+            <p>Raport przygotowany i wygenerowany przez Marek Ziemniewicz: 2025-10-22 08:02:55</div>
     </div>
   </div>
 
