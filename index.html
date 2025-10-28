@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2025-10-25</title>
+  <title>Raport Cyberbezpieczeństwa — 2025-10-28</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -119,7 +119,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2025-10-25</p>
+      <p class="sub">Dane z RSS i API | 2025-10-28</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,18 +137,27 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">61</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">62</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">11</a></div><div class="kpi-label">Zagrożenia</div></div>
         <div class="card"><div class="kpi-num"><a href="#vulnerabilities">352</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">424</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">425</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (61)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (62)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2025-10-27" data-cvss="-1">
+  <div class="news-title">27th October – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2025-10-27 10:44</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 27th October, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Toys “R” Us Canada has suffered a data breach that resulted in stolen customer records being leaked on the dark web. The compromised data affects an u...</div>
+  <a href="https://research.checkpoint.com/2025/27th-october-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2025-10-24" data-cvss="-1">
   <div class="news-title">Think passwordless is too complicated? Let's clear that up</div>
   <div class="news-meta">
@@ -347,15 +356,6 @@ On February 21, 2025, the cryptocurrency exchange Bybit experienced the most sig
 The DARKNA...</div>
   <a href="https://www.darknavy.org/darknavy_insight/reconstructing_the_1.5_billion_bybit_hack_by_north_korean_actors/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-03-24" data-cvss="-1">
-  <div class="news-title">Pwning Millions of Smart Weighing Machines with API and Hardware Hacking</div>
-  <div class="news-meta">
-    <span class="badge">Spaceraccoon</span>
-    <span>2025-03-24 00:03</span>
-  </div>
-  <div class="news-summary">Why hack one device, when you can hack all of them? By reverse-engineering and finding vulnerabilities in user-machine association flows for smart weighing machines, I was able to take over millions of internet-connected health devices. Hardware and web security are two halves of modern smart device...</div>
-  <a href="https://spaceraccoon.dev/pwning-millions-smart-weighing-machines-api-hardware-hacking/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -365,6 +365,15 @@ The DARKNA...</div>
     <div class="section" id="threats">
       <h3>⚠️ Nowe Zagrożenia (11)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2025-10-27" data-cvss="-1">
+  <div class="news-title">Uncovering Qilin attack methods exposed through multiple cases</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2025-10-27 02:00</span>
+  </div>
+  <div class="news-summary">Cisco Talos investigated the Qilin ransomware group, uncovering its frequent attacks on the manufacturing sector, use of legitimate tools for credential theft and data exfiltration, and sophisticated methods for lateral movement, evasion, and persistence.</div>
+  <a href="https://blog.talosintelligence.com/uncovering-qilin-attack-methods-exposed-through-multiple-cases/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2025-10-23" data-cvss="-1">
   <div class="news-title">Dissecting YouTube’s Malware Distribution Network</div>
   <div class="news-meta">
@@ -409,15 +418,6 @@ The DARKNA...</div>
   </div>
   <div class="news-summary">Nimbus Manticore Deploys New Malware Targeting Europe Key Findings Introduction Since early 2025, Check Point Research (CPR) has tracked waves of Nimbus Manticore activity. Known as UNC1549 or Smoke Sandstorm, Nimbus Manticore is a mature Iran-nexus APT group that primarily targets aerospace and def...</div>
   <a href="https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2025-09-16" data-cvss="-1">
-  <div class="news-title">Under the Pure Curtain: From RAT to Builder to Coder</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2025-09-16 12:57</span>
-  </div>
-  <div class="news-summary">Research by: Antonis Terefos (@Tera0017) Key Points Introduction The Pure malware family is a suite of malicious tools developed and sold by the author known as PureCoder. This suite includes PureHVNC RAT (a remote administration tool and predecessor to PureRAT), PureCrypter (a malware obfuscator), ...</div>
-  <a href="https://research.checkpoint.com/2025/under-the-pure-curtain-from-rat-to-builder-to-coder/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2024-08-19" data-cvss="-1">
   <div class="news-title">Advisory Blog Series: Ransomware Readiness Part 2 – What Does it Really Mean to be Ready?</div>
@@ -473,6 +473,43 @@ The DARKNA...</div>
     <div class="section" id="vulnerabilities">
       <h3>🔓 Wykryte Luki (352)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-27" data-cvss="-1.0">
+  <div class="news-title">Python - Zip64 Locator Offset Vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Google Security Research Advisories</span>
+    <span>2025-10-27 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://github.com/google/security-research/security/advisories/GHSA-hhv7-p4pg-wm6p" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-27" data-cvss="-1.0">
+  <div class="news-title">Paint it blue: Attacking the bluetooth stack</div>
+  <div class="news-meta">
+    <span class="badge">Synacktiv</span>
+    <span>2025-10-27 00:00</span>
+  </div>
+  <div class="news-summary">
+
+
+
+ 
+
+
+
+
+
+Paint it blue: Attacking the bluetooth stack
+
+
+27/10/2025
+
+
+Exploit
+
+
+                   Bluetooth has always been an attractive target to attackers since it is present almost everywhere (TV, automotive charger, connected fridge, etc.). This is especially true on mobile devices, as it run...</div>
+  <a href="https://www.synacktiv.com/en/publications/paint-it-blue-attacking-the-bluetooth-stack" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2025-10-23" data-cvss="-1.0">
   <div class="news-title">IR Trends Q3 2025: ToolShell attacks dominate, highlighting criticality of segmentation and rapid response</div>
   <div class="news-meta">
@@ -502,174 +539,155 @@ That’s all folks! Pwn2Own Ireland has come to a close. In total,...</div>
   <div class="news-summary">Welcome to Day Two of Pwn2Own Ireland 2025. Yesterday, we awarded $522,500 for 34 unique 0-day bugs. The Summoning Team took a slim lead in the Master of Pwn, but big changes could happen today as we have 19 more attempts today. We’ll be updating this blog with results as they come in, so refresh of...</div>
   <a href="https://www.thezdi.com/blog/2025/10/22/pwn2own-ireland-2025-day-two-results" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-20" data-cvss="-1.0">
-  <div class="news-title">Truffle Security Co. TruffleHog git arbitrary code execution vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2025-10-20 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2243" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="5.3">
-  <div class="news-title">CVE-2025-11738 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-21" data-cvss="7.5">
+  <div class="news-title">CVE-2025-11949 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11738 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Media Library Assistant plugin for WordPress is vulnerable to limited file reading in all versions up to, and including, 3.29 via the mla-stream-image.php file. This makes it possible for unauthenticated attackers to read the contents of arbitrary ai/eps/pdf/ps files on the server, which can con...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11738" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-11949 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">EasyFlow .NET and EasyFlow AiNet, developed by Digiwin, has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to obtain database administrator credentials via a specific functionality.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11949" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="4.3">
-  <div class="news-title">CVE-2025-11742 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-21" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-12004 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11742 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The WPC Smart Wishlist for WooCommerce plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the 'wishlist_quickview' AJAX action in all versions up to, and including, 5.0.4. This makes it possible for authenticated attackers, with Subscriber-level ac...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11742" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-12004 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Incorrect Permission Assignment for Critical Resource vulnerability in The Wikimedia Foundation Mediawiki - Lockdown Extension allows Privilege Abuse. Fixed in Mediawiki Core Action APIThis issue affects Mediawiki - Lockdown Extension: from master before 1.42.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-12004" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="6.4">
-  <div class="news-title">CVE-2025-11857 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-21" data-cvss="5.4">
+  <div class="news-title">CVE-2025-26392 - MEDIUM (5.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11857 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The XX2WP Integration Tools plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mxp_fb2wp_display_embed' shortcode in all versions up to, and including, 1.9.9. This is due to the plugin not properly sanitizing user input and output of the 'post_id' parameter. This makes it pos...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11857" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-26392 | CVSS: 5.4 | Severity: MEDIUM</div>
+  <div class="news-summary">SolarWinds Observability Self-Hosted is susceptible to SQL injection vulnerability that may display sensitive data using a low-level account. This vulnerability requires authentication from a low-privilege account.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-26392" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-18" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-11937 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-21" data-cvss="6.1">
+  <div class="news-title">CVE-2025-10612 - MEDIUM (6.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11937 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in The Wikimedia Foundation Mediawiki - SecurePoll Extension allows Stored XSS.This issue affects Mediawiki - SecurePoll Extension: master.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11937" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-10612 | CVSS: 6.1 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in giSoft Information Technologies City Guide allows Reflected XSS.This issue affects City Guide: before 1.4.45.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10612" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="6.4">
-  <div class="news-title">CVE-2025-10006 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-21" data-cvss="3.3">
+  <div class="news-title">CVE-2025-5496 - LOW (3.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-10006 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The WPBakery Page Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'rev_slider_vc' shortcode in all versions up to, and including, 8.6 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenti...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10006" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-5496 | CVSS: 3.3 | Severity: LOW</div>
+  <div class="news-summary">ZohoCorp ManageEngine Endpoint Central versions earlier than 11.4.2508.14, 11.4.2516.06, and 11.4.2518.01 are affected by an arbitrary file deletion vulnerability in the agent setup component.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-5496" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="4.9">
-  <div class="news-title">CVE-2025-10187 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-21" data-cvss="5.2">
+  <div class="news-title">CVE-2025-7473 - MEDIUM (5.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-10187 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">The GSpeech TTS – WordPress Text To Speech Plugin plugin for WordPress is vulnerable to SQL Injection via the 'field' parameter in all versions up to, and including, 3.17.13 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  Thi...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10187" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-7473 | CVSS: 5.2 | Severity: MEDIUM</div>
+  <div class="news-summary">Zohocorp ManageEngine EndPoint Central versions 11.4.2516.1 and prior are vulnerable to XML Injection.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-7473" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="6.4">
-  <div class="news-title">CVE-2025-11270 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-21" data-cvss="8.8">
+  <div class="news-title">CVE-2025-10639 - HIGH (8.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11270 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Gutenberg Essential Blocks – Page Builder for Gutenberg Blocks & Patterns plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'titleTag' attribute in all versions up to, and including, 5.7.1 due to insufficient input sanitization and output escaping. This makes it possible ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11270" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-10639 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">The WorkExaminer Professional server installation comes with an FTP server that is used to receive the client logs on TCP port 12304. An attacker with network access to this port can use weak hardcoded credentials to login to the FTP server and modify or read data, log files and gain remote code exe...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10639" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="6.5">
-  <div class="news-title">CVE-2025-11372 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-21" data-cvss="9.8">
+  <div class="news-title">CVE-2025-10640 - CRITICAL (9.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11372 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">The LearnPress – WordPress LMS Plugin plugin for WordPress is vulnerable to modification of data in all versions up to, and including, 4.2.9.2. This is due to missing capability checks on the Admin Tools REST endpoints which are registered with permission_callback set to __return_true. This makes it...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11372" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-10640 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">An unauthenticated attacker with access to TCP port 12306 of the WorkExaminer server can exploit missing server-side authentication checks to bypass the login prompt in the WorkExaminer Professional console to gain administrative access to the WorkExaminer server and therefore all sensitive monitori...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10640" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-18" data-cvss="9.8">
-  <div class="news-title">CVE-2025-11391 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-21" data-cvss="7.1">
+  <div class="news-title">CVE-2025-10641 - HIGH (7.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11391 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The PPOM – Product Addons & Custom Fields for WooCommerce plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the image cropper functionality in all versions up to, and including, 33.0.15. This makes it possible for unauthenticated attackers to upload ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11391" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-10641 | CVSS: 7.1 | Severity: HIGH</div>
+  <div class="news-summary">All WorkExaminer Professional traffic between monitoring client, console and server is transmitted as plain text. This allows an attacker with access to the network to read the transmitted sensitive data. An attacker can also freely modify the data on the wire. The monitoring clients transmit their ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10641" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="4.3">
-  <div class="news-title">CVE-2025-11510 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-21" data-cvss="8.3">
+  <div class="news-title">CVE-2025-9428 - HIGH (8.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11510 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The FileBird – WordPress Media Library Folders & File Manager plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the /filebird/v1/fb-wipe-clear-all-data function in all versions up to, and including, 6.4.9. This makes it possible for authenti...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11510" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-9428 | CVSS: 8.3 | Severity: HIGH</div>
+  <div class="news-summary">Zohocorp ManageEngine Analytics Plus versions 6171 and prior are vulnerable to authenticated SQL Injection via the key update api.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9428" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-18" data-cvss="7.5">
-  <div class="news-title">CVE-2025-11517 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-21" data-cvss="8.5">
+  <div class="news-title">CVE-2025-10020 - HIGH (8.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11517 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">The Event Tickets and Registration plugin for WordPress is vulnerable to payment bypass in all versions up to, and including, 5.26.5. This is due to the /wp-json/tribe/tickets/v1/commerce/free/order endpoint not verifying that a ticket type should be free allowing the user to bypass the payment. Thi...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11517" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-10020 | CVSS: 8.5 | Severity: HIGH</div>
+  <div class="news-summary">Zohocorp ManageEngine ADManager Plus version before 8024 are vulnerable to authenticated command injection vulnerability in the Custom Script component.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10020" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="4.3">
-  <div class="news-title">CVE-2025-11519 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-21" data-cvss="6.5">
+  <div class="news-title">CVE-2025-6239 - MEDIUM (6.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11519 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Optimole – Optimize Images | Convert WebP & AVIF | CDN & Lazy Load | Image Optimization plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 4.1.0 via the /wp-json/optml/v1/move_image REST API endpoint due to missing validation on a user co...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11519" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-6239 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Zohocorp ManageEngine Applications Manager versions 176800 and below are vulnerable to information disclosure in File/Directory monitor.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-6239" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-18" data-cvss="7.5">
-  <div class="news-title">CVE-2025-11691 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-21" data-cvss="8.2">
+  <div class="news-title">CVE-2025-11151 - HIGH (8.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11691 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">The PPOM – Product Addons & Custom Fields for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the PPOM_Meta::get_fields_by_id() function in all versions up to, and including, 33.0.15 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11691" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-11151 | CVSS: 8.2 | Severity: HIGH</div>
+  <div class="news-summary">Exposure of Sensitive Information to an Unauthorized Actor, Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in Beyaz Bilgisayar Software Design Industry and Trade Ltd. Co. CityPLus allows Detect Unpublicized Web Pages.This issue affects CityPLus: before V24.2...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11151" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="5.3">
-  <div class="news-title">CVE-2025-11703 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-21" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-11624 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11703 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The WP Go Maps (formerly WP Google Maps) plugin for WordPress is vulnerable to Cache Poisoning in all versions up to, and including, 9.0.48. This is due to the plugin not serving cached data from server-side responses and instead relying on user-input. This makes it possible for unauthenticated atta...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11703" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-11624 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Potential stack buffer overwrite on the SFTP server side when receiving a malicious packet that has a handle size larger than the system handle or file descriptor size, but smaller than max handle size allowed.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11624" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="5.3">
-  <div class="news-title">CVE-2025-11741 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-21" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-11625 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
+    <span>2025-10-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11741 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The WPC Smart Quick View for WooCommerce plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 4.2.5 via the 'woosq_quickview' AJAX endpoint due to insufficient restrictions on which posts can be included. This makes it possible for unauthenticated attacker...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11741" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-18" data-cvss="6.4">
-  <div class="news-title">CVE-2025-9562 - MEDIUM (6.4)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2025-10-18</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2025-9562 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Redirection for Contact Form 7 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's qs_date shortcode in all versions up to, and including, 3.2.6 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authe...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9562" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-11625 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Improper host authentication vulnerability in wolfSSH version 1.4.20 and earlier clients that allows authentication bypass and leaking of clients credentials.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11625" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -679,7 +697,7 @@ That’s all folks! Pwn2Own Ireland has come to a close. In total,...</div>
       <strong>Źródła danych:</strong></p>
             <p>RSS: CERT.PL, Niebezpiecznik, Bleeping Computer, Security Affairs, Krebs Security, Threatpost, Dark Reading, InfoSecurity Magazine, Security Week, Cybersecurity News, HackRead, The Hacker News, CISA, SANS</p>
             <p>API: National Vulnerability Database (NVD), VirusTotal, Shodan, AlienVault OTX</p>
-            <p>Raport przygotowany i wygenerowany przez Marek Z: 2025-10-25 08:02:31</div>
+            <p>Raport przygotowany i wygenerowany przez Marek Z: 2025-10-28 08:03:05</div>
     </div>
   </div>
 
