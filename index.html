@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2025-10-29</title>
+  <title>Raport Cyberbezpieczeństwa — 2025-10-30</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -119,7 +119,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2025-10-29</p>
+      <p class="sub">Dane z RSS i API | 2025-10-30</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,9 +137,9 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">63</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">64</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">11</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">351</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">350</a></div><div class="kpi-label">Luki</div></div>
         <div class="card"><div class="kpi-num"><a href="#top">425</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
@@ -147,8 +147,18 @@
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (63)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (64)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2025-10-29" data-cvss="-1">
+  <div class="news-title">How a "Fixed" IDOR and an Empty String Led to 5 Million+ File Leaks</div>
+  <div class="news-meta">
+    <span class="badge">Hacktus</span>
+    <span>2025-10-29 10:48</span>
+  </div>
+  <div class="news-summary">When I start looking at a target in finance, medical, etc, I always go for the most valuable data. In this case, on a major application we'll call "Redacted Corp," that meant file uploads. Invoices, personal documents, signatures... all the PII.
+Part...</div>
+  <a href="https://hacktus.tech/how-a-fixed-idor-and-an-empty-string-led-to-5-million-file-leaks" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2025-10-28" data-cvss="-1">
   <div class="news-title">Claude Pirate: Abusing Anthropic's File API For Data Exfiltration</div>
   <div class="news-meta">
@@ -343,16 +353,6 @@ In the first three blog posts of this series, I sought to outline what the Windo
   <div class="news-summary">Tired of repeating yourself? Automate your web security audit trail. In this post I'll introduce a new Burp AI extension that takes the boring bits out of your pen test. Web security testing can be a</div>
   <a href="https://portswigger.net/research/document-my-pentest" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-03-30" data-cvss="-1">
-  <div class="news-title">If the Person Who Finds a Web3 Hardware Wallet is a Hacker</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2025-03-30 02:00</span>
-  </div>
-  <div class="news-summary">In 2024, Web3 security incidents caused by private key leaks have surged, resulting in estimated financial losses exceeding $855 million.
-Private keys function as the sole credentials for blockchain accounts, controlling access to all associated on-chain assets like cryptocurrencies and NFTs. Due to...</div>
-  <a href="https://www.darknavy.org/blog/if_the_person_who_finds_a_web3_hardware_wallet_is_a_hacker/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -468,7 +468,7 @@ Private keys function as the sole credentials for blockchain accounts, controlli
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (351)</h3>
+      <h3>🔓 Wykryte Luki (350)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
 <div class="card news-item vulnerability" data-sev="low" data-date="2025-10-28" data-cvss="-1.0">
   <div class="news-title">GCC Productions Inc. Fade In XML parser out-of-bounds write vulnerability</div>
@@ -545,144 +545,147 @@ Exploit
 That’s all folks! Pwn2Own Ireland has come to a close. In total,...</div>
   <a href="https://www.thezdi.com/blog/2025/10/23/pwn2own-ireland-2025-day-three-and-master-of-pwn" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-22" data-cvss="-1.0">
-  <div class="news-title">Pwn2Own Ireland 2025 - Day Two Results</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2025-10-22 10:19</span>
-  </div>
-  <div class="news-summary">Welcome to Day Two of Pwn2Own Ireland 2025. Yesterday, we awarded $522,500 for 34 unique 0-day bugs. The Summoning Team took a slim lead in the Master of Pwn, but big changes could happen today as we have 19 more attempts today. We’ll be updating this blog with results as they come in, so refresh of...</div>
-  <a href="https://www.thezdi.com/blog/2025/10/22/pwn2own-ireland-2025-day-two-results" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-22" data-cvss="4.3">
-  <div class="news-title">CVE-2025-10570 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-23" data-cvss="5.4">
+  <div class="news-title">CVE-2025-10727 - MEDIUM (5.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-10570 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Flexible Refund and Return Order for WooCommerce plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 1.0.38 via the save_refund_request() function. This makes it possible for authenticated attackers, with subscriber-level access and above, to submit ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10570" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-10727 | CVSS: 5.4 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in ArkSigner Software and Hardware Inc. AcBakImzala allows Reflected XSS.This issue affects AcBakImzala: before v5.1.4.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10727" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-22" data-cvss="4.3">
-  <div class="news-title">CVE-2025-10588 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-23" data-cvss="7.6">
+  <div class="news-title">CVE-2025-10914 - HIGH (7.6)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-10588 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The PixelYourSite – Your smart PIXEL (TAG) & API Manager plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 11.1.2. This is due to missing or incorrect nonce validation on the adminEnableGdprAjax() function. This makes it possible for unauthenticat...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10588" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-10914 | CVSS: 7.6 | Severity: HIGH</div>
+  <div class="news-summary">Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Proliz Software Ltd. Co. OBS (Student Affairs Information System) allows Reflected XSS.This issue affects OBS (Student Affairs Information System): before V26.0401.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10914" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-22" data-cvss="4.4">
-  <div class="news-title">CVE-2025-12033 - MEDIUM (4.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-23" data-cvss="7.5">
+  <div class="news-title">CVE-2025-12105 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-12033 | CVSS: 4.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Simple Banner – Easily add multiple Banners/Bars/Notifications/Announcements to the top or bottom of your website plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'pro_version_activation_code' parameter in all versions up to, and including, 3.0.10 due to insufficient inp...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-12033" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-12105 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">A flaw was found in the asynchronous message queue handling of the libsoup library, widely used by GNOME and WebKit-based applications to manage HTTP/2 communications. When network operations are aborted at specific timing intervals, an internal message queue item may be freed twice due to missing s...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-12105" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-22" data-cvss="8.8">
-  <div class="news-title">CVE-2025-41719 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-23" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-9980 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-41719 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">A low privileged remote attacker can corrupt the webserver users storage on the device by setting a sequence of unsupported characters which leads to deletion of all previously configured users and the creation of the default Administrator with a known default password.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41719" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-9980 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">QuickCMS is vulnerable to multiple Stored XSS in page editor functionality (pages-form). Malicious attacker with admin privileges can inject arbitrary HTML and JS into website, which will be rendered/executed when visiting edited page. By default admin user is not able to add JavaScript into the web...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9980" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-22" data-cvss="4.3">
-  <div class="news-title">CVE-2025-41720 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-23" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-9981 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-41720 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A low privileged remote attacker can upload arbitrary data masked as a png file to the affected device using the webserver API because only the file extension is verified.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41720" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-9981 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">QuickCMS is vulnerable to multiple Stored XSS in slider editor functionality (sliders-form). Malicious attacker with admin privileges can inject arbitrary HTML and JS into website, which will be rendered/executed on every page. By default admin user is not able to add JavaScript into the website.
+
+T...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9981" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-22" data-cvss="2.7">
-  <div class="news-title">CVE-2025-41721 - LOW (2.7)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-23" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-40643 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-41721 | CVSS: 2.7 | Severity: LOW</div>
-  <div class="news-summary">A high privileged remote attacker can influence the parameters passed to the openssl command due to improper neutralization of special elements when adding a password protected self-signed certificate.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41721" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-40643 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Stored Cross-Site Scripting (XSS) vulnerability in Energy CRM v2025 by Status Tracker Ltd, consisting of a stored XSS due to lack of proper validation of user input by sending a POST request to “/crm/create_job_submit.php”, using the “JobCreatedBy” parameter. This vulnerability could allow a remote ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40643" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-22" data-cvss="7.5">
-  <div class="news-title">CVE-2025-41722 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-23" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-41073 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-41722 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">The wsc server uses a hard-coded certificate to check the authenticity of SOAP messages. An unauthenticated remote attacker can extract private keys from the Software of the affected devices.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41722" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-41073 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Path Traversal vulnerability in version 4.4.2236.1 of TESI Gandia Integra Total. This issue allows an authenticated attacker to download a ZIP file containing files from the server, including those located in parent directories (e.g., ..\..\..), by exploiting the “direstudio” parameter in “/encuesta...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41073" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-22" data-cvss="9.8">
-  <div class="news-title">CVE-2025-41723 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-23" data-cvss="-1.0">
+  <div class="news-title">CVE-2024-14011 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-41723 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The importFile SOAP method is vulnerable to a directory traversal attack. An unauthenticated remote attacker bypass the path restriction and upload files to arbitrary locations.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41723" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2024-14011 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This is a duplicate.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-14011" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-22" data-cvss="7.5">
-  <div class="news-title">CVE-2025-41724 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-23" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-10355 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-41724 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">An unauthenticated remote attacker can crash the wscserver by sending incomplete SOAP requests. The wscserver process will not be restarted by a watchdog and a device reboot is necessary to make it work again.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41724" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-10355 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Open redirection vulnerability in MOLGENIS EMX2 v11.14.0. This vulnerability allows an attacker to create a malicious URL using a manipulated redirection parameter, potentially leading users to phishing sites or other malicious destinations via “/%2f%2f<MALICIOUS_DOMAIN>”.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10355" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-22" data-cvss="4.9">
-  <div class="news-title">CVE-2025-10047 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-23" data-cvss="4.3">
+  <div class="news-title">CVE-2025-62393 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-10047 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">The Email Tracker – Email Log, Email Open Tracking, Email Analytics & Email Management for WordPress Emails plugin for WordPress is vulnerable to SQL Injection via the 'orderby' parameter in all versions up to, and including, 5.3.12 due to insufficient escaping on the user supplied parameter and lac...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10047" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-62393 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw was found in the course overview output function where user access permissions were not fully enforced. This could allow unauthorized users to view information about courses they should not have access to, potentially exposing limited course details.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-62393" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-22" data-cvss="6.4">
-  <div class="news-title">CVE-2025-10138 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-23" data-cvss="4.3">
+  <div class="news-title">CVE-2025-62394 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-10138 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The This-or-That plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'thisorthat' shortcode in all versions up to, and including, 1.0.4 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated atta...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-10138" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-62394 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">Moodle failed to verify enrolment status correctly when sending quiz notifications. As a result, suspended or inactive users might receive quiz-related messages, leaking limited course information.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-62394" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-22" data-cvss="6.4">
-  <div class="news-title">CVE-2025-11804 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-23" data-cvss="4.3">
+  <div class="news-title">CVE-2025-62395 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11804 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The JB News Ticker plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'id' shortcode attribute of the 'jbticker' shortcode in all versions up to, and including, 1.0. This is due to insufficient input sanitization and output escaping. This makes it possible for authenticated at...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11804" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-62395 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw in the cohort search web service allowed users with permissions in lower contexts to access cohort information from the system context, revealing restricted administrative data.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-62395" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-22" data-cvss="6.4">
-  <div class="news-title">CVE-2025-11807 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-23" data-cvss="5.3">
+  <div class="news-title">CVE-2025-62396 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-22</span>
+    <span>2025-10-23</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11807 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Mixlr Shortcode plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mixlr' shortcode in all versions up to, and including, 1.0.1. This is due to insufficient input sanitization and output escaping on the 'url' attribute. This makes it possible for authenticated attackers, ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11807" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-62396 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">An error-handling issue in the Moodle router (r.php) could cause the application to display internal directory listings when specific HTTP headers were not properly configured.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-62396" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-23" data-cvss="5.3">
+  <div class="news-title">CVE-2025-62397 - MEDIUM (5.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2025-10-23</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-62397 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The router’s inconsistent response to invalid course IDs allowed attackers to infer which course IDs exist, potentially aiding reconnaissance.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-62397" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -692,7 +695,7 @@ That’s all folks! Pwn2Own Ireland has come to a close. In total,...</div>
       <strong>Źródła danych:</strong></p>
             <p>RSS: CERT.PL, Niebezpiecznik, Bleeping Computer, Security Affairs, Krebs Security, Threatpost, Dark Reading, InfoSecurity Magazine, Security Week, Cybersecurity News, HackRead, The Hacker News, CISA, SANS</p>
             <p>API: National Vulnerability Database (NVD), VirusTotal, Shodan, AlienVault OTX</p>
-            <p>Raport przygotowany i wygenerowany przez Marek Z: 2025-10-29 08:02:44</div>
+            <p>Raport przygotowany i wygenerowany przez Marek Z: 2025-10-30 08:02:51</div>
     </div>
   </div>
 
