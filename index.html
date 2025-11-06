@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2025-11-05</title>
+  <title>Raport Cyberbezpieczeństwa — 2025-11-06</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -119,7 +119,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2025-11-05</p>
+      <p class="sub">Dane z RSS i API | 2025-11-06</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,9 +137,9 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">61</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">60</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">11</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">354</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">355</a></div><div class="kpi-label">Luki</div></div>
         <div class="card"><div class="kpi-num"><a href="#top">426</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
@@ -147,7 +147,7 @@
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (61)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (60)</h3>
       <div class="news-grid" data-grid="incidents">
 <div class="card news-item incident" data-sev="none" data-date="2025-10-29" data-cvss="-1">
   <div class="news-title">How a "Fixed" IDOR and an Empty String Led to 5 Million+ File Leaks</div>
@@ -195,15 +195,6 @@ At a high level, this post is about a data exfiltration attack chain, where an a
   </div>
   <div class="news-summary">For the latest discoveries in cyber research for the week of 20th October, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES F5 has disclosed a cyber attack, reportedly carried out by a nation-state actor with long-term, persistent access to critical product development envi...</div>
   <a href="https://research.checkpoint.com/2025/20th-october-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item incident" data-sev="none" data-date="2025-10-06" data-cvss="-1">
-  <div class="news-title">6th October – Threat Intelligence Report</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2025-10-06 09:44</span>
-  </div>
-  <div class="news-summary">For the latest discoveries in cyber research for the week of 6th October, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Red Hat has confirmed a cyber attack that resulted in unauthorized access to one of its GitLab instances. The attackers, Crimson Collective, claim to h...</div>
-  <a href="https://research.checkpoint.com/2025/6th-october-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item incident" data-sev="none" data-date="2025-10-02" data-cvss="-1">
   <div class="news-title">What could go wrong when MySQL strict SQL mode is off?</div>
@@ -358,6 +349,16 @@ The DARKNA...</div>
   <div class="news-summary">Why hack one device, when you can hack all of them? By reverse-engineering and finding vulnerabilities in user-machine association flows for smart weighing machines, I was able to take over millions of internet-connected health devices. Hardware and web security are two halves of modern smart device...</div>
   <a href="https://spaceraccoon.dev/pwning-millions-smart-weighing-machines-api-hardware-hacking/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
+<div class="card news-item incident" data-sev="none" data-date="2025-03-21" data-cvss="-1">
+  <div class="news-title">Red Teaming with ServiceNow</div>
+  <div class="news-meta">
+    <span class="badge">Mdsec</span>
+    <span>2025-03-21 12:58</span>
+  </div>
+  <div class="news-summary">Introduction Over the course of numerous Red Team engagements MDSec has often gained privileged access to a target’s ServiceNow instance. This has, in turn, facilitated a variety of compromise actions...
+The post Red Teaming with ServiceNow appeared first on MDSec.</div>
+  <a href="https://www.mdsec.co.uk/2025/03/red-teaming-with-servicenow/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -473,8 +474,53 @@ The DARKNA...</div>
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (354)</h3>
+      <h3>🔓 Wykryte Luki (355)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-11-05" data-cvss="-1.0">
+  <div class="news-title">How an Attacker Drained $128M from Balancer Through Rounding Error Exploitation</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2025-11-05 12:04</span>
+  </div>
+  <div class="news-summary">By: Dikla Barda, Roaman Zaikin & Oded Vanunu  On November 3, 2025, Check Point Research’s blockchain monitoring systems detected a sophisticated exploit targeting Balancer V2’s ComposableStablePool contracts. The attacker exploited arithmetic precision loss in pool invariant calculations to drain $1...</div>
+  <a href="https://research.checkpoint.com/2025/how-an-attacker-drained-128m-from-balancer-through-rounding-error-exploitation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-11-05" data-cvss="-1.0">
+  <div class="news-title">Entr'ouvert Lasso lasso_provider_verify_saml_signature denial of service vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2025-11-05 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2194" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-11-05" data-cvss="-1.0">
+  <div class="news-title">Entr'ouvert Lasso g_assert_not_reached denial of service vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2025-11-05 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2196" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-11-05" data-cvss="-1.0">
+  <div class="news-title">Entr'ouvert Lasso lasso_node_impl_init_from_xml type confusion vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2025-11-05 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2193" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-11-05" data-cvss="-1.0">
+  <div class="news-title">Entr'ouvert Lasso lasso_node_init_from_message_with_format denial of service vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2025-11-05 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2195" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2025-11-04" data-cvss="-1.0">
   <div class="news-title">TruffleHog, Fade In and BSAFE Crypto-C vulnerabilities</div>
   <div class="news-meta">
@@ -547,128 +593,108 @@ The DARKNA...</div>
   <div class="news-summary">Learn how to build your own dynamic binary instrumentation (DBI) tool with open-source DynamoRIO to enable malware analysis, security auditing, reverse engineering, and more.</div>
   <a href="https://blog.talosintelligence.com/dynamic-binary-instrumentation-dbi-with-dynamorio/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-29" data-cvss="5.3">
-  <div class="news-title">CVE-2023-7320 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-30" data-cvss="5.3">
+  <div class="news-title">CVE-2025-11881 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
+    <span>2025-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2023-7320 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The WooCommerce plugin for WordPress is vulnerable to Sensitive Information Exposure in versions up to, and including, 7.8.2, due to improper CORS handling on the Store API's REST endpoints allowing direct external access from any origin. This can allow unauthenticated attackers to extract sensitive...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-7320" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-11881 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The AppPresser – Mobile App Framework plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the 'myappp_verify' function in all versions up to, and including, 4.5.0. This makes it possible for unauthenticated attackers to extract sensitive data includ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11881" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-29" data-cvss="8.5">
-  <div class="news-title">CVE-2025-11702 - HIGH (8.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-30" data-cvss="6.7">
+  <div class="news-title">CVE-2025-11906 - MEDIUM (6.7)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
+    <span>2025-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-11702 | CVSS: 8.5 | Severity: HIGH</div>
-  <div class="news-summary">GitLab has remediated an issue in EE affecting all versions from 17.1 before 18.3.5, 18.4 before 18.4.3, and 18.5 before 18.5.1 that could have allowed an authenticated attacker with specific permissions to hijack project runners from other projects.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11702" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-11906 | CVSS: 6.7 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability exists in Progress Flowmon versions prior 12.5.6 where certain system configuration files have incorrect file permissions, allowing a user with access to the default flowmon system user account used for SSH access to potentially escalate privileges to root during service initializati...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11906" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-29" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-12058 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-30" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-40086 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
+    <span>2025-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-12058 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">The Keras.Model.load_model method, including when executed with the intended security mitigation safe_mode=True, is vulnerable to arbitrary local file loading and Server-Side Request Forgery (SSRF).
+  <div class="cve-info">CVE ID: CVE-2025-40086 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
 
+drm/xe: Don't allow evicting of BOs in same VM in array of VM binds
 
-This vulnerability stems from the way the StringLookup layer is handled during model loading from a...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-12058" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+An array of VM binds can potentially evict other buffer objects (BOs)
+within the same VM under certain conditions, which may lead to NULL
+pointer dereferences lat...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40086" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-29" data-cvss="5.3">
-  <div class="news-title">CVE-2025-58711 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-30" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-40087 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
+    <span>2025-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-58711 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">Missing Authorization vulnerability in solwin Blog Designer PRO blog-designer-pro allows Accessing Functionality Not Properly Constrained by ACLs.This issue affects Blog Designer PRO: from n/a through <= 3.4.8.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-58711" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-40087 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+NFSD: Define a proc_layoutcommit for the FlexFiles layout type
+
+Avoid a crash if a pNFS client should happen to send a LAYOUTCOMMIT
+operation on a FlexFiles layout.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40087" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-29" data-cvss="4.3">
-  <div class="news-title">CVE-2025-58939 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-30" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-40088 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
+    <span>2025-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-58939 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">Cross-Site Request Forgery (CSRF) vulnerability in highwarden Super Store Finder superstorefinder-wp allows Cross Site Request Forgery.This issue affects Super Store Finder: from n/a through <= 7.5.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-58939" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-40088 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+hfsplus: fix slab-out-of-bounds read in hfsplus_strcasecmp()
+
+The hfsplus_strcasecmp() logic can trigger the issue:
+
+[  117.317703][ T9855] ==================================================================
+[  117.318353][ T9855] B...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40088" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-29" data-cvss="7.1">
-  <div class="news-title">CVE-2025-60075 - HIGH (7.1)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-30" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-40089 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
+    <span>2025-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-60075 | CVSS: 7.1 | Severity: HIGH</div>
-  <div class="news-summary">Cross-Site Request Forgery (CSRF) vulnerability in Allegro Marketing hpb seo plugin for WordPress hpbseo allows Reflected XSS.This issue affects hpb seo plugin for WordPress: from n/a through <= 3.0.1.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-60075" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-40089 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+cxl/features: Add check for no entries in cxl_feature_info
+
+cxl EDAC calls cxl_feature_info() to get the feature information and
+if the hardware has no Features support, cxlfs may be passed in as
+NULL.
+
+[   51.957498] BUG: kernel N...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40089" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-29" data-cvss="6.5">
-  <div class="news-title">CVE-2025-64194 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-10-30" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-40090 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
+    <span>2025-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-64194 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ThimPress Eduma eduma allows Stored XSS.This issue affects Eduma: from n/a through <= 5.7.6.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-64194" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-10-29" data-cvss="7.5">
-  <div class="news-title">CVE-2025-64195 - HIGH (7.5)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2025-64195 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in ThimPress Eduma eduma allows PHP Local File Inclusion.This issue affects Eduma: from n/a through <= 5.7.6.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-64195" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-29" data-cvss="6.5">
-  <div class="news-title">CVE-2025-64197 - MEDIUM (6.5)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2025-64197 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in sizam Rehub rehub-theme allows Stored XSS.This issue affects Rehub: from n/a through < 19.9.9.1.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-64197" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-29" data-cvss="5.3">
-  <div class="news-title">CVE-2025-64199 - MEDIUM (5.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2025-64199 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">Missing Authorization vulnerability in WpEstate wpresidence wpresidence allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects wpresidence: from n/a through <= 5.3.2.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-64199" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-29" data-cvss="5.9">
-  <div class="news-title">CVE-2025-64200 - MEDIUM (5.9)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2025-64200 | CVSS: 5.9 | Severity: MEDIUM</div>
-  <div class="news-summary">Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in VillaTheme Email Template Customizer for WooCommerce email-template-customizer-for-woo allows Stored XSS.This issue affects Email Template Customizer for WooCommerce: from n/a through <= 1.2.17.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-64200" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-10-29" data-cvss="4.3">
-  <div class="news-title">CVE-2025-64201 - MEDIUM (4.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2025-10-29</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2025-64201 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">Cross-Site Request Forgery (CSRF) vulnerability in blubrry PowerPress Podcasting powerpress allows Cross Site Request Forgery.This issue affects PowerPress Podcasting: from n/a through <= 11.13.12.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-64201" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-40090 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+ksmbd: fix recursive locking in RPC handle list access
+
+Since commit 305853cce3794 ("ksmbd: Fix race condition in RPC handle list
+access"), ksmbd_session_rpc_method() attempts to lock sess->rpc_lock.
+
+This causes hung connections /...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40090" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -678,7 +704,7 @@ This vulnerability stems from the way the StringLookup layer is handled during m
       <strong>Źródła danych:</strong></p>
             <p>RSS: CERT.PL, Niebezpiecznik, Bleeping Computer, Security Affairs, Krebs Security, Threatpost, Dark Reading, InfoSecurity Magazine, Security Week, Cybersecurity News, HackRead, The Hacker News, CISA, SANS</p>
             <p>API: National Vulnerability Database (NVD), VirusTotal, Shodan, AlienVault OTX</p>
-            <p>Raport przygotowany i wygenerowany przez Marek Z: 2025-11-05 08:02:34</div>
+            <p>Raport przygotowany i wygenerowany przez Marek Z: 2025-11-06 08:02:30</div>
     </div>
   </div>
 
