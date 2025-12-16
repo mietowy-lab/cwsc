@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2025-12-15</title>
+  <title>Raport Cyberbezpieczeństwa — 2025-12-16</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -119,7 +119,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2025-12-15</p>
+      <p class="sub">Dane z RSS i API | 2025-12-16</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,9 +137,9 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">60</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">61</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">7</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">349</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">348</a></div><div class="kpi-label">Luki</div></div>
         <div class="card"><div class="kpi-num"><a href="#top">416</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
@@ -147,8 +147,17 @@
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (60)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (61)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2025-12-15" data-cvss="-1">
+  <div class="news-title">15th December – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2025-12-15 13:03</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 15th December, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES The Indian government confirmed cyber incidents involving GPS spoofing at seven major airports, including Delhi, Mumbai, Kolkata, and Bengaluru. The ...</div>
+  <a href="https://research.checkpoint.com/2025/15th-december-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2025-12-04" data-cvss="-1">
   <div class="news-title">Spy vs. spy: How GenAI is powering defenders and attackers</div>
   <div class="news-meta">
@@ -364,20 +373,6 @@ In the first three blog posts of this series, I sought to outline what the Windo
 Private keys function as the sole credentials for blockchain accounts, controlling access to all associated on-chain assets like cryptocurrencies and NFTs. Due to...</div>
   <a href="https://www.darknavy.org/blog/if_the_person_who_finds_a_web3_hardware_wallet_is_a_hacker/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-03-24" data-cvss="-1">
-  <div class="news-title">Reconstructing the $1.5 Billion Bybit Hack by North Korean Actors</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2025-03-24 07:34</span>
-  </div>
-  <div class="news-summary">
-Both the Attackers and Victims Made Critical Mistakes
-
-
-On February 21, 2025, the cryptocurrency exchange Bybit experienced the most significant financial loss in Web3 history when nearly $1.5 billion was illicitly transferred from its multi-signature wallet by North Korean threat actors.
-The DARKN...</div>
-  <a href="https://www.darknavy.org/darknavy_insight/reconstructing_the_1.5_billion_bybit_hack_by_north_korean_actors/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -457,8 +452,17 @@ The DARKN...</div>
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (349)</h3>
+      <h3>🔓 Wykryte Luki (348)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-15" data-cvss="-1.0">
+  <div class="news-title">Token Leak via Open Redirection and CSRF in the Callback Handler of cloudflare/workers-oauth-provider</div>
+  <div class="news-meta">
+    <span class="badge">Google Security Research Advisories</span>
+    <span>2025-12-15 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://github.com/google/security-research/security/advisories/GHSA-2h78-5wx8-jccc" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2025-12-12" data-cvss="-1.0">
   <div class="news-title">A look at an Android ITW DNG exploit</div>
   <div class="news-meta">
@@ -532,124 +536,181 @@ A...</div>
   <div class="news-summary">Cisco Talos has uncovered a new DeadLock ransomware campaign using a previously unknown BYOVD loader to exploit a Baidu Antivirus driver vulnerability, letting threat actors disable EDR defenses and escalate attacks.</div>
   <a href="https://blog.talosintelligence.com/byovd-loader-deadlock-ransomware/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-08" data-cvss="-1.0">
-  <div class="news-title">8th December – Threat Intelligence Report</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2025-12-08 13:07</span>
-  </div>
-  <div class="news-summary">For the latest discoveries in cyber research for the week of 8th December, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES The University of Pennsylvania and the University of Phoenix were hit by data breaches after attackers exploited zero-day vulnerabilities in Oracle E-...</div>
-  <a href="https://research.checkpoint.com/2025/8th-december-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-12-08" data-cvss="4.3">
-  <div class="news-title">CVE-2025-14220 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2022-50657 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-12-08</span>
+    <span>2025-12-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-14220 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A security vulnerability has been detected in ORICO CD3510 1.9.12. This affects an unknown function of the component File Upload. The manipulation leads to path traversal. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early ab...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14220" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50657 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+riscv: mm: add missing memcpy in kasan_init
+
+Hi Atish,
+
+It seems that the panic is due to the missing memcpy during kasan_init.
+Could you please check whether this patch is helpful?
+
+When doing kasan_populate, the new allocated bas...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50657" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-08" data-cvss="3.5">
-  <div class="news-title">CVE-2025-14221 - LOW (3.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2022-50658 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-12-08</span>
+    <span>2025-12-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-14221 | CVSS: 3.5 | Severity: LOW</div>
-  <div class="news-summary">A vulnerability was detected in SourceCodester Online Banking System 1.0. This impacts an unknown function of the file /?page=user. The manipulation of the argument First Name/Last Name results in cross site scripting. The attack can be launched remotely. The exploit is now public and may be used.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14221" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50658 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+cpufreq: qcom: fix memory leak in error path
+
+If for some reason the speedbin length is incorrect, then there is a
+memory leak in the error path because we never free the speedbin buffer.
+This commit fixes the error path to always ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50658" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-12-08" data-cvss="6.3">
-  <div class="news-title">CVE-2025-14222 - MEDIUM (6.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2022-50659 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-12-08</span>
+    <span>2025-12-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-14222 | CVSS: 6.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw has been found in code-projects Employee Profile Management System 1.0. Affected is an unknown function of the file /print_personnel_report.php. This manipulation of the argument per_id causes sql injection. The attack may be initiated remotely. The exploit has been published and may be used.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14222" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50659 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+hwrng: geode - Fix PCI device refcount leak
+
+for_each_pci_dev() is implemented by pci_get_device(). The comment of
+pci_get_device() says that it will increase the reference count for the
+returned pci_dev and also decrease the refer...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50659" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2025-12-08" data-cvss="7.3">
-  <div class="news-title">CVE-2025-14223 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2022-50660 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-12-08</span>
+    <span>2025-12-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-14223 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability has been found in code-projects Simple Leave Manager 1.0. Affected by this vulnerability is an unknown functionality of the file /request.php. Such manipulation of the argument staff_id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14223" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50660 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+wifi: ipw2200: fix memory leak in ipw_wdev_init()
+
+In the error path of ipw_wdev_init(), exception value is returned, and
+the memory applied for in the function is not released. Also the memory
+is not released in ipw_pci_probe(). A...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50660" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-12-08" data-cvss="4.9">
-  <div class="news-title">CVE-2025-14253 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2022-50661 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-12-08</span>
+    <span>2025-12-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-14253 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">Vitals ESP developed by Galaxy Software Services has an Arbitrary File Read vulnerability, allowing privileged remote attackers to exploit Absolute Path Traversal to download arbitrary system files.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14253" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50661 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+seccomp: Move copy_seccomp() to no failure path.
+
+Our syzbot instance reported memory leaks in do_seccomp() [0], similar
+to the report [1].  It shows that we miss freeing struct seccomp_filter
+and some objects included in it.
+
+We c...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50661" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-12-08" data-cvss="6.5">
-  <div class="news-title">CVE-2025-14254 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2022-50662 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-12-08</span>
+    <span>2025-12-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-14254 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">Vitals ESP developed by Galaxy Software Services has a SQL Injection vulnerability, allowing authenticated remote attackers to inject arbitrary SQL commands to read database contents.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14254" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50662 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+RDMA/hns: fix memory leak in hns_roce_alloc_mr()
+
+When hns_roce_mr_enable() failed in hns_roce_alloc_mr(), mr_key is not
+released. Compiled test only.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50662" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-12-08" data-cvss="6.5">
-  <div class="news-title">CVE-2025-14255 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2022-50663 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-12-08</span>
+    <span>2025-12-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-14255 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">Vitals ESP developed by Galaxy Software Services has a SQL Injection vulnerability, allowing authenticated remote attackers to inject arbitrary SQL commands to read database contents.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14255" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50663 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+net: stmmac: fix possible memory leak in stmmac_dvr_probe()
+
+The bitmap_free() should be called to free priv->af_xdp_zc_qps
+when create_singlethread_workqueue() fails, otherwise there will
+be a memory leak, so we add the err path e...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50663" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-12-08" data-cvss="5.1">
-  <div class="news-title">CVE-2025-66320 - MEDIUM (5.1)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2022-50664 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-12-08</span>
+    <span>2025-12-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-66320 | CVSS: 5.1 | Severity: MEDIUM</div>
-  <div class="news-summary">Multi-thread race condition vulnerability in the camera framework module. Impact: Successful exploitation of this vulnerability may affect availability.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66320" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50664 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+media: dvb-frontends: fix leak of memory fw</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50664" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-12-08" data-cvss="5.1">
-  <div class="news-title">CVE-2025-66321 - MEDIUM (5.1)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2022-50665 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-12-08</span>
+    <span>2025-12-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-66321 | CVSS: 5.1 | Severity: MEDIUM</div>
-  <div class="news-summary">Multi-thread race condition vulnerability in the camera framework module. Impact: Successful exploitation of this vulnerability may affect availability.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66321" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50665 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+wifi: ath11k: fix failed to find the peer with peer_id 0 when disconnected
+
+It has a fail log which is ath11k_dbg in ath11k_dp_rx_process_mon_status(),
+as below, it will not print when debug_mask is not set ATH11K_DBG_DATA.
+	ath11k...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50665" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-12-08" data-cvss="5.1">
-  <div class="news-title">CVE-2025-66322 - MEDIUM (5.1)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2022-50666 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-12-08</span>
+    <span>2025-12-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-66322 | CVSS: 5.1 | Severity: MEDIUM</div>
-  <div class="news-summary">Multi-thread race condition vulnerability in the camera framework module. Impact: Successful exploitation of this vulnerability may affect availability.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66322" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50666 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+RDMA/siw: Fix QP destroy to wait for all references dropped.
+
+Delay QP destroy completion until all siw references to QP are
+dropped. The calling RDMA core will free QP structure after
+successful return from siw_qp_destroy() call, ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50666" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2025-12-08" data-cvss="5.3">
-  <div class="news-title">CVE-2025-66323 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2025-12-09" data-cvss="-1.0">
+  <div class="news-title">CVE-2022-50667 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2025-12-08</span>
+    <span>2025-12-09</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-66323 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">Vulnerability of improper criterion security check in the card module. Impact: Successful exploitation of this vulnerability may affect availability.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-66323" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50667 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+drm/vmwgfx: Fix memory leak in vmw_mksstat_add_ioctl()
+
+If the copy of the description string from userspace fails, then the page
+for the instance descriptor doesn't get freed before returning -EFAULT,
+which leads to a memleak.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50667" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -659,7 +720,7 @@ A...</div>
       <strong>Źródła danych:</strong></p>
             <p>RSS: CERT.PL, Niebezpiecznik, Bleeping Computer, Security Affairs, Krebs Security, Threatpost, Dark Reading, InfoSecurity Magazine, Security Week, Cybersecurity News, HackRead, The Hacker News, CISA, SANS</p>
             <p>API: National Vulnerability Database (NVD), VirusTotal, Shodan, AlienVault OTX</p>
-            <p>Raport przygotowany i wygenerowany przez Marek Z: 2025-12-15 08:02:31</div>
+            <p>Raport przygotowany i wygenerowany przez Marek Z: 2025-12-16 08:02:32</div>
     </div>
   </div>
 
