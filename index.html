@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-01-09</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-01-10</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -119,7 +119,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-01-09</p>
+      <p class="sub">Dane z RSS i API | 2026-01-10</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -475,6 +475,15 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="section" id="vulnerabilities">
       <h3>🔓 Wykryte Luki (340)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-09" data-cvss="-1.0">
+  <div class="news-title">Breaking Down the Attack Surface of the Kenwood DNR1007XR – Part Two</div>
+  <div class="news-meta">
+    <span class="badge">Zdi</span>
+    <span>2026-01-09 15:00</span>
+  </div>
+  <div class="news-summary">In our previous Kenwood DNR1007XR blog, we detailed the internals of the Kenwood in-vehicle infotainment (IVI) head unit and provided annotated pictures of the main PCB. In this post, we aim to outline the attack surface of the DNR1007XR in the hopes of providing inspiration for vulnerability resear...</div>
+  <a href="https://www.thezdi.com/blog/2026/1/8/breaking-down-the-attack-surface-of-the-kenwood-dnr1007xr-part-two" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-01-08" data-cvss="-1.0">
   <div class="news-title">Do Smart People Ever Say They’re Smart? (SmarterTools SmarterMail Pre-Auth RCE CVE-2025-52691)</div>
   <div class="news-meta">
@@ -502,182 +511,165 @@ The post Strengthening supply chain security: Preparing for the next malware cam
   <div class="news-summary"></div>
   <a href="https://github.com/google/security-research/security/advisories/GHSA-46qj-g894-vrxr" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-02" data-cvss="-1.0">
-  <div class="news-title">Reverse Engineering the Tapo C260 and Tapo Discovery Protocol v2</div>
-  <div class="news-meta">
-    <span class="badge">Spaceraccoon</span>
-    <span>2026-01-02 00:00</span>
-  </div>
-  <div class="news-summary">The Tapo C260 is the latest TP-Link camera featuring a whole host of upgrades. As part of the SPIRITCYBER contest where I found several RCEs and other interesting vulnerabilities, I decided to focus on this device and dive deeper into hardware hacking.</div>
-  <a href="https://spaceraccoon.dev/reverse-engineer-tapo-c260-tdp-v2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-02" data-cvss="5.3">
-  <div class="news-title">CVE-2025-15432 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-05" data-cvss="7.3">
+  <div class="news-title">CVE-2025-15447 - HIGH (7.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-15432 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A vulnerability has been found in yeqifu carRental up to 3fabb7eae93d209426638863980301d6f99866b3. This vulnerability affects the function downloadShowFile of the file /file/downloadShowFile.action of the component com.yeqifu.sys.controller.FileController. The manipulation of the argument path leads...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15432" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-15447 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability has been found in Seeyon Zhiyuan OA Web Application System up to 20251223. This affects an unknown function of the file /assetsGroupReport/assetsService.j%73p. The manipulation of the argument unitCode leads to sql injection. It is possible to initiate the attack remotely. The exploi...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15447" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-02" data-cvss="7.3">
-  <div class="news-title">CVE-2025-15434 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-05" data-cvss="6.3">
+  <div class="news-title">CVE-2025-15448 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-15434 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability was detected in Yonyou KSOA 9.0. Affected is an unknown function of the file /kp/PrintZPYG.jsp. The manipulation of the argument zpjhid results in sql injection. It is possible to launch the attack remotely. The exploit is now public and may be used. The vendor was contacted early ab...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15434" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-15448 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was found in cld378632668 JavaMall up to 994f1e2b019378ec9444cdf3fce2d5b5f72d28f0. This impacts the function Upload of the file src/main/java/com/macro/mall/controller/MinioController.java. The manipulation results in unrestricted upload. It is possible to launch the attack remotely....</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15448" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-02" data-cvss="7.3">
-  <div class="news-title">CVE-2025-15435 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-05" data-cvss="5.4">
+  <div class="news-title">CVE-2025-15449 - MEDIUM (5.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-15435 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A flaw has been found in Yonyou KSOA 9.0. Affected by this vulnerability is an unknown functionality of the file /worksheet/work_update.jsp. This manipulation of the argument Report causes sql injection. The attack can be initiated remotely. The exploit has been published and may be used. The vendor...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15435" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-15449 | CVSS: 5.4 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was determined in cld378632668 JavaMall up to 994f1e2b019378ec9444cdf3fce2d5b5f72d28f0. Affected is the function delete of the file src/main/java/com/macro/mall/controller/MinioController.java. This manipulation of the argument objectName causes path traversal. The attack can be init...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15449" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-02" data-cvss="7.3">
-  <div class="news-title">CVE-2025-15436 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-05" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-5591 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-15436 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability has been found in Yonyou KSOA 9.0. Affected by this issue is some unknown functionality of the file /worksheet/work_edit.jsp. Such manipulation of the argument Report leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15436" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-5591 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Kentico Xperience 13 is vulnerable to a stored cross-site scripting attack via a form component, allowing an attacker to hijack a victim user’s session and perform actions in their security context.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-5591" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-02" data-cvss="3.5">
-  <div class="news-title">CVE-2025-15437 - LOW (3.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-04" data-cvss="6.5">
+  <div class="news-title">CVE-2025-15115 - MEDIUM (6.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-15437 | CVSS: 3.5 | Severity: LOW</div>
-  <div class="news-summary">A vulnerability was found in LigeroSmart up to 6.1.24. This affects an unknown part of the component Environment Variable Handler. Performing manipulation of the argument REQUEST_URI results in cross site scripting. The attack may be initiated remotely. The exploit has been made public and could be ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15437" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-15115 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Petlibro Smart Pet Feeder Platform versions up to 1.7.31 contains an authentication bypass vulnerability that allows unauthenticated attackers to access any user account by exploiting OAuth token validation flaws in the social login system. Attackers can send requests to /member/auth/thirdLogin with...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15115" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-02" data-cvss="7.3">
-  <div class="news-title">CVE-2026-0546 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-04" data-cvss="7.3">
+  <div class="news-title">CVE-2025-3646 - HIGH (7.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-0546 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability was determined in code-projects Content Management System 1.0. This impacts an unknown function of the file search.php. This manipulation of the argument Value causes sql injection. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0546" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-3646 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">Petlibro Smart Pet Feeder Platform versions up to 1.7.31 contains an authorization bypass vulnerability that allows unauthorized users to add users as shared owners to any device by exploiting missing permission checks. Attackers can send requests to the device share API to gain unauthorized access ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3646" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-02" data-cvss="6.3">
-  <div class="news-title">CVE-2026-0547 - MEDIUM (6.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-04" data-cvss="5.3">
+  <div class="news-title">CVE-2025-3652 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-0547 | CVSS: 6.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A vulnerability was found in PHPGurukul Online Course Registration up to 3.1. This issue affects some unknown processing of the file /admin/edit-student-profile.php of the component Student Registration Page. The manipulation of the argument photo results in unrestricted upload. The attack may be la...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0547" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-3652 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">Petlibro Smart Pet Feeder Platform versions up to 1.7.31 contains an information disclosure vulnerability that allows unauthorized access to private audio recordings by exploiting sequential audio IDs and insecure assignment endpoints. Attackers can send requests to /device/deviceAudio/use with arbi...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3652" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-02" data-cvss="7.3">
-  <div class="news-title">CVE-2026-0565 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-04" data-cvss="7.3">
+  <div class="news-title">CVE-2025-3653 - HIGH (7.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-0565 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A weakness has been identified in code-projects Content Management System 1.0. This issue affects some unknown processing of the file /admin/delete.php. Executing manipulation of the argument del can lead to sql injection. The attack can be executed remotely. The exploit has been made available to t...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0565" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-3653 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">Petlibro Smart Pet Feeder Platform versions up to 1.7.31 contains an improper access control vulnerability that allows unauthorized device manipulation by accepting arbitrary serial numbers without ownership verification. Attackers can control any device by sending serial numbers to device control A...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3653" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-02" data-cvss="5.3">
-  <div class="news-title">CVE-2024-55374 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-04" data-cvss="5.3">
+  <div class="news-title">CVE-2025-3654 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2024-55374 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">REDCap 14.3.13 allows an attacker to enumerate usernames due to an observable discrepancy between login attempts.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-55374" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-3654 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">Petlibro Smart Pet Feeder Platform versions up to 1.7.31 contains an information disclosure vulnerability that allows unauthorized access to device hardware information by exploiting insecure API endpoints. Attackers can retrieve device serial numbers and MAC addresses through /device/devicePetRelat...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3654" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-02" data-cvss="4.7">
-  <div class="news-title">CVE-2025-15438 - MEDIUM (4.7)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-04" data-cvss="6.5">
+  <div class="news-title">CVE-2025-3660 - MEDIUM (6.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-15438 | CVSS: 4.7 | Severity: MEDIUM</div>
-  <div class="news-summary">A vulnerability was determined in PluXml up to 5.8.22. Affected is the function FileCookieJar::__destruct of the file core/admin/medias.php of the component Media Management Module. Executing manipulation of the argument File can lead to deserialization. The attack can be launched remotely. The expl...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15438" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-3660 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Petlibro Smart Pet Feeder Platform versions up to 1.7.31 contains a broken access control vulnerability that allows authenticated users to access other users' pet data by exploiting missing ownership verification. Attackers can send requests to /member/pet/detailV2 with arbitrary pet IDs to retrieve...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-3660" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-02" data-cvss="6.5">
-  <div class="news-title">CVE-2025-44013 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-04" data-cvss="6.3">
+  <div class="news-title">CVE-2026-0574 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-44013 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">A NULL pointer dereference vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains a user account, they can then exploit the vulnerability to launch a denial-of-service (DoS) attack.
-
-We have already fixed the vulnerability in the following versio...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-44013" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-0574 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A weakness has been identified in yeqifu warehouse up to aaf29962ba407d22d991781de28796ee7b4670e4. This affects the function saveUserRole of the file warehouse\src\main\java\com\yeqifu\sys\controller\UserController.java of the component Request Handler. This manipulation causes improper authorizatio...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0574" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-02" data-cvss="6.1">
-  <div class="news-title">CVE-2025-45286 - MEDIUM (6.1)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-04" data-cvss="7.3">
+  <div class="news-title">CVE-2026-0575 - HIGH (7.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-45286 | CVSS: 6.1 | Severity: MEDIUM</div>
-  <div class="news-summary">A cross-site scripting (XSS) vulnerability in mccutchen httpbin v2.17.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-45286" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-0575 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A security vulnerability has been detected in code-projects Online Product Reservation System 1.0. This impacts an unknown function of the file /handgunner-administrator/adminlogin.php of the component Administrator Login. Such manipulation of the argument emailadd/pass leads to sql injection. The a...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0575" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-02" data-cvss="6.5">
-  <div class="news-title">CVE-2025-47208 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-04" data-cvss="7.3">
+  <div class="news-title">CVE-2026-0576 - HIGH (7.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-47208 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">An allocation of resources without limits or throttling vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains a user account, they can then exploit the vulnerability to prevent other systems, applications, or processes from accessing the same ty...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-47208" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-0576 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability was detected in code-projects Online Product Reservation System 1.0. Affected is an unknown function of the file /handgunner-administrator/prod.php of the component Parameter Handler. Performing manipulation of the argument cat/price/name/model/serial results in sql injection. It is ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0576" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-02" data-cvss="4.9">
-  <div class="news-title">CVE-2025-52426 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-04" data-cvss="4.9">
+  <div class="news-title">CVE-2025-14830 - MEDIUM (4.9)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-52426 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">A NULL pointer dereference vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains an administrator account, they can then exploit the vulnerability to launch a denial-of-service (DoS) attack.
-
-We have already fixed the vulnerability in the follow...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-52426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-14830 | CVSS: 4.9 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in JFrog Artifactory (Workers) allows Cross-Site Scripting (XSS).This issue affects Artifactory (Workers): from >=7.94.0 through <7.117.10.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14830" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-02" data-cvss="4.9">
-  <div class="news-title">CVE-2025-52430 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-04" data-cvss="6.3">
+  <div class="news-title">CVE-2026-0577 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-52430 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">A NULL pointer dereference vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains an administrator account, they can then exploit the vulnerability to launch a denial-of-service (DoS) attack.
-
-We have already fixed the vulnerability in the follow...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-52430" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-0577 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw has been found in code-projects Online Product Reservation System 1.0. Affected by this vulnerability is an unknown functionality of the file /handgunner-administrator/prod.php. Executing manipulation can lead to unrestricted upload. It is possible to launch the attack remotely. The exploit h...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0577" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-02" data-cvss="4.9">
-  <div class="news-title">CVE-2025-52431 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-04" data-cvss="4.7">
+  <div class="news-title">CVE-2025-15442 - MEDIUM (4.7)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-02</span>
+    <span>2026-01-04</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-52431 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">A NULL pointer dereference vulnerability has been reported to affect several QNAP operating system versions. If a remote attacker gains an administrator account, they can then exploit the vulnerability to launch a denial-of-service (DoS) attack.
-
-We have already fixed the vulnerability in the follow...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-52431" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-15442 | CVSS: 4.7 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was determined in CRMEB up to 5.6.1. This vulnerability affects unknown code of the file /adminapi/export/product_list. This manipulation of the argument cate_id causes sql injection. The attack may be initiated remotely. The exploit has been publicly disclosed and may be utilized. T...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15442" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -687,7 +679,7 @@ We have already fixed the vulnerability in the follow...</div>
       <strong>Źródła danych:</strong></p>
             <p>RSS: CERT.PL, Niebezpiecznik, Bleeping Computer, Security Affairs, Krebs Security, Threatpost, Dark Reading, InfoSecurity Magazine, Security Week, Cybersecurity News, HackRead, The Hacker News, CISA, SANS</p>
             <p>API: National Vulnerability Database (NVD), VirusTotal, Shodan, AlienVault OTX</p>
-            <p>Raport przygotowany i wygenerowany przez Marek Z: 2026-01-09 08:02:35</div>
+            <p>Raport przygotowany i wygenerowany przez Marek Z: 2026-01-10 08:02:34</div>
     </div>
   </div>
 
