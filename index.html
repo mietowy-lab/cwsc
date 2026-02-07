@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-02-06</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-02-07</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-02-06</p>
+      <p class="sub">Dane z RSS i API | 2026-02-07</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -475,6 +475,15 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="section" id="vulnerabilities">
       <h3>🔓 Wykryte Luki (345)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-07" data-cvss="-1.0">
+  <div class="news-title">Discovering Negative-Days with LLM Workflows</div>
+  <div class="news-meta">
+    <span class="badge">Spaceraccoon</span>
+    <span>2026-02-07 00:00</span>
+  </div>
+  <div class="news-summary">It’s no longer just about reverse-engineering n-days. You can detect vulnerabilities in open-source repositories before a CVE is published - or even if they’re never published. Here’s how I built an LLM workflow to detect “negative-days” and “never-days”.</div>
+  <a href="https://spaceraccoon.dev/discovering-negative-days-llm-workflows/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-02-05" data-cvss="-1.0">
   <div class="news-title">CVE-2025-6978: Arbitrary Code Execution in the Arista NG Firewall</div>
   <div class="news-meta">
@@ -530,170 +539,243 @@ Pentest
                    Windows privileges are special rights that grant processes the ability to perform sensitive operations. Some privileges allow bypassing standard Access Control List (ACL) ch...</div>
   <a href="https://www.synacktiv.com/en/publications/beyond-acls-mapping-windows-privilege-escalation-paths-with-bloodhound" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-30" data-cvss="-1.0">
-  <div class="news-title">Someone Knows Bash Far Too Well, And We Love It (Ivanti EPMM Pre-Auth RCEs CVE-2026-1281 & CVE-2026-1340)</div>
-  <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-01-30 16:15</span>
-  </div>
-  <div class="news-summary">When Ivanti removed the embargoes from CVE-2026-1281 and CVE-2026-1340 - actively exploited pre-auth Remote Command Execution vulnerabilities in Ivanti’s Endpoint Manager Mobile (EPMM) solution - we sighed with relief.Clearly, the universe had decided to continue mocking Secure-By-Design signers rig...</div>
-  <a href="https://labs.watchtowr.com/someone-knows-bash-far-too-well-and-we-love-it-ivanti-epmm-pre-auth-rces-cve-2026-1281-cve-2026-1340/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-30" data-cvss="8.2">
-  <div class="news-title">CVE-2026-0805 - HIGH (8.2)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-31" data-cvss="5.4">
+  <div class="news-title">CVE-2026-1251 - MEDIUM (5.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
+    <span>2026-01-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-0805 | CVSS: 8.2 | Severity: HIGH</div>
-  <div class="news-summary">An input neutralization vulnerability in the Backup Configuration component of Crafty Controller allows a remote, authenticated attacker to perform file tampering and remote code execution via path traversal.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0805" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1251 | CVSS: 5.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The SupportCandy – Helpdesk & Customer Support Ticket System plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 3.4.4 via the 'add_reply' function due to missing validation on a user controlled key. This makes it possible for authenticated at...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1251" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-30" data-cvss="9.9">
-  <div class="news-title">CVE-2026-0963 - CRITICAL (9.9)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71180 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
+    <span>2026-01-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-0963 | CVSS: 9.9 | Severity: CRITICAL</div>
-  <div class="news-summary">An input neutralization vulnerability in the File Operations API Endpoint component of Crafty Controller allows a remote, authenticated attacker to perform file tampering and remote code execution via path traversal.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0963" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-30" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-1680 - N/A (N/A)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-1680 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Improper access control in the WCF endpoint in Edgemo (now owned by Danoffice IT) Local Admin Service 1.2.7.23180 on Windows allows a local user to escalate their privileges to local administrator via direct communication with the LocalAdminService.exe named pipe, bypassing client-side group members...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1680" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-30" data-cvss="6.9">
-  <div class="news-title">CVE-2026-25210 - MEDIUM (6.9)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-25210 | CVSS: 6.9 | Severity: MEDIUM</div>
-  <div class="news-summary">In libexpat before 2.7.4, the doContent function does not properly determine the buffer size bufSize because there is no integer overflow check for tag buffer reallocation.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25210" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-30" data-cvss="3.2">
-  <div class="news-title">CVE-2026-25211 - LOW (3.2)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-25211 | CVSS: 3.2 | Severity: LOW</div>
-  <div class="news-summary">Llama Stack (aka llama-stack) before 0.4.0rc3 does not censor the pgvector password in the initialization log.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25211" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-30" data-cvss="8.2">
-  <div class="news-title">CVE-2025-1395 - HIGH (8.2)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2025-1395 | CVSS: 8.2 | Severity: HIGH</div>
-  <div class="news-summary">Generation of Error Message Containing Sensitive Information vulnerability in Codriapp Innovation and Software Technologies Inc. HeyGarson allows Fuzzing for application mapping.This issue affects HeyGarson: through 30012026.
+  <div class="cve-info">CVE ID: CVE-2025-71180 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
 
-NOTE: The vendor was contacted several times to verifying fixing process ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-1395" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-30" data-cvss="7.8">
-  <div class="news-title">CVE-2026-21418 - HIGH (7.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-21418 | CVSS: 7.8 | Severity: HIGH</div>
-  <div class="news-summary">Dell Unity, version(s) 5.5.2 and prior, contain(s) an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to arbitrary command execution with root p...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21418" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-30" data-cvss="7.8">
-  <div class="news-title">CVE-2026-22277 - HIGH (7.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-22277 | CVSS: 7.8 | Severity: HIGH</div>
-  <div class="news-summary">Dell UnityVSA, version(s) 5.4 and prior, contain(s) an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to arbitrary command execution with root ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22277" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-30" data-cvss="10.0">
-  <div class="news-title">CVE-2026-1699 - CRITICAL (10.0)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-1699 | CVSS: 10.0 | Severity: CRITICAL</div>
-  <div class="news-summary">In the Eclipse Theia Website repository, the GitHub Actions workflow .github/workflows/preview.yml used pull_request_target trigger while checking out and executing untrusted pull request code. This allowed any GitHub user to execute arbitrary code in the repository's CI environment with access to r...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1699" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-30" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-26385 - N/A (N/A)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2025-26385 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Johnson Controls Metasys component listed below have  Improper Neutralization of Special Elements used in a Command (Command Injection) Vulnerability . Successful exploitation of this vulnerability could allow remote SQL execution This issue affects 
+counter: interrupt-cnt: Drop IRQF_NO_THREAD flag
 
+An IRQ handler can either be IRQF_NO_THREAD or acquire spinlock_t, as
+CONFIG_PROVE_RAW_LOCK_NESTING warns:
+=============================
+[ BUG: Invalid wait context ]
+6.18.0-rc1+git...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71180" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71181 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-01-31</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-71181 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
 
+rust_binder: remove spin_lock() in rust_shrink_free_page()
 
-  *  Metasys: Application and Data Server (ADS...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-26385" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+When forward-porting Rust Binder to 6.18, I neglected to take commit
+fb56fdf8b9a2 ("mm/list_lru: split the lock to per-cgroup scope") into
+account, and apparently I did no...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71181" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-30" data-cvss="7.2">
-  <div class="news-title">CVE-2026-0709 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71182 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
+    <span>2026-01-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-0709 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">Some Hikvision Wireless Access Points are vulnerable to authenticated command execution due to insufficient input validation. Attackers with valid credentials can exploit this flaw by sending crafted packets containing malicious commands to affected devices, leading to arbitrary command execution.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0709" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-71182 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+can: j1939: make j1939_session_activate() fail if device is no longer registered
+
+syzbot is still reporting
+
+  unregister_netdevice: waiting for vcan0 to become free. Usage count = 2
+
+even after commit 93a27b5891b8 ("can: j1939: ad...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71182" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-01-30" data-cvss="7.2">
-  <div class="news-title">CVE-2026-22623 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71183 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
+    <span>2026-01-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-22623 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">Due to insufficient input parameter validation on the interface, authenticated users of certain HIKSEMI NAS products can execute arbitrary commands on the device by crafting specific messages.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22623" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-71183 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+btrfs: always detect conflicting inodes when logging inode refs
+
+After rename exchanging (either with the rename exchange operation or
+regular renames in multiple non-atomic steps) two inodes and at least
+one of them is a directory...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71183" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-30" data-cvss="4.3">
-  <div class="news-title">CVE-2026-22624 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71184 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
+    <span>2026-01-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-22624 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">Due to inadequate access control, authenticated users of certain HIKSEMI NAS products can manipulate other users' file resources without proper authorization.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22624" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-71184 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+btrfs: fix NULL dereference on root when tracing inode eviction
+
+When evicting an inode the first thing we do is to setup tracing for it,
+which implies fetching the root's id. But in btrfs_evict_inode() the
+root might be NULL, as i...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71184" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-30" data-cvss="4.6">
-  <div class="news-title">CVE-2026-22625 - MEDIUM (4.6)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71185 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
+    <span>2026-01-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-22625 | CVSS: 4.6 | Severity: MEDIUM</div>
-  <div class="news-summary">Improper handling of filenames in certain HIKSEMI NAS products may lead to the exposure of sensitive system files.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22625" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-71185 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+dmaengine: ti: dma-crossbar: fix device leak on am335x route allocation
+
+Make sure to drop the reference taken when looking up the crossbar
+platform device during am335x route allocation.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71185" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-01-30" data-cvss="4.9">
-  <div class="news-title">CVE-2026-22626 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71186 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-01-30</span>
+    <span>2026-01-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-22626 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">Due to insufficient input parameter validation on the interface, authenticated users of certain HIKSEMI NAS products can cause abnormal device behavior by crafting specific messages.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22626" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-71186 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+dmaengine: stm32: dmamux: fix device leak on route allocation
+
+Make sure to drop the reference taken when looking up the DMA mux
+platform device during route allocation.
+
+Note that holding a reference to a device does not prevent i...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71186" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71187 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-01-31</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-71187 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+dmaengine: sh: rz-dmac: fix device leak on probe failure
+
+Make sure to drop the reference taken when looking up the ICU device
+during probe also on probe failures (e.g. probe deferral).</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71187" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71188 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-01-31</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-71188 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+dmaengine: lpc18xx-dmamux: fix device leak on route allocation
+
+Make sure to drop the reference taken when looking up the DMA mux
+platform device during route allocation.
+
+Note that holding a reference to a device does not prevent ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71188" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71189 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-01-31</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-71189 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+dmaengine: dw: dmamux: fix OF node leak on route allocation failure
+
+Make sure to drop the reference taken to the DMA master OF node also on
+late route allocation failures.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71189" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71190 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-01-31</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-71190 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+dmaengine: bcm-sba-raid: fix device leak on probe
+
+Make sure to drop the reference taken when looking up the mailbox device
+during probe on probe failures and on driver unbind.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71190" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-71191 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-01-31</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-71191 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+dmaengine: at_hdmac: fix device leak on of_dma_xlate()
+
+Make sure to drop the reference taken when looking up the DMA platform
+device during of_dma_xlate() when releasing channel resources.
+
+Note that commit 3832b78b3ec2 ("dmaengin...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71191" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-23015 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-01-31</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-23015 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+gpio: mpsse: fix reference leak in gpio_mpsse_probe() error paths
+
+The reference obtained by calling usb_get_dev() is not released in the
+gpio_mpsse_probe() error paths. Fix that by using device managed helper
+functions. Also remov...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23015" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-01-31" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-23016 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-01-31</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-23016 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+inet: frags: drop fraglist conntrack references
+
+Jakub added a warning in nf_conntrack_cleanup_net_list() to make debugging
+leaked skbs/conntrack references more obvious.
+
+syzbot reports this as triggering, and I can also reproduce...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23016" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -701,7 +783,7 @@ NOTE: The vendor was contacted several times to verifying fixing process ...</di
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-02-06 08:02:16</div>
+      <div>Raport wygenerowano: 2026-02-07 08:02:11</div>
     </div>
   </div>
 
