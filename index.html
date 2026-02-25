@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-02-24</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-02-25</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-02-24</p>
+      <p class="sub">Dane z RSS i API | 2026-02-25</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -138,8 +138,8 @@
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">54</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">10</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">344</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">408</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">345</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">409</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -463,8 +463,17 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (344)</h3>
+      <h3>🔓 Wykryte Luki (345)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-23" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-59201 - Network Connection Status Indicator (NCSI) EoP</div>
+  <div class="news-meta">
+    <span class="badge">Itm4N</span>
+    <span>2026-02-23 23:00</span>
+  </div>
+  <div class="news-summary">It’s been a while since I last dug into a Patch Tuesday release. With an extraordinarily high number of 177 CVEs, including 6 that were either already public or exploited in the wild, the October 2025 one seemed like a good opportunity to get back at it. The one I ended up investigating in depth was...</div>
+  <a href="https://itm4n.github.io/cve-2025-59201-ncsi-eop/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-02-19" data-cvss="-1.0">
   <div class="news-title">CVE-2026-20841: Arbitrary Code Execution in the Windows Notepad</div>
   <div class="news-meta">
@@ -492,176 +501,165 @@ The post Strengthening supply chain security: Preparing for the next malware cam
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2292" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-17" data-cvss="-1.0">
-  <div class="news-title">Security Researchers Find Vulnerabilities in Mental Health Apps; One With Millions of Users May Leak Therapy Notes</div>
-  <div class="news-meta">
-    <span class="badge">Oversecured</span>
-    <span>2026-02-17 15:00</span>
-  </div>
-  <div class="news-summary">Oversecured has identified vulnerabilities in several popular mental health apps with tens of millions of downloads. The flaws could turn these apps into unintended data sources for surveillance, including personal conversations with AI therapists.</div>
-  <a href="https://blog.oversecured.com/Security-researchers-find-vulnerabilities-in-mental-health-apps/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-17" data-cvss="5.8">
-  <div class="news-title">CVE-2026-0829 - MEDIUM (5.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-18" data-cvss="4.3">
+  <div class="news-title">CVE-2026-1640 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-0829 | CVSS: 5.8 | Severity: MEDIUM</div>
-  <div class="news-summary">The Frontend File Manager Plugin WordPress plugin through 23.5 allows unauthenticated users to send emails through the site without any security checks. This lets attackers use the WordPress site as an open relay for spam or phishing emails to anyone. Attackers can also guess file IDs to access and ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0829" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1640 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The Taskbuilder – WordPress Project Management & Task Management plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 5.0.2. This is due to missing authorization checks on the project and task comment submission functions (AJAX actions: wppm_submit_proj_co...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1640" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-17" data-cvss="7.2">
-  <div class="news-title">CVE-2026-1216 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-18" data-cvss="6.1">
+  <div class="news-title">CVE-2026-1666 - MEDIUM (6.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-1216 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">The RSS Aggregator plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'template' parameter in all versions up to, and including, 5.0.10 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for unauthenticated attacke...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1216" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1666 | CVSS: 6.1 | Severity: MEDIUM</div>
+  <div class="news-summary">The Download Manager plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'redirect_to' parameter in all versions up to, and including, 3.3.46. This is due to insufficient input sanitization and output escaping on the 'redirect_to' GET parameter in the login form shortcode. T...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1666" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-17" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-25903 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-18" data-cvss="6.4">
+  <div class="news-title">CVE-2026-1807 - MEDIUM (6.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-25903 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Apache NiFi 1.1.0 through 2.7.2 are missing authorization when updating configuration properties on extension components that have specific Required Permissions based on the Restricted annotation. The Restricted annotation indicates additional privileges required to add the annotated component to th...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25903" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1807 | CVSS: 6.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The InteractiveCalculator for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'interactivecalculator' shortcode in all versions up to, and including, 1.0.3 due to insufficient input sanitization and output escaping on user supplied attributes. This makes ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1807" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-17" data-cvss="8.6">
-  <div class="news-title">CVE-2025-7631 - HIGH (8.6)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-18" data-cvss="4.3">
+  <div class="news-title">CVE-2026-1857 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-7631 | CVSS: 8.6 | Severity: HIGH</div>
-  <div class="news-summary">Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Tumeva Internet Technologies Software Information Advertising and Consulting Services Trade Ltd. Co. Tumeva News Software allows SQL Injection.This issue affects Tumeva News Software: through 170220...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-7631" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1857 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The Gutenberg Blocks with AI by Kadence WP plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 3.6.1. This is due to insufficient validation of the `endpoint` parameter in the `get_items()` function of the GetResponse REST API handler. The endpoint...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1857" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-17" data-cvss="6.5">
-  <div class="news-title">CVE-2025-8303 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-18" data-cvss="9.8">
+  <div class="news-title">CVE-2026-1937 - CRITICAL (9.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-8303 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in EKA Software Computer Information Advertising Services Ltd. Real Estate Script V5 (With Doping Module – Store Module – New Language System) allows Cross-Site Scripting (XSS).This issue affect...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-8303" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1937 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">The YayMail – WooCommerce Email Customizer plugin for WordPress is vulnerable to unauthorized modification of data that can lead to privilege escalation due to a missing capability check on the `yaymail_import_state` AJAX action in all versions up to, and including, 4.3.2. This makes it possible for...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1937" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-17" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-2247 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-18" data-cvss="7.2">
+  <div class="news-title">CVE-2026-2019 - HIGH (7.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-2247 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">SQL injection vulnerability (SQLi) in Clicldeu SaaS, specifically in the generation of reports, which occurs when a previously authenticated remote attacker executes a malicious payload in the URL generated after downloading the student's report card in the ‘Day-to-day’ section from the mobile appli...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2247" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-2019 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The Cart All In One For WooCommerce plugin for WordPress is vulnerable to Code Injection in all versions up to, and including, 1.1.21. This is due to insufficient input validation on the 'Assign page' field which is passed directly to the eval() function. This makes it possible for authenticated att...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2019" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-17" data-cvss="4.3">
-  <div class="news-title">CVE-2026-2608 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-18" data-cvss="4.4">
+  <div class="news-title">CVE-2026-2281 - MEDIUM (4.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-2608 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Kadence Blocks — Page Builder Toolkit for Gutenberg Editor plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on a function in all versions up to, and including, 3.5.32. This makes it possible for authenticated attackers, with Contributor-level access and...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2608" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-2281 | CVSS: 4.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The Private Comment plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Label text' setting in all versions up to, and including, 0.0.4. This is due to insufficient input sanitization and output escaping on the plugin's label text option. This makes it possible for authenticat...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2281" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-17" data-cvss="7.2">
-  <div class="news-title">CVE-2026-2615 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-18" data-cvss="7.2">
+  <div class="news-title">CVE-2026-2296 - HIGH (7.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-2615 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">A flaw has been found in Wavlink WL-NU516U1 up to 20251208. The affected element is the function singlePortForwardDelete of the file /cgi-bin/firewall.cgi. Executing a manipulation of the argument del_flag can lead to command injection. The attack may be launched remotely. The exploit has been publi...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2615" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-2296 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The Product Addons for Woocommerce – Product Options with Custom Fields plugin for WordPress is vulnerable to Code Injection in all versions up to, and including, 3.1.0. This is due to insufficient input validation of the 'operator' field in conditional logic rules within the evalConditions() functi...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2296" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-17" data-cvss="6.1">
-  <div class="news-title">CVE-2025-7706 - MEDIUM (6.1)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-18" data-cvss="4.3">
+  <div class="news-title">CVE-2026-2633 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-7706 | CVSS: 6.1 | Severity: MEDIUM</div>
-  <div class="news-summary">Missing Authentication for Critical Function vulnerability in TUBITAK BILGEM Software Technologies Research Institute Liderahenk allows Remote Code Inclusion.This issue affects Liderahenk: from 3.0.0 to 3.3.1 before 3.5.0.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-7706" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-2633 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The Gutenberg Blocks with AI by Kadence WP plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 3.6.1. This is due to a missing capability check in the `process_image_data_ajax_callback()` function which handles the `kadence_import_process_image_data` AJA...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2633" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-17" data-cvss="5.4">
-  <div class="news-title">CVE-2026-23861 - MEDIUM (5.4)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-18" data-cvss="3.3">
+  <div class="news-title">CVE-2026-2642 - LOW (3.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-23861 | CVSS: 5.4 | Severity: MEDIUM</div>
-  <div class="news-summary">Dell Unisphere for PowerMax vApp, version(s) 9.2.4.x, contain(s) an Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to the execution of malicious HTM...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23861" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-2642 | CVSS: 3.3 | Severity: LOW</div>
+  <div class="news-summary">A security vulnerability has been detected in ggreer the_silver_searcher up to 2.2.0. The impacted element is the function search_stream of the file src/search.c. The manipulation leads to null pointer dereference. Local access is required to approach this attack. The exploit has been disclosed publ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2642" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-17" data-cvss="7.0">
-  <div class="news-title">CVE-2026-25087 - HIGH (7.0)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-18" data-cvss="3.3">
+  <div class="news-title">CVE-2026-2644 - LOW (3.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-25087 | CVSS: 7.0 | Severity: HIGH</div>
-  <div class="news-summary">Use After Free vulnerability in Apache Arrow C++.
-
-This issue affects Apache Arrow C++ from 15.0.0 through 23.0.0. It can be triggered when reading an Arrow IPC file (but not an IPC stream) with pre-buffering enabled, if the IPC file contains data with variadic buffers (such as Binary View and Strin...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-25087" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-2644 | CVSS: 3.3 | Severity: LOW</div>
+  <div class="news-summary">A weakness has been identified in niklasso minisat up to 2.2.0. This issue affects the function Solver::value in the library core/SolverTypes.h of the component DIMACS File Parser. This manipulation of the argument variable index with the input 2147483648 causes out-of-bounds read. The attack needs ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2644" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-17" data-cvss="6.5">
-  <div class="news-title">CVE-2022-41650 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-18" data-cvss="4.3">
+  <div class="news-title">CVE-2026-1655 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2022-41650 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">Missing Authorization vulnerability in Paul Custom Content by Country (by Shield Security) custom-content-by-country.This issue affects Custom Content by Country (by Shield Security): from n/a through 3.1.2.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-41650" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1655 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The EventPrime plugin for WordPress is vulnerable to unauthorized post modification due to missing authorization checks in all versions up to, and including, 4.2.8.4. This is due to the save_frontend_event_submission function accepting a user-controlled event_id parameter and updating the correspond...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1655" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-17" data-cvss="6.5">
-  <div class="news-title">CVE-2024-31118 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-18" data-cvss="2.7">
+  <div class="news-title">CVE-2026-1831 - LOW (2.7)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2024-31118 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">Missing Authorization vulnerability in Smartypants SP Project & Document Manager allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects SP Project & Document Manager: from n/a through 4.70.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-31118" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1831 | CVSS: 2.7 | Severity: LOW</div>
+  <div class="news-summary">The YayMail - WooCommerce Email Customizer plugin for WordPress is vulnerable to unauthorized plugin installation and activation due to missing capability checks on the 'yaymail_install_yaysmtp' AJAX action and `/yaymail/v1/addons/activate` REST endpoint in all versions up to, and including, 4.3.2. ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1831" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-17" data-cvss="5.7">
-  <div class="news-title">CVE-2025-70829 - MEDIUM (5.7)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-18" data-cvss="4.3">
+  <div class="news-title">CVE-2026-1860 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-70829 | CVSS: 5.7 | Severity: MEDIUM</div>
-  <div class="news-summary">An information exposure vulnerability in Datart v1.0.0-rc.3 allows authenticated attackers to access sensitive data via a custom H2 JDBC connection string.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-70829" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1860 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The Kali Forms plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 2.4.8. This is due to the `get_items_permissions_check()` permission callback on the `/kaliforms/v1/forms/{id}` REST API endpoint only checking for the `edit_posts` capability ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1860" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-17" data-cvss="9.6">
-  <div class="news-title">CVE-2026-22208 - CRITICAL (9.6)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-18" data-cvss="5.3">
+  <div class="news-title">CVE-2026-1938 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-22208 | CVSS: 9.6 | Severity: CRITICAL</div>
-  <div class="news-summary">OpenS100 (the reference implementation S-100 viewer) prior to commit 753cf29 contain a remote code execution vulnerability via an unrestricted Lua interpreter. The Portrayal Engine initializes Lua using luaL_openlibs() without sandboxing or capability restrictions, exposing standard libraries such a...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22208" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1938 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The YayMail – WooCommerce Email Customizer plugin for WordPress is vulnerable to unauthorized license key deletion due to a missing authorization check on the `/yaymail-license/v1/license/delete` REST endpoint in versions up to, and including, 4.3.2. This makes it possible for authenticated attacker...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1938" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-17" data-cvss="8.8">
-  <div class="news-title">CVE-2026-2616 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-18" data-cvss="4.4">
+  <div class="news-title">CVE-2026-1943 - MEDIUM (4.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-17</span>
+    <span>2026-02-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-2616 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability has been found in Beetel 777VR1 up to 01.00.09. The impacted element is an unknown function of the component Web Management Interface. The manipulation leads to hard-coded credentials. The attack needs to be initiated within the local network. The exploit has been disclosed to the pu...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2616" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1943 | CVSS: 4.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The YayMail – WooCommerce Email Customizer plugin for WordPress is vulnerable to Stored Cross-Site Scripting via settings in all versions up to, and including, 4.3.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Shop Manager-leve...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1943" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -669,7 +667,7 @@ This issue affects Apache Arrow C++ from 15.0.0 through 23.0.0. It can be trigge
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-02-24 08:02:09</div>
+      <div>Raport wygenerowano: 2026-02-25 08:02:14</div>
     </div>
   </div>
 
