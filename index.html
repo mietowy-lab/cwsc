@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-03-03</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-03-04</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-03-03</p>
+      <p class="sub">Dane z RSS i API | 2026-03-04</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,8 +137,8 @@
 
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">58</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">9</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">343</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">10</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">342</a></div><div class="kpi-label">Luki</div></div>
         <div class="card"><div class="kpi-num"><a href="#top">410</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
@@ -344,8 +344,17 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (9)</h3>
+      <h3>⚠️ Nowe Zagrożenia (10)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-03-03" data-cvss="-1">
+  <div class="news-title">Silver Dragon Targets Organizations in Southeast Asia and Europe</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-03-03 15:49</span>
+  </div>
+  <div class="news-summary">Key Findings Introduction In recent months, Check Point Research (CPR) has been tracking a sophisticated, Chinese-aligned threat group whose activity demonstrates operational correlation with campaigns previously associated with APT41. We have designated this activity cluster as Silver Dragon. This ...</div>
+  <a href="https://research.checkpoint.com/2026/silver-dragon-targets-organizations-in-southeast-asia-and-europe/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-02-23" data-cvss="-1">
   <div class="news-title">2025: The Untold Stories of Check Point Research</div>
   <div class="news-meta">
@@ -435,8 +444,44 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (343)</h3>
+      <h3>🔓 Wykryte Luki (342)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-03" data-cvss="-1.0">
+  <div class="news-title">Sometimes, You Can Just Feel The Security In The Design (Juniper Junos Evolved CVE-2026-21902 Pre-Auth RCE)</div>
+  <div class="news-meta">
+    <span class="badge">Watchtowr Labs</span>
+    <span>2026-03-03 14:15</span>
+  </div>
+  <div class="news-summary">On today’s ‘good news disguised as other things’ segment, we’re turning our gaze to CVE-2026-21902 - a recently disclosed “Incorrect Permission Assignment for Critical Resource” vulnerability affecting Juniper’s Junos OS Evolved platform. This vulnerability affects only Juniper’s PTX</div>
+  <a href="https://labs.watchtowr.com/sometimes-you-can-just-feel-the-security-in-the-design-junos-os-evolved-cve-2026-21902-rce/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-03" data-cvss="-1.0">
+  <div class="news-title">The Biosig Project libbiosig ABF parsing out-of-bounds read vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-03-03 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2323" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-03" data-cvss="-1.0">
+  <div class="news-title">The Biosig Project libbiosig Nicolet WFT parsing heap-based buffer overflow vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-03-03 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2362" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-03" data-cvss="-1.0">
+  <div class="news-title">The Biosig Project libbiosig Intan CLP parsing heap-based buffer overflow vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-03-03 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2361" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-03-02" data-cvss="-1.0">
   <div class="news-title">mitmproxy for fun and profit: Interception and Analysis of Application Traffic</div>
   <div class="news-meta">
@@ -521,153 +566,99 @@ The post Total Recall – Retracing Your Steps Back to NT AUTHORITY\SYSTEM appea
   <div class="news-summary">By Aviv Donenfeld and Oded Vanunu Executive Summary Check Point Research has discovered critical vulnerabilities in Anthropic’s Claude Code that allow attackers to achieve remote code execution and steal API credentials through malicious project configurations. The vulnerabilities exploit various co...</div>
   <a href="https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-24" data-cvss="9.1">
-  <div class="news-title">CVE-2025-40538 - CRITICAL (9.1)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-25" data-cvss="6.4">
+  <div class="news-title">CVE-2026-1614 - MEDIUM (6.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
+    <span>2026-02-25</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-40538 | CVSS: 9.1 | Severity: CRITICAL</div>
-  <div class="news-summary">A broken access control vulnerability exists in Serv-U which when exploited, gives a malicious actor the ability to create a system admin user and execute arbitrary code as a privileged account via domain admin or group admin privileges.
+  <div class="cve-info">CVE ID: CVE-2026-1614 | CVSS: 6.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The Rise Blocks – A Complete Gutenberg Page Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘logoTag’ Site Identity block attribute in all versions up to, and including, 3.7 due to insufficient input sanitization and output escaping. This makes it possible for authe...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1614" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-25" data-cvss="8.8">
+  <div class="news-title">CVE-2026-3166 - HIGH (8.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-02-25</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-3166 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability was identified in Tenda F453 1.0.0.3. The affected element is the function fromRouteStatic of the file /goform/RouteStatic of the component httpd. Such manipulation of the argument page leads to buffer overflow. The attack can be launched remotely. The exploit is publicly available a...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3166" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-25" data-cvss="8.8">
+  <div class="news-title">CVE-2026-3167 - HIGH (8.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-02-25</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-3167 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A security flaw has been discovered in Tenda F453 1.0.0.3. The impacted element is the function formWebTypeLibrary of the file /goform/webtypelibrary of the component httpd. Performing a manipulation of the argument webSiteId results in buffer overflow. The attack may be initiated remotely. The expl...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3167" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-25" data-cvss="8.8">
+  <div class="news-title">CVE-2026-3168 - HIGH (8.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-02-25</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-3168 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A weakness has been identified in Tenda F453 1.0.0.3. This affects the function fromNatStaticSetting of the file /goform/NatStaticSetting of the component httpd. Executing a manipulation of the argument page can lead to buffer overflow. The attack may be launched remotely. The exploit has been made ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3168" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-25" data-cvss="4.6">
+  <div class="news-title">CVE-2025-11563 - MEDIUM (4.6)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-02-25</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-11563 | CVSS: 4.6 | Severity: MEDIUM</div>
+  <div class="news-summary">URLs containing percent-encoded slashes (`/` or `\`) can trick wcurl into
+saving the output file outside of the current directory without the user
+explicitly asking for it.
 
-This issue requires administrative privileges to abuse. On Wi...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40538" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+This flaw only affects the wcurl command line tool.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11563" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-24" data-cvss="9.1">
-  <div class="news-title">CVE-2025-40539 - CRITICAL (9.1)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-25" data-cvss="8.8">
+  <div class="news-title">CVE-2026-3169 - HIGH (8.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
+    <span>2026-02-25</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-40539 | CVSS: 9.1 | Severity: CRITICAL</div>
-  <div class="news-summary">A type confusion vulnerability exists in Serv-U which when exploited, gives a malicious actor the ability to execute arbitrary native code as privileged account.
-
-This issue requires administrative privileges to abuse. On Windows deployments, the risk is scored as a medium because services frequentl...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40539" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-3169 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A security vulnerability has been detected in Tenda F453 1.0.0.3. This impacts the function fromSafeEmailFilter of the file /goform/SafeEmailFilter of the component httpd. The manipulation of the argument page leads to buffer overflow. Remote exploitation of the attack is possible. The exploit has b...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3169" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-24" data-cvss="9.1">
-  <div class="news-title">CVE-2025-40540 - CRITICAL (9.1)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-25" data-cvss="2.4">
+  <div class="news-title">CVE-2026-3170 - LOW (2.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
+    <span>2026-02-25</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-40540 | CVSS: 9.1 | Severity: CRITICAL</div>
-  <div class="news-summary">A type confusion vulnerability exists in Serv-U which when exploited, gives a malicious actor the ability to execute arbitrary native code as privileged account.
-
-This issue requires administrative privileges to abuse. On Windows deployments, the risk is scored as a medium because services frequentl...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40540" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-3170 | CVSS: 2.4 | Severity: LOW</div>
+  <div class="news-summary">A vulnerability was detected in SourceCodester/Patrick Mvuma Patients Waiting Area Queue Management System 1.0. Affected is an unknown function of the file /patient-search.php. The manipulation of the argument First Name/Last Name results in cross site scripting. The attack can be executed remotely....</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3170" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-24" data-cvss="9.1">
-  <div class="news-title">CVE-2025-40541 - CRITICAL (9.1)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-25" data-cvss="7.5">
+  <div class="news-title">CVE-2026-1916 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
+    <span>2026-02-25</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-40541 | CVSS: 9.1 | Severity: CRITICAL</div>
-  <div class="news-summary">An Insecure Direct Object Reference (IDOR) vulnerability exists in Serv-U, which when exploited, gives a malicious actor the ability to execute native code as a privileged account.
-
-This issue requires administrative privileges to abuse. On Windows deployments, the risk is scored as a medium because...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-40541" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1916 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The WPGSI: Spreadsheet Integration plugin for WordPress is vulnerable to unauthorized modification and loss of data due to missing capability checks and an insecure authentication mechanism on the `wpgsi_callBackFuncAccept` and `wpgsi_callBackFuncUpdate` REST API functions in all versions up to, and...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1916" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-24" data-cvss="9.8">
-  <div class="news-title">CVE-2026-1229 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-25" data-cvss="8.8">
+  <div class="news-title">CVE-2026-1929 - HIGH (8.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
+    <span>2026-02-25</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-1229 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The CombinedMult function in the CIRCL ecc/p384 package (secp384r1 curve) produces an incorrect value for specific inputs. The issue is fixed by using complete addition formulas.
-ECDH and ECDSA signing relying on this curve are not affected.
-
-The bug was fixed in  v1.6.3 https://github.com/cloudflar...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1229" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-24" data-cvss="7.7">
-  <div class="news-title">CVE-2024-1524 - HIGH (7.7)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2024-1524 | CVSS: 7.7 | Severity: HIGH</div>
-  <div class="news-summary">When the "Silent Just-In-Time Provisioning" feature is enabled for a federated identity provider (IDP)  there is a risk that a local user store user's information may be replaced during the account provisioning process in cases where federated users share the same username as local users. 
-
- There w...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-1524" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-24" data-cvss="9.9">
-  <div class="news-title">CVE-2025-11165 - CRITICAL (9.9)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2025-11165 | CVSS: 9.9 | Severity: CRITICAL</div>
-  <div class="news-summary">A sandbox escape vulnerability exists in dotCMS’s Velocity scripting engine (VTools) that allows authenticated users with scripting privileges to bypass class and package restrictions enforced by SecureUberspectorImpl.
-
-By dynamically modifying the Velocity engine’s runtime configuration and reiniti...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11165" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-24" data-cvss="8.4">
-  <div class="news-title">CVE-2024-56373 - HIGH (8.4)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2024-56373 | CVSS: 8.4 | Severity: HIGH</div>
-  <div class="news-summary">DAG Author (who already has quite a lot of permissions) could manipulate database of Airflow 2 in the way to execute arbitrary code in the web-server context, which they should normally not be able to do, leading to potentially remote code execution in the context of web-server (server-side) as a re...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-56373" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-24" data-cvss="6.5">
-  <div class="news-title">CVE-2025-27555 - MEDIUM (6.5)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2025-27555 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">Airflow versions before 2.11.1 have a vulnerability that allows authenticated users with audit log access to see sensitive values in audit logs which they should not see. When sensitive connection parameters were set via airflow CLI, values of those variables appeared in the audit log and were store...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-27555" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-24" data-cvss="7.8">
-  <div class="news-title">CVE-2026-2664 - HIGH (7.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-2664 | CVSS: 7.8 | Severity: HIGH</div>
-  <div class="news-summary">An out of bounds read vulnerability in the grpcfuse kernel module present in the Linux VM in Docker Desktop for Windows, Linux and macOS up to version 4.61.0 could allow a local attacker to cause an unspecified impact by writing to /proc/docker entries. The issue has been fixed in Docker Desktop 4.6...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2664" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-24" data-cvss="9.8">
-  <div class="news-title">CVE-2025-14577 - CRITICAL (9.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2025-14577 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">Slican NCP/IPL/IPM/IPU devices are vulnerable to PHP Function Injection. An unauthenticated remote attacker is able to execute arbitrary PHP commands by sending specially crafted requests to /webcti/session_ajax.php endpoint.
-
-
-This issue was fixed in version 1.24.0190 (Slican NCP) and 6.61.0010 (Sl...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14577" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-24" data-cvss="5.3">
-  <div class="news-title">CVE-2026-1772 - MEDIUM (5.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-1772 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">RTU500 web interface: An unprivileged user can read user management information. The information cannot be accessed via the RTU500 web user interface but requires further tools like browser development utilities to access them without required privileges.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1772" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-24" data-cvss="7.5">
-  <div class="news-title">CVE-2026-1773 - HIGH (7.5)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-02-24</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-1773 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">IEC 60870-5-104: Potential Denial of Service impact on reception of invalid U-format frame. Product is only affected if IEC 60870-5-104 bi-directional functionality is configured. Enabling secure communication following IEC 62351-3 does not remediate the vulnerability but mitigates the risk of explo...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1773" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-1929 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">The Advanced Woo Labels plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.37. This is due to the use of `call_user_func_array()` with user-controlled callback and parameters in the `get_select_option_values()` AJAX handler without an allowlist of per...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1929" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -675,7 +666,7 @@ This issue was fixed in version 1.24.0190 (Slican NCP) and 6.61.0010 (Sl...</div
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-03-03 08:02:10</div>
+      <div>Raport wygenerowano: 2026-03-04 08:02:10</div>
     </div>
   </div>
 
