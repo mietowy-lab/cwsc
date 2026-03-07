@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-03-06</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-03-07</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-03-06</p>
+      <p class="sub">Dane z RSS i API | 2026-03-07</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,9 +136,9 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">59</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">60</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">10</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">340</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">339</a></div><div class="kpi-label">Luki</div></div>
         <div class="card"><div class="kpi-num"><a href="#top">409</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
@@ -146,8 +146,21 @@
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (59)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (60)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-03-05" data-cvss="-1">
+  <div class="news-title">The MCP AuthN/Z Nightmare</div>
+  <div class="news-meta">
+    <span class="badge">Doyensec</span>
+    <span>2026-03-05T00:00:00+01:00</span>
+  </div>
+  <div class="news-summary">
+
+
+This article shares our perspective on the current state of authentication and authorization in enterprise-ready, remote MCP server deployments.
+Before diving into that discussion, we’ll first outline the most common attack vectors. Understanding these threats is essential to properly frame the s...</div>
+  <a href="https://blog.doyensec.com/2026/03/05/mcp-nightmare.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-03-04" data-cvss="-1">
   <div class="news-title">When an AI Assistant Becomes Part of the Hacker’s Attack Chain | Security Analysis of Doubao Phone</div>
   <div class="news-meta">
@@ -327,15 +340,6 @@ On February 21, 2025, the cryptocurrency exchange Bybit experienced the most sig
 The DARKN...</div>
   <a href="https://www.darknavy.org/darknavy_insight/reconstructing_the_1.5_billion_bybit_hack_by_north_korean_actors/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-03-24" data-cvss="-1">
-  <div class="news-title">Pwning Millions of Smart Weighing Machines with API and Hardware Hacking</div>
-  <div class="news-meta">
-    <span class="badge">Spaceraccoon</span>
-    <span>2025-03-24 00:03</span>
-  </div>
-  <div class="news-summary">Why hack one device, when you can hack all of them? By reverse-engineering and finding vulnerabilities in user-machine association flows for smart weighing machines, I was able to take over millions of internet-connected health devices. Hardware and web security are two halves of modern smart device...</div>
-  <a href="https://spaceraccoon.dev/pwning-millions-smart-weighing-machines-api-hardware-hacking/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -443,8 +447,27 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (340)</h3>
+      <h3>🔓 Wykryte Luki (339)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-06" data-cvss="-1.0">
+  <div class="news-title">How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework</div>
+  <div class="news-meta">
+    <span class="badge">Github Security Lab</span>
+    <span>2026-03-06 21:09</span>
+  </div>
+  <div class="news-summary">GitHub Security Lab Taskflow Agent is very effective at finding Auth Bypasses, IDORs, Token Leaks, and other high-impact vulnerabilities.
+The post How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework appeared first on The GitHub Blog.</div>
+  <a href="https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-06" data-cvss="-1.0">
+  <div class="news-title">Getting a Shell on the Tapo C260 Camera (CVE-2026-0651, CVE-2026-0652, CVE-2026-0653)</div>
+  <div class="news-meta">
+    <span class="badge">Spaceraccoon</span>
+    <span>2026-03-06 08:00</span>
+  </div>
+  <div class="news-summary">I discovered a remote code execution vulnerability on the Tapo C260 after a fun journey of reverse-engineering and understanding its interactions with TP-Link Cloud.</div>
+  <a href="https://spaceraccoon.dev/getting-shell-tapo-c260-webcam/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-03-05" data-cvss="-1.0">
   <div class="news-title">Patch, track, repeat: The 2025 CVE retrospective</div>
   <div class="news-meta">
@@ -519,145 +542,125 @@ Network
                    A solid understanding of the protocols used by applications is a necessary prerequisite when assessing application security. In recent projects, we have h...</div>
   <a href="https://www.synacktiv.com/en/publications/mitmproxy-for-fun-and-profit-interception-and-analysis-of-application-traffic" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-27" data-cvss="-1.0">
-  <div class="news-title">Total Recall – Retracing Your Steps Back to NT AUTHORITY\SYSTEM</div>
-  <div class="news-meta">
-    <span class="badge">Mdsec</span>
-    <span>2026-02-27 11:13</span>
-  </div>
-  <div class="news-summary">The MDSec red team are regularly performing research to identify privilege escalation vectors in Windows and macOS for use during red team engagements. Where the indicators in exploiting the EoP...
-The post Total Recall – Retracing Your Steps Back to NT AUTHORITY\SYSTEM appeared first on MDSec.</div>
-  <a href="https://www.mdsec.co.uk/2026/02/total-recall-retracing-your-steps-back-to-nt-authoritysystem/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-27" data-cvss="9.8">
-  <div class="news-title">CVE-2025-12981 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-03-01" data-cvss="8.8">
+  <div class="news-title">CVE-2026-3377 - HIGH (8.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-03-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-12981 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The Listee theme for WordPress is vulnerable to privilege escalation in all versions up to, and including, 1.1.6. This is due to a broken validation check in the bundled listee-core plugin's user registration function that fails to properly sanitize the user_role parameter. This makes it possible fo...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-12981" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-3377 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability was detected in Tenda F453 1.0.0.3. Affected by this issue is the function fromSafeUrlFilter of the file /goform/SafeUrlFilter. Performing a manipulation of the argument page results in buffer overflow. The attack can be initiated remotely. The exploit is now public and may be used.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3377" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-27" data-cvss="6.4">
-  <div class="news-title">CVE-2025-14040 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-03-01" data-cvss="8.8">
+  <div class="news-title">CVE-2026-3378 - HIGH (8.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-03-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-14040 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Automotive Car Dealership Business WordPress Theme for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Call to Action' custom fields in all versions up to, and including, 13.4. This is due to insufficient input sanitization and output escaping on user-supplied attributes in the '...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14040" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-3378 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A flaw has been found in Tenda F453 1.0.0.3. This affects the function fromqossetting of the file /goform/qossetting. Executing a manipulation of the argument qos can lead to buffer overflow. The attack can be launched remotely. The exploit has been published and may be used.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3378" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-27" data-cvss="6.4">
-  <div class="news-title">CVE-2025-14149 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-03-01" data-cvss="8.8">
+  <div class="news-title">CVE-2026-3379 - HIGH (8.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-03-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-14149 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Xpro Addons — 140+ Widgets for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's Image Scroller widget box link attribute in all versions up to, and including, 1.4.24 due to insufficient input sanitization and output escaping on user supplied attributes...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14149" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-3379 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability has been found in Tenda F453 1.0.0.3. This vulnerability affects the function fromSetIpBind of the file /goform/SetIpBind. The manipulation of the argument page leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be use...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3379" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-27" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-15509 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-03-01" data-cvss="8.8">
+  <div class="news-title">CVE-2026-3380 - HIGH (8.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-03-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-15509 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">The SmartRemote module has insufficient restrictions on loading URLs, which may lead to some information leakage.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15509" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-3380 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability was found in Tenda F453 1.0.0.3. This issue affects the function frmL7ImForm of the file /goform/L7Im. The manipulation of the argument page results in buffer overflow. The attack may be launched remotely. The exploit has been made public and could be used.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3380" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-27" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-15567 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-01" data-cvss="3.3">
+  <div class="news-title">CVE-2026-3382 - LOW (3.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-03-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-15567 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Insufficient protection mechanisms in the Health Module may lead to partial information disclosure.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15567" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-3382 | CVSS: 3.3 | Severity: LOW</div>
+  <div class="news-summary">A security flaw has been discovered in ChaiScript up to 6.1.0. The impacted element is the function chaiscript::Boxed_Number::get_as of the file include/chaiscript/dispatchkit/boxed_number.hpp. Performing a manipulation results in memory corruption. The attack requires a local approach. The exploit ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3382" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-27" data-cvss="4.3">
-  <div class="news-title">CVE-2026-3302 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-01" data-cvss="3.3">
+  <div class="news-title">CVE-2026-3383 - LOW (3.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-03-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-3302 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A weakness has been identified in SourceCodester Doctor Appointment System 1.0. Affected by this issue is some unknown functionality of the file /register.php of the component Sign Up Page. Executing a manipulation of the argument Email can lead to cross site scripting. The attack can be launched re...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3302" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-3383 | CVSS: 3.3 | Severity: LOW</div>
+  <div class="news-summary">A weakness has been identified in ChaiScript up to 6.1.0. This affects the function chaiscript::Boxed_Number::go of the file include/chaiscript/dispatchkit/boxed_number.hpp. Executing a manipulation can lead to divide by zero. The attack requires local access. The exploit has been made available to ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3383" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-27" data-cvss="6.3">
-  <div class="news-title">CVE-2025-13327 - MEDIUM (6.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-28" data-cvss="7.5">
+  <div class="news-title">CVE-2026-2471 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-02-28</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-13327 | CVSS: 6.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw was found in uv. This vulnerability allows an attacker to execute malicious code during package resolution or installation via specially crafted ZIP (Zipped Information Package) archives that exploit parsing differentials, requiring user interaction to install an attacker-controlled package.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-13327" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-2471 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The WP Mail Logging plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.15.0 via deserialization of untrusted input from the email log message field. This is due to the `BaseModel` class constructor calling `maybe_unserialize()` on all properties retrie...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2471" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-27" data-cvss="5.0">
-  <div class="news-title">CVE-2025-9572 - MEDIUM (5.0)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-28" data-cvss="7.5">
+  <div class="news-title">CVE-2025-13673 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-02-28</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-9572 | CVSS: 5.0 | Severity: MEDIUM</div>
-  <div class="news-summary">n authorization flaw in Foreman's GraphQL API allows low-privileged users to access metadata beyond their assigned permissions. Unlike the REST API, which correctly enforces access controls, the GraphQL endpoint does not apply proper filtering, leading to an authorization bypass.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9572" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-13673 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to SQL Injection via the 'coupon_code' parameter in all versions up to, and including, 3.9.6 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL quer...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-13673" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-27" data-cvss="6.7">
-  <div class="news-title">CVE-2025-9907 - MEDIUM (6.7)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-28" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-2844 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-02-28</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-9907 | CVSS: 6.7 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw was found in the Red Hat Ansible Automation Platform, Event-Driven Ansible (EDA) Event Stream API. This vulnerability allows exposure of sensitive client credentials and internal infrastructure headers via the test_headers field when an event stream is in test mode. The possible outcome inclu...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9907" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-2844 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Missing Authentication for Critical Function vulnerability in Microchip TimePictra allows Configuration/Environment Manipulation.This issue affects TimePictra: from 11.0 through 11.3 SP2.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2844" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-27" data-cvss="6.7">
-  <div class="news-title">CVE-2025-9908 - MEDIUM (6.7)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-02-28" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-3010 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-02-28</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-9908 | CVSS: 6.7 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw was found in the Red Hat Ansible Automation Platform, Event-Driven Ansible (EDA) Event Streams. This vulnerability allows an authenticated user to gain access to sensitive internal infrastructure headers (such as X-Trusted-Proxy and X-Envoy-*) and event stream URLs via crafted requests and jo...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9908" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-3010 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Microchip TimePictra allows Query System for Information.This issue affects TimePictra: from 11.0 through 11.3 SP2.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3010" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-27" data-cvss="6.7">
-  <div class="news-title">CVE-2025-9909 - MEDIUM (6.7)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-28" data-cvss="4.3">
+  <div class="news-title">CVE-2026-28554 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-02-28</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-9909 | CVSS: 6.7 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw was found in the Red Hat Ansible Automation Platform Gateway route creation component. This vulnerability allows credential theft via the creation of misleading routes using a double-slash (//) prefix in the gateway_path. A malicious or socially engineered administrator can configure a honey-...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9909" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-28554 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">wpForo Forum 2.4.14 contains a missing authorization vulnerability that allows authenticated subscribers to approve or unapprove any forum post via the wpforo_approve_ajax AJAX handler. Attackers exploit the nonce-only check by submitting a valid nonce with an arbitrary post ID to bypass moderation ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28554" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-27" data-cvss="4.9">
-  <div class="news-title">CVE-2026-0871 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-02-28" data-cvss="4.3">
+  <div class="news-title">CVE-2026-28555 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
+    <span>2026-02-28</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-0871 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw was found in Keycloak. An administrator with `manage-users` permission can bypass the "Only administrators can view" setting for unmanaged attributes, allowing them to modify these attributes. This improper access control can lead to unauthorized changes to user profiles, even when the system...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0871" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-02-27" data-cvss="8.3">
-  <div class="news-title">CVE-2026-0980 - HIGH (8.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-02-27</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-0980 | CVSS: 8.3 | Severity: HIGH</div>
-  <div class="news-summary">A flaw was found in rubyipmi, a gem used in the Baseboard Management Controller (BMC) component of Red Hat Satellite. An authenticated attacker with host creation or update permissions could exploit this vulnerability by crafting a malicious username for the BMC interface. This could lead to remote ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0980" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-28555 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">wpForo Forum 2.4.14 contains a missing authorization vulnerability that allows authenticated subscribers to close or reopen any forum topic via the wpforo_close_ajax handler. Attackers submit a valid nonce with an arbitrary topic ID to bypass the moderator permission requirement and disrupt forum di...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28555" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -665,7 +668,7 @@ The post Total Recall – Retracing Your Steps Back to NT AUTHORITY\SYSTEM appea
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-03-06 08:02:16</div>
+      <div>Raport wygenerowano: 2026-03-07 08:02:09</div>
     </div>
   </div>
 
