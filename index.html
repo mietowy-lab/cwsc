@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-03-19</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-03-23</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-03-19</p>
+      <p class="sub">Dane z RSS i API | 2026-03-23</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,18 +136,27 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">61</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">10</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">340</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">411</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">60</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">11</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">338</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">409</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (61)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (60)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-03-19" data-cvss="-1">
+  <div class="news-title">You have to invite them in</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-03-19 18:00</span>
+  </div>
+  <div class="news-summary">While a garlic and wooden stakes keep the vampires at bay in movies, they won’t save your network once an attacker has been "invited in." Discover why identity is the new frontier of cyber horror in this week’s edition.</div>
+  <a href="https://blog.talosintelligence.com/you-have-to-invite-them-in/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-03-16" data-cvss="-1">
   <div class="news-title">16th March – Threat Intelligence Report</div>
   <div class="news-meta">
@@ -325,16 +334,6 @@ At a high level, this post is about a data exfiltration attack chain, where an a
   <div class="news-summary"></div>
   <a href="https://kaist-hacking.github.io/publication/han-cpmm/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-03-30" data-cvss="-1">
-  <div class="news-title">If the Person Who Finds a Web3 Hardware Wallet is a Hacker</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2025-03-30 02:00</span>
-  </div>
-  <div class="news-summary">In 2024, Web3 security incidents caused by private key leaks have surged, resulting in estimated financial losses exceeding $855 million.
-Private keys function as the sole credentials for blockchain accounts, controlling access to all associated on-chain assets like cryptocurrencies and NFTs. Due to...</div>
-  <a href="https://www.darknavy.org/blog/if_the_person_who_finds_a_web3_hardware_wallet_is_a_hacker/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -342,8 +341,17 @@ Private keys function as the sole credentials for blockchain accounts, controlli
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (10)</h3>
+      <h3>⚠️ Nowe Zagrożenia (11)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-03-19" data-cvss="-1">
+  <div class="news-title">Everyday tools, extraordinary crimes: the ransomware exfiltration playbook</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-03-19 10:00</span>
+  </div>
+  <div class="news-summary">Attackers use trusted tools for data theft, making traditional detection unreliable. The Exfiltration Framework enables defenders to spot exfiltration by focusing on behavioral signals across endpoints, networks, and cloud environments rather than static tool indicators.</div>
+  <a href="https://blog.talosintelligence.com/everyday-tools-extraordinary-crimes-the-ransomware-exfiltration-playbook/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-03-05" data-cvss="-1">
   <div class="news-title">UAT-9244 targets South American telecommunication providers with three new malware implants</div>
   <div class="news-meta">
@@ -442,8 +450,53 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (340)</h3>
+      <h3>🔓 Wykryte Luki (338)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-22" data-cvss="-1.0">
+  <div class="news-title">Running Tesla Model 3’s Computer on My Desk Using Parts From Crashed Cars</div>
+  <div class="news-meta">
+    <span class="badge">Xdavidhu</span>
+    <span>2026-03-22 11:00</span>
+  </div>
+  <div class="news-summary">Tesla runs a bug bounty program that invites researchers to find security vulnerabilities in their vehicles. To participate, I needed the actual hardware, so I started looking for Tesla Model 3 parts on eBay. My goal was to get a Tesla car computer and touchscreen running on my desk, booting the car...</div>
+  <a href="https://bugs.xdavidhu.me/tesla/2026/03/22/running-tesla-model-3s-computer-on-my-desk-using-parts-from-crashed-cars/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-21" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-20817 - Windows Error Reporting Service EoP</div>
+  <div class="news-meta">
+    <span class="badge">Itm4N</span>
+    <span>2026-03-21 23:00</span>
+  </div>
+  <div class="news-summary">This vulnerability was such a gaping hole in the Windows Error Reporting service that Microsoft completely removed the affected feature. A low privilege user could simply send a specially crafted ALPC message with a reference to a command line that the service executed with SYSTEM privileges. At lea...</div>
+  <a href="https://itm4n.github.io/cve-2026-20817-wersvc-eop/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-21" data-cvss="-1.0">
+  <div class="news-title">The App You Asked Your Employees to Install Can Leak Their Bank Account Details to Hackers</div>
+  <div class="news-meta">
+    <span class="badge">Oversecured</span>
+    <span>2026-03-21 17:00</span>
+  </div>
+  <div class="news-summary">Security audit of shift scheduling and workforce management apps finds flaws that expose Plaid banking tokens, allow fake messages under the employer's brand, and let attackers silently delete shift notifications.</div>
+  <a href="https://blog.oversecured.com/The-app-you-asked-your-employees-to-install-can-leak-their-bank-account-details-to-hackers/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-21" data-cvss="-1.0">
+  <div class="news-title">That AI You Confide in May Be an Open Book: Researchers Find Cloud Keys, Exposed Conversations, and Injectable Chat in Companion Apps</div>
+  <div class="news-meta">
+    <span class="badge">Oversecured</span>
+    <span>2026-03-21 17:00</span>
+  </div>
+  <div class="news-summary">Oversecured identifies hardcoded cloud credentials and a cross-site scripting flaw in popular AI companion apps, exposing backend infrastructure and allowing code injection into private conversations.</div>
+  <a href="https://blog.oversecured.com/That-AI-you-confide-in-may-be-an-open-book-researchers-find-cloud-keys-exposed-conversations-and-injectable-chat-in-companion-apps/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-19" data-cvss="-1.0">
+  <div class="news-title">A 32-Year-Old Bug Walks Into A Telnet Server (GNU inetutils Telnetd CVE-2026-32746 Pre-Auth RCE)</div>
+  <div class="news-meta">
+    <span class="badge">Watchtowr Labs</span>
+    <span>2026-03-19 20:21</span>
+  </div>
+  <div class="news-summary">A long, long time ago, in a land free of binary exploit mitigations, when Unix still roamed the Earth, there lived a pre-authentication Telnetd vulnerability.In fact, this vulnerability was born so long ago (way back in 1994) that it may even be older than you. To put the timespan</div>
+  <a href="https://labs.watchtowr.com/a-32-year-old-bug-walks-into-a-telnet-server-gnu-inetutils-telnetd-cve-2026-32746/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-03-18" data-cvss="-1.0">
   <div class="news-title">The Most Organized Threat Actors Use Your ITSM (BMC FootPrints Pre-Auth Remote Code Execution Chains)</div>
   <div class="news-meta">
@@ -583,64 +636,13 @@ The vulnerability described in this ...</div>
 This report describes a use of cryptographically weak PRNG implementation issue, which leads to reliable prediction of cryptographic primitives used in the proprietary ...</div>
   <a href="https://labs.taszk.io/blog/post/113_mi_rng_predict/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-16" data-cvss="-1.0">
-  <div class="news-title">TVE-2026-03: Xiaomi miIO client heap buffer overflow</div>
-  <div class="news-meta">
-    <span class="badge">Taszk</span>
-    <span>2026-03-16 00:00</span>
-  </div>
-  <div class="news-summary">An attacker sending a malformed miIO message over WiFi to a Xiaomi Smart camera device can trigger the vulnerability described here.
-This report describes a heap buffer overflow, which leads to remote code execution.
-The vulnerability described in this advisory affects a potentially wide range of Xi...</div>
-  <a href="https://labs.taszk.io/blog/post/114_mi_heap_bof/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-13" data-cvss="-1.0">
-  <div class="news-title">RIP RegPwn</div>
-  <div class="news-meta">
-    <span class="badge">Mdsec</span>
-    <span>2026-03-13 15:25</span>
-  </div>
-  <div class="news-summary">13th March 2026 As part of MDSec’s R&D work, we often discover vulnerabilities and develop exploits to support our red team engagements. When researching widely used software, it is often...
-The post RIP RegPwn appeared first on MDSec.</div>
-  <a href="https://www.mdsec.co.uk/2026/03/rip-regpwn/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-12" data-cvss="-1.0">
-  <div class="news-title">Finding Gadgets Like it’s 2026</div>
-  <div class="news-meta">
-    <span class="badge">Atredis Partners</span>
-    <span>2026-03-12 17:03</span>
-  </div>
-  <div class="news-summary">Introduction
-Java deserialization vulnerabilities have been of interest to me for nearly a decade. In 2016, my team published a blog post titled "What Do WebLogic, WebSphere, JBoss, Jenkins, OpenNMS, and Your Application Have in Common? This Vulnerability." which kicked off a firestorm of vulnerabil...</div>
-  <a href="https://www.atredis.com/blog/2026/3/12/findings-gadgets-like-its-2026" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-03-12" data-cvss="8.8">
-  <div class="news-title">CVE-2026-4007 - HIGH (8.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-03-12</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-4007 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability was detected in Tenda W3 1.0.0.3(2204). This vulnerability affects unknown code of the file /goform/wifiSSIDget of the component POST Parameter Handler. Performing a manipulation of the argument index results in stack-based buffer overflow. It is possible to initiate the attack remot...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4007" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-03-12" data-cvss="8.8">
-  <div class="news-title">CVE-2026-4008 - HIGH (8.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-03-12</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-4008 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">A flaw has been found in Tenda W3 1.0.0.3(2204). This issue affects some unknown processing of the file /goform/wifiSSIDset of the component POST Parameter Handler. Executing a manipulation of the argument index/GO can lead to stack-based buffer overflow. It is possible to launch the attack remotely...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4008" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-03-19 08:02:21</div>
+      <div>Raport wygenerowano: 2026-03-23 08:02:18</div>
     </div>
   </div>
 
