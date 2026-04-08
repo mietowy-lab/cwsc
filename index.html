@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-04-04</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-04-08</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-04-04</p>
+      <p class="sub">Dane z RSS i API | 2026-04-08</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,18 +136,27 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">65</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">12</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">339</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">416</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">66</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">11</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">340</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">417</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (65)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (66)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-04-06" data-cvss="-1">
+  <div class="news-title">6th April – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-04-06 11:21</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 30th March, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES The European Commission, the European Union’s executive body, has confirmed a data breach after its Europa.eu platform was compromised through a third-p...</div>
+  <a href="https://research.checkpoint.com/2026/6th-march-threat-intelligence-report-2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-04-03" data-cvss="-1">
   <div class="news-title">Do not get high(jacked) off your own supply (chain)</div>
   <div class="news-meta">
@@ -344,15 +353,6 @@ In October 2025, the U.S. government announced the seizure of 127,000 BTC from P
 At a high level, this post is about a data exfiltration attack chain, where an adversary (either the model or third-party attacker via ind...</div>
   <a href="https://embracethered.com/blog/posts/2025/claude-abusing-network-access-and-anthropic-api-for-data-exfiltration/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-10-01" data-cvss="-1">
-  <div class="news-title">CROSS-X: Generalized and Stable Cross-Cache Attack on the Linux Kernel</div>
-  <div class="news-meta">
-    <span class="badge">Kaist Hacking Lab</span>
-    <span>2025-10-01 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://kaist-hacking.github.io/publication/kim-crossx/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -360,8 +360,17 @@ At a high level, this post is about a data exfiltration attack chain, where an a
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (12)</h3>
+      <h3>⚠️ Nowe Zagrożenia (11)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-04-07" data-cvss="-1">
+  <div class="news-title">The Trojan horse of cybercrime: Weaponizing SaaS notification pipelines</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-04-07 10:00</span>
+  </div>
+  <div class="news-summary">Cisco Talos has recently observed an increase in activity that is leveraging notification pipelines in popular collaboration platforms to deliver spam and phishing emails.</div>
+  <a href="https://blog.talosintelligence.com/weaponizing-saas-notification-pipelines/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-04-02" data-cvss="-1">
   <div class="news-title">UAT-10608: Inside a large-scale automated credential harvesting operation targeting web applications</div>
   <div class="news-meta">
@@ -380,31 +389,13 @@ At a high level, this post is about a data exfiltration attack chain, where an a
   <div class="news-summary">This blog provides an in-depth analysis of the malicious “msimg32.dll” used in Qilin ransomware attacks, which is a multi-stage infection chain targeting EDR systems.</div>
   <a href="https://blog.talosintelligence.com/qilin-edr-killer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item threat" data-sev="none" data-date="2026-04-02" data-cvss="-1">
-  <div class="news-title">An overview of ransomware threats in Japan in 2025 and early detection insights from Qilin cases</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-04-02 10:00</span>
-  </div>
-  <div class="news-summary">There were 134 ransomware incidents reported in Japan in 2025, representing a 17.5% year-over-year increase from 2024.</div>
-  <a href="https://blog.talosintelligence.com/an-overview-of-ransomware-threats-in-japan-in-2025-and-early-detection-insights-from-qilin-cases/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2026-03-31" data-cvss="-1">
-  <div class="news-title">Ransomware in 2025: Blending in is the strategy</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-03-31 10:00</span>
-  </div>
-  <div class="news-summary">A summary of the top ransomware trends from the Talos 2025 Year in Review, with a focus on identity, attacker tactics, and practical defenses.</div>
-  <a href="https://blog.talosintelligence.com/ransomware-in-2025-blending-in-is-the-strategy/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-03-29" data-cvss="-1">
   <div class="news-title">AI Threat Landscape Digest January-February 2026</div>
   <div class="news-meta">
     <span class="badge">Checkpoint Research</span>
     <span>2026-03-29 10:08</span>
   </div>
-  <div class="news-summary">KEY FINDINGS AI-assisted malware development has reached operational maturity.VoidLink framework, which is modular, professionally engineered, and fully functional,was built by a single developer using a commercial AI-powered IDE within a compressedtimeframe. AI-assisted development is no longer exp...</div>
+  <div class="news-summary">KEY FINDINGS AI-assisted malware development has reached operational maturity.VoidLink framework, which is modular, professionally engineered, and fully functional, was built by a single developer using a commercial AI-powered IDE within a compressed timeframe. AI-assisted development is no longer e...</div>
   <a href="https://research.checkpoint.com/2026/ai-threat-landscape-digest-january-february-2026/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2026-02-01" data-cvss="-1">
@@ -478,8 +469,89 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (339)</h3>
+      <h3>🔓 Wykryte Luki (340)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-07" data-cvss="-1.0">
+  <div class="news-title">Talos Takes: 2025's ransomware trends and zombie vulnerabilities</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-04-07 12:03</span>
+  </div>
+  <div class="news-summary">In this episode of Talos Takes, Amy and Pierre Cadieux unpack the ransomware and vulnerability trends that defined 2025.</div>
+  <a href="https://blog.talosintelligence.com/talos-takes-2025s-ransomware-trends-and-zombie-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-07" data-cvss="-1.0">
+  <div class="news-title">Year in Review: Vulnerabilities old and new and something React2</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-04-07 10:00</span>
+  </div>
+  <div class="news-summary">The year was characterized by an unending beat-down on infrastructure that relied on older enmeshed dependencies (e.g., Log4j and PHPUnit), while React2Shell rocketed to the highest percentage of attacks for the entire year within the last three weeks of 2025.</div>
+  <a href="https://blog.talosintelligence.com/year-in-review-vulnerabilities-old-and-new-and-something-react2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-07" data-cvss="-1.0">
+  <div class="news-title">LibRaw x3f_thumb_loader heap-based buffer overflow vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-04-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2358" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-07" data-cvss="-1.0">
+  <div class="news-title">LibRaw lossless_jpeg_load_raw heap-based buffer overflow vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-04-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2331" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-07" data-cvss="-1.0">
+  <div class="news-title">LibRaw deflate_dng_load_raw integer overflow vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-04-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2364" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-07" data-cvss="-1.0">
+  <div class="news-title">LibRaw x3f_load_huffman heap-based buffer overflow vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-04-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2359" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-07" data-cvss="-1.0">
+  <div class="news-title">LibRaw HuffTable::initval heap-based buffer overflow vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-04-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2330" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-07" data-cvss="-1.0">
+  <div class="news-title">LibRaw uncompressed_fp_dng_load_raw integer overflow vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-04-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2363" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-05" data-cvss="-1.0">
+  <div class="news-title">Site-DOM-XSS using Cookie Injection: The AI Hackers are Coming Faster than You Think</div>
+  <div class="news-meta">
+    <span class="badge">Renwa</span>
+    <span>2026-04-05 11:08</span>
+  </div>
+  <div class="news-summary">pew pew pewThere been a big trend in recent weeks of using AIs to find vulnerabilities and how now they can easily find bugs, I have been using these clankers for a quite good time and unfortunately I have to break it to you that yes they’re really good and still improving.I’m not someone who looks ...</div>
+  <a href="https://medium.com/@renwa/site-dom-xss-using-cookie-injection-the-ai-hackers-are-coming-faster-than-you-think-3ef82f2a991d?source=rss-3f8ae70e3957------2" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-04-02" data-cvss="-1.0">
   <div class="news-title">You’re Not Supposed To ShareFile With Everyone (Progress ShareFile Pre-Auth RCE Chain CVE-2026-2699 & CVE-2026-2701)</div>
   <div class="news-meta">
@@ -499,188 +571,95 @@ The post Strengthening supply chain security: Preparing for the next malware cam
 The post Securing the open source supply chain across GitHub appeared first on The GitHub Blog.</div>
   <a href="https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-31" data-cvss="-1.0">
-  <div class="news-title">Operation TrueChaos: 0-Day Exploitation Against Southeast Asian Government Targets</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-03-31 13:16</span>
-  </div>
-  <div class="news-summary">Key Points Introduction At the beginning of 2026, Check Point Research observed a series of targeted attacks against government entities in Southeast Asia carried out via a legitimate TrueConf software installed in the targets’ environment. The investigation led to the discovery of a zero-day vulner...</div>
-  <a href="https://research.checkpoint.com/2026/operation-truechaos-0-day-exploitation-against-southeast-asian-government-targets/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-31" data-cvss="-1.0">
-  <div class="news-title">OpenOlat - RCE via Server-side Template Injection (SSTI) and OIDC Auth Bypass</div>
-  <div class="news-meta">
-    <span class="badge">Secfault Security</span>
-    <span>2026-03-31 00:00</span>
-  </div>
-  <div class="news-summary">Posted on March 31, 2026 by maik
-Summary
-We identified an exploitable SSTI within OpenOlat that allowed for code execution on the host for authenticated users with authoring permissions. Additionally, an authentication bypass in the OIDC implicit flow implementation was identified, that allowed us t...</div>
-  <a href="https://secfault-security.com/blog/openolat-ssti.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-31" data-cvss="-1.0">
-  <div class="news-title">Foxit Reader List Box Calculate Array Use-After-Free Vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-03-31 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2365" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-29" data-cvss="-1.0">
-  <div class="news-title">Please, We Beg, Just One Weekend Free Of Appliances (Citrix NetScaler CVE-2026-3055 Memory Overread Part 2)</div>
-  <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-03-29 20:07</span>
-  </div>
-  <div class="news-summary">Today, we woke up with a nagging feeling: what if Citrix had, in fact, patched multiple Memory Overread vulnerabilities as part of CVE-2026-3055? While we've been using our analysis from Part 1 (please read it first, as this post will be brief) to accurately identify exploitable Citrix NetScaler</div>
-  <a href="https://labs.watchtowr.com/please-we-beg-just-one-weekend-free-of-appliances-citrix-netscaler-cve-2026-3055-memory-overread-part-2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-28" data-cvss="-1.0">
-  <div class="news-title">The Sequels Are Never As Good, But We're Still In Pain (Citrix NetScaler CVE-2026-3055 Memory Overread)</div>
-  <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-03-28 20:39</span>
-  </div>
-  <div class="news-summary">Sequels? Pain? We're obviously talking about Citrix NetScalers, yet again.Welcome back to another watchTowr Labs blog post - pull up a chair, we always welcome new members to our group therapy sessions.If you asked a C programmer what they most dislike doing in life, their answer</div>
-  <a href="https://labs.watchtowr.com/the-sequels-are-never-as-good-but-were-still-in-pain-citrix-netscaler-cve-2026-3055-memory-overread/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-28" data-cvss="-1.0">
-  <div class="news-title">A Technical Deep Dive into CVE-2024-23380: Exploiting GPU Memory Corruption to Android Root</div>
-  <div class="news-meta">
-    <span class="badge">Android Offensive Security</span>
-    <span>2026-03-28 00:00</span>
-  </div>
-  <div class="news-summary">In our last blog, we talked about Binder exploit and fuzzing,  and how they can be used to achieve Local Privilege Escalation (LPE) from a zero-permission application to root. In this blog, we will continue the journey of LPE, focusing on the KGSL GPU driver on the Qualcomm platform.
-At BlackHat USA...</div>
-  <a href="https://androidoffsec.withgoogle.com/posts/a-technical-deep-dive-into-cve-2024-23380-exploiting-gpu-memory-corruption-to-android-root/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-03-28" data-cvss="5.4">
-  <div class="news-title">CVE-2025-15445 - MEDIUM (5.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-01" data-cvss="9.1">
+  <div class="news-title">CVE-2025-15484 - CRITICAL (9.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
+    <span>2026-04-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-15445 | CVSS: 5.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Restaurant Cafeteria WordPress theme through 0.4.6 exposes insecure admin-ajax actions without nonce or capability checks, allowing any logged-in user, like subscriber, to perform privileged operations. An attacker can install and activate a  from a user-supplied URL, leading to arbitrary PHP co...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15445" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-15484 | CVSS: 9.1 | Severity: CRITICAL</div>
+  <div class="news-summary">The Order Notification for WooCommerce  WordPress plugin before 3.6.3 overrides WooCommerce's permission checks to grant full access to all unauthenticated requests, enabling complete read/write access to store resources like products, coupons, and customers.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15484" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-03-28" data-cvss="6.5">
-  <div class="news-title">CVE-2026-1307 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-01" data-cvss="5.3">
+  <div class="news-title">CVE-2026-2696 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
+    <span>2026-04-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-1307 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">The Ninja Forms - The Contact Form Builder That Grows With You plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.14.1 via a callback function for the admin_enqueue_scripts action handler in blocks/bootstrap.php. This makes it possible for au...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1307" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-2696 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The Export All URLs WordPress plugin before 5.1 generates CSV filenames containing posts URLS (including private posts) in a predictable pattern using a random 6-digit number. These files are stored in the publicly accessible wp-content/uploads/ directory. As a result, any unauthenticated user can b...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2696" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-28" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-23399 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-01" data-cvss="4.3">
+  <div class="news-title">CVE-2026-5255 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
+    <span>2026-04-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-23399 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
-
-nf_tables: nft_dynset: fix possible stateful expression memleak in error path
-
-If cloning the second stateful expression in the element via GFP_ATOMIC
-fails, then the first stateful expression remains in place without being
-release...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-23399" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-5255 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was detected in code-projects Simple Laundry System 1.0. This affects an unknown part of the file /delstaffinfo.php of the component Parameter Handler. The manipulation of the argument userid results in cross site scripting. The attack may be launched remotely. The exploit is now pub...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5255" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-03-28" data-cvss="5.3">
-  <div class="news-title">CVE-2026-2442 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-01" data-cvss="7.3">
+  <div class="news-title">CVE-2026-5256 - HIGH (7.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
+    <span>2026-04-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-2442 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Page Builder: Pagelayer – Drag and Drop website builder plugin for WordPress is vulnerable to Improper Neutralization of CRLF Sequences ('CRLF Injection') in all versions up to, and including, 2.0.7. This is due to the contact form handler performing placeholder substitution on attacker-controll...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2442" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-5256 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A flaw has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /modify.php of the component Parameter Handler. This manipulation of the argument firstName causes sql injection. Remote exploitation of the attack is possible. The exploit has been ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5256" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-28" data-cvss="3.3">
-  <div class="news-title">CVE-2026-4993 - LOW (3.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-01" data-cvss="7.3">
+  <div class="news-title">CVE-2026-5257 - HIGH (7.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
+    <span>2026-04-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-4993 | CVSS: 3.3 | Severity: LOW</div>
-  <div class="news-summary">A vulnerability has been found in wandb OpenUI up to 0.0.0.0/1.0. This impacts an unknown function of the file backend/openui/config.py. The manipulation of the argument LITELLM_MASTER_KEY leads to hard-coded credentials. An attack has to be approached locally. The exploit has been disclosed to the ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4993" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-5257 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability has been found in code-projects Simple Laundry System 1.0. This issue affects some unknown processing of the file /delstaffinfo.php of the component Parameter Handler. Such manipulation of the argument userid leads to sql injection. The attack can be executed remotely. The exploit ha...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5257" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-28" data-cvss="3.5">
-  <div class="news-title">CVE-2026-4994 - LOW (3.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-01" data-cvss="7.5">
+  <div class="news-title">CVE-2026-4748 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
+    <span>2026-04-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-4994 | CVSS: 3.5 | Severity: LOW</div>
-  <div class="news-summary">A vulnerability was found in wandb OpenUI up to 1.0/3.5-turb. Affected is the function generic_exception_handler of the file backend/openui/server.py of the component APIStatusError Handler. The manipulation of the argument key results in information exposure through error message. Access to the loc...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4994" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-4748 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">A regression in the way hashes were calculated caused rules containing the address range syntax (x.x.x.x - y.y.y.y) that only differ in the address range(s) involved to be silently dropped as duplicates.  Only the first of such rules is actually loaded into pf.  Ranges expressed using the address[/m...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4748" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-03-28" data-cvss="9.8">
-  <div class="news-title">CVE-2025-9497 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-01" data-cvss="7.3">
+  <div class="news-title">CVE-2026-5258 - HIGH (7.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
+    <span>2026-04-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-9497 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">Use of Hard-coded Credentials vulnerability in Microchip Time Provider 4100 allows Malicious Manual Software Update.This issue affects Time Provider 4100: before 2.5.0.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-9497" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-5258 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability was found in Sanster IOPaint 1.5.3. Impacted is the function _get_file of the file iopaint/file_manager/file_manager.py of the component File Manager. Performing a manipulation of the argument filename results in path traversal. The attack is possible to be carried out remotely. The ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5258" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-03-28" data-cvss="3.5">
-  <div class="news-title">CVE-2026-4995 - LOW (3.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-01" data-cvss="4.7">
+  <div class="news-title">CVE-2026-27101 - MEDIUM (4.7)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
+    <span>2026-04-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-4995 | CVSS: 3.5 | Severity: LOW</div>
-  <div class="news-summary">A vulnerability was determined in wandb OpenUI up to 1.0. Affected by this vulnerability is an unknown functionality of the file frontend/public/annotator/index.html of the component Window Message Event Handler. This manipulation causes cross site scripting. The attack can be initiated remotely. Th...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4995" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-27101 | CVSS: 4.7 | Severity: MEDIUM</div>
+  <div class="news-summary">Dell Secure Connect Gateway (SCG) 5.0 Appliance and Application version(s) 5.28.00.xx to 5.32.00.xx, contain(s) an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability. A high privileged attacker within the management network could potentially exploit this vul...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27101" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-03-28" data-cvss="8.4">
-  <div class="news-title">CVE-2016-20037 - HIGH (8.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-01" data-cvss="4.4">
+  <div class="news-title">CVE-2026-28265 - MEDIUM (4.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
+    <span>2026-04-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2016-20037 | CVSS: 8.4 | Severity: HIGH</div>
-  <div class="news-summary">xwpe 1.5.30a-2.1 and prior contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying overly long input strings that exceed buffer boundaries. Attackers can craft malicious command-line arguments with 262 bytes of junk data followed by she...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-20037" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-03-28" data-cvss="8.4">
-  <div class="news-title">CVE-2016-20038 - HIGH (8.4)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2016-20038 | CVSS: 8.4 | Severity: HIGH</div>
-  <div class="news-summary">yTree 1.94-1.1 contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an excessively long argument to the application. Attackers can craft a malicious command-line argument containing shellcode and a return address to overwrite the sta...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-20038" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-03-28" data-cvss="8.4">
-  <div class="news-title">CVE-2016-20039 - HIGH (8.4)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2016-20039 | CVSS: 8.4 | Severity: HIGH</div>
-  <div class="news-summary">Multi Emulator Super System 0.154-3.1 contains a buffer overflow vulnerability in the gamma parameter handling that allows local attackers to crash the application or execute arbitrary code. Attackers can supply an oversized gamma parameter value to overflow the stack buffer and overwrite the instru...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-20039" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-03-28" data-cvss="8.4">
-  <div class="news-title">CVE-2016-20040 - HIGH (8.4)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-03-28</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2016-20040 | CVSS: 8.4 | Severity: HIGH</div>
-  <div class="news-summary">TiEmu 3.03-nogdb+dfsg-3 contains a buffer overflow vulnerability in the ROM parameter handling that allows local attackers to crash the application or execute arbitrary code. Attackers can supply an oversized ROM parameter to the tiemu command-line interface to overflow the stack buffer and overwrit...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-20040" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-28265 | CVSS: 4.4 | Severity: MEDIUM</div>
+  <div class="news-summary">PowerStore, contains a Path Traversal vulnerability in the Service user. A low privileged attacker with local access could potentially exploit this vulnerability, leading to modification of arbitrary system files.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28265" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -688,7 +667,7 @@ release...</div>
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-04-04 08:02:19</div>
+      <div>Raport wygenerowano: 2026-04-08 08:02:15</div>
     </div>
   </div>
 
