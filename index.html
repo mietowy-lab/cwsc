@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-04-16</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-04-20</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-04-16</p>
+      <p class="sub">Dane z RSS i API | 2026-04-20</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,18 +136,29 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">58</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">10</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">347</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">415</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">59</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">8</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">346</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">413</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (58)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (59)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-04-17" data-cvss="-1">
+  <div class="news-title">Breaking Opus 4.7 with ChatGPT (Hacking Claude's Memory)</div>
+  <div class="news-meta">
+    <span class="badge">Embrace The Red</span>
+    <span>2026-04-17 23:00</span>
+  </div>
+  <div class="news-summary">In this post, we explore how ChatGPT generated an adversarial image that hijacked my Claude Opus 4.7 to invoke the memory tool and persist false memories for future chats.
+
+This matters because Opus 4.6+ is genuinely a lot harder to attack than previous models, but it still fell for a ChatGPT genera...</div>
+  <a href="https://embracethered.com/blog/posts/2026/breaking-opus-4.7-with-chatgpt/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-04-13" data-cvss="-1">
   <div class="news-title">13th April – Threat Intelligence Report</div>
   <div class="news-meta">
@@ -343,15 +354,6 @@ At a high level, this post is about a data exfiltration attack chain, where an a
   <div class="news-summary">I recently presented at the DEF CON 33 Mainstage and the 12th Crypto & Privacy Village on weaknesses in implementations of Google’s Privacy Sandbox that subverted privacy protections and enabled deanonymization attacks.</div>
   <a href="https://spaceraccoon.dev/client-side-deanonymization-attacks-privacy-sandbox-apis/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-07-27" data-cvss="-1">
-  <div class="news-title">Getting a Shell on the LAU-G150-C Optical Network Terminal</div>
-  <div class="news-meta">
-    <span class="badge">Spaceraccoon</span>
-    <span>2025-07-27 12:00</span>
-  </div>
-  <div class="news-summary">Since the Link-All LAU-G150-C Optical Network Terminal isn’t documented anywhere, I thought this was a great opportunity to practice some hardware hacking…</div>
-  <a href="https://spaceraccoon.dev/getting-shell-lau-g150-c-optical-network-terminal/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -359,26 +361,8 @@ At a high level, this post is about a data exfiltration attack chain, where an a
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (10)</h3>
+      <h3>⚠️ Nowe Zagrożenia (8)</h3>
       <div class="news-grid" data-grid="threats">
-<div class="card news-item threat" data-sev="none" data-date="2026-04-08" data-cvss="-1">
-  <div class="news-title">New Lua-based malware “LucidRook” observed in targeted attacks against Taiwanese organizations</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-04-08 10:00</span>
-  </div>
-  <div class="news-summary">Cisco Talos uncovered a cluster of activity we track as UAT-10362 conducting spear-phishing campaigns against Taiwanese non-governmental organizations (NGOs) and suspected universities to deliver a newly identified malware family, “LucidRook.”</div>
-  <a href="https://blog.talosintelligence.com/new-lua-based-malware-lucidrook/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2026-04-07" data-cvss="-1">
-  <div class="news-title">The Trojan horse of cybercrime: Weaponizing SaaS notification pipelines</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-04-07 10:00</span>
-  </div>
-  <div class="news-summary">Cisco Talos has recently observed an increase in activity that is leveraging notification pipelines in popular collaboration platforms to deliver spam and phishing emails.</div>
-  <a href="https://blog.talosintelligence.com/weaponizing-saas-notification-pipelines/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-03-29" data-cvss="-1">
   <div class="news-title">AI Threat Landscape Digest January-February 2026</div>
   <div class="news-meta">
@@ -459,8 +443,35 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (347)</h3>
+      <h3>🔓 Wykryte Luki (346)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-16" data-cvss="-1.0">
+  <div class="news-title">Foxit, LibRaw vulnerabilities</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-04-16 19:00</span>
+  </div>
+  <div class="news-summary">Cisco Talos’ Vulnerability Discovery & Research team recently disclosed one Foxit Reader vulnerability, and six LibRaw file reader vulnerabilities.The vulnerabilities mentioned in this blog post have been patched by their respective vendors, all in adherence to Cisco’s third-party vulnerability disc...</div>
+  <a href="https://blog.talosintelligence.com/foxit-libraw-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-16" data-cvss="-1.0">
+  <div class="news-title">The Q1 vulnerability pulse</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-04-16 18:00</span>
+  </div>
+  <div class="news-summary">Thor provides an overview of the Q1 2026 vulnerability statistics, highlighting key trends in legacy CVEs and the evolving impact of AI on the threat landscape.</div>
+  <a href="https://blog.talosintelligence.com/the-q1-vulnerability-pulse/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-16" data-cvss="-1.0">
+  <div class="news-title">PowMix botnet targets Czech workforce</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-04-16 10:00</span>
+  </div>
+  <div class="news-summary">Cisco Talos discovered an ongoing malicious campaign, operating since at least December 2025, affecting a broader workforce in the Czech Republic with a previously undocumented botnet we call “PowMix.”</div>
+  <a href="https://blog.talosintelligence.com/powmix-botnet-targets-czech-workforce/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-04-14" data-cvss="-1.0">
   <div class="news-title">Microsoft Patch Tuesday for April 2026 - Snort Rule and Prominent Vulnerabilities</div>
   <div class="news-meta">
@@ -507,161 +518,125 @@ The post Hack the AI agent: Build agentic AI security skills with the GitHub Sec
   <div class="news-summary">On April 13, 2026 at 03:55:23 UTC, a helper contract deployed by the attacker used Hyperbridge's Ethereum-side ISMP message path to deliver a forged governance-style `PostRequest` into `TokenGateway`. The exploit is best classified as an access-control failure at the proof-validation boundary: `Hand...</div>
   <a href="https://www.darknavy.org/web3/exploits/hyperbridge-ismp-forged-proof-dot-mint/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-12" data-cvss="-1.0">
-  <div class="news-title">SubQuery Settings Access Control Staking Drain</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-04-12 00:00</span>
-  </div>
-  <div class="news-summary">On April 12, 2026, SubQuery Network, a staking protocol on Base, (block 44,590,469) suffered an access-control exploit that drained approximately **218.29M SQT** (about **$131.2K**) from the protocol's Staking contract. The attacker deployed two ephemeral contracts, abused the absence of any owner o...</div>
-  <a href="https://www.darknavy.org/web3/exploits/subquery-settings-access-control-staking-drain/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-10" data-cvss="-1.0">
-  <div class="news-title">[Video] The TTP Ep. 22: The Collapse of the Patch Window</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-04-10 15:29</span>
-  </div>
-  <div class="news-summary">In this episode of The Talos Threat Perspective, we discuss how vulnerability exploitation is accelerating, and why attacker speed, AI, and exposed systems are affecting the patch window.</div>
-  <a href="https://blog.talosintelligence.com/video-the-ttp-ep-22-the-collapse-of-the-patch-window/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-09" data-cvss="4.7">
-  <div class="news-title">CVE-2026-5848 - MEDIUM (4.7)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-13" data-cvss="2.4">
+  <div class="news-title">CVE-2026-21006 - LOW (2.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-5848 | CVSS: 4.7 | Severity: MEDIUM</div>
-  <div class="news-summary">A vulnerability was found in jeecgboot JimuReport up to 2.3.0. The affected element is the function DriverManager.getConnection of the file /drag/onlDragDataSource/testConnection of the component Data Source Handler. Performing a manipulation of the argument dbUrl results in code injection. The atta...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5848" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21006 | CVSS: 2.4 | Severity: LOW</div>
+  <div class="news-summary">Improper access control in Samsung DeX prior to SMR Apr-2026 Release 1 allows physical attackers to access to hidden notification contents.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21006" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-09" data-cvss="7.3">
-  <div class="news-title">CVE-2026-5849 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-13" data-cvss="6.8">
+  <div class="news-title">CVE-2026-21007 - MEDIUM (6.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-5849 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability was determined in Tenda i12 1.0.0.11(3862). The impacted element is an unknown function of the component HTTP Handler. Executing a manipulation can lead to path traversal. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5849" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21007 | CVSS: 6.8 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper check for exceptional conditions in Device Care prior to SMR Apr-2026 Release 1 allows physical attackers to bypass Knox Guard.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21007" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-09" data-cvss="9.8">
-  <div class="news-title">CVE-2026-5850 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-13" data-cvss="6.5">
+  <div class="news-title">CVE-2026-21008 - MEDIUM (6.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-5850 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">A vulnerability was identified in Totolink A7100RU 7.4cu.2313_b20191024. This affects the function setVpnPassCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument pptpPassThru leads to os command injection. Remote exploitation of the attack is possible. ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5850" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21008 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Exposure of sensitive information in S Share prior to SMR Apr-2026 Release 1 allows adjacent attacker to access sensitive information.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21008" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-09" data-cvss="9.8">
-  <div class="news-title">CVE-2026-5851 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-13" data-cvss="6.8">
+  <div class="news-title">CVE-2026-21009 - MEDIUM (6.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-5851 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">A security flaw has been discovered in Totolink A7100RU 7.4cu.2313_b20191024. This impacts the function setUPnPCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument enable results in os command injection. The attack can be executed remotely. The exploit ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5851" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21009 | CVSS: 6.8 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper check for exceptional conditions in Recents prior to SMR Apr-2026 Release 1 allows physical attacker to bypass App Pinning.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21009" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-09" data-cvss="9.8">
-  <div class="news-title">CVE-2026-5852 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-13" data-cvss="6.6">
+  <div class="news-title">CVE-2026-21010 - MEDIUM (6.6)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-5852 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">A weakness has been identified in Totolink A7100RU 7.4cu.2313_b20191024. Affected is the function setIptvCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument igmpVer causes os command injection. The attack is possible to be carried out remotely. The ex...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5852" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21010 | CVSS: 6.6 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper input validation in Retail Mode prior to SMR Apr-2026 Release 1 allows local attackers to trigger privileged functions.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21010" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-09" data-cvss="9.8">
-  <div class="news-title">CVE-2026-5853 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-13" data-cvss="6.8">
+  <div class="news-title">CVE-2026-21011 - MEDIUM (6.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-5853 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this vulnerability is the function setIpv6LanCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of the argument addrPrefixLen leads to os command injection. The attack m...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5853" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21011 | CVSS: 6.8 | Severity: MEDIUM</div>
+  <div class="news-summary">Incorrect privilege assignment in Bluetooth in Maintenance mode prior to SMR Apr-2026 Release 1 allows physical attackers to bypass Extend Unlock.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21011" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-09" data-cvss="9.8">
-  <div class="news-title">CVE-2026-5854 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-13" data-cvss="3.3">
+  <div class="news-title">CVE-2026-21012 - LOW (3.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-5854 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">A vulnerability was detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this issue is the function setWiFiEasyCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulation of the argument merge results in os command injection. It is possible to initiate the ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5854" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21012 | CVSS: 3.3 | Severity: LOW</div>
+  <div class="news-summary">External control of file name in AODManager prior to SMR Apr-2026 Release 1 allows privileged local attacker to create file with system privilege.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21012" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-09" data-cvss="7.5">
-  <div class="news-title">CVE-2025-62188 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-13" data-cvss="5.5">
+  <div class="news-title">CVE-2026-21013 - MEDIUM (5.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-62188 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">An Exposure of Sensitive Information to an Unauthorized Actor vulnerability exists in Apache DolphinScheduler.
-
-This vulnerability may allow unauthorized actors to access sensitive information, including database credentials.
-
-
-This issue affects Apache DolphinScheduler versions 3.1.*.
-
-
-Users are r...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-62188" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21013 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Incorrect default permission in Galaxy Wearable prior to version 2.2.68.26 allows local attackers to access sensitive information.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21013" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-09" data-cvss="9.1">
-  <div class="news-title">CVE-2026-34177 - CRITICAL (9.1)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-13" data-cvss="2.8">
+  <div class="news-title">CVE-2026-21014 - LOW (2.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-34177 | CVSS: 9.1 | Severity: CRITICAL</div>
-  <div class="news-summary">Canonical LXD versions 4.12 through 6.7 contain an incomplete denylist in isVMLowLevelOptionForbidden (lxd/project/limits/permissions.go), which omits raw.apparmor and raw.qemu.conf from the set of keys blocked under the restricted.virtual-machines.lowlevel=block project restriction. A remote attack...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34177" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21014 | CVSS: 2.8 | Severity: LOW</div>
+  <div class="news-summary">Improper access control in Samsung Camera prior to version 16.5.00.28 allows local attacker to access location data. User interaction is required for triggering this vulnerability.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21014" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-09" data-cvss="9.1">
-  <div class="news-title">CVE-2026-34178 - CRITICAL (9.1)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-13" data-cvss="5.1">
+  <div class="news-title">CVE-2026-40447 - MEDIUM (5.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-34178 | CVSS: 9.1 | Severity: CRITICAL</div>
-  <div class="news-summary">In Canonical LXD before 6.8, the backup import path validates project restrictions against backup/index.yaml in the supplied tar archive but creates the instance from backup/container/backup.yaml, a separate file in the same archive that is never checked against project restrictions. An authenticate...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34178" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-40447 | CVSS: 5.1 | Severity: MEDIUM</div>
+  <div class="news-summary">Integer overflow or wraparound vulnerability in Samsung Open Source Escargot allows undefined behavior.This issue affects Escargot: 97e8115ab1110bc502b4b5e4a0c689a71520d335.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40447" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-09" data-cvss="9.1">
-  <div class="news-title">CVE-2026-34179 - CRITICAL (9.1)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-13" data-cvss="7.3">
+  <div class="news-title">CVE-2026-6163 - HIGH (7.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-34179 | CVSS: 9.1 | Severity: CRITICAL</div>
-  <div class="news-summary">In Canonical LXD versions 4.12 through 6.7, the doCertificateUpdate function in lxd/certificates.go does not validate the Type field when handling PUT/PATCH requests to /1.0/certificates/{fingerprint} for restricted TLS certificate users, allowing a remote authenticated attacker to escalate privileg...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34179" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-6163 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability was identified in code-projects Lost and Found Thing Management 1.0. Affected by this issue is some unknown functionality of the file /catageory.php. Such manipulation of the argument cat leads to sql injection. It is possible to launch the attack remotely. The exploit is publicly av...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6163" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-09" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-34184 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-13" data-cvss="7.3">
+  <div class="news-title">CVE-2026-6164 - HIGH (7.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
+    <span>2026-04-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-34184 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Hydrosystem Control System does not enforce authorization for some directories. This allows an unauthorized attacker to read all files in these directories and even execute some of them. Critically the attacker could run PHP scripts directly on the connected database.This issue was fixed in Hydrosys...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34184" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-09" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-34185 - N/A (N/A)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-04-09</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-34185 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Hydrosystem Control System is vulnerable to SQL Injection across most scripts and input parameters. Because no protections are in place, an authenticated attacker can inject arbitrary SQL commands, potentially gaining full control over the database.This issue was fixed in Hydrosystem Control System ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34185" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-6164 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A security flaw has been discovered in code-projects Lost and Found Thing Management 1.0. This affects an unknown part of the file /addcat.php. Performing a manipulation of the argument cata results in sql injection. The attack can be initiated remotely. The exploit has been released to the public a...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6164" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -669,7 +644,7 @@ Users are r...</div>
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-04-16 08:02:10</div>
+      <div>Raport wygenerowano: 2026-04-20 08:02:08</div>
     </div>
   </div>
 
