@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-04-29</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-04-30</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-04-29</p>
+      <p class="sub">Dane z RSS i API | 2026-04-30</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,8 +137,8 @@
 
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">54</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">12</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">344</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">13</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">343</a></div><div class="kpi-label">Luki</div></div>
         <div class="card"><div class="kpi-num"><a href="#top">410</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
@@ -361,8 +361,17 @@ At a high level, this post is about a data exfiltration attack chain, where an a
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (12)</h3>
+      <h3>⚠️ Nowe Zagrożenia (13)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-04-29" data-cvss="-1">
+  <div class="news-title">AI-powered honeypots: Turning the tables on malicious AI agents</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-04-29 10:00</span>
+  </div>
+  <div class="news-summary">Just as AI brings time-saving advantages to our lives, it brings similar advantages to threat actors. We can take the advantage back. This blog shows how generative AI can be used to rapidly deploy adaptive honeypot systems.</div>
+  <a href="https://blog.talosintelligence.com/ai-powered-honeypots-turning-the-tables-on-malicious-ai-agents/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-04-28" data-cvss="-1">
   <div class="news-title">VECT: Ransomware by design, Wiper by accident</div>
   <div class="news-meta">
@@ -479,8 +488,60 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (344)</h3>
+      <h3>🔓 Wykryte Luki (343)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-29" data-cvss="-1.0">
+  <div class="news-title">The Internet Is Falling Down, Falling Down, Falling Down (cPanel & WHM Authentication Bypass CVE-2026-41940)</div>
+  <div class="news-meta">
+    <span class="badge">Watchtowr Labs</span>
+    <span>2026-04-29 17:19</span>
+  </div>
+  <div class="news-summary">Hello! Yes, it's all a disaster again! Let's get this party started:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0:00
+
+                            /0:12
+
+
+1×
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+No comments today, so imagine this:We wrote something that we find very funny,Nobody else gets it,But everyone humors us Just like a typical watchTowr...</div>
+  <a href="https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
   <div class="news-title">JUDAO Sell-Burn Reserve Manipulation</div>
   <div class="news-meta">
@@ -507,6 +568,116 @@ The post Strengthening supply chain security: Preparing for the next malware cam
   </div>
   <div class="news-summary">On Ethereum mainnet, transaction `0xebaaab69baa3cd2543eb80ecfb8e3ed226b9e5a6f5694891a8adf4edbcbd8107` succeeded at block `24981717` on `2026-04-28T23:01:11Z`. The attacker deployed helper contracts and exploited an unauthenticated `execute()` batch-action function on contract `0x143a737bffc6414b6113...</div>
   <a href="https://www.darknavy.org/web3/exploits/yvweth-approval-arbitrary-command-drain/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-0918: TP-Link HTTP POST body DoS</div>
+  <div class="news-meta">
+    <span class="badge">Taszk</span>
+    <span>2026-04-28 00:00</span>
+  </div>
+  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
+This report describes a malformed allocation length vulnerability which leads to denial of service.
+The vulnerability we are disclosing in this advisory affected ...</div>
+  <a href="https://labs.taszk.io/blog/post/118_tp_dos_1/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-14299: TP-Link HTTP POST body DoS</div>
+  <div class="news-meta">
+    <span class="badge">Taszk</span>
+    <span>2026-04-28 00:00</span>
+  </div>
+  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
+This report describes a malformed allocation length vulnerability which leads to denial of service.
+The vulnerability we are disclosing in this advisory affected ...</div>
+  <a href="https://labs.taszk.io/blog/post/119_tp_dos_2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-8065: TP-Link ONVIF stack buffer overflow</div>
+  <div class="news-meta">
+    <span class="badge">Taszk</span>
+    <span>2026-04-28 00:00</span>
+  </div>
+  <div class="news-summary">An attacker sending a malformed ONVIF request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
+This report describes a stack buffer overflow, which leads to pre-auth remote code execution via LAN or WAN (through browser).
+The vulnerability we are disclosing in ...</div>
+  <a href="https://labs.taszk.io/blog/post/125_tp_stack_bof_onvif/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-0651: TP-Link HTTP GET path traversal</div>
+  <div class="news-meta">
+    <span class="badge">Taszk</span>
+    <span>2026-04-28 00:00</span>
+  </div>
+  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
+This report describes a path traversal which can lead to leaking secrets.
+The vulnerability we are disclosing in this advisory affected a wide range of TP-Link de...</div>
+  <a href="https://labs.taszk.io/blog/post/123_tp_path_traversal/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-34118: TP-Link HTTP POST body heap buffer overflow</div>
+  <div class="news-meta">
+    <span class="badge">Taszk</span>
+    <span>2026-04-28 00:00</span>
+  </div>
+  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
+This report describes a heap buffer overflow, which leads to remote code execution.
+The vulnerability we are disclosing in this advisory affected a wide range of ...</div>
+  <a href="https://labs.taszk.io/blog/post/115_tp_heap_bof/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-34119: TP-Link HTTP POST body heap buffer overflow</div>
+  <div class="news-meta">
+    <span class="badge">Taszk</span>
+    <span>2026-04-28 00:00</span>
+  </div>
+  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
+This report describes a heap buffer overflow, which leads to remote code execution.
+The vulnerability we are disclosing in this advisory affected a wide range of ...</div>
+  <a href="https://labs.taszk.io/blog/post/116_tp_heap_bof_2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-34120: TP-Link HTTP POST body heap buffer overflow</div>
+  <div class="news-meta">
+    <span class="badge">Taszk</span>
+    <span>2026-04-28 00:00</span>
+  </div>
+  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
+This report describes a heap buffer overflow, which leads to remote code execution.
+The vulnerability we are disclosing in this advisory affected a wide range of ...</div>
+  <a href="https://labs.taszk.io/blog/post/117_tp_heap_bof_3/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-34121: TP-Link HTTP authentication bypass</div>
+  <div class="news-meta">
+    <span class="badge">Taszk</span>
+    <span>2026-04-28 00:00</span>
+  </div>
+  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
+This report describes an authentication bypass vulnerability in the HTTP server implementation.
+The vulnerability we are disclosing in this advisory affected a wi...</div>
+  <a href="https://labs.taszk.io/blog/post/120_tp_auth_bp/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-34124: TP-Link HTTP GET stack buffer overflow</div>
+  <div class="news-meta">
+    <span class="badge">Taszk</span>
+    <span>2026-04-28 00:00</span>
+  </div>
+  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
+This report describes a stack buffer overflow, which leads to denial of service and may potentially lead to remote code execution.
+The vulnerability we are disclo...</div>
+  <a href="https://labs.taszk.io/blog/post/124_tp_stack_bof_dos/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
+  <div class="news-title">TVE-2026-04: TP-Link HTTP authentication bypass</div>
+  <div class="news-meta">
+    <span class="badge">Taszk</span>
+    <span>2026-04-28 00:00</span>
+  </div>
+  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
+This report describes an authentication bypass vulnerability in the HTTP server implementation.
+The vulnerability we are disclosing in this advisory affected a wi...</div>
+  <a href="https://labs.taszk.io/blog/post/121_tp_auth_bp_2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-04-27" data-cvss="-1.0">
   <div class="news-title">27th April – Threat Intelligence Report</div>
@@ -581,124 +752,13 @@ Pentest
   <div class="news-summary">In this excerpt of a TrendAI Research Services vulnerability report, Richard Chen and Lucas Miller of the TrendAI Research team detail a recently patched double free vulnerability in the Windows Internet Key Exchange (IKE) service. This bug was originally discovered by WARP & MORSE team at Microsoft...</div>
   <a href="https://www.thezdi.com/blog/2026/4/22/cve-2026-33824-remote-code-execution-in-windows-ikev2" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-23" data-cvss="-1.0">
-  <div class="news-title">UAT-4356's Targeting of Cisco Firepower Devices</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-04-23 15:10</span>
-  </div>
-  <div class="news-summary">Cisco Talos is aware of UAT-4356's continued active targeting of Cisco Firepower devices’ Firepower eXtensible Operating System (FXOS). UAT-4356 exploited n-day vulnerabilities (CVE-2025-20333 and CVE-2025-20362) to gain unauthorized access to vulnerable devices.</div>
-  <a href="https://blog.talosintelligence.com/uat-4356-firestarter/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-23" data-cvss="-1.0">
-  <div class="news-title">GiddyVaultV3 Signature Replay</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-04-23 00:00</span>
-  </div>
-  <div class="news-summary">GiddyVaultV3 was exploited on Ethereum in transaction `0x5edb66a4c2ea55bba95d36d27713e3bb1c67c3c4199a8a1759e754c6f25482e5`, mined on 2026-04-23 11:57:47 UTC. The root cause was an authorization-bypass bug in `compound()` signing: the vault validated a signature that covered only `keccak256(swap.data...</div>
-  <a href="https://www.darknavy.org/web3/exploits/giddyvaultv3-signature-replay/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-22" data-cvss="-1.0">
-  <div class="news-title">Adobe Photoshop Installation Privilege Escalation Vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-04-22 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2274" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-22" data-cvss="3.7">
-  <div class="news-title">CVE-2026-22746 - LOW (3.7)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-04-22</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-22746 | CVSS: 3.7 | Severity: LOW</div>
-  <div class="news-summary">Vulnerability in Spring Spring Security. If an application is using the UserDetails#isEnabled, #isAccountNonExpired, or #isAccountNonLocked user attributes, to enable, expire, or lock users, then DaoAuthenticationProvider's timing attack defense can be bypassed for users who are disabled, expired, o...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22746" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-22" data-cvss="6.8">
-  <div class="news-title">CVE-2026-22747 - MEDIUM (6.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-04-22</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-22747 | CVSS: 6.8 | Severity: MEDIUM</div>
-  <div class="news-summary">Vulnerability in Spring Spring Security. SubjectX500PrincipalExtractor does not correctly handle certain malformed X.509 certificate CN values, which can lead to reading the wrong value for the username. In a carefully crafted certificate, this can lead to an attacker impersonating another user.
-Thi...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22747" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-22" data-cvss="5.3">
-  <div class="news-title">CVE-2026-22748 - MEDIUM (5.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-04-22</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-22748 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">Vulnerability in Spring Spring Security. When an application configures JWT decoding with NimbusJwtDecoder  or NimbusReactiveJwtDecoder, it must configure an OAuth2TokenValidator<Jwt> separately, for example by calling setJwtValidator.This issue affects Spring Security: from 6.3.0 through 6.3.14, fr...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22748" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-22" data-cvss="7.5">
-  <div class="news-title">CVE-2026-22753 - HIGH (7.5)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-04-22</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-22753 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">Vulnerability in Spring Spring Security. If an application is using securityMatchers(String) and a PathPatternRequestMatcher.Builder bean to prepend a servlet path, matching requests to that filter chain may fail and its related security components will not be exercised as intended by the applicatio...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22753" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-22" data-cvss="7.5">
-  <div class="news-title">CVE-2026-22754 - HIGH (7.5)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-04-22</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-22754 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">Vulnerability in Spring Spring Security. If an application uses <sec:intercept-url servlet-path="/servlet-path" pattern="/endpoint/**"/> to define the servlet path for computing a path matcher, then the servlet path is not included and the related authorization rules are not exercised. This can lead...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22754" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-22" data-cvss="5.3">
-  <div class="news-title">CVE-2026-40448 - MEDIUM (5.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-04-22</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-40448 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">Potential Integer overflow in tensor allocation size calculation could lead to insufficient memory allocation for large tensors in Samsung Open Source ONE.
-Affected version is prior to commit  1.30.0.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40448" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-22" data-cvss="6.6">
-  <div class="news-title">CVE-2026-40449 - MEDIUM (6.6)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-04-22</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-40449 | CVSS: 6.6 | Severity: MEDIUM</div>
-  <div class="news-summary">Integer overflow in buffer size calculation could result in out of bounds memory access when handling large tensors in Samsung Open Source ONE.
-Affected version is prior to commit  1.30.0.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40449" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-22" data-cvss="6.6">
-  <div class="news-title">CVE-2026-40450 - MEDIUM (6.6)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-04-22</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-40450 | CVSS: 6.6 | Severity: MEDIUM</div>
-  <div class="news-summary">Integer overflow in output tensor copy size calculation in Samsung Open Source ONE could cause incorrect copy length and memory corruption for oversized tensors.
-Affected version is prior to commit  1.30.0.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40450" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-04-29 08:02:26</div>
+      <div>Raport wygenerowano: 2026-04-30 08:02:16</div>
     </div>
   </div>
 
