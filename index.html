@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-04-30</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-05-04</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-04-30</p>
+      <p class="sub">Dane z RSS i API | 2026-05-04</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -138,8 +138,8 @@
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">54</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">13</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">343</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">410</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">340</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">407</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -148,6 +148,15 @@
     <div class="section" id="incidents">
       <h3>🚨 Incydenty Bezpieczeństwa (54)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-05-01" data-cvss="-1">
+  <div class="news-title">Discovering Vulnerabilities in Enterprise Audiovisual Hardware</div>
+  <div class="news-meta">
+    <span class="badge">Spaceraccoon</span>
+    <span>2026-05-01 00:00</span>
+  </div>
+  <div class="news-summary">Some organisations’ most sensitive information is only ever discussed in person. Ironically, the equipment in meeting rooms, conference halls, and other physical locations is often among the least-monitored and most insecurely-configured attack surfaces in an organisation.</div>
+  <a href="https://spaceraccoon.dev/discovering-vulnerabilities-enterprise-audiovisual-hardware/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-04-28" data-cvss="-1">
   <div class="news-title">Five defender priorities from the Talos Year in Review</div>
   <div class="news-meta">
@@ -345,15 +354,6 @@ At a high level, this post is about a data exfiltration attack chain, where an a
   <div class="news-summary">In October 2024, RET2 participated in the “Small Office / Home Office” (SOHO) flavor of Pwn2Own, a competition which challenges top security researchers to compromise consumer-focused network devices. This includes popular smart speakers, routers, IP cameras, printers, and network-attached storage (...</div>
   <a href="https://blog.ret2.io/2025/06/11/pwn2own-soho-2024-sonos-exploit/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-06-01" data-cvss="-1">
-  <div class="news-title">Automated Attack Synthesis for Constant Product Market Makers</div>
-  <div class="news-meta">
-    <span class="badge">Kaist Hacking Lab</span>
-    <span>2025-06-01 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://kaist-hacking.github.io/publication/han-cpmm/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -488,8 +488,36 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (343)</h3>
+      <h3>🔓 Wykryte Luki (340)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-30" data-cvss="-1.0">
+  <div class="news-title">Bypassing Windows authentication reflection mitigations for SYSTEM shells - Part ②</div>
+  <div class="news-meta">
+    <span class="badge">Synacktiv</span>
+    <span>2026-04-30 00:00</span>
+  </div>
+  <div class="news-summary">
+
+
+
+ 
+
+
+
+
+
+ 	Bypassing Windows authentication reflection mitigations for SYSTEM shells - Part ②
+
+
+30/04/2026
+
+
+Pentest
+
+
+                   In part 1 of this blogpost series, we proved our initial theory that the patch for CVE-2025-33073 was insufficient, by disclosing a trivial NTLM reflection vuln...</div>
+  <a href="https://www.synacktiv.com/en/publications/bypassing-windows-authentication-reflection-mitigations-for-system-shells-part" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-04-29" data-cvss="-1.0">
   <div class="news-title">The Internet Is Falling Down, Falling Down, Falling Down (cPanel & WHM Authentication Bypass CVE-2026-41940)</div>
   <div class="news-meta">
@@ -725,32 +753,25 @@ Pentest
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2381" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-25" data-cvss="-1.0">
-  <div class="news-title">Singularity_Fi dynBaseUSDCv3 Oracle Share Inflation</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-27" data-cvss="4.3">
+  <div class="news-title">CVE-2026-7086 - MEDIUM (4.3)</div>
   <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-04-25 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-04-27</span>
   </div>
-  <div class="news-summary">Singularity_Fi's `dynBaseUSDCv3` vault on Base was exploited in transaction `0x00b949bc3ed3edb58b04faedfbd8eb1db2edceae761382e80fe012919f8d3732`, mined at block `45183967` on 2026-04-25 22:48:01 UTC (2026-04-26 in Asia/Shanghai). The root cause was an oracle configuration error: the vault's Uniswap ...</div>
-  <a href="https://www.darknavy.org/web3/exploits/singularity-fi-dynbaseusdcv3-oracle-share-inflation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-7086 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was identified in HBAI-Ltd Toonflow-app up to 1.1.1. This issue affects the function updateStoryboardUrl of the file replaceUrl.ts of the component Storyboard Export. Such manipulation of the argument url leads to path traversal. It is possible to launch the attack remotely. The expl...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7086" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-23" data-cvss="-1.0">
-  <div class="news-title">Goodbye Secure Pool, Hello KDP Pool</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-04-27" data-cvss="7.3">
+  <div class="news-title">CVE-2026-7087 - HIGH (7.3)</div>
   <div class="news-meta">
-    <span class="badge">Windows Internals</span>
-    <span>2026-04-23 16:49</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-04-27</span>
   </div>
-  <div class="news-summary">Kernel Data Protection (KDP) is a Windows 11 VBS feature that allows drivers to protect their data from being modified by other kernel drivers or malware that achieved kernel write access. It actually contains two separate features: static and dynamic KDP. Static KDP, that allows drivers to enforce ...</div>
-  <a href="https://windows-internals.com/goodbye-secure-pool-hello-kdp-pool/?utm_source=rss&utm_medium=rss&utm_campaign=goodbye-secure-pool-hello-kdp-pool" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-23" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-33824: Remote Code Execution in Windows IKEv2</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-04-23 15:42</span>
-  </div>
-  <div class="news-summary">In this excerpt of a TrendAI Research Services vulnerability report, Richard Chen and Lucas Miller of the TrendAI Research team detail a recently patched double free vulnerability in the Windows Internet Key Exchange (IKE) service. This bug was originally discovered by WARP & MORSE team at Microsoft...</div>
-  <a href="https://www.thezdi.com/blog/2026/4/22/cve-2026-33824-remote-code-execution-in-windows-ikev2" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-7087 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A security flaw has been discovered in SourceCodester Pharmacy Sales and Inventory System 1.0. Impacted is an unknown function of the file /ajax.php?action=save_sales. Performing a manipulation of the argument ID results in sql injection. The attack can be initiated remotely. The exploit has been re...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7087" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -758,7 +779,7 @@ Pentest
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-04-30 08:02:16</div>
+      <div>Raport wygenerowano: 2026-05-04 08:02:07</div>
     </div>
   </div>
 
