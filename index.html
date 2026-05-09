@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-05-05</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-05-09</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-05-05</p>
+      <p class="sub">Dane z RSS i API | 2026-05-09</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,18 +136,45 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">54</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">57</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">12</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">341</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">407</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">336</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">405</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (54)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (57)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-05-07" data-cvss="-1">
+  <div class="news-title">TrustedVolumes RFQ Proxy Drain</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2026-05-07 00:00</span>
+  </div>
+  <div class="news-summary">On May 7, 2026, TrustedVolumes on Ethereum was drained for approximately $5.87M through an RFQ authorization design flaw that let attacker-controlled maker and signer parameters pull assets from a resolver's approved balances.</div>
+  <a href="https://www.darknavy.org/web3/exploits/trustedvolumes-rfq-proxy-drain/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2026-05-06" data-cvss="-1">
+  <div class="news-title">Insights into the clustering and reuse of phone numbers in scam emails</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-05-06 10:00</span>
+  </div>
+  <div class="news-summary">Talos has recently started to collect and gather intelligence around phone numbers within emails as an additional indicator of compromise (IOC). In this blog, we discuss new insights into in-the-wild phone number reuse in scam emails.</div>
+  <a href="https://blog.talosintelligence.com/insights-into-the-clustering-and-reuse-of-phone-numbers-in-scam-emails/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2026-05-05" data-cvss="-1">
+  <div class="news-title">CloudZ RAT potentially steals OTP messages using Pheno plugin</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-05-05 10:00</span>
+  </div>
+  <div class="news-summary">Cisco Talos discovered an intrusion, active since at least January 2026, where an unknown attacker implanted a CloudZ remote access tool (RAT) and a previously undocumented plugin called “Pheno.”</div>
+  <a href="https://blog.talosintelligence.com/cloudz-pheno-infostealer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-05-04" data-cvss="-1">
   <div class="news-title">4th May – Threat Intelligence Report</div>
   <div class="news-meta">
@@ -166,6 +193,15 @@
   <div class="news-summary">Some organisations’ most sensitive information is only ever discussed in person. Ironically, the equipment in meeting rooms, conference halls, and other physical locations is often among the least-monitored and most insecurely-configured attack surfaces in an organisation.</div>
   <a href="https://spaceraccoon.dev/discovering-vulnerabilities-enterprise-audiovisual-hardware/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
+<div class="card news-item incident" data-sev="none" data-date="2026-04-29" data-cvss="-1">
+  <div class="news-title">Syndicate Commons Bridge Upgrade Compromise</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2026-04-29 00:00</span>
+  </div>
+  <div class="news-summary">On April 29, 2026, the Syndicate Commons bridge on Base was drained for 18.45M SYND after a privileged upgrade-control compromise let the attacker install malicious bridge logic and transfer the proxy's token balance.</div>
+  <a href="https://www.darknavy.org/web3/exploits/syndicate-commons-bridge-upgrade-compromise/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-04-28" data-cvss="-1">
   <div class="news-title">Five defender priorities from the Talos Year in Review</div>
   <div class="news-meta">
@@ -174,15 +210,6 @@
   </div>
   <div class="news-summary">With attackers moving faster than ever, it’s easy to feel overwhelmed. This blog breaks down five practical priorities from the Cisco Talos 2025 Year in Review to help defenders focus and prioritize, amidst all the noise.</div>
   <a href="https://blog.talosintelligence.com/five-defender-priorities-from-the-talos-year-in-review/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item incident" data-sev="none" data-date="2026-04-27" data-cvss="-1">
-  <div class="news-title">Executor Missing Access Control USDC/USDT Drain</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-04-27 00:00</span>
-  </div>
-  <div class="news-summary">On Ethereum mainnet, transaction `0x81f9aeaa697e4a389e7ce442a357e162ada24049c27cb1439f69d2f4fee720f1` succeeded at block `24971842` on `2026-04-27T14:01:11Z`. The attacker deployed helper contract `0x2196b3f31a43de49a2951c514488a8dd7c96ad67` and used it to call `execute(uint256,address,uint256,bytes...</div>
-  <a href="https://www.darknavy.org/web3/exploits/executor-missing-access-control-usdc-usdt-drain/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item incident" data-sev="none" data-date="2026-04-20" data-cvss="-1">
   <div class="news-title">20th April – Threat Intelligence Report</div>
@@ -326,33 +353,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   <div class="news-summary">Browsers added cookie prefixes to protect your sessions and stop attackers from setting harmful cookies. In this post, you’ll see how to bypass cookie defenses using discrepancies in browser and serve</div>
   <a href="https://portswigger.net/research/cookie-chaos-how-to-bypass-host-and-secure-cookie-prefixes" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-08-17" data-cvss="-1">
-  <div class="news-title">Escaping the Matrix: Client-Side Deanonymization Attacks on Privacy Sandbox APIs</div>
-  <div class="news-meta">
-    <span class="badge">Spaceraccoon</span>
-    <span>2025-08-17 12:00</span>
-  </div>
-  <div class="news-summary">I recently presented at the DEF CON 33 Mainstage and the 12th Crypto & Privacy Village on weaknesses in implementations of Google’s Privacy Sandbox that subverted privacy protections and enabled deanonymization attacks.</div>
-  <a href="https://spaceraccoon.dev/client-side-deanonymization-attacks-privacy-sandbox-apis/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item incident" data-sev="none" data-date="2025-07-27" data-cvss="-1">
-  <div class="news-title">Getting a Shell on the LAU-G150-C Optical Network Terminal</div>
-  <div class="news-meta">
-    <span class="badge">Spaceraccoon</span>
-    <span>2025-07-27 12:00</span>
-  </div>
-  <div class="news-summary">Since the Link-All LAU-G150-C Optical Network Terminal isn’t documented anywhere, I thought this was a great opportunity to practice some hardware hacking…</div>
-  <a href="https://spaceraccoon.dev/getting-shell-lau-g150-c-optical-network-terminal/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item incident" data-sev="none" data-date="2025-06-11" data-cvss="-1">
-  <div class="news-title">Streaming Zero-Fi Shells to Your Smart Speaker</div>
-  <div class="news-meta">
-    <span class="badge">Ret2 Systems</span>
-    <span>2025-06-11 10:00</span>
-  </div>
-  <div class="news-summary">In October 2024, RET2 participated in the “Small Office / Home Office” (SOHO) flavor of Pwn2Own, a competition which challenges top security researchers to compromise consumer-focused network devices. This includes popular smart speakers, routers, IP cameras, printers, and network-attached storage (...</div>
-  <a href="https://blog.ret2.io/2025/06/11/pwn2own-soho-2024-sonos-exploit/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -362,6 +362,15 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="section" id="threats">
       <h3>⚠️ Nowe Zagrożenia (12)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-05-05" data-cvss="-1">
+  <div class="news-title">UAT-8302 and its box full of malware</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-05-05 10:00</span>
+  </div>
+  <div class="news-summary">Cisco Talos is disclosing UAT-8302, a sophisticated, China-nexus advanced persistent threat (APT) group targeting government entities in South America since at least late 2024 and government agencies in southeastern Europe in 2025.</div>
+  <a href="https://blog.talosintelligence.com/uat-8302/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-04-29" data-cvss="-1">
   <div class="news-title">AI-powered honeypots: Turning the tables on malicious AI agents</div>
   <div class="news-meta">
@@ -388,15 +397,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   </div>
   <div class="news-summary">Phishing reemerged as the most observed means of gaining initial access, accounting for over a third of the engagements where initial access could be determined. Phishing has not been the top vertical for initial access since Q2 2025.</div>
   <a href="https://blog.talosintelligence.com/ir-trends-q1-2026/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2026-04-21" data-cvss="-1">
-  <div class="news-title">[Podcast] It's not you, it's your printer: State-sponsored and phishing threats in 2025</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-04-21 12:29</span>
-  </div>
-  <div class="news-summary">In this episode of Talos Takes, Amy and Martin Lee unpack state-sponsored and phishing trends from the 2025 Talos Year in Review.</div>
-  <a href="https://blog.talosintelligence.com/podcast-its-not-you-its-your-printer-state-sponsored-and-phishing-threats-in-2025/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2026-04-20" data-cvss="-1">
   <div class="news-title">DFIR Report – The Gentlemen & SystemBC: A Sneak Peek Behind the Proxy</div>
@@ -478,8 +478,117 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (341)</h3>
+      <h3>🔓 Wykryte Luki (336)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-07" data-cvss="-1.0">
+  <div class="news-title">White Eagle Withdraw Drain</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2026-05-07 00:00</span>
+  </div>
+  <div class="news-summary">On May 7, 2026, White Eagle on BNB Chain was exploited for 65,645.94 USDT through a withdrawal logic flaw that sized WEGL payouts with a manipulable live PancakeSwap quote.</div>
+  <a href="https://www.darknavy.org/web3/exploits/white-eagle-withdraw-drain/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-07" data-cvss="-1.0">
+  <div class="news-title">Tp-Link Archer AX53 v1.0 configuration restore crt.sed vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-05-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2304" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-07" data-cvss="-1.0">
+  <div class="news-title">Tp-Link Archer AX53 v1.0 Openvpn configuration restore client_disconnect OS command injection vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-05-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2307" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-07" data-cvss="-1.0">
+  <div class="news-title">Tp-Link Archer AX53 v1.0 Openvpn configuration restore route_up OS command injection vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-05-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2309" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-07" data-cvss="-1.0">
+  <div class="news-title">Tp-Link AX53 v1.0 tmpServer opcode 0x436 stack-based buffer overflow vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-05-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2302" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-07" data-cvss="-1.0">
+  <div class="news-title">Tp-Link Archer AX53 v1.0 dnsmasq configuration restore dhcpscript OS command injection vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-05-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2306" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-07" data-cvss="-1.0">
+  <div class="news-title">Tp-Link Archer AX53 v1.0 dnsmasq configuration restore TFTP server enable vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-05-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2305" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-07" data-cvss="-1.0">
+  <div class="news-title">Tp-Link Archer AX53 v1.0 Openvpn configuration restore script_security OS command injection vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-05-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2303" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-07" data-cvss="-1.0">
+  <div class="news-title">Tp-Link Archer AX53 v1.0 Openvpn configuration restore client_connect OS command injection vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-05-07 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2308" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-06" data-cvss="-1.0">
+  <div class="news-title">Make it Blink: Over-the-Air Exploitation of the Philips Hue Bridge</div>
+  <div class="news-meta">
+    <span class="badge">Synacktiv</span>
+    <span>2026-05-06 00:00</span>
+  </div>
+  <div class="news-summary">
+
+
+
+ 
+
+
+
+
+
+Make it Blink: Over-the-Air Exploitation of the Philips Hue Bridge
+
+
+06/05/2026
+
+
+Exploit
+
+
+                   The year-end edition of Pwn2Own took place in Cork, Ireland. For the first time, this event featured smart home devices, including the Amazon Smart Plug, Home Assistant Green, an...</div>
+  <a href="https://www.synacktiv.com/en/publications/make-it-blink-over-the-air-exploitation-of-the-philips-hue-bridge" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-05-04" data-cvss="-1.0">
   <div class="news-title">Copirate 365 at DEF CON: Plundering in the Depths of Microsoft Copilot (CVE-2026-24299)</div>
   <div class="news-meta">
@@ -500,252 +609,85 @@ This turned out to be a long post, covering the 45 minu...</div>
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2276" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-30" data-cvss="-1.0">
-  <div class="news-title">Bypassing Windows authentication reflection mitigations for SYSTEM shells - Part ②</div>
-  <div class="news-meta">
-    <span class="badge">Synacktiv</span>
-    <span>2026-04-30 00:00</span>
-  </div>
-  <div class="news-summary">
-
-
-
- 
-
-
-
-
-
- 	Bypassing Windows authentication reflection mitigations for SYSTEM shells - Part ②
-
-
-30/04/2026
-
-
-Pentest
-
-
-                   In part 1 of this blogpost series, we proved our initial theory that the patch for CVE-2025-33073 was insufficient, by disclosing a trivial NTLM reflection vuln...</div>
-  <a href="https://www.synacktiv.com/en/publications/bypassing-windows-authentication-reflection-mitigations-for-system-shells-part" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-29" data-cvss="-1.0">
-  <div class="news-title">The Internet Is Falling Down, Falling Down, Falling Down (cPanel & WHM Authentication Bypass CVE-2026-41940)</div>
-  <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-04-29 17:19</span>
-  </div>
-  <div class="news-summary">Hello! Yes, it's all a disaster again! Let's get this party started:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-0:00
-
-                            /0:12
-
-
-1×
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-No comments today, so imagine this:We wrote something that we find very funny,Nobody else gets it,But everyone humors us Just like a typical watchTowr...</div>
-  <a href="https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">JUDAO Sell-Burn Reserve Manipulation</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">On April 28, 2026 at 00:00:00 UTC, the T3 JUDAO token on BNB Chain was exploited through a reserve-manipulation flaw in the token's sell-transfer hook. The attacker used a Moolah flash loan to buy JUDAO from the PancakeSwap V2 JUDAO/USDT pair, then sold almost the maximum amount allowed by JUDAO's s...</div>
-  <a href="https://www.darknavy.org/web3/exploits/judao-sell-burn-reserve-manipulation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">QNT Pool Drain via EIP-7702 Admin EOA Delegation</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">On Ethereum mainnet, transaction `0xef9994ac862318ccf3ebdb66c181bb159651373b945aea59a966608d7b98684f` succeeded at block `24978818` on `2026-04-28T13:19:59Z`. The attacker deployed two helper contracts and exploited the public `batch(address[],bytes[])` function on legacy contract `0x044dc3e39c566a9...</div>
-  <a href="https://www.darknavy.org/web3/exploits/qnt-pool-drain-via-eip-7702-admin-eoa-delegation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">yvWETH Approval Arbitrary Command Drain</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">On Ethereum mainnet, transaction `0xebaaab69baa3cd2543eb80ecfb8e3ed226b9e5a6f5694891a8adf4edbcbd8107` succeeded at block `24981717` on `2026-04-28T23:01:11Z`. The attacker deployed helper contracts and exploited an unauthenticated `execute()` batch-action function on contract `0x143a737bffc6414b6113...</div>
-  <a href="https://www.darknavy.org/web3/exploits/yvweth-approval-arbitrary-command-drain/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-0918: TP-Link HTTP POST body DoS</div>
-  <div class="news-meta">
-    <span class="badge">Taszk</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
-This report describes a malformed allocation length vulnerability which leads to denial of service.
-The vulnerability we are disclosing in this advisory affected ...</div>
-  <a href="https://labs.taszk.io/blog/post/118_tp_dos_1/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-14299: TP-Link HTTP POST body DoS</div>
-  <div class="news-meta">
-    <span class="badge">Taszk</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
-This report describes a malformed allocation length vulnerability which leads to denial of service.
-The vulnerability we are disclosing in this advisory affected ...</div>
-  <a href="https://labs.taszk.io/blog/post/119_tp_dos_2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-8065: TP-Link ONVIF stack buffer overflow</div>
-  <div class="news-meta">
-    <span class="badge">Taszk</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">An attacker sending a malformed ONVIF request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
-This report describes a stack buffer overflow, which leads to pre-auth remote code execution via LAN or WAN (through browser).
-The vulnerability we are disclosing in ...</div>
-  <a href="https://labs.taszk.io/blog/post/125_tp_stack_bof_onvif/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-0651: TP-Link HTTP GET path traversal</div>
-  <div class="news-meta">
-    <span class="badge">Taszk</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
-This report describes a path traversal which can lead to leaking secrets.
-The vulnerability we are disclosing in this advisory affected a wide range of TP-Link de...</div>
-  <a href="https://labs.taszk.io/blog/post/123_tp_path_traversal/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-34118: TP-Link HTTP POST body heap buffer overflow</div>
-  <div class="news-meta">
-    <span class="badge">Taszk</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
-This report describes a heap buffer overflow, which leads to remote code execution.
-The vulnerability we are disclosing in this advisory affected a wide range of ...</div>
-  <a href="https://labs.taszk.io/blog/post/115_tp_heap_bof/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-34119: TP-Link HTTP POST body heap buffer overflow</div>
-  <div class="news-meta">
-    <span class="badge">Taszk</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
-This report describes a heap buffer overflow, which leads to remote code execution.
-The vulnerability we are disclosing in this advisory affected a wide range of ...</div>
-  <a href="https://labs.taszk.io/blog/post/116_tp_heap_bof_2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-34120: TP-Link HTTP POST body heap buffer overflow</div>
-  <div class="news-meta">
-    <span class="badge">Taszk</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
-This report describes a heap buffer overflow, which leads to remote code execution.
-The vulnerability we are disclosing in this advisory affected a wide range of ...</div>
-  <a href="https://labs.taszk.io/blog/post/117_tp_heap_bof_3/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-34121: TP-Link HTTP authentication bypass</div>
-  <div class="news-meta">
-    <span class="badge">Taszk</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
-This report describes an authentication bypass vulnerability in the HTTP server implementation.
-The vulnerability we are disclosing in this advisory affected a wi...</div>
-  <a href="https://labs.taszk.io/blog/post/120_tp_auth_bp/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-34124: TP-Link HTTP GET stack buffer overflow</div>
-  <div class="news-meta">
-    <span class="badge">Taszk</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
-This report describes a stack buffer overflow, which leads to denial of service and may potentially lead to remote code execution.
-The vulnerability we are disclo...</div>
-  <a href="https://labs.taszk.io/blog/post/124_tp_stack_bof_dos/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-04-28" data-cvss="-1.0">
-  <div class="news-title">TVE-2026-04: TP-Link HTTP authentication bypass</div>
-  <div class="news-meta">
-    <span class="badge">Taszk</span>
-    <span>2026-04-28 00:00</span>
-  </div>
-  <div class="news-summary">An attacker sending a malformed HTTP POST request over LAN to a TP-Link Smart camera device can trigger the vulnerability described here.
-This report describes an authentication bypass vulnerability in the HTTP server implementation.
-The vulnerability we are disclosing in this advisory affected a wi...</div>
-  <a href="https://labs.taszk.io/blog/post/121_tp_auth_bp_2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-28" data-cvss="5.9">
-  <div class="news-title">CVE-2026-40355 - MEDIUM (5.9)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-02" data-cvss="7.2">
+  <div class="news-title">CVE-2026-5109 - HIGH (7.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-28</span>
+    <span>2026-05-02</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-40355 | CVSS: 5.9 | Severity: MEDIUM</div>
-  <div class="news-summary">In MIT Kerberos 5 (aka krb5) before 1.22.3, there is a NULL pointer dereference if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, causing the process to terminate in parse_nego_messag...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40355" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-5109 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 2.10.0. This is due to insufficient validation and output escaping of Product Option field values. The vulnerability exists because the state validation function accepts submitted valu...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5109" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-28" data-cvss="6.6">
-  <div class="news-title">CVE-2026-42510 - MEDIUM (6.6)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-02" data-cvss="7.2">
+  <div class="news-title">CVE-2026-5110 - HIGH (7.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-28</span>
+    <span>2026-05-02</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-42510 | CVSS: 6.6 | Severity: MEDIUM</div>
-  <div class="news-summary">OpenStack Ironic before 35.0.1 allows ipmitool execution in a non-default configuration that has a console interface.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42510" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-5110 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The Gravity Forms plugin for WordPress is vulnerable to Unauthenticated Stored Cross-Site Scripting in versions up to and including 2.10.0. This is due to insufficient input validation and output escaping in the SingleProduct field when used inside a Repeater field. When SingleProduct fields are nes...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5110" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-04-28" data-cvss="6.4">
-  <div class="news-title">CVE-2026-6551 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-02" data-cvss="7.2">
+  <div class="news-title">CVE-2026-5111 - HIGH (7.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-04-28</span>
+    <span>2026-05-02</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-6551 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Timeline Blocks for Gutenberg plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'titleTag' attribute of the timeline-blocks/tb-timeline-blocks block in all versions up to, and including, 1.1.10 due to insufficient input sanitization and output escaping on user supplied at...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6551" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-5111 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 2.10.0. This is due to insufficient input validation and output escaping on Hidden Product field values when used inside Repeater fields, where repeater subfields bypass state validati...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5111" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-02" data-cvss="7.2">
+  <div class="news-title">CVE-2026-5112 - HIGH (7.2)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-02</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-5112 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The Gravity Forms plugin for WordPress is vulnerable to Unauthenticated Stored Cross-Site Scripting in versions up to and including 2.10.0. This is due to insufficient input validation and output escaping of Calculation Product field product names when rendered inside Repeater fields. The validate()...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5112" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-02" data-cvss="7.2">
+  <div class="news-title">CVE-2026-5113 - HIGH (7.2)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-02</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-5113 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Consent field hidden inputs in versions up to and including 2.10.0. This is due to a flawed state validation mechanism that fails open when input is sanitized by wp_kses(), combined with insufficient output escap...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5113" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-02" data-cvss="4.4">
+  <div class="news-title">CVE-2026-6447 - MEDIUM (4.4)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-02</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-6447 | CVSS: 4.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The Call for Price for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 4.2.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6447" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-02" data-cvss="4.4">
+  <div class="news-title">CVE-2026-6812 - MEDIUM (4.4)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-02</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-6812 | CVSS: 4.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The Ona theme for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 1.26 via the ona_activate_child_theme. This makes it possible for authenticated attackers, with administrator-level access and above, to make web requests to arbitrary locations originating...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6812" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-02" data-cvss="6.4">
+  <div class="news-title">CVE-2026-6916 - MEDIUM (6.4)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-02</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-6916 | CVSS: 6.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The Jeg Kit for Elementor – Powerful Addons for Elementor, Widgets & Templates for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'sg_content_number_prefix' parameter in all versions up to, and including, 3.1.0 due to insufficient input sanitization and output es...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6916" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -753,7 +695,7 @@ The vulnerability we are disclosing in this advisory affected a wi...</div>
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-05-05 08:02:07</div>
+      <div>Raport wygenerowano: 2026-05-09 08:02:23</div>
     </div>
   </div>
 
