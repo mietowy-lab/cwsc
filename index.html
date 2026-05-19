@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-05-18</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-05-19</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-05-18</p>
+      <p class="sub">Dane z RSS i API | 2026-05-19</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,18 +136,38 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">53</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">14</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">339</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">406</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">54</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">15</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">335</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">404</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (53)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (54)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-05-14" data-cvss="-1">
+  <div class="news-title">The Biometric AuthToken Heist: Cracking PINs and Bypassing CE via a Long-Ignored Attack Surface</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2026-05-14 08:39</span>
+  </div>
+  <div class="news-summary">Talk presented at Qualcomm Product Security Summit (QPSS) 2026.
+The talk revisits a neglected attack surface in Android’s biometric authentication flow and explores how weaknesses around biometric AuthToken handling can be abused to crack PINs and bypass Credential Encrypted (CE) protection.
+Slides ...</div>
+  <a href="https://www.darknavy.org/blog/the_biometric_authtoken_heist/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item incident" data-sev="none" data-date="2026-05-13" data-cvss="-1">
+  <div class="news-title">MAIL token drain via Moolah flash-loan callback reentrancy</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2026-05-13 00:00</span>
+  </div>
+  <div class="news-summary">On May 13, 2026 at 23:22:02 UTC (BNB Chain block `98134017`), attacker EOA `0xcb26b3a469c5aee911d059a25de2b26ed52826e9` executed transaction `0x2fdd6aef515fb06ce803c55086bb71de712631979809c135cf6d02be133f5cdb`, which deployed bootstrap contract `0x8aa9cb61885121448f1bf9a5df80ec36c6fbd535` and exe...</div>
+  <a href="https://www.darknavy.org/web3/exploits/mail-token-moolah-flash-loan-callback-reentrancy/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-05-11" data-cvss="-1">
   <div class="news-title">11th May – Threat Intelligence Report</div>
   <div class="news-meta">
@@ -221,15 +241,6 @@ This matters because Opus 4.6+ is genuinely a lot harder to attack than previous
   </div>
   <div class="news-summary">For the latest discoveries in cyber research for the week of 13th April, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES The Los Angeles Police Department has reported a data breach involving a digital storage system used by the L.A. City Attorney’s Office. The exposure in...</div>
   <a href="https://research.checkpoint.com/2026/13th-april-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item incident" data-sev="none" data-date="2026-04-06" data-cvss="-1">
-  <div class="news-title">6th April – Threat Intelligence Report</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-04-06 11:21</span>
-  </div>
-  <div class="news-summary">For the latest discoveries in cyber research for the week of 30th March, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES The European Commission, the European Union’s executive body, has confirmed a data breach after its Europa.eu platform was compromised through a third-p...</div>
-  <a href="https://research.checkpoint.com/2026/6th-march-threat-intelligence-report-2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item incident" data-sev="none" data-date="2026-03-26" data-cvss="-1">
   <div class="news-title">Kubernetes forensics 1/3: what the container ?</div>
@@ -344,15 +355,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   <div class="news-summary">In October 2024, RET2 participated in the “Small Office / Home Office” (SOHO) flavor of Pwn2Own, a competition which challenges top security researchers to compromise consumer-focused network devices. This includes popular smart speakers, routers, IP cameras, printers, and network-attached storage (...</div>
   <a href="https://blog.ret2.io/2025/06/11/pwn2own-soho-2024-sonos-exploit/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-06-01" data-cvss="-1">
-  <div class="news-title">Automated Attack Synthesis for Constant Product Market Makers</div>
-  <div class="news-meta">
-    <span class="badge">Kaist Hacking Lab</span>
-    <span>2025-06-01 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://kaist-hacking.github.io/publication/han-cpmm/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -360,8 +362,17 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (14)</h3>
+      <h3>⚠️ Nowe Zagrożenia (15)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-05-17" data-cvss="-1">
+  <div class="news-title">SEA Settlement Adapter Round Redemption Inflation</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2026-05-17 00:00</span>
+  </div>
+  <div class="news-summary">The attack repeatedly sent fixed USDT lots into the SEA settlement adapter, redeemed disproportionately large SEA amounts through the adapter's round logic, and sold the redeemed SEA back into the SEA/USDT pair before repaying the flash loan.</div>
+  <a href="https://www.darknavy.org/web3/exploits/sea-settlement-adapter-round-redemption-inflation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-05-15" data-cvss="-1">
   <div class="news-title">WrappedADS Privileged `wrapTo()` Mint Through the Authorized Minter Allowance Path</div>
   <div class="news-meta">
@@ -496,8 +507,17 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (339)</h3>
+      <h3>🔓 Wykryte Luki (335)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-18" data-cvss="-1.0">
+  <div class="news-title">18th May – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-05-18 14:58</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 18th May, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Vodafone, a major international telecom, has sustained a source code leak claimed by the Lapsus$ extortion group. The company confirmed limited access to ...</div>
+  <a href="https://research.checkpoint.com/2026/18th-may-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-05-17" data-cvss="-1.0">
   <div class="news-title">Ethereum Bridge BTC Import/Proof Path Trace-Attributed Unauthorized Payout</div>
   <div class="news-meta">
@@ -516,24 +536,6 @@ The post Strengthening supply chain security: Preparing for the next malware cam
   <div class="news-summary">Following two days of intense competition, Day Three of Pwn2Own Berlin 2026 brought the curtain down on an incredible event. Security researchers delivered their final exploits, pushing enterprise systems to the limit one last time as the race for Master of Pwn came to a close.Day Three added to an ...</div>
   <a href="https://www.thezdi.com/blog/2026/5/16/pwn2own-berlin-2026-day-three-results-and-master-of-pwn" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-16" data-cvss="-1.0">
-  <div class="news-title">Adshares Wrapper Incident Follow-Up Transaction: Post-Incident On-Chain Message, Not Exploit Execution</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-05-16 00:00</span>
-  </div>
-  <div class="news-summary">On May 16, 2026, transaction `0x7a823a891b7c5c02de50931f34cf50fc12cc600fe8b390b8f3dc29f2222c93b8` on Ethereum made a single zero-value call with plaintext calldata and no internal execution, logs, or transfers, marking it as post-incident Adshares Wrapper message traffic rather than the draining tra...</div>
-  <a href="https://www.darknavy.org/web3/exploits/adshares-wrapper-post-incident-message/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-16" data-cvss="-1.0">
-  <div class="news-title">Adshares Wrapper On-Chain Whitehat Message Is Settlement Traffic, Not The Exploit</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-05-16 00:00</span>
-  </div>
-  <div class="news-summary">On Ethereum at 2026-05-16 18:15:23 UTC, transaction `0x99a1114c2e8dc1807e00da0e963a6fbd5d91a04d1e1fd0a75b78e9c6b41a7464` was an on-chain plaintext settlement message related to Adshares Wrapper, not the drain transaction itself. The trace shows a single zero-value `CALL` from `0xb6fe3854a85dc6c2a...</div>
-  <a href="https://www.darknavy.org/web3/exploits/adshares-wrapper-whitehat-message/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-05-15" data-cvss="-1.0">
   <div class="news-title">Hack the Elephant One Bite at a Time: JPEG-Related Memory-Safety Bugs in PHP</div>
   <div class="news-meta">
@@ -551,33 +553,6 @@ The post Strengthening supply chain security: Preparing for the next malware cam
   </div>
   <div class="news-summary">Day Two of Pwn2Own Berlin 2026 and the stakes continue to rise! Security researchers are back on the Pwn2Own stage, pushing enterprise systems to their limits as the competition heats up. More exploits, more surprises, and more standout moments are unfolding, so follow along here for live updates as...</div>
   <a href="https://www.thezdi.com/blog/2026/5/15/pwn2own-berlin-2026-day-two-results" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-15" data-cvss="-1.0">
-  <div class="news-title">Kelp DAO LRTDepositPool Authorized Admin Unpause (Not an Exploit)</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-05-15 00:00</span>
-  </div>
-  <div class="news-summary">On Ethereum at 2026-05-15 14:44:59 UTC (block `25101229`), Kelp DAO's `LRTDepositPool` was unpaused through the protocol's admin Safe rather than through an exploit path. The executed action was an authorized `unpause()` administrative operation guarded by an on-chain `DEFAULT_ADMIN_ROLE` check i...</div>
-  <a href="https://www.darknavy.org/web3/exploits/kelp-dao-lrtdepositpool-authorized-unpause/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-15" data-cvss="-1.0">
-  <div class="news-title">Kelp DAO LRTOracle Administrative Unpause via Authorized Safe Execution</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-05-15 00:00</span>
-  </div>
-  <div class="news-summary">The fetched artifacts show a routine Safe-mediated `unpause()` with no token transfers, no attacker gains, and no evidence of unauthorized access or exploit behavior in this transaction.</div>
-  <a href="https://www.darknavy.org/web3/exploits/kelp-dao-lrtoracle-admin-unpause/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-15" data-cvss="-1.0">
-  <div class="news-title">TrustedVolumes On-Chain Message Is Post-Exploit Settlement Traffic, Not The Drain</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-05-15 00:00</span>
-  </div>
-  <div class="news-summary">On May 15, 2026, transaction 0xebeec0... on Ethereum carried a plaintext settlement demand referencing the prior TrustedVolumes theft and should be classified as post-exploit message traffic rather than the exploit itself.</div>
-  <a href="https://www.darknavy.org/web3/exploits/trustedvolumes-onchain-message-post-exploit/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-05-14" data-cvss="-1.0">
   <div class="news-title">The time of much patching is coming</div>
@@ -680,25 +655,65 @@ Reverse-engineering
                    In a previous article, we presented an attack against the Tesla Wall Connector Gen 3 used during Pwn2Own Automotive 202...</div>
   <a href="https://www.synacktiv.com/en/publications/exploiting-the-tesla-wall-connector-from-its-charge-port-connector-part-2-bypassing" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-11" data-cvss="5.3">
-  <div class="news-title">CVE-2026-1677 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-12" data-cvss="3.3">
+  <div class="news-title">CVE-2026-41530 - LOW (3.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-11</span>
+    <span>2026-05-12</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-1677 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">Zephyr sockets created with `IPPROTO_TLS_1_3` can still negotiate a TLS 1.2 connection when both TLS versions are enabled in Kconfig, because the socket-level protocol selection is not propagated to mbedTLS (e.g. via `mbedtls_ssl_conf_min_tls_version`). The ClientHello advertises both versions and t...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1677" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-41530 | CVSS: 3.3 | Severity: LOW</div>
+  <div class="news-summary">The automatic folder creation feature of Lhaz and Lhaz+ provided by Chitora soft contains a path traversal vulnerability. When the affected product is configured with the automatic folder creation feature enabled, and a product user tries to extract an archive file which has a crafted file name, the...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41530" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-11" data-cvss="7.3">
-  <div class="news-title">CVE-2026-6433 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-12" data-cvss="7.4">
+  <div class="news-title">CVE-2026-41872 - HIGH (7.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-11</span>
+    <span>2026-05-12</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-6433 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">The Custom css-js-php WordPress plugin through 2.0.7 does not properly sanitize user input before using it in a SQL query, and the result is passed to eval(), allowing unauthenticated users to execute arbitrary PHP code on the server.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6433" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-41872 | CVSS: 7.4 | Severity: HIGH</div>
+  <div class="news-summary">"Kura Sushi Official App" provided by EPG, Inc. is vulnerable to improper certificate validation. A man-in-the-middle attack may allow eavesdropping on, or altering, the communication on push notifications between the affected application and the relevant server.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41872" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-12" data-cvss="6.7">
+  <div class="news-title">CVE-2026-0541 - MEDIUM (6.7)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-12</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-0541 | CVSS: 6.7 | Severity: MEDIUM</div>
+  <div class="news-summary">ACAP applications can gain elevated privileges due to improper input validation during the installation process, potentially leading to privilege escalation. This vulnerability can only be exploited if the Axis device is configured to allow the installation of unsigned ACAP applications, and if an a...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0541" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-12" data-cvss="6.0">
+  <div class="news-title">CVE-2026-0802 - MEDIUM (6.0)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-12</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-0802 | CVSS: 6.0 | Severity: MEDIUM</div>
+  <div class="news-summary">An ACAP configuration file lacked sufficient input validation, which could allow command injection and potentially lead to privilege escalation. This vulnerability can only be exploited if the Axis device is configured to allow the installation of unsigned ACAP applications, and if an attacker convi...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0802" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-12" data-cvss="6.7">
+  <div class="news-title">CVE-2026-0804 - MEDIUM (6.7)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-12</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-0804 | CVSS: 6.7 | Severity: MEDIUM</div>
+  <div class="news-summary">An ACAP configuration file lacked sufficient input validation, which could allow a path traversal attack leading to potential privilege escalation. This vulnerability can only be exploited if the Axis device is configured to allow the installation of unsigned ACAP applications, and if an attacker co...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0804" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-12" data-cvss="5.4">
+  <div class="news-title">CVE-2026-1185 - MEDIUM (5.4)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-12</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-1185 | CVSS: 5.4 | Severity: MEDIUM</div>
+  <div class="news-summary">A configuration file on the local file system had improper input validation which could allow code execution and potentially lead to privilege escalation. This vulnerability can only be exploited if an attacker can log in to the Axis device using SSH.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1185" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -706,7 +721,7 @@ Reverse-engineering
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-05-18 08:02:32</div>
+      <div>Raport wygenerowano: 2026-05-19 08:02:41</div>
     </div>
   </div>
 
