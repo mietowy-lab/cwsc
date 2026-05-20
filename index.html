@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-05-19</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-05-20</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-05-19</p>
+      <p class="sub">Dane z RSS i API | 2026-05-20</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,9 +137,9 @@
 
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">54</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">15</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">16</a></div><div class="kpi-label">Zagrożenia</div></div>
         <div class="card"><div class="kpi-num"><a href="#vulnerabilities">335</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">404</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">405</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -148,6 +148,15 @@
     <div class="section" id="incidents">
       <h3>🚨 Incydenty Bezpieczeństwa (54)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-05-19" data-cvss="-1">
+  <div class="news-title">When Filenames Become Attack Surfaces: Weaponizing NASA's CFITSIO Extended Filename Syntax</div>
+  <div class="news-meta">
+    <span class="badge">Doyensec</span>
+    <span>2026-05-19T00:00:00+02:00</span>
+  </div>
+  <div class="news-summary">This research was recently presented at BSides Luxembourg 2026. This blogpost documents our findings presented during the talk. The BSides slides are posted here. Today, we’re also releasing the Docker-based playground utilized for the demos so anyone interested can reproduce the findings locally: d...</div>
+  <a href="https://blog.doyensec.com/2026/05/19/cfitsio-weaponized-filenames.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-05-14" data-cvss="-1">
   <div class="news-title">The Biometric AuthToken Heist: Cracking PINs and Bypassing CE via a Long-Ignored Attack Surface</div>
   <div class="news-meta">
@@ -185,15 +194,6 @@ Slides ...</div>
   </div>
   <div class="news-summary">Talos has recently started to collect and gather intelligence around phone numbers within emails as an additional indicator of compromise (IOC). In this blog, we discuss new insights into in-the-wild phone number reuse in scam emails.</div>
   <a href="https://blog.talosintelligence.com/insights-into-the-clustering-and-reuse-of-phone-numbers-in-scam-emails/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item incident" data-sev="none" data-date="2026-05-05" data-cvss="-1">
-  <div class="news-title">CloudZ RAT potentially steals OTP messages using Pheno plugin</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-05-05 10:00</span>
-  </div>
-  <div class="news-summary">Cisco Talos discovered an intrusion, active since at least January 2026, where an unknown attacker implanted a CloudZ remote access tool (RAT) and a previously undocumented plugin called “Pheno.”</div>
-  <a href="https://blog.talosintelligence.com/cloudz-pheno-infostealer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item incident" data-sev="none" data-date="2026-05-04" data-cvss="-1">
   <div class="news-title">4th May – Threat Intelligence Report</div>
@@ -362,8 +362,17 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (15)</h3>
+      <h3>⚠️ Nowe Zagrożenia (16)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-05-19" data-cvss="-1">
+  <div class="news-title">From PDB strings to MaaS: Tracking a commodity BadIIS ecosystem used by Chinese-speaking threat</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-05-19 10:00</span>
+  </div>
+  <div class="news-summary">Cisco Talos has uncovered a BadIIS variant — identifiable by its embedded "demo.pdb" strings — that functions as commodity malware, likely sold or shared among multiple Chinese-speaking cyber crime groups operating under a malware-as-a-service (MaaS) model for continuous monetization.</div>
+  <a href="https://blog.talosintelligence.com/from-pdb-strings-to-maas-tracking-a-commodity-badiis-ecosystem/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-05-17" data-cvss="-1">
   <div class="news-title">SEA Settlement Adapter Round Redemption Inflation</div>
   <div class="news-meta">
@@ -509,6 +518,15 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="section" id="vulnerabilities">
       <h3>🔓 Wykryte Luki (335)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-19" data-cvss="-1.0">
+  <div class="news-title">TP-Link, Photoshop, OpenVPN, Norton VPN vulnerabilities</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-05-19 15:39</span>
+  </div>
+  <div class="news-summary">Cisco Talos’ Vulnerability Discovery & Research team recently disclosed eight vulnerabilities in TP-Link, and one each in Adobe Photoshop, OpenVPN, and Gen Digital's Norton VPN.The vulnerabilities mentioned in this blog post have been patched by their respective vendors, in adherence to Cisco’s thir...</div>
+  <a href="https://blog.talosintelligence.com/tp-link-photoshop-openvpn-norton-vpn-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-05-18" data-cvss="-1.0">
   <div class="news-title">18th May – Threat Intelligence Report</div>
   <div class="news-meta">
@@ -599,121 +617,95 @@ The post Strengthening supply chain security: Preparing for the next malware cam
   <div class="news-summary">We recently published an exploit chain for the Google Pixel 9 that demonstrated it was possible to go from a zero-click context to root on Android in just two exploits. The Dolby 0-click vulnerability existed across all of Android, until it was patched in January 2026. While we had an exploit chain ...</div>
   <a href="https://projectzero.google/2026/05/pixel-10-exploit.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-12" data-cvss="-1.0">
-  <div class="news-title">Microsoft Patch Tuesday for May 2026 — Snort rules and prominent vulnerabilities</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-05-12 19:57</span>
-  </div>
-  <div class="news-summary">Microsoft has released its monthly security update for May 2026, which includes 137 vulnerabilities affecting a range of products, including 16 that Microsoft marked as “critical”.</div>
-  <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-may-2026/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-12" data-cvss="-1.0">
-  <div class="news-title">The May 2026 Security Update Review</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-05-12 18:38</span>
-  </div>
-  <div class="news-summary">I’m currently in Berlin helping set up for Pwn2Own Berlin, but that doesn’t stop Patch Tuesday from coming, and it’s another big one. At least nothing is listed as being in the wild – for now. Take a break from your regularly scheduled activities and let’s take a look at the latest security patches ...</div>
-  <a href="https://www.thezdi.com/blog/2026/5/12/the-may-2026-security-update-review" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-12" data-cvss="-1.0">
-  <div class="news-title">The Apple macOS Security Update Review</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-05-12 12:21</span>
-  </div>
-  <div class="news-summary">We’ve received some feedback from those who read the Patch Blog that they would like something similar for macOS updates. Unfortunately, Apple doesn’t schedule these for a particular day, but we can provide our thoughts and analysis on the days they do release their latest patches. For May 2026, App...</div>
-  <a href="https://www.thezdi.com/blog/2026/5/12/the-apple-macos-security-update-review" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-12" data-cvss="-1.0">
-  <div class="news-title">Exploiting the Tesla Wall Connector from its charge port connector - Part 2: bypassing the anti-downgrade</div>
-  <div class="news-meta">
-    <span class="badge">Synacktiv</span>
-    <span>2026-05-12 00:00</span>
-  </div>
-  <div class="news-summary">
-
-
-
- 
-
-
-
-
-
-Exploiting the Tesla Wall Connector from its charge port connector - Part 2: bypassing the anti-downgrade
-
-
-12/05/2026
-
-
-Exploit
-Reverse-engineering
-
-
-                   In a previous article, we presented an attack against the Tesla Wall Connector Gen 3 used during Pwn2Own Automotive 202...</div>
-  <a href="https://www.synacktiv.com/en/publications/exploiting-the-tesla-wall-connector-from-its-charge-port-connector-part-2-bypassing" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-12" data-cvss="3.3">
-  <div class="news-title">CVE-2026-41530 - LOW (3.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-13" data-cvss="9.1">
+  <div class="news-title">CVE-2025-11159 - CRITICAL (9.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-12</span>
+    <span>2026-05-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-41530 | CVSS: 3.3 | Severity: LOW</div>
-  <div class="news-summary">The automatic folder creation feature of Lhaz and Lhaz+ provided by Chitora soft contains a path traversal vulnerability. When the affected product is configured with the automatic folder creation feature enabled, and a product user tries to extract an archive file which has a crafted file name, the...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41530" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-11159 | CVSS: 9.1 | Severity: CRITICAL</div>
+  <div class="news-summary">Hitachi Vantara Pentaho Data Integration & Analytics of all versions contain a JDBC driver for H2 databases which is vulnerable to external script execution when a new connection is created by a data source administrator.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11159" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-12" data-cvss="7.4">
-  <div class="news-title">CVE-2026-41872 - HIGH (7.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-13" data-cvss="5.3">
+  <div class="news-title">CVE-2025-14033 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-12</span>
+    <span>2026-05-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-41872 | CVSS: 7.4 | Severity: HIGH</div>
-  <div class="news-summary">"Kura Sushi Official App" provided by EPG, Inc. is vulnerable to improper certificate validation. A man-in-the-middle attack may allow eavesdropping on, or altering, the communication on push notifications between the affected application and the relevant server.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41872" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-14033 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The ilGhera Support System for WooCommerce plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the 'get_ticket_content_callback' function in all versions up to, and including, 1.3.0. This makes it possible for unauthenticated attackers to view any s...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14033" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-12" data-cvss="6.7">
-  <div class="news-title">CVE-2026-0541 - MEDIUM (6.7)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-13" data-cvss="5.5">
+  <div class="news-title">CVE-2026-21015 - MEDIUM (5.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-12</span>
+    <span>2026-05-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-0541 | CVSS: 6.7 | Severity: MEDIUM</div>
-  <div class="news-summary">ACAP applications can gain elevated privileges due to improper input validation during the installation process, potentially leading to privilege escalation. This vulnerability can only be exploited if the Axis device is configured to allow the installation of unsigned ACAP applications, and if an a...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0541" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21015 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Incorrect default permissions in FactoryCamera prior to SMR May-2026 Release 1 allows local attacker to access unique identifier.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21015" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-12" data-cvss="6.0">
-  <div class="news-title">CVE-2026-0802 - MEDIUM (6.0)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-13" data-cvss="5.5">
+  <div class="news-title">CVE-2026-21016 - MEDIUM (5.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-12</span>
+    <span>2026-05-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-0802 | CVSS: 6.0 | Severity: MEDIUM</div>
-  <div class="news-summary">An ACAP configuration file lacked sufficient input validation, which could allow command injection and potentially lead to privilege escalation. This vulnerability can only be exploited if the Axis device is configured to allow the installation of unsigned ACAP applications, and if an attacker convi...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0802" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21016 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Incorrect privilege assignment in LocationManager prior to SMR May-2026 Release 1 allows local attackers to access sensitive information.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21016" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-12" data-cvss="6.7">
-  <div class="news-title">CVE-2026-0804 - MEDIUM (6.7)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-13" data-cvss="6.7">
+  <div class="news-title">CVE-2026-21018 - MEDIUM (6.7)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-12</span>
+    <span>2026-05-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-0804 | CVSS: 6.7 | Severity: MEDIUM</div>
-  <div class="news-summary">An ACAP configuration file lacked sufficient input validation, which could allow a path traversal attack leading to potential privilege escalation. This vulnerability can only be exploited if the Axis device is configured to allow the installation of unsigned ACAP applications, and if an attacker co...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0804" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21018 | CVSS: 6.7 | Severity: MEDIUM</div>
+  <div class="news-summary">Out-of-bounds write in SveService prior to SMR May-2026 Release 1 allows local privileged attackers to execute arbitrary code.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21018" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-12" data-cvss="5.4">
-  <div class="news-title">CVE-2026-1185 - MEDIUM (5.4)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-13" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-21019 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-12</span>
+    <span>2026-05-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-1185 | CVSS: 5.4 | Severity: MEDIUM</div>
-  <div class="news-summary">A configuration file on the local file system had improper input validation which could allow code execution and potentially lead to privilege escalation. This vulnerability can only be exploited if an attacker can log in to the Axis device using SSH.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1185" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21019 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Improper input validation in FacAtFunction in Galaxy Watch prior to SMR May-2026 Release 1 allows local attacker to execute arbitrary code with system privilege.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21019" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-13" data-cvss="7.8">
+  <div class="news-title">CVE-2026-21020 - HIGH (7.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-13</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-21020 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">Improper export of android application components in OmaCP prior to SMR May-2026 Release 1 allows local attackers to trigger privileged functions.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21020" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-13" data-cvss="6.8">
+  <div class="news-title">CVE-2026-21021 - MEDIUM (6.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-13</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-21021 | CVSS: 6.8 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper input validation in Routines prior to SMR May-2026 Release 1 allows physical attackers to launch privileged activity.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21021" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-13" data-cvss="5.5">
+  <div class="news-title">CVE-2026-21022 - MEDIUM (5.5)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-13</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-21022 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper handling of insufficient permissions in Routines prior to SMR May-2026 Release 1 allows local attackers to access sensitive information.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21022" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -721,7 +713,7 @@ Reverse-engineering
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-05-19 08:02:41</div>
+      <div>Raport wygenerowano: 2026-05-20 08:02:32</div>
     </div>
   </div>
 
