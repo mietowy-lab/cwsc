@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-05-23</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-05-26</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-05-23</p>
+      <p class="sub">Dane z RSS i API | 2026-05-26</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,18 +136,27 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">55</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">15</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">315</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">385</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">56</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">14</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">334</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">404</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (55)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (56)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-05-25" data-cvss="-1">
+  <div class="news-title">25th May – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-05-25 15:08</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 25th May, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES 7-Eleven, the global convenience store chain, confirmed a breach after an unauthorized access to systems used for franchisee documents. ShinyHunters claim...</div>
+  <a href="https://research.checkpoint.com/2026/25th-may-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-05-22" data-cvss="-1">
   <div class="news-title">Fast and Furious – Nimbus Manticore Operations During the Iranian Conflict</div>
   <div class="news-meta">
@@ -346,15 +355,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   <div class="news-summary">I recently presented at the DEF CON 33 Mainstage and the 12th Crypto & Privacy Village on weaknesses in implementations of Google’s Privacy Sandbox that subverted privacy protections and enabled deanonymization attacks.</div>
   <a href="https://spaceraccoon.dev/client-side-deanonymization-attacks-privacy-sandbox-apis/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-07-27" data-cvss="-1">
-  <div class="news-title">Getting a Shell on the LAU-G150-C Optical Network Terminal</div>
-  <div class="news-meta">
-    <span class="badge">Spaceraccoon</span>
-    <span>2025-07-27 12:00</span>
-  </div>
-  <div class="news-summary">Since the Link-All LAU-G150-C Optical Network Terminal isn’t documented anywhere, I thought this was a great opportunity to practice some hardware hacking…</div>
-  <a href="https://spaceraccoon.dev/getting-shell-lau-g150-c-optical-network-terminal/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -362,7 +362,7 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (15)</h3>
+      <h3>⚠️ Nowe Zagrożenia (14)</h3>
       <div class="news-grid" data-grid="threats">
 <div class="card news-item threat" data-sev="none" data-date="2026-05-19" data-cvss="-1">
   <div class="news-title">From PDB strings to MaaS: Tracking a commodity BadIIS ecosystem used by Chinese-speaking threat</div>
@@ -426,15 +426,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   </div>
   <div class="news-summary">Key Takeaways Background VECT Ransomware is a Ransomware-as-a-Service (RaaS) program that made its first appearance in December 2025 on a Russian-language cybercrime forum. After claiming their first two victims in January 2026, the group got back into the public eye due to an announcement of a part...</div>
   <a href="https://research.checkpoint.com/2026/vect-ransomware-by-design-wiper-by-accident/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2026-04-20" data-cvss="-1">
-  <div class="news-title">DFIR Report – The Gentlemen & SystemBC: A Sneak Peek Behind the Proxy</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-04-20 12:55</span>
-  </div>
-  <div class="news-summary">Key Points The Gentlemen RaaS The Gentlemen ransomware‑as‑a‑service (RaaS) operation is a relatively new group that emerged around mid‑2025. The operators advertise their services across multiple underground forums, promoting their ransomware platform and inviting penetration testers (and other tech...</div>
-  <a href="https://research.checkpoint.com/2026/dfir-report-the-gentlemen/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2026-02-01" data-cvss="-1">
   <div class="news-title">RTCon: Context-Adaptive Function-Level Fuzzing for RTOS Kernels</div>
@@ -507,8 +498,17 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (315)</h3>
+      <h3>🔓 Wykryte Luki (334)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-24" data-cvss="-1.0">
+  <div class="news-title">Negative-Days with Vulnerability Spoiler Alert: Three Months Later</div>
+  <div class="news-meta">
+    <span class="badge">Spaceraccoon</span>
+    <span>2026-05-24 00:00</span>
+  </div>
+  <div class="news-summary">35 CVEs caught before publication, with an average lead time of 2 days. Three months of running Vulnerability Spoiler Alert on 10 open-source repos - the numbers, the false positives, and what it takes to make an LLM vulnerability monitor actually work.</div>
+  <a href="https://spaceraccoon.dev/negative-days-vulnerability-spoiler-alert/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-05-21" data-cvss="-1.0">
   <div class="news-title">The art of being ungovernable</div>
   <div class="news-meta">
@@ -545,169 +545,173 @@ The post Strengthening supply chain security: Preparing for the next malware cam
   <div class="news-summary">Cisco Talos’ Vulnerability Discovery & Research team recently disclosed eight vulnerabilities in TP-Link, and one each in Adobe Photoshop, OpenVPN, and Gen Digital's Norton VPN.The vulnerabilities mentioned in this blog post have been patched by their respective vendors, in adherence to Cisco’s thir...</div>
   <a href="https://blog.talosintelligence.com/tp-link-photoshop-openvpn-norton-vpn-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-18" data-cvss="-1.0">
-  <div class="news-title">18th May – Threat Intelligence Report</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-19" data-cvss="7.5">
+  <div class="news-title">CVE-2025-15609 - HIGH (7.5)</div>
   <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-05-18 14:58</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
   </div>
-  <div class="news-summary">For the latest discoveries in cyber research for the week of 18th May, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Vodafone, a major international telecom, has sustained a source code leak claimed by the Lapsus$ extortion group. The company confirmed limited access to ...</div>
-  <a href="https://research.checkpoint.com/2026/18th-may-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-15609 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The Fortis for WooCommerce WordPress plugin before 1.3.1 may leak sensitive API keys to unauthenticated attackers, allowing them to query Fortis' API and retrieve sensitive customer information, like past orders, PII, etc.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15609" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-17" data-cvss="-1.0">
-  <div class="news-title">Ethereum Bridge BTC Import/Proof Path Trace-Attributed Unauthorized Payout</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-19" data-cvss="5.5">
+  <div class="news-title">CVE-2026-47309 - MEDIUM (5.5)</div>
   <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-05-17 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
   </div>
-  <div class="news-summary">On Ethereum block `25118335` at `2026-05-17T23:55:23Z`, attacker EOA `0x5abb91b9c01a5ed3ae762d32b236595b459d5777` called bridge dispatcher `0x71518580f36feceffe0721f06ba4703218cd7f63` and drained bridge-held assets to drainer `0x65cb8b128bf6e690761044cceca422bb239c25f9`. The trace shows a BTC-imp...</div>
-  <a href="https://www.darknavy.org/web3/exploits/bridge-eth-tbtc-usdc-drain/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-16" data-cvss="-1.0">
-  <div class="news-title">Pwn2Own Berlin 2026: Day Three Results and Master of Pw</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-05-16 10:38</span>
-  </div>
-  <div class="news-summary">Following two days of intense competition, Day Three of Pwn2Own Berlin 2026 brought the curtain down on an incredible event. Security researchers delivered their final exploits, pushing enterprise systems to the limit one last time as the race for Master of Pwn came to a close.Day Three added to an ...</div>
-  <a href="https://www.thezdi.com/blog/2026/5/16/pwn2own-berlin-2026-day-three-results-and-master-of-pwn" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-15" data-cvss="-1.0">
-  <div class="news-title">Hack the Elephant One Bite at a Time: JPEG-Related Memory-Safety Bugs in PHP</div>
-  <div class="news-meta">
-    <span class="badge">Pt Swarm</span>
-    <span>2026-05-15 09:09</span>
-  </div>
-  <div class="news-summary">PHP is one of the world’s most popular programming languages. The PHP core itself is rarely perceived as an attack surface — attention usually shifts to frameworks and third-party libraries. However, a significant portion of real-world application logic relies on built-in functions from the ext/stan...</div>
-  <a href="https://swarm.ptsecurity.com/hack-the-elephant-one-bite-at-a-time-jpeg-related-memory-safety-bugs-in-php/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-15" data-cvss="-1.0">
-  <div class="news-title">Pwn2Own Berlin 2026 - Day Two Results</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-05-15 07:29</span>
-  </div>
-  <div class="news-summary">Day Two of Pwn2Own Berlin 2026 and the stakes continue to rise! Security researchers are back on the Pwn2Own stage, pushing enterprise systems to their limits as the competition heats up. More exploits, more surprises, and more standout moments are unfolding, so follow along here for live updates as...</div>
-  <a href="https://www.thezdi.com/blog/2026/5/15/pwn2own-berlin-2026-day-two-results" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-14" data-cvss="-1.0">
-  <div class="news-title">The time of much patching is coming</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-05-14 18:00</span>
-  </div>
-  <div class="news-summary">In this week’s newsletter, Martin reflects on what the next iteration of AI tools means for vulnerability discovery and our ability to manage large-scale patch releases.</div>
-  <a href="https://blog.talosintelligence.com/the-time-of-much-patching-is-coming/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-14" data-cvss="-1.0">
-  <div class="news-title">Ongoing exploitation of Cisco Catalyst SD-WAN vulnerabilities</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-05-14 16:02</span>
-  </div>
-  <div class="news-summary">Cisco Talos is tracking the active exploitation of CVE-2026-20182, an authentication bypass vulnerability in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage.</div>
-  <a href="https://blog.talosintelligence.com/sd-wan-ongoing-exploitation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-14" data-cvss="-1.0">
-  <div class="news-title">Pwn2Own Berlin 2026 - Day One Results</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-05-14 08:27</span>
-  </div>
-  <div class="news-summary">Welcome to Day One of Pwn2Own Berlin 2026! Today, 22 entries took the Pwn2Own stage to target AI Databases, Coding Agents, Local Inferences, and a separate category for NVIDIA products, as the world’s top security researchers push technology to its limits. Exploits, surprises, and breakthrough disco...</div>
-  <a href="https://www.thezdi.com/blog/2026/5/13/pwn2own-berlin-2026-day-one-results" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-13" data-cvss="-1.0">
-  <div class="news-title">Breaking things to keep them safe with Philippe Laulheret</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-05-13 10:00</span>
-  </div>
-  <div class="news-summary">Philippe shares his unique journey from French engineering school to the front lines of cybersecurity, explaining how his lifelong love for solving puzzles helps him uncover critical security flaws before they can be exploited.</div>
-  <a href="https://blog.talosintelligence.com/breaking-things-to-keep-them-safe-with-philippe-laulheret/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-13" data-cvss="-1.0">
-  <div class="news-title">A 0-click exploit chain for the Pixel 10: When a Door Closes, a Window Opens</div>
-  <div class="news-meta">
-    <span class="badge">Project Zero</span>
-    <span>2026-05-13 00:00</span>
-  </div>
-  <div class="news-summary">We recently published an exploit chain for the Google Pixel 9 that demonstrated it was possible to go from a zero-click context to root on Android in just two exploits. The Dolby 0-click vulnerability existed across all of Android, until it was patched in January 2026. While we had an exploit chain ...</div>
-  <a href="https://projectzero.google/2026/05/pixel-10-exploit.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-12" data-cvss="-1.0">
-  <div class="news-title">Microsoft Patch Tuesday for May 2026 — Snort rules and prominent vulnerabilities</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-05-12 19:57</span>
-  </div>
-  <div class="news-summary">Microsoft has released its monthly security update for May 2026, which includes 137 vulnerabilities affecting a range of products, including 16 that Microsoft marked as “critical”.</div>
-  <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-may-2026/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-12" data-cvss="-1.0">
-  <div class="news-title">The May 2026 Security Update Review</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-05-12 18:38</span>
-  </div>
-  <div class="news-summary">I’m currently in Berlin helping set up for Pwn2Own Berlin, but that doesn’t stop Patch Tuesday from coming, and it’s another big one. At least nothing is listed as being in the wild – for now. Take a break from your regularly scheduled activities and let’s take a look at the latest security patches ...</div>
-  <a href="https://www.thezdi.com/blog/2026/5/12/the-may-2026-security-update-review" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-12" data-cvss="-1.0">
-  <div class="news-title">The Apple macOS Security Update Review</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-05-12 12:21</span>
-  </div>
-  <div class="news-summary">We’ve received some feedback from those who read the Patch Blog that they would like something similar for macOS updates. Unfortunately, Apple doesn’t schedule these for a particular day, but we can provide our thoughts and analysis on the days they do release their latest patches. For May 2026, App...</div>
-  <a href="https://www.thezdi.com/blog/2026/5/12/the-apple-macos-security-update-review" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-12" data-cvss="-1.0">
-  <div class="news-title">Exploiting the Tesla Wall Connector from its charge port connector - Part 2: bypassing the anti-downgrade</div>
-  <div class="news-meta">
-    <span class="badge">Synacktiv</span>
-    <span>2026-05-12 00:00</span>
-  </div>
-  <div class="news-summary">
+  <div class="cve-info">CVE ID: CVE-2026-47309 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Uncontrolled Recursion vulnerability in Samsung Open Source Escargot allows Oversized Serialized Data Payloads.
 
-
-
- 
-
-
-
-
-
-Exploiting the Tesla Wall Connector from its charge port connector - Part 2: bypassing the anti-downgrade
-
-
-12/05/2026
-
-
-Exploit
-Reverse-engineering
-
-
-                   In a previous article, we presented an attack against the Tesla Wall Connector Gen 3 used during Pwn2Own Automotive 202...</div>
-  <a href="https://www.synacktiv.com/en/publications/exploiting-the-tesla-wall-connector-from-its-charge-port-connector-part-2-bypassing" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+This issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47309" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-07" data-cvss="-1.0">
-  <div class="news-title">Tp-Link Archer AX53 v1.0 Openvpn configuration restore script_security OS command injection vulnerability</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-19" data-cvss="7.8">
+  <div class="news-title">CVE-2026-47310 - HIGH (7.8)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-05-07 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2303" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-47310 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">Use after free vulnerability in Samsung Open Source Escargot allows Pointer Manipulation.
+
+This issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47310" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-07" data-cvss="-1.0">
-  <div class="news-title">Tp-Link Archer AX53 v1.0 Openvpn configuration restore client_connect OS command injection vulnerability</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-19" data-cvss="7.8">
+  <div class="news-title">CVE-2026-47311 - HIGH (7.8)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-05-07 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2308" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-47311 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">Heap-based buffer overflow vulnerability in Samsung Open Source Escargot allows Overflow Buffers.
+
+This issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47311" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-19" data-cvss="7.5">
+  <div class="news-title">CVE-2026-8813 - HIGH (7.5)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-8813 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">This affects versions of the package exifreader before 4.39.0. A crafted image containing an ICC mluc tag can set an attacker-controlled record count together with a zero record size. During parsing, ExifReader repeatedly processes the same record and appends entries to an array without sufficient b...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8813" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-19" data-cvss="5.3">
+  <div class="news-title">CVE-2026-8814 - MEDIUM (5.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-8814 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">Versions of the package exifreader before 4.39.0 are vulnerable to Improper Handling of Highly Compressed Data (Data Amplification) due to decompressing PNG zTXt metadata without enforcing a built-in maximum decompressed output size. When asynchronous parsing is enabled, a crafted PNG file containin...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8814" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-19" data-cvss="4.3">
+  <div class="news-title">CVE-2026-8830 - MEDIUM (4.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-8830 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw was found in Keycloak. An authenticated user can bypass configured WebAuthn policies during credential registration by manipulating client-side JavaScript. This occurs because the server-side processAction() fails to validate that the newly created credential's parameters, such as public key ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8830" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-19" data-cvss="5.5">
+  <div class="news-title">CVE-2026-47312 - MEDIUM (5.5)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47312 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Release of invalid pointer or reference vulnerability in Samsung Open Source Escargot allows Buffer Manipulation.
+
+This issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47312" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-19" data-cvss="5.5">
+  <div class="news-title">CVE-2026-47313 - MEDIUM (5.5)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47313 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Memory allocation with excessive size value vulnerability in Samsung Open Source Escargot allows Excessive Allocation.
+
+This issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47313" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-19" data-cvss="7.8">
+  <div class="news-title">CVE-2026-47314 - HIGH (7.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47314 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">Out-of-bounds write vulnerability in Samsung Open Source Escargot allows Overflow Buffers.
+
+This issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47314" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-19" data-cvss="5.5">
+  <div class="news-title">CVE-2026-47315 - MEDIUM (5.5)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47315 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper Check for Unusual or Exceptional Conditions vulnerability in Samsung Open Source Escargot allows Input Data Manipulation.
+
+This issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47315" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-19" data-cvss="5.5">
+  <div class="news-title">CVE-2026-47316 - MEDIUM (5.5)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47316 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper Check or Handling of Exceptional Conditions vulnerability in Samsung Open Source Escargot allows Input Data Manipulation.
+
+This issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47316" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-19" data-cvss="5.5">
+  <div class="news-title">CVE-2026-47317 - MEDIUM (5.5)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47317 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Uncontrolled Recursion vulnerability in Samsung Open Source Escargot allows Excessive Allocation.
+
+This issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47317" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-19" data-cvss="9.8">
+  <div class="news-title">CVE-2026-4885 - CRITICAL (9.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-4885 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">The Piotnet Addons for Elementor Pro plugin for WordPress is vulnerable to arbitrary file upload due to missing file type validation in the 'pafe_ajax_form_builder' function in all versions up to, and including, 7.1.70. The plugin uses an incomplete extension blacklist that only blocks php, phpt, ph...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-4885" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-19" data-cvss="5.4">
+  <div class="news-title">CVE-2026-8922 - MEDIUM (5.4)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-19</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-8922 | CVSS: 5.4 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw was found in Keycloak. When both realm-level and client-level `notBefore` revocation policies are configured, Keycloak's OpenID Connect (OIDC) Introspection feature fails to properly honor the realm-level policy. This allows tokens that should have been revoked to remain active, potentially l...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8922" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -715,7 +719,7 @@ Reverse-engineering
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-05-23 08:02:57</div>
+      <div>Raport wygenerowano: 2026-05-26 08:02:37</div>
     </div>
   </div>
 
