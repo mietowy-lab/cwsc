@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-06-03</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-06-07</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-06-03</p>
+      <p class="sub">Dane z RSS i API | 2026-06-07</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -138,8 +138,8 @@
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">54</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">14</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">337</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">405</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">334</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">402</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -365,6 +365,15 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="section" id="threats">
       <h3>⚠️ Nowe Zagrożenia (14)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-06-03" data-cvss="-1">
+  <div class="news-title">Impersonation, Click Hijacking, and TDS: Inside a Malware Distribution Ecosystem</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-06-03 13:21</span>
+  </div>
+  <div class="news-summary">Research by: Alexey Bukhteyev Key Takeaways Introduction When we search Google for a popular piece of software, we usually click the first result, sometimes without even looking at the rest, because official project sites tend to rank highest and appear near the top of the results. After landing on ...</div>
+  <a href="https://research.checkpoint.com/2026/impersonation-click-hijacking-and-tds-inside-a-malware-distribution-ecosystem/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-06-01" data-cvss="-1">
   <div class="news-title">1st June – Threat Intelligence Report</div>
   <div class="news-meta">
@@ -418,15 +427,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   </div>
   <div class="news-summary">Key Findings Ransomware in Q1 2026: Consolidation at Scale During the first quarter of 2026, we monitored more than 70 active data leak sites (DLS) that collectively listed 2,122 new victims. This figure represents a 12.2% decline from the Q4 2025 all-time record of 2,416 victims but remains the sec...</div>
   <a href="https://research.checkpoint.com/2026/the-state-of-ransomware-q1-2026/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2026-04-28" data-cvss="-1">
-  <div class="news-title">VECT: Ransomware by design, Wiper by accident</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-04-28 13:03</span>
-  </div>
-  <div class="news-summary">Key Takeaways Background VECT Ransomware is a Ransomware-as-a-Service (RaaS) program that made its first appearance in December 2025 on a Russian-language cybercrime forum. After claiming their first two victims in January 2026, the group got back into the public eye due to an announcement of a part...</div>
-  <a href="https://research.checkpoint.com/2026/vect-ransomware-by-design-wiper-by-accident/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2026-02-01" data-cvss="-1">
   <div class="news-title">RTCon: Context-Adaptive Function-Level Fuzzing for RTOS Kernels</div>
@@ -499,203 +499,206 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (337)</h3>
+      <h3>🔓 Wykryte Luki (334)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-28" data-cvss="-1.0">
-  <div class="news-title">Less panic patching, more precision</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-05" data-cvss="-1.0">
+  <div class="news-title">The Click that shouldn’t have worked: RCE via clickjacking in Internet Explorer</div>
   <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-05-28 18:00</span>
+    <span class="badge">Pt Swarm</span>
+    <span>2026-06-05 11:18</span>
   </div>
-  <div class="news-summary">In this newsletter, Thor breaks down why you should stop relying solely on CVSS and start using EPSS and GCVE to focus your patching efforts on the threats that actually matter.</div>
-  <a href="https://blog.talosintelligence.com/less-panic-patching-more-precision/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Author’s note: this article describes vulnerabilities in ascending order of severity. If you want to skip straight to the most interesting part, feel free to read it from the bottom up. Even though Internet Explorer officially reached its end of life in 2020, its core engine remains widely used in t...</div>
+  <a href="https://swarm.ptsecurity.com/the-click-that-shouldnt-have-worked-rce-via-clickjacking-in-internet-explorer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-28" data-cvss="-1.0">
-  <div class="news-title">DICOM, Pydicom, GDCM, and Orthanc: A technical tour of what really happens in the heap</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-05-28 10:00</span>
-  </div>
-  <div class="news-summary">This white paper presents a concrete case study demonstrating the creation of a heap overflow vulnerability through the exploitation of the DICOM file format.</div>
-  <a href="https://blog.talosintelligence.com/dicom-pydicom-gdcm-and-orthanc-a-technical-tour-of-what-really-happens-in-the-heap/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-28" data-cvss="-1.0">
-  <div class="news-title">Critical Unauthenticated Remote Code Execution (RCE) in Salesforce Workbench via Pre-Auth XSS and Dynamic Code Injection</div>
-  <div class="news-meta">
-    <span class="badge">Google Security Research Advisories</span>
-    <span>2026-05-28 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://github.com/google/security-research/security/advisories/GHSA-3vq3-92v4-j6mf" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-27" data-cvss="-1.0">
-  <div class="news-title">MediaArea heap-based buffer overflow vulnerabilities</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-05-27 14:00</span>
-  </div>
-  <div class="news-summary">Talos researchers find 4 heap-based buffer overflow vulnerabilities in MediaArea's MediaInfoLib.</div>
-  <a href="https://blog.talosintelligence.com/mediaarea-heap-based-buffer-overflow-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-27" data-cvss="7.1">
-  <div class="news-title">CVE-2026-6268 - HIGH (7.1)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-31" data-cvss="6.3">
+  <div class="news-title">CVE-2026-10170 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-6268 | CVSS: 7.1 | Severity: HIGH</div>
-  <div class="news-summary">The EventPress WordPress theme before 22.2 does not sanitize or escape the 'id' parameter in the eventpress_customizer_notify_dismiss_action AJAX handler before outputting it back in the response, allowing unauthenticated attackers to perform Reflected Cross-Site Scripting attacks against logged-in ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6268" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10170 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw has been found in code-projects Visitor Management System 1.0. Affected by this issue is some unknown functionality of the file /vms/php/phone_0.php. This manipulation of the argument phone causes sql injection. The attack may be initiated remotely. The exploit has been published and may be u...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10170" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="4.3">
-  <div class="news-title">CVE-2026-7614 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-31" data-cvss="4.7">
+  <div class="news-title">CVE-2026-10171 - MEDIUM (4.7)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-7614 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Old Posts Highlighter plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.0.3. This is due to missing or incorrect nonce validation on the OPH_options function. This makes it possible for unauthenticated attackers to update the plugin's config...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7614" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10171 | CVSS: 4.7 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability has been found in code-projects Online Music Site 1.0. This affects an unknown part of the file /Administrator/PHP/AdminUpdateAlbum.php. Such manipulation of the argument ID leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10171" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8040 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-31" data-cvss="6.3">
+  <div class="news-title">CVE-2026-10172 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8040 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The faq shortocde plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'color' shortcode attribute in the 'faq' shortcode in all versions up to, and including, 1.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, wit...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8040" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10172 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A security flaw has been discovered in Bdtask Multi-Store Inventory Management System 1.0. The affected element is the function Upload of the file application/modules/dashboard/controllers/Module.php of the component Component Module. The manipulation of the argument module results in unrestricted u...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10172" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8048 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-31" data-cvss="4.3">
+  <div class="news-title">CVE-2026-10173 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8048 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The My Email Shortcode plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'subject' shortcode attribute in the 'my-email' shortcode in all versions up to, and including, 0.91 due to insufficient input sanitization and output escaping. This makes it possible for authenticated a...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8048" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10173 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A weakness has been identified in Orthanc Explorer 2 up to 1.12.0. The impacted element is an unknown function of the file WebApplication/src/components/StudyList.vue of the component URL Handler. This manipulation of the argument remote-source causes cross site scripting. It is possible to initiate...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10173" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8698 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-31" data-cvss="6.3">
+  <div class="news-title">CVE-2026-10174 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8698 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Cryptocurrency Prijsvergelijking Widget plugin for WordPress is vulnerable to Stored Cross-Site Scripting in version 1.0. This is due to insufficient output escaping in the as_get_coin_shortcode() function, which renders the 'width' (and 'height') shortcode attribute directly into the style attr...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8698" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10174 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was identified in Aider-AI Aider 0.86.3. Affected is an unknown function of the file aider/args.py of the component Pre-commit Hook Handler. Such manipulation of the argument git-commit-verify leads to protection mechanism failure. The attack may be launched remotely. The exploit is ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10174" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8701 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-31" data-cvss="6.3">
+  <div class="news-title">CVE-2026-10175 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8701 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The GNTT Post Title Ticker plugin for WordPress is vulnerable to Stored Cross-Site Scripting in version 1.0 via the `title-ticker-slide`, `title-ticker-fade`, and `title-ticker-typing` shortcodes. This is due to insufficient input sanitization and output escaping on shortcode attributes (notably `bo...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8701" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10175 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A security flaw has been discovered in Aider-AI Aider 0.86.3. Affected by this vulnerability is the function editor_coder.run of the file auth.py of the component Architect Mode. Performing a manipulation results in code injection. Remote exploitation of the attack is possible. The exploit has been ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10175" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8702 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-31" data-cvss="6.3">
+  <div class="news-title">CVE-2026-10176 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8702 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The GBI To Print plugin for WordPress is vulnerable to Stored Cross-Site Scripting in version 1.0 via the 'div' attribute of the 'gbitoprint' shortcode. This is due to insufficient output escaping in the gbi_toprint_shortcode() function, which concatenates the raw shortcode attribute value directly ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8702" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10176 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A weakness has been identified in Aider-AI Aider 0.86.3. Affected by this issue is some unknown functionality of the component Code Generation Workflow. Executing a manipulation can lead to sql injection. The attack can be executed remotely. The exploit has been made available to the public and coul...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10176" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8703 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-31" data-cvss="6.3">
+  <div class="news-title">CVE-2026-10177 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8703 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Endless Scroll plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Shortcode Attributes in all versions up to, and including, 1.0.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8703" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10177 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A security vulnerability has been detected in Aider-AI Aider 0.86.3. This affects the function requests.get of the file api_docs.py of the component AWS EC2 Metadata Endpoint. The manipulation leads to server-side request forgery. The attack is possible to be carried out remotely. The exploit has be...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10177" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="6.1">
-  <div class="news-title">CVE-2026-8707 - MEDIUM (6.1)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-31" data-cvss="7.3">
+  <div class="news-title">CVE-2026-10178 - HIGH (7.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8707 | CVSS: 6.1 | Severity: MEDIUM</div>
-  <div class="news-summary">The NS Product icon badge plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via PHP_SELF in all versions up to, and including, 1.2.4 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8707" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10178 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability was detected in code-projects Online Music Site 1.0. This vulnerability affects unknown code of the file /Administrator/PHP/AdminEditAlbum.php. The manipulation of the argument ID results in sql injection. The attack may be performed from remote. The exploit is now public and may be ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10178" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="4.3">
-  <div class="news-title">CVE-2026-8708 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-31" data-cvss="8.8">
+  <div class="news-title">CVE-2026-10179 - HIGH (8.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8708 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Genzel breadcrumbs plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.2. This is due to missing or incorrect nonce validation on the _options_page function. This makes it possible for unauthenticated attackers to update the plugin's breadcrum...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8708" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10179 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A flaw has been found in TRENDnet TEW-432BRP 3.10B20. This issue affects the function formSetWlanEncrypt of the file /goform/formSetWlanEncrypt. This manipulation of the argument webpage causes stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been publishe...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10179" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-27" data-cvss="9.8">
-  <div class="news-title">CVE-2026-8760 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-31" data-cvss="6.3">
+  <div class="news-title">CVE-2026-10180 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8760 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The Login with OTP plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 1.6. This is due to an incomplete fix for CVE-2024-11178: the rate-limit/lockout check added to `otpl_login_action()` was placed only inside the OTP-generation branch and is never eva...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8760" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10180 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability has been found in TRENDnet TEW-432BRP 3.10B20. Impacted is the function formSysCmd of the file /goform/formSysCmd. Such manipulation of the argument sysCmd leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may b...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10180" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-27" data-cvss="8.8">
-  <div class="news-title">CVE-2026-8787 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-31" data-cvss="8.8">
+  <div class="news-title">CVE-2026-10181 - HIGH (8.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8787 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">The Firebase Support & Chat Management plugin for WordPress is vulnerable to privilege escalation in all versions up to, and including, 3.1.1. This is due to the `firebase_auth()` function authenticating the request as the WordPress user whose email is supplied in the `user_email` POST parameter wit...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8787" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10181 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability was found in TRENDnet TEW-432BRP 3.10B20. The affected element is the function formSysCmd of the file /goform/formSysCmd. Performing a manipulation of the argument submit-url results in stack-based buffer overflow. The attack can be initiated remotely. The exploit has been made publi...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10181" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8837 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-31" data-cvss="8.5">
+  <div class="news-title">CVE-2026-49489 - HIGH (8.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8837 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The WP Iframe Geo Style for Amazon affiliates plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'adid' Shortcode Attribute in all versions up to, and including, 1.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, wit...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8837" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-49489 | CVSS: 8.5 | Severity: HIGH</div>
+  <div class="news-summary">OpenCATS through 0.9.7.4 contains a sql injection vulnerability in the sortDirection parameter of the DataGrid component that allows authenticated users to extract database contents. Attackers can inject malicious SQL via the sortDirection parameter in ajax/getDataGridPager.php to perform time-based...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49489" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8842 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-31" data-cvss="8.1">
+  <div class="news-title">CVE-2026-49490 - HIGH (8.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8842 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Google+ Link Name plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'gplusnamelink' shortcode in versions up to, and including, 1.0. This is due to insufficient input sanitization and output escaping on user supplied attributes ('id' and 'name') in the gplusnamelink_gener...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8842" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-49490 | CVSS: 8.1 | Severity: HIGH</div>
+  <div class="news-summary">OpenCATS from version 0.9.1a contains an SQL injection vulnerability in DataGrid filter handling that allows authenticated attackers to inject SQL through crafted filters targeting the non-filterable Tags column in the Candidates DataGrid. Attackers can bypass column filterable restrictions by manip...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49490" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8844 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-31" data-cvss="6.3">
+  <div class="news-title">CVE-2026-10182 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8844 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Responsive Check plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'rspcheck' shortcode in versions up to, and including, 0.0.3. This is due to insufficient input sanitization and output escaping on the 'url' (and 'button') shortcode attributes in the rspc_check_shortcode...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8844" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10182 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was determined in TRENDnet TEW-432BRP 3.10B20. The impacted element is the function formWlanSetup of the file /goform/formWlanSetup. Executing a manipulation of the argument enrollee can lead to command injection. The attack can be launched remotely. The exploit has been publicly dis...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10182" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-05-27" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8845 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-31" data-cvss="8.8">
+  <div class="news-title">CVE-2026-10183 - HIGH (8.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-05-27</span>
+    <span>2026-05-31</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8845 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Islamic Database plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'islamicDB-roqya' shortcode in versions up to, and including, 1.0. This is due to insufficient input sanitization and output escaping on user-supplied 'width' and 'height' shortcode attributes within the i...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8845" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10183 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability was identified in TRENDnet TEW-432BRP 3.10B20. This affects the function formWlanSetup of the file /goform/formWlanSetup. The manipulation of the argument enrollee leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit is publicly available and might ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10183" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-31" data-cvss="7.3">
+  <div class="news-title">CVE-2026-10184 - HIGH (7.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-31</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-10184 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A security flaw has been discovered in SourceCodester Hospitals Patient Records Management System 1.0. This impacts an unknown function of the file /classes/Users.php?f=delete. The manipulation of the argument ID results in sql injection. The attack may be launched remotely. The exploit has been rel...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10184" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-31" data-cvss="7.3">
+  <div class="news-title">CVE-2026-10185 - HIGH (7.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-31</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-10185 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A weakness has been identified in SourceCodester Hospitals Patient Records Management System 1.0. Affected is an unknown function of the file /classes/Users.php?f=save. This manipulation of the argument ID causes sql injection. Remote exploitation of the attack is possible. The exploit has been made...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10185" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-05-31" data-cvss="7.3">
+  <div class="news-title">CVE-2026-10186 - HIGH (7.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-05-31</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-10186 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A security vulnerability has been detected in code-projects Online Hospital Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /patient.php. Such manipulation of the argument editid leads to sql injection. The attack can be executed remotely. The exploit ha...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10186" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -703,7 +706,7 @@ The post Strengthening supply chain security: Preparing for the next malware cam
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-06-03 08:02:43</div>
+      <div>Raport wygenerowano: 2026-06-07 08:02:35</div>
     </div>
   </div>
 
