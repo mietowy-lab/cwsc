@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-06-11</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-06-12</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-06-11</p>
+      <p class="sub">Dane z RSS i API | 2026-06-12</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,9 +137,9 @@
 
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">54</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">13</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">12</a></div><div class="kpi-label">Zagrożenia</div></div>
         <div class="card"><div class="kpi-num"><a href="#vulnerabilities">337</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">404</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">403</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -363,7 +363,7 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (13)</h3>
+      <h3>⚠️ Nowe Zagrożenia (12)</h3>
       <div class="news-grid" data-grid="threats">
 <div class="card news-item threat" data-sev="none" data-date="2026-06-03" data-cvss="-1">
   <div class="news-title">Impersonation, Click Hijacking, and TDS: Inside a Malware Distribution Ecosystem</div>
@@ -409,15 +409,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   </div>
   <div class="news-summary">Key Points Introduction The Gentlemen ransomware‑as‑a‑service (RaaS) operation is a relatively new group that emerged around mid‑2025. Its operators advertise the service across multiple underground forums, promoting their ransomware platform and inviting penetration testers and other technically sk...</div>
   <a href="https://research.checkpoint.com/2026/thus-spoke-the-gentlemen/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2026-05-11" data-cvss="-1">
-  <div class="news-title">The State of Ransomware – Q1 2026</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-05-11 09:58</span>
-  </div>
-  <div class="news-summary">Key Findings Ransomware in Q1 2026: Consolidation at Scale During the first quarter of 2026, we monitored more than 70 active data leak sites (DLS) that collectively listed 2,122 new victims. This figure represents a 12.2% decline from the Q4 2025 all-time record of 2,416 victims but remains the sec...</div>
-  <a href="https://research.checkpoint.com/2026/the-state-of-ransomware-q1-2026/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2026-02-01" data-cvss="-1">
   <div class="news-title">RTCon: Context-Adaptive Function-Level Fuzzing for RTOS Kernels</div>
@@ -492,13 +483,31 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="section" id="vulnerabilities">
       <h3>🔓 Wykryte Luki (337)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-12" data-cvss="-1.0">
+  <div class="news-title">Marking Your Own Homework (Check Point Remote Access VPN IKEv1 Authentication Bypass CVE-2026-50751)</div>
+  <div class="news-meta">
+    <span class="badge">Watchtowr Labs</span>
+    <span>2026-06-12 05:17</span>
+  </div>
+  <div class="news-summary">It is yet another day in this parallel universe of security, where the devices we bolt onto the edge of our networks to keep the bad people out are, with remarkable consistency, the exact thing that let the bad people in.While we’ve seemingly had a breather from</div>
+  <a href="https://labs.watchtowr.com/marking-your-own-homework-check-point-remote-access-vpn-ikev1-authentication-bypass-cve-2026-50751/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-11" data-cvss="-1.0">
+  <div class="news-title">From SQLi to RCE – Exploiting LangGraph’s Checkpointer</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-06-11 13:37</span>
+  </div>
+  <div class="news-summary">By Yarden Porat AI agents need memory. Frameworks like LangGraph provide it through checkpointers – persistence layers that store execution state. But what happens when that persistence layer isn’t locked down? Key Points Background LangGraph is an open-source framework for building stateful, multi-...</div>
+  <a href="https://research.checkpoint.com/2026/from-sqli-to-rce-exploiting-langgraphs-checkpointer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
   <div class="news-title">More Evidence That Words Don't Mean What We Thought They Meant (Ivanti Sentry Pre-Auth OS Command Injection CVE-2026-10520)</div>
   <div class="news-meta">
     <span class="badge">Watchtowr Labs</span>
     <span>2026-06-10 00:52</span>
   </div>
-  <div class="news-summary">Today, Ivanti published an advisory.“No way?” we hear you say. "Yes way!" a random dog screams back at you, across the street.Today’s rare advisory outlines two vulnerabilities in Ivanti’s Sentry product, appealing directly to our inner desire for sophisticated server-</div>
+  <div class="news-summary">Today, Ivanti published an advisory.“No way?” we hear you say. "Yes way!"Today’s advisory outlines two vulnerabilities in Ivanti’s Sentry product, appealing directly to our inner desire for sophisticated server-side, pre-authenticated vulnerabilities.CVE-2026-10520An OS Command Injection</div>
   <a href="https://labs.watchtowr.com/more-evidence-that-words-dont-mean-what-we-thought-they-meant-ivanti-sentry-pre-auth-os-command-injection-cve-2026-10520/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
@@ -539,155 +548,139 @@ The framing was unusually strong: Mythos was presented as a powerful cybersecuri
   <div class="news-summary">Author’s note: this article describes vulnerabilities in ascending order of severity. If you want to skip straight to the most interesting part, feel free to read it from the bottom up. Even though Internet Explorer officially reached its end of life in 2020, its core engine remains widely used in t...</div>
   <a href="https://swarm.ptsecurity.com/the-click-that-shouldnt-have-worked-rce-via-clickjacking-in-internet-explorer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-04" data-cvss="6.7">
-  <div class="news-title">CVE-2026-10805 - MEDIUM (6.7)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-05" data-cvss="6.4">
+  <div class="news-title">CVE-2026-10732 - MEDIUM (6.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-10805 | CVSS: 6.7 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw was found in NetworkManager. This local privilege escalation vulnerability exists in NetworkManager's dhclient backend when processing malformed Manufacturer Usage Description (MUD) URLs. A local user can exploit this flaw to escalate privileges by triggering a script via a crafted MUD URL, p...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10805" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10732 | CVSS: 6.4 | Severity: MEDIUM</div>
+  <div class="news-summary">All versions of the package decompress are vulnerable to Arbitrary File Write via Archive Extraction (Zip Slip) when extracting a ZIP archive containing two entries with the same path - the first being a symlink to an arbitrary target and the second being a regular file - the file content is written...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10732" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-04" data-cvss="7.5">
-  <div class="news-title">CVE-2026-49187 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-05" data-cvss="6.1">
+  <div class="news-title">CVE-2026-21825 - MEDIUM (6.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-49187 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">The hard-coded APK resource files never expire, and the shared scepter leads to information leaks and potential misuse.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49187" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21825 | CVSS: 6.1 | Severity: MEDIUM</div>
+  <div class="news-summary">HCL Digital Experience Compose is affected by a reflected cross-site scripting (XSS) vulnerability in the search center.  An attacker could execute arbitrary JavaScript in the victim's browser.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21825" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-04" data-cvss="9.8">
-  <div class="news-title">CVE-2026-49188 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-05" data-cvss="6.1">
+  <div class="news-title">CVE-2026-21826 - MEDIUM (6.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-49188 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The ai_cmd utility executes with full root permissions. It pipes socket inputs directly to popen(), paving the way for unauthenticated users to execute arbitrary root commands.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49188" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21826 | CVSS: 6.1 | Severity: MEDIUM</div>
+  <div class="news-summary">HCL Digital Experience and HCL Digital Experience Compose could be susceptible to Host header injection.  An attacker can manipulate the Host header and cause the application to behave in unexpected ways.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21826" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-04" data-cvss="7.8">
-  <div class="news-title">CVE-2026-49189 - HIGH (7.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-05" data-cvss="8.8">
+  <div class="news-title">CVE-2026-21837 - HIGH (8.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-49189 | CVSS: 7.8 | Severity: HIGH</div>
-  <div class="news-summary">Unchecked public access permissions on a core Broadcast Receiver allow unauthorized local software components to invoke administrative operations.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49189" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21837 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">HCL Digital Experience is affected by an OS command injection vulnerability in the Digital Asset Management API.  An attacker may execute arbitrary operating system commands, typically inheriting the privileges of the vulnerable application, which could possibly lead to a complete system takeover an...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21837" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-04" data-cvss="4.9">
-  <div class="news-title">CVE-2026-50219 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-05" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-48907 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-50219 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">libexpat before 2.8.2 lacks handler call depth tracking for calls to XML_GetBuffer, XML_Parse, XML_ParseBuffer, XML_ParserFree, or XML_ParserReset from within handlers in cases of a policy violation. Thus, a use-after-free can occur,</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50219" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-48907 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">A vulnerability in the JCE editor extension for Joomla allows the creation of new editor profiles for unauthenticated users, ultimately resulting in PHP code upload and execution.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48907" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-04" data-cvss="8.8">
-  <div class="news-title">CVE-2026-49190 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-05" data-cvss="2.7">
+  <div class="news-title">CVE-2026-9088 - LOW (2.7)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-49190 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">The system fails to evaluate instructional permissions over multiple internal operation codes (opcodes), permitting unauthorized application installations or command executions.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49190" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-9088 | CVSS: 2.7 | Severity: LOW</div>
+  <div class="news-summary">A flaw was found in org.keycloak.services. An administrator with delegated access to read group memberships and users can bypass user profile permissions by accessing the group members endpoint. This allows the administrator to view user attributes that are explicitly configured to be denied, leadin...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9088" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-04" data-cvss="9.8">
-  <div class="news-title">CVE-2026-49191 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-05" data-cvss="7.8">
+  <div class="news-title">CVE-2026-11332 - HIGH (7.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-49191 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The production build of the M3WebServer hard-codes its backend API keys, which can be easily intercepted through verbose error handling pages.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49191" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11332 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">A flaw was found in ansible-core. The ansible-galaxy role install command processes dependency specifications from a role's meta/requirements.yml file. Due to improper neutralization of argument delimiters, a malicious role author can inject arbitrary git configuration flags through the src field. T...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11332" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-04" data-cvss="5.4">
-  <div class="news-title">CVE-2026-49192 - MEDIUM (5.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-05" data-cvss="10.0">
+  <div class="news-title">CVE-2026-49777 - CRITICAL (10.0)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-49192 | CVSS: 5.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The summary service endpoint suffers from an IDOR vulnerability where it fails to verify user ownership of hardware serial numbers, exposing device data to scraping.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49192" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-49777 | CVSS: 10.0 | Severity: CRITICAL</div>
+  <div class="news-summary">Improper Validation of Specified Quantity in Input vulnerability in ShapedPlugin, LLC Product Slider Pro for WooCommerce allows Malicious Software Implanted.
+
+This issue affects Product Slider Pro for WooCommerce: from n/a before 3.5.4.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49777" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-04" data-cvss="7.5">
-  <div class="news-title">CVE-2026-49193 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-05" data-cvss="9.8">
+  <div class="news-title">CVE-2026-6274 - CRITICAL (9.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-49193 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">Overly permissive configuration settings on cloud storage containers expose active telemetry information publicly to the internet.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49193" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-6274 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">Improper Authentication, Missing authentication for critical function, Weak Authentication vulnerability in DTS Electronics Industry and Trade Ltd. Co. Redline WR3200 allows Accessing Functionality Not Properly Constrained by ACLs.
+
+This issue affects Redline WR3200: from 7.1.3 before 7.1.8.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6274" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-04" data-cvss="8.8">
-  <div class="news-title">CVE-2026-49194 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-05" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-11347 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-49194 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">The debugging routine SCREEN_CLICK(5053) enables a connection to skip the standard device login prompt entirely and directly enter an interactive shell interface.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49194" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11347 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">The linqi application contains hardcoded cryptographic keys. Additionally, the application uses a weak algorithm with a limited ASCII charset to dynamically generate Initialization Vectors (IVs) for AES/CBC encryption, making known-plaintext attacks feasible. An attacker with local access can levera...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11347" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-04" data-cvss="8.6">
-  <div class="news-title">CVE-2026-49202 - HIGH (8.6)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-05" data-cvss="5.5">
+  <div class="news-title">CVE-2026-21017 - MEDIUM (5.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-49202 | CVSS: 8.6 | Severity: HIGH</div>
-  <div class="news-summary">Internal multimedia session archives are accessible without authentication, exacerbated by loose Cross-Origin Resource Sharing (CORS) rules that allow cross-site theft.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49202" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21017 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper handling of insufficient privileges in SecTelephonyProvider prior to SMR Jun-2026 Release 1 allows local attackers to access privileged files.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21017" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-04" data-cvss="8.3">
-  <div class="news-title">CVE-2026-49203 - HIGH (8.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-05" data-cvss="5.5">
+  <div class="news-title">CVE-2026-21025 - MEDIUM (5.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-49203 | CVSS: 8.3 | Severity: HIGH</div>
-  <div class="news-summary">Crucial management API endpoints for cellular eSIM allocation do not validate caller authorization, allowing remote profiles to be rewritten or deleted.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49203" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21025 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Incorrect privilege assignment in Telephony prior to SMR Jun-2026 Release 1 allows local attackers to access sensitive information.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21025" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-04" data-cvss="6.5">
-  <div class="news-title">CVE-2026-49204 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-05" data-cvss="5.5">
+  <div class="news-title">CVE-2026-21026 - MEDIUM (5.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
+    <span>2026-06-05</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-49204 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">Leftover debug modules contain fixed credentials for internal AWS Cognito test sandboxes, risking asset exploitation.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49204" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-04" data-cvss="8.2">
-  <div class="news-title">CVE-2026-50205 - HIGH (8.2)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-50205 | CVSS: 8.2 | Severity: HIGH</div>
-  <div class="news-summary">System log files output unencrypted SMTP server authentication passwords alongside sensitive employee corporate identification data.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50205" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-04" data-cvss="6.8">
-  <div class="news-title">CVE-2026-50206 - MEDIUM (6.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-04</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-50206 | CVSS: 6.8 | Severity: MEDIUM</div>
-  <div class="news-summary">Incoming VPN network profile settings fail to process special characters safely, enabling command injection via malicious config files.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50206" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-21026 | CVSS: 5.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Improper export of android application components in SpriteWallpaper prior to SMR Jun-2026 Release 1 allows local attackers to access to sensitive information.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21026" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -695,7 +688,7 @@ The framing was unusually strong: Mythos was presented as a powerful cybersecuri
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-06-11 08:02:35</div>
+      <div>Raport wygenerowano: 2026-06-12 08:02:34</div>
     </div>
   </div>
 
