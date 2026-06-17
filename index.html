@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-06-16</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-06-17</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-06-16</p>
+      <p class="sub">Dane z RSS i API | 2026-06-17</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,9 +137,9 @@
 
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">52</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">11</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">318</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">381</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">10</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">339</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">401</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -362,7 +362,7 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (11)</h3>
+      <h3>⚠️ Nowe Zagrożenia (10)</h3>
       <div class="news-grid" data-grid="threats">
 <div class="card news-item threat" data-sev="none" data-date="2026-06-03" data-cvss="-1">
   <div class="news-title">Impersonation, Click Hijacking, and TDS: Inside a Malware Distribution Ecosystem</div>
@@ -381,15 +381,6 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
   </div>
   <div class="news-summary">For the latest discoveries in cyber research for the week of 1st June, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Carnival Corporation, a global cruise line operator, has confirmed a data breach affecting nearly 6 million people after attackers used social engineering...</div>
   <a href="https://research.checkpoint.com/2026/1st-june-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2026-05-17" data-cvss="-1">
-  <div class="news-title">SEA Settlement Adapter Round Redemption Inflation</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-05-17 00:00</span>
-  </div>
-  <div class="news-summary">The attack repeatedly sent fixed USDT lots into the SEA settlement adapter, redeemed disproportionately large SEA amounts through the adapter's round logic, and sold the redeemed SEA back into the SEA/USDT pair before repaying the flash loan.</div>
-  <a href="https://www.darknavy.org/web3/exploits/sea-settlement-adapter-round-redemption-inflation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2026-05-13" data-cvss="-1">
   <div class="news-title">Thus Spoke…The Gentlemen</div>
@@ -471,8 +462,26 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (318)</h3>
+      <h3>🔓 Wykryte Luki (339)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-16" data-cvss="-1.0">
+  <div class="news-title">DIP Token Double-Transfer Reserve Manipulation Exploit</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2026-06-16 00:00</span>
+  </div>
+  <div class="news-summary">The attacker abused DIP's double-transfer logic through Pancake `skim()` and `sync()` calls to collapse the AIC-DIP reserve balance, drain 29,037,659.001700876485419035 AIC, and cash out through the AIC-USDC pool.</div>
+  <a href="https://www.darknavy.org/web3/exploits/dip-token-double-transfer-reserve-manipulation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-16" data-cvss="-1.0">
+  <div class="news-title">Google Chrome AddGenericPassword infomation overwrite vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-06-16 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2444" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
   <div class="news-title">Thetanuts Legacy Index Vault Zero-Cost Remint Exploit</div>
   <div class="news-meta">
@@ -581,98 +590,71 @@ The post Strengthening supply chain security: Preparing for the next malware cam
   <div class="news-summary">Today, Ivanti published an advisory.“No way?” we hear you say. "Yes way!"Today’s advisory outlines two vulnerabilities in Ivanti’s Sentry product, appealing directly to our inner desire for sophisticated server-side, pre-authenticated vulnerabilities.CVE-2026-10520An OS Command Injection</div>
   <a href="https://labs.watchtowr.com/more-evidence-that-words-dont-mean-what-we-thought-they-meant-ivanti-sentry-pre-auth-os-command-injection-cve-2026-10520/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
-  <div class="news-title">Microsoft Patch Tuesday for June 2026 — Snort rules and prominent vulnerabilities</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-10846 - N/A (N/A)</div>
   <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-06-09 21:21</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-10</span>
   </div>
-  <div class="news-summary">Microsoft Patch Tuesday details for June 2026.</div>
-  <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-june-2026-snort-rules-and-prominent-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10846 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">NLnet Labs ldns 1.2.0 up to and including versions 1.9.0, when used in applications as (stub) resolver over UDP, lacks matching the query destination address and port with the response source address and port. Furthermore not the query ID, neither the question of the query is matched with that of th...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10846" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
-  <div class="news-title">The June 2026 Security Update Review</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-11815 - N/A (N/A)</div>
   <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-06-09 18:12</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-10</span>
   </div>
-  <div class="news-summary">I’ve made it through Pwn2Own Berlin, had a little vacation, and now I’m back for Patch Tuesday. Microsoft and Adobe didn’t disappoint. In fact, they have heralded my return with the largest Patch Tuesday release ever. Thanks? Take a break from your regularly scheduled activities and let’s take a loo...</div>
-  <a href="https://www.thezdi.com/blog/2026/6/9/the-june-2026-security-update-review" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11815 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">An attacker who intercepts and tampers with traffic between the client application and the API Gateway server could potentially deserialize arbitrary objects. This vulnerability could lead to broken security expectations or remote code execution.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11815" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
-  <div class="news-title">deepsec: Chasing Mythos with Open-Source LLMs</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-29114 - N/A (N/A)</div>
   <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-06-09 05:43</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-10</span>
   </div>
-  <div class="news-summary">
-On April 7, Anthropic introduced Claude Mythos Preview. The announcement quickly drew attention from the AI industry, the security community, and even Wall Street.
-The framing was unusually strong: Mythos was presented as a powerful cybersecurity AI capable of finding and exploiting vulnerabilities...</div>
-  <a href="https://www.darknavy.org/blog/deepsec_chasing_mythos_with_open_source_llms/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-29114 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">A vulnerability has been found in some Dahua products. An attacker
+may obtain the device’s CA root certificate. If that CA is installed and
+trusted on client systems, the attacker could issue fraudulent certificates
+trusted by those clients and undermine the certificate trust chain.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29114" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-05" data-cvss="-1.0">
-  <div class="news-title">The Click that shouldn’t have worked: RCE via clickjacking in Internet Explorer</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-29115 - N/A (N/A)</div>
   <div class="news-meta">
-    <span class="badge">Pt Swarm</span>
-    <span>2026-06-05 11:18</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-10</span>
   </div>
-  <div class="news-summary">Author’s note: this article describes vulnerabilities in ascending order of severity. If you want to skip straight to the most interesting part, feel free to read it from the bottom up. Even though Internet Explorer officially reached its end of life in 2020, its core engine remains widely used in t...</div>
-  <a href="https://swarm.ptsecurity.com/the-click-that-shouldnt-have-worked-rce-via-clickjacking-in-internet-explorer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-29115 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">A vulnerability has been found in some Dahua products could allow an authenticated remote attacker to send a specially crafted packet, triggering an exception that causes the system to reboot unexpectedly, resulting in a denial of service.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29115" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-29" data-cvss="-1.0">
-  <div class="news-title">Surviving the surge of new Linux LPE :  Defense in Depth not dead</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-29116 - N/A (N/A)</div>
   <div class="news-meta">
-    <span class="badge">Synacktiv</span>
-    <span>2026-05-29 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-10</span>
   </div>
-  <div class="news-summary">
-
-
-
- 
-
-
-
-
-
-Surviving the surge of new Linux LPE :  Defense in Depth not dead
-
-
-29/05/2026
-
-
-Systems
-
-
-                   Thanks to AI-assisted vulnerability research and kernel patch diffing that breaks "responsible disclosure" embargos, it's quite the overwhelming time for defenders. There's been a...</div>
-  <a href="https://www.synacktiv.com/en/publications/surviving-the-surge-of-new-linux-lpe-defense-in-depth-not-dead" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-29116 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">A vulnerability has been found in some Dahua products could
+allow an unauthenticated remote attacker to send a specially crafted packet,
+triggering an exception that causes the system to reboot unexpectedly,
+resulting in a denial of service.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29116" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-28" data-cvss="-1.0">
-  <div class="news-title">Less panic patching, more precision</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-10" data-cvss="8.6">
+  <div class="news-title">CVE-2026-3326 - HIGH (8.6)</div>
   <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-05-28 18:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-10</span>
   </div>
-  <div class="news-summary">In this newsletter, Thor breaks down why you should stop relying solely on CVSS and start using EPSS and GCVE to focus your patching efforts on the threats that actually matter.</div>
-  <a href="https://blog.talosintelligence.com/less-panic-patching-more-precision/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-28" data-cvss="-1.0">
-  <div class="news-title">DICOM, Pydicom, GDCM, and Orthanc: A technical tour of what really happens in the heap</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-05-28 10:00</span>
-  </div>
-  <div class="news-summary">This white paper presents a concrete case study demonstrating the creation of a heap overflow vulnerability through the exploitation of the DICOM file format.</div>
-  <a href="https://blog.talosintelligence.com/dicom-pydicom-gdcm-and-orthanc-a-technical-tour-of-what-really-happens-in-the-heap/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-28" data-cvss="-1.0">
-  <div class="news-title">Critical Unauthenticated Remote Code Execution (RCE) in Salesforce Workbench via Pre-Auth XSS and Dynamic Code Injection</div>
-  <div class="news-meta">
-    <span class="badge">Google Security Research Advisories</span>
-    <span>2026-05-28 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://github.com/google/security-research/security/advisories/GHSA-3vq3-92v4-j6mf" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-3326 | CVSS: 8.6 | Severity: HIGH</div>
+  <div class="news-summary">The Xstore WordPress theme before 9.7.3 does not properly sanitise and escape a parameter before using it in a SQL statement via an AJAX action available to unauthenticated users, leading to a SQL injection</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3326" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -680,7 +662,7 @@ Systems
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-06-16 08:02:27</div>
+      <div>Raport wygenerowano: 2026-06-17 08:02:45</div>
     </div>
   </div>
 
