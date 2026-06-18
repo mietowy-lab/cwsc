@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-06-17</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-06-18</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-06-17</p>
+      <p class="sub">Dane z RSS i API | 2026-06-18</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,18 +136,27 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">52</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">53</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">10</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">339</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">401</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">318</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">381</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (52)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (53)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-06-17" data-cvss="-1">
+  <div class="news-title">Little Boy Plus LP-Share Hashrate Reserve Manipulation</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2026-06-17 00:00</span>
+  </div>
+  <div class="news-summary">The attacker used flash liquidity to inflate the LBP/USDT pair reserve that LBPHashrate trusted during LP settlement, causing oversized hLBP credit, repeated LBP reward emissions, and a final exit of about 610.56 WBNB.</div>
+  <a href="https://www.darknavy.org/web3/exploits/little-boy-plus-lp-share-hashrate-reserve-manipulation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-06-15" data-cvss="-1">
   <div class="news-title">15th June – Threat Intelligence Report</div>
   <div class="news-meta">
@@ -345,16 +354,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   <div class="news-summary">In October 2024, RET2 participated in the “Small Office / Home Office” (SOHO) flavor of Pwn2Own, a competition which challenges top security researchers to compromise consumer-focused network devices. This includes popular smart speakers, routers, IP cameras, printers, and network-attached storage (...</div>
   <a href="https://blog.ret2.io/2025/06/11/pwn2own-soho-2024-sonos-exploit/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-03-21" data-cvss="-1">
-  <div class="news-title">Red Teaming with ServiceNow</div>
-  <div class="news-meta">
-    <span class="badge">Mdsec</span>
-    <span>2025-03-21 12:58</span>
-  </div>
-  <div class="news-summary">Introduction Over the course of numerous Red Team engagements MDSec has often gained privileged access to a target’s ServiceNow instance. This has, in turn, facilitated a variety of compromise actions...
-The post Red Teaming with ServiceNow appeared first on MDSec.</div>
-  <a href="https://www.mdsec.co.uk/2025/03/red-teaming-with-servicenow/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -364,6 +363,15 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
     <div class="section" id="threats">
       <h3>⚠️ Nowe Zagrożenia (10)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-06-17" data-cvss="-1">
+  <div class="news-title">From Stars to Upvotes: Fake Reputation Fueling a Crypto Clipboard Hijacker</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-06-17 13:38</span>
+  </div>
+  <div class="news-summary">Key Points Introduction In this research, we analyze a clipboard hijacker campaign that is hidden inside a collection of “solutions” and “tools” that claim to give users an unfair advantage. These offers include Solana and Pump.fun sniper bots (automated tools that try to buy new tokens or meme coin...</div>
+  <a href="https://research.checkpoint.com/2026/from-stars-to-upvotes-fake-reputation-fueling-a-crypto-clipboard-hijacker/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-06-03" data-cvss="-1">
   <div class="news-title">Impersonation, Click Hijacking, and TDS: Inside a Malware Distribution Ecosystem</div>
   <div class="news-meta">
@@ -381,15 +389,6 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
   </div>
   <div class="news-summary">For the latest discoveries in cyber research for the week of 1st June, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Carnival Corporation, a global cruise line operator, has confirmed a data breach affecting nearly 6 million people after attackers used social engineering...</div>
   <a href="https://research.checkpoint.com/2026/1st-june-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2026-05-13" data-cvss="-1">
-  <div class="news-title">Thus Spoke…The Gentlemen</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-05-13 13:01</span>
-  </div>
-  <div class="news-summary">Key Points Introduction The Gentlemen ransomware‑as‑a‑service (RaaS) operation is a relatively new group that emerged around mid‑2025. Its operators advertise the service across multiple underground forums, promoting their ransomware platform and inviting penetration testers and other technically sk...</div>
-  <a href="https://research.checkpoint.com/2026/thus-spoke-the-gentlemen/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2026-02-01" data-cvss="-1">
   <div class="news-title">RTCon: Context-Adaptive Function-Level Fuzzing for RTOS Kernels</div>
@@ -462,8 +461,20 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (339)</h3>
+      <h3>🔓 Wykryte Luki (318)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-17" data-cvss="-1.0">
+  <div class="news-title">Introducing Session Switcher. Swap Burp Sessions with One Click!</div>
+  <div class="news-meta">
+    <span class="badge">Doyensec</span>
+    <span>2026-06-17T00:00:00+02:00</span>
+  </div>
+  <div class="news-summary">
+
+
+Authorization testing is one of the most repetitive, yet critical tasks in web app security testing. Checking for horizontal and vertical privilege escalation, IDORs, and other access control issues requires constantly swapping cookies and headers between different user sessions, a process that i...</div>
+  <a href="https://blog.doyensec.com/2026/06/17/session-switcher.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-06-16" data-cvss="-1.0">
   <div class="news-title">DIP Token Double-Transfer Reserve Manipulation Exploit</div>
   <div class="news-meta">
@@ -590,71 +601,71 @@ The post Strengthening supply chain security: Preparing for the next malware cam
   <div class="news-summary">Today, Ivanti published an advisory.“No way?” we hear you say. "Yes way!"Today’s advisory outlines two vulnerabilities in Ivanti’s Sentry product, appealing directly to our inner desire for sophisticated server-side, pre-authenticated vulnerabilities.CVE-2026-10520An OS Command Injection</div>
   <a href="https://labs.watchtowr.com/more-evidence-that-words-dont-mean-what-we-thought-they-meant-ivanti-sentry-pre-auth-os-command-injection-cve-2026-10520/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-10846 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
+  <div class="news-title">Microsoft Patch Tuesday for June 2026 — Snort rules and prominent vulnerabilities</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-10</span>
+    <span class="badge">Cisco Talos</span>
+    <span>2026-06-09 21:21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-10846 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">NLnet Labs ldns 1.2.0 up to and including versions 1.9.0, when used in applications as (stub) resolver over UDP, lacks matching the query destination address and port with the response source address and port. Furthermore not the query ID, neither the question of the query is matched with that of th...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10846" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Microsoft Patch Tuesday details for June 2026.</div>
+  <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-june-2026-snort-rules-and-prominent-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-11815 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
+  <div class="news-title">The June 2026 Security Update Review</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-10</span>
+    <span class="badge">Zdi</span>
+    <span>2026-06-09 18:12</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-11815 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">An attacker who intercepts and tampers with traffic between the client application and the API Gateway server could potentially deserialize arbitrary objects. This vulnerability could lead to broken security expectations or remote code execution.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11815" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">I’ve made it through Pwn2Own Berlin, had a little vacation, and now I’m back for Patch Tuesday. Microsoft and Adobe didn’t disappoint. In fact, they have heralded my return with the largest Patch Tuesday release ever. Thanks? Take a break from your regularly scheduled activities and let’s take a loo...</div>
+  <a href="https://www.thezdi.com/blog/2026/6/9/the-june-2026-security-update-review" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-29114 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
+  <div class="news-title">deepsec: Chasing Mythos with Open-Source LLMs</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-10</span>
+    <span class="badge">Darknavy</span>
+    <span>2026-06-09 05:43</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-29114 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">A vulnerability has been found in some Dahua products. An attacker
-may obtain the device’s CA root certificate. If that CA is installed and
-trusted on client systems, the attacker could issue fraudulent certificates
-trusted by those clients and undermine the certificate trust chain.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29114" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">
+On April 7, Anthropic introduced Claude Mythos Preview. The announcement quickly drew attention from the AI industry, the security community, and even Wall Street.
+The framing was unusually strong: Mythos was presented as a powerful cybersecurity AI capable of finding and exploiting vulnerabilities...</div>
+  <a href="https://www.darknavy.org/blog/deepsec_chasing_mythos_with_open_source_llms/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-29115 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-05" data-cvss="-1.0">
+  <div class="news-title">The Click that shouldn’t have worked: RCE via clickjacking in Internet Explorer</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-10</span>
+    <span class="badge">Pt Swarm</span>
+    <span>2026-06-05 11:18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-29115 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">A vulnerability has been found in some Dahua products could allow an authenticated remote attacker to send a specially crafted packet, triggering an exception that causes the system to reboot unexpectedly, resulting in a denial of service.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29115" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Author’s note: this article describes vulnerabilities in ascending order of severity. If you want to skip straight to the most interesting part, feel free to read it from the bottom up. Even though Internet Explorer officially reached its end of life in 2020, its core engine remains widely used in t...</div>
+  <a href="https://swarm.ptsecurity.com/the-click-that-shouldnt-have-worked-rce-via-clickjacking-in-internet-explorer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-29116 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-29" data-cvss="-1.0">
+  <div class="news-title">Surviving the surge of new Linux LPE :  Defense in Depth not dead</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-10</span>
+    <span class="badge">Synacktiv</span>
+    <span>2026-05-29 00:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-29116 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">A vulnerability has been found in some Dahua products could
-allow an unauthenticated remote attacker to send a specially crafted packet,
-triggering an exception that causes the system to reboot unexpectedly,
-resulting in a denial of service.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-29116" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-10" data-cvss="8.6">
-  <div class="news-title">CVE-2026-3326 - HIGH (8.6)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-10</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-3326 | CVSS: 8.6 | Severity: HIGH</div>
-  <div class="news-summary">The Xstore WordPress theme before 9.7.3 does not properly sanitise and escape a parameter before using it in a SQL statement via an AJAX action available to unauthenticated users, leading to a SQL injection</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-3326" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">
+
+
+
+ 
+
+
+
+
+
+Surviving the surge of new Linux LPE :  Defense in Depth not dead
+
+
+29/05/2026
+
+
+Systems
+
+
+                   Thanks to AI-assisted vulnerability research and kernel patch diffing that breaks "responsible disclosure" embargos, it's quite the overwhelming time for defenders. There's been a...</div>
+  <a href="https://www.synacktiv.com/en/publications/surviving-the-surge-of-new-linux-lpe-defense-in-depth-not-dead" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -662,7 +673,7 @@ resulting in a denial of service.</div>
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-06-17 08:02:45</div>
+      <div>Raport wygenerowano: 2026-06-18 08:02:30</div>
     </div>
   </div>
 
