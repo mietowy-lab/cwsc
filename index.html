@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-06-18</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-06-19</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-06-18</p>
+      <p class="sub">Dane z RSS i API | 2026-06-19</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -148,6 +148,15 @@
     <div class="section" id="incidents">
       <h3>🚨 Incydenty Bezpieczeństwa (53)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-06-17" data-cvss="-1">
+  <div class="news-title">Aztec Private Rollup Bridge Escape-Hatch Claim-Proof Drain</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2026-06-17 00:00</span>
+  </div>
+  <div class="news-summary">The attacker called the bridge's escape-hatch path with a proof whose public output named the attacker as recipient, causing the RollupProcessor to trust the forged output owner after verifier success and release 1158 ETH from bridge custody.</div>
+  <a href="https://www.darknavy.org/web3/exploits/aztec-private-rollup-bridge-escape-hatch-claim-proof-drain/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-06-17" data-cvss="-1">
   <div class="news-title">Little Boy Plus LP-Share Hashrate Reserve Manipulation</div>
   <div class="news-meta">
@@ -211,15 +220,6 @@ testing platforms: Aikido’s Attack AI Pentest and XBOW’s Lightspeed in order
   </div>
   <div class="news-summary">This research was recently presented at BSides Luxembourg 2026. This blogpost documents our findings presented during the talk. The BSides slides are posted here. Today, we’re also releasing the Docker-based playground utilized for the demos so anyone interested can reproduce the findings locally: d...</div>
   <a href="https://blog.doyensec.com/2026/05/19/cfitsio-weaponized-filenames.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item incident" data-sev="none" data-date="2026-05-19" data-cvss="-1">
-  <div class="news-title">ElevateFi Staking Vault Spot-Price Oracle Manipulation</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-05-19 00:00</span>
-  </div>
-  <div class="news-summary">Using flash-loan-funded buying pressure against the EFI/DAI pair, the attacker temporarily inflated the vault's reserve-based oracle, booked $2.5 million of fake staking principal through repeated stake calls, and then claimed 6,256.5334 EFI worth about $25,000 after the price normalized.</div>
-  <a href="https://www.darknavy.org/web3/exploits/elevatefi-staking-vault-spot-price-oracle-manipulation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item incident" data-sev="none" data-date="2026-05-01" data-cvss="-1">
   <div class="news-title">Discovering Vulnerabilities in Enterprise Audiovisual Hardware</div>
@@ -463,6 +463,24 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="section" id="vulnerabilities">
       <h3>🔓 Wykryte Luki (318)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-18" data-cvss="-1.0">
+  <div class="news-title">Close Encounters of the Human Kind</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-06-18 18:00</span>
+  </div>
+  <div class="news-summary">In the latest Threat Source, Hazel channels her inner Spielberg to explore why humans are delightfully irrational, reminding us that while security best practices are simple in theory, they’re a lot harder to pull off when you’re busy dealing with real life.</div>
+  <a href="https://blog.talosintelligence.com/close-encounters-of-the-human-kind/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-18" data-cvss="-1.0">
+  <div class="news-title">Internet Systems Consortium BIND DNSSEC DNSKEY Extended Flags denial of service vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-06-18 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2382" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-06-17" data-cvss="-1.0">
   <div class="news-title">Introducing Session Switcher. Swap Burp Sessions with One Click!</div>
   <div class="news-meta">
@@ -630,50 +648,13 @@ On April 7, Anthropic introduced Claude Mythos Preview. The announcement quickly
 The framing was unusually strong: Mythos was presented as a powerful cybersecurity AI capable of finding and exploiting vulnerabilities...</div>
   <a href="https://www.darknavy.org/blog/deepsec_chasing_mythos_with_open_source_llms/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-05" data-cvss="-1.0">
-  <div class="news-title">The Click that shouldn’t have worked: RCE via clickjacking in Internet Explorer</div>
-  <div class="news-meta">
-    <span class="badge">Pt Swarm</span>
-    <span>2026-06-05 11:18</span>
-  </div>
-  <div class="news-summary">Author’s note: this article describes vulnerabilities in ascending order of severity. If you want to skip straight to the most interesting part, feel free to read it from the bottom up. Even though Internet Explorer officially reached its end of life in 2020, its core engine remains widely used in t...</div>
-  <a href="https://swarm.ptsecurity.com/the-click-that-shouldnt-have-worked-rce-via-clickjacking-in-internet-explorer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-05-29" data-cvss="-1.0">
-  <div class="news-title">Surviving the surge of new Linux LPE :  Defense in Depth not dead</div>
-  <div class="news-meta">
-    <span class="badge">Synacktiv</span>
-    <span>2026-05-29 00:00</span>
-  </div>
-  <div class="news-summary">
-
-
-
- 
-
-
-
-
-
-Surviving the surge of new Linux LPE :  Defense in Depth not dead
-
-
-29/05/2026
-
-
-Systems
-
-
-                   Thanks to AI-assisted vulnerability research and kernel patch diffing that breaks "responsible disclosure" embargos, it's quite the overwhelming time for defenders. There's been a...</div>
-  <a href="https://www.synacktiv.com/en/publications/surviving-the-surge-of-new-linux-lpe-defense-in-depth-not-dead" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-06-18 08:02:30</div>
+      <div>Raport wygenerowano: 2026-06-19 08:02:07</div>
     </div>
   </div>
 
