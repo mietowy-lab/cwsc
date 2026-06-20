@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-06-19</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-06-20</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-06-19</p>
+      <p class="sub">Dane z RSS i API | 2026-06-20</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -138,8 +138,8 @@
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">53</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">10</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">318</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">381</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">338</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">401</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -461,7 +461,7 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (318)</h3>
+      <h3>🔓 Wykryte Luki (338)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-06-18" data-cvss="-1.0">
   <div class="news-title">Close Encounters of the Human Kind</div>
@@ -583,70 +583,85 @@ Authorization testing is one of the most repetitive, yet critical tasks in web a
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2329" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-12" data-cvss="-1.0">
-  <div class="news-title">Why Use App-Level Auth When Every Database Has Auth? (Splunk Enterprise CVE-2026-20253 Pre-Auth RCE)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-14" data-cvss="4.3">
+  <div class="news-title">CVE-2026-12176 - MEDIUM (4.3)</div>
   <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-06-12 20:35</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-14</span>
   </div>
-  <div class="news-summary">Three posts? In three days? Are we insane?We're home alone, there's no one to stop us, and we're up past bedtime. So, we need to talk about Splunk. On June 10th, Splunk published this CVE-2026-20253 advisory:It has everything that we</div>
-  <a href="https://labs.watchtowr.com/why-use-app-level-auth-when-every-database-has-auth-splunk-enterprise-cve-2026-20253-pre-auth-rce/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-12176 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability has been found in SourceCodester CET Automated Grading System with AI Predictive Analytics 1.0. The impacted element is an unknown function of the file /index.php. The manipulation of the argument action leads to cross site scripting. The attack is possible to be carried out remotely...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12176" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-12" data-cvss="-1.0">
-  <div class="news-title">Marking Your Own Homework (Check Point Remote Access VPN IKEv1 Authentication Bypass CVE-2026-50751)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-14" data-cvss="8.5">
+  <div class="news-title">CVE-2026-54420 - HIGH (8.5)</div>
   <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-06-12 05:17</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-14</span>
   </div>
-  <div class="news-summary">It is yet another day in this parallel universe of security, where the devices we bolt onto the edge of our networks to keep the bad people out are, with remarkable consistency, the exact thing that let the bad people in.While we’ve seemingly had a breather from</div>
-  <a href="https://labs.watchtowr.com/marking-your-own-homework-check-point-remote-access-vpn-ikev1-authentication-bypass-cve-2026-50751/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-54420 | CVSS: 8.5 | Severity: HIGH</div>
+  <div class="news-summary">LiteSpeed cPanel plugin before 2.4.8 (as distributed in LiteSpeed WHM PlugIn before 5.3.2.0) mishandles symlinks provided by a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS, as exploited in the wild in May 2026.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54420" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-11" data-cvss="-1.0">
-  <div class="news-title">From SQLi to RCE – Exploiting LangGraph’s Checkpointer</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-14" data-cvss="6.8">
+  <div class="news-title">CVE-2026-54421 - MEDIUM (6.8)</div>
   <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-06-11 13:37</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-14</span>
   </div>
-  <div class="news-summary">By Yarden Porat AI agents need memory. Frameworks like LangGraph provide it through checkpointers – persistence layers that store execution state. But what happens when that persistence layer isn’t locked down? Key Points Background LangGraph is an open-source framework for building stateful, multi-...</div>
-  <a href="https://research.checkpoint.com/2026/from-sqli-to-rce-exploiting-langgraphs-checkpointer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-54421 | CVSS: 6.8 | Severity: MEDIUM</div>
+  <div class="news-summary">In OpenStack Ironic before 37.0.1, when applying a PATCH to update fields in volume properties the user is authorized for, Ironic can return unredacted sensitive information (such as iSCSI credentials). The PATCH outcome is a security issue; the POST outcome is not a security issue.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54421" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
-  <div class="news-title">More Evidence That Words Don't Mean What We Thought They Meant (Ivanti Sentry Pre-Auth OS Command Injection CVE-2026-10520)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-14" data-cvss="-1.0">
+  <div class="news-title">CVE-2025-15546 - N/A (N/A)</div>
   <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-06-10 00:52</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-14</span>
   </div>
-  <div class="news-summary">Today, Ivanti published an advisory.“No way?” we hear you say. "Yes way!"Today’s advisory outlines two vulnerabilities in Ivanti’s Sentry product, appealing directly to our inner desire for sophisticated server-side, pre-authenticated vulnerabilities.CVE-2026-10520An OS Command Injection</div>
-  <a href="https://labs.watchtowr.com/more-evidence-that-words-dont-mean-what-we-thought-they-meant-ivanti-sentry-pre-auth-os-command-injection-cve-2026-10520/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-15546 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">The Iptanus File Upload WordPress plugin before 5.1.7 does not implement proper file handling when the duplicatepolicy setting is configured to "maintain both." Due to a Time-of-Check to Time-of-Use (TOCTOU) race condition between the file existence check and the actual file write operation, an auth...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15546" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
-  <div class="news-title">Microsoft Patch Tuesday for June 2026 — Snort rules and prominent vulnerabilities</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-14" data-cvss="9.8">
+  <div class="news-title">CVE-2026-11526 - CRITICAL (9.8)</div>
   <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-06-09 21:21</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-14</span>
   </div>
-  <div class="news-summary">Microsoft Patch Tuesday details for June 2026.</div>
-  <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-june-2026-snort-rules-and-prominent-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11526 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">GD versions before 2.86 for Perl allow OS command injection and file overwrite via a 2-arg open() of filename arguments in _make_filehandle.
+
+GD::Image::_make_filehandle opens a filename argument with Perl's 2-arg open(), so a filename that begins or ends with a pipe ("| cmd", "cmd |") or begins wit...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11526" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
-  <div class="news-title">The June 2026 Security Update Review</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-13" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-11769 - N/A (N/A)</div>
   <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-06-09 18:12</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-13</span>
   </div>
-  <div class="news-summary">I’ve made it through Pwn2Own Berlin, had a little vacation, and now I’m back for Patch Tuesday. Microsoft and Adobe didn’t disappoint. In fact, they have heralded my return with the largest Patch Tuesday release ever. Thanks? Take a break from your regularly scheduled activities and let’s take a loo...</div>
-  <a href="https://www.thezdi.com/blog/2026/6/9/the-june-2026-security-update-review" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11769 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">We have released version 5.24.0 of the Grafana Operator. This patch includes a CRITICAL severity security fix for a path traversal/privilege escalation vulnerability in the Grafana Operator.
+
+
+
+### Summary
+
+
+
+The Grafana Operator supports loading dashboards & library panels using the jsonnet data te...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11769" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
-  <div class="news-title">deepsec: Chasing Mythos with Open-Source LLMs</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-13" data-cvss="3.5">
+  <div class="news-title">CVE-2026-9061 - LOW (3.5)</div>
   <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-06-09 05:43</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-13</span>
   </div>
-  <div class="news-summary">
-On April 7, Anthropic introduced Claude Mythos Preview. The announcement quickly drew attention from the AI industry, the security community, and even Wall Street.
-The framing was unusually strong: Mythos was presented as a powerful cybersecurity AI capable of finding and exploiting vulnerabilities...</div>
-  <a href="https://www.darknavy.org/blog/deepsec_chasing_mythos_with_open_source_llms/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-9061 | CVSS: 3.5 | Severity: LOW</div>
+  <div class="news-summary">The Store Locator WordPress plugin before 1.6.9 does not sanitize and escape store logo metadata before storing it and outputting it on the Store Locator WordPress plugin before 1.6.9 admin page, allowing high-privileged users such as administrators to perform Stored Cross-Site Scripting attacks eve...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9061" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -654,7 +669,7 @@ The framing was unusually strong: Mythos was presented as a powerful cybersecuri
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-06-19 08:02:07</div>
+      <div>Raport wygenerowano: 2026-06-20 08:02:17</div>
     </div>
   </div>
 
