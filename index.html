@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-06-23</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-06-24</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-06-23</p>
+      <p class="sub">Dane z RSS i API | 2026-06-24</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,27 +136,18 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">54</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">53</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">10</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">317</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">381</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">339</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">402</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (54)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (53)</h3>
       <div class="news-grid" data-grid="incidents">
-<div class="card news-item incident" data-sev="none" data-date="2026-06-22" data-cvss="-1">
-  <div class="news-title">22nd June – Threat Intelligence Report</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-06-22 16:00</span>
-  </div>
-  <div class="news-summary">For the latest discoveries in cyber research for the week of 22nd June, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Texas Parks and Wildlife Department has been affected by a third-party data breach involving its license system vendor. The incident exposed driver’s lic...</div>
-  <a href="https://research.checkpoint.com/2026/22nd-june-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-06-17" data-cvss="-1">
   <div class="news-title">Aztec Private Rollup Bridge Escape-Hatch Claim-Proof Drain</div>
   <div class="news-meta">
@@ -354,6 +345,15 @@ Before diving into that discussion, we’ll first outline the most common attack
   <div class="news-summary">Since the Link-All LAU-G150-C Optical Network Terminal isn’t documented anywhere, I thought this was a great opportunity to practice some hardware hacking…</div>
   <a href="https://spaceraccoon.dev/getting-shell-lau-g150-c-optical-network-terminal/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
+<div class="card news-item incident" data-sev="none" data-date="2025-06-11" data-cvss="-1">
+  <div class="news-title">Streaming Zero-Fi Shells to Your Smart Speaker</div>
+  <div class="news-meta">
+    <span class="badge">Ret2 Systems</span>
+    <span>2025-06-11 10:00</span>
+  </div>
+  <div class="news-summary">In October 2024, RET2 participated in the “Small Office / Home Office” (SOHO) flavor of Pwn2Own, a competition which challenges top security researchers to compromise consumer-focused network devices. This includes popular smart speakers, routers, IP cameras, printers, and network-attached storage (...</div>
+  <a href="https://blog.ret2.io/2025/06/11/pwn2own-soho-2024-sonos-exploit/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -461,13 +461,40 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (317)</h3>
+      <h3>🔓 Wykryte Luki (339)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-22" data-cvss="-1.0">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-23" data-cvss="-1.0">
+  <div class="news-title">GeoVision GV-I/O Box 4E DVRSearch CMD_IP_SET buffer overflow vulnerabilities</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-06-23 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2377" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-23" data-cvss="-1.0">
+  <div class="news-title">GeoVision GV-I/O Box 4E libNetSetObj.so OS command injection vulnerabilities</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-06-23 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2379" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-23" data-cvss="-1.0">
+  <div class="news-title">GeoVision GV-VMS V20 GV-Cloud memory corruption vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-06-23 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2411" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-23" data-cvss="-1.0">
   <div class="news-title">Google Chrome AddGenericPassword infomation overwrite vulnerability</div>
   <div class="news-meta">
     <span class="badge">Talos Reports</span>
-    <span>2026-06-22 00:00</span>
+    <span>2026-06-23 00:00</span>
   </div>
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2444" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
@@ -502,151 +529,135 @@ The post Strengthening supply chain security: Preparing for the next malware cam
 Authorization testing is one of the most repetitive, yet critical tasks in web app security testing. Checking for horizontal and vertical privilege escalation, IDORs, and other access control issues requires constantly swapping cookies and headers between different user sessions, a process that i...</div>
   <a href="https://blog.doyensec.com/2026/06/17/session-switcher.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-16" data-cvss="-1.0">
-  <div class="news-title">DIP Token Double-Transfer Reserve Manipulation Exploit</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="7.4">
+  <div class="news-title">CVE-2026-12348 - HIGH (7.4)</div>
   <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-06-16 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary">The attacker abused DIP's double-transfer logic through Pancake `skim()` and `sync()` calls to collapse the AIC-DIP reserve balance, drain 29,037,659.001700876485419035 AIC, and cash out through the AIC-USDC pool.</div>
-  <a href="https://www.darknavy.org/web3/exploits/dip-token-double-transfer-reserve-manipulation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-12348 | CVSS: 7.4 | Severity: HIGH</div>
+  <div class="news-summary">Address bar spoofing in Arc Search for Android allows a remote attacker to display a trusted domain in the address bar while rendering attacker-controlled content, enabling phishing.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12348" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">Thetanuts Legacy Index Vault Zero-Cost Remint Exploit</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="8.7">
+  <div class="news-title">CVE-2026-35258 - HIGH (8.7)</div>
   <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary">The attacker flash-loaned TN-IDX-USDC-PUT, redeemed the basket once, then called mint 37 times while every basket-token transfer rounded to zero, using the unbacked shares to repay the loan and keeping the redeemed vault assets.</div>
-  <a href="https://www.darknavy.org/web3/exploits/thetanuts-legacy-index-vault-zero-cost-remint/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35258 | CVSS: 8.7 | Severity: HIGH</div>
+  <div class="news-summary">Vulnerability in the WebLogic Server product of Oracle Fusion Middleware (component: Console).  Supported versions that are affected are 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTPS to compromise WebLogic Server.  Successfu...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35258" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">GeoVision LPC2011/LPC2211 Web Interface / ssi.cgi privilege escalation vulnerability</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="8.8">
+  <div class="news-title">CVE-2026-35259 - HIGH (8.8)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2328" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35259 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">Vulnerability in the WebLogic Server product of Oracle Fusion Middleware (component: Console).  Supported versions that are affected are 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTPS to compromise WebLogic Server.  Successf...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35259" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">GeoVision LPC2011/LPC2211 Web Interface / ssi.cgi reflected cross-site scripting (XSS) vulnerabilities</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-17" data-cvss="6.5">
+  <div class="news-title">CVE-2026-35261 - MEDIUM (6.5)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2327" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35261 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35261" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">GeoVision LPC2011/LPC2211 DdnsSetting.cgi OS command injection vulnerability</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="8.3">
+  <div class="news-title">CVE-2026-35262 - HIGH (8.3)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2326" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35262 | CVSS: 8.3 | Severity: HIGH</div>
+  <div class="news-summary">Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Market Place).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Data Inte...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35262" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">GeoVision GV-IP Device Utility Device Authentication insufficient encryption vulnerability</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="9.9">
+  <div class="news-title">CVE-2026-35263 - CRITICAL (9.9)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2322" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35263 | CVSS: 9.9 | Severity: CRITICAL</div>
+  <div class="news-summary">Vulnerability in the WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise WebLogic Server.  While the vul...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35263" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">GeoVision GV-VMS V20 WebCam Server Login stack overflow vulnerability</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="8.8">
+  <div class="news-title">CVE-2026-35265 - HIGH (8.8)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2369" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35265 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">Vulnerability in the Identity Manager product of Oracle Fusion Middleware (component: Security).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Identity Manager.  Success...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35265" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">GeoVision LPC2011/LPC2211 Web Interface guessable session cookie vulnerability</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="8.8">
+  <div class="news-title">CVE-2026-35267 - HIGH (8.8)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2332" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35267 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">Vulnerability in the Identity Manager product of Oracle Fusion Middleware (component: REST WebServices).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Identity Manager. ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35267" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">GeoVision LPC2011/LPC2211 Web Interface privilege escalation vulnerability</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="9.9">
+  <div class="news-title">CVE-2026-35268 - CRITICAL (9.9)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2329" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35268 | CVSS: 9.9 | Severity: CRITICAL</div>
+  <div class="news-summary">Vulnerability in the Identity Manager product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows low privileged attacker with network access via T3, IIOP to compromise Identity Manager.  While t...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35268" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-12" data-cvss="-1.0">
-  <div class="news-title">Why Use App-Level Auth When Every Database Has Auth? (Splunk Enterprise CVE-2026-20253 Pre-Auth RCE)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="7.5">
+  <div class="news-title">CVE-2026-35269 - HIGH (7.5)</div>
   <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-06-12 20:35</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary">Three posts? In three days? Are we insane?We're home alone, there's no one to stop us, and we're up past bedtime. So, we need to talk about Splunk. On June 10th, Splunk published this CVE-2026-20253 advisory:It has everything that we</div>
-  <a href="https://labs.watchtowr.com/why-use-app-level-auth-when-every-database-has-auth-splunk-enterprise-cve-2026-20253-pre-auth-rce/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35269 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">Vulnerability in the Identity Manager product of Oracle Fusion Middleware (component: REST WebServices).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Identity Manager....</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35269" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-12" data-cvss="-1.0">
-  <div class="news-title">Marking Your Own Homework (Check Point Remote Access VPN IKEv1 Authentication Bypass CVE-2026-50751)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="9.1">
+  <div class="news-title">CVE-2026-35270 - CRITICAL (9.1)</div>
   <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-06-12 05:17</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary">It is yet another day in this parallel universe of security, where the devices we bolt onto the edge of our networks to keep the bad people out are, with remarkable consistency, the exact thing that let the bad people in.While we’ve seemingly had a breather from</div>
-  <a href="https://labs.watchtowr.com/marking-your-own-homework-check-point-remote-access-vpn-ikev1-authentication-bypass-cve-2026-50751/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35270 | CVSS: 9.1 | Severity: CRITICAL</div>
+  <div class="news-summary">Vulnerability in the Oracle WebCenter Content product of Oracle Fusion Middleware (component: Content Server).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows high privileged attacker with network access via HTTP to compromise Oracle WebC...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35270" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-11" data-cvss="-1.0">
-  <div class="news-title">From SQLi to RCE – Exploiting LangGraph’s Checkpointer</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="8.7">
+  <div class="news-title">CVE-2026-35271 - HIGH (8.7)</div>
   <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-06-11 13:37</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary">By Yarden Porat AI agents need memory. Frameworks like LangGraph provide it through checkpointers – persistence layers that store execution state. But what happens when that persistence layer isn’t locked down? Key Points Background LangGraph is an open-source framework for building stateful, multi-...</div>
-  <a href="https://research.checkpoint.com/2026/from-sqli-to-rce-exploiting-langgraphs-checkpointer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35271 | CVSS: 8.7 | Severity: HIGH</div>
+  <div class="news-summary">Vulnerability in the PeopleSoft Enterprise PT PeopleTools product of Oracle PeopleSoft (component: Weblogic).  Supported versions that are affected are 8.61 and  8.62. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35271" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
-  <div class="news-title">More Evidence That Words Don't Mean What We Thought They Meant (Ivanti Sentry Pre-Auth OS Command Injection CVE-2026-10520)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-17" data-cvss="8.4">
+  <div class="news-title">CVE-2026-35272 - HIGH (8.4)</div>
   <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-06-10 00:52</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-17</span>
   </div>
-  <div class="news-summary">Today, Ivanti published an advisory.“No way?” we hear you say. "Yes way!"Today’s advisory outlines two vulnerabilities in Ivanti’s Sentry product, appealing directly to our inner desire for sophisticated server-side, pre-authenticated vulnerabilities.CVE-2026-10520An OS Command Injection</div>
-  <a href="https://labs.watchtowr.com/more-evidence-that-words-dont-mean-what-we-thought-they-meant-ivanti-sentry-pre-auth-os-command-injection-cve-2026-10520/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
-  <div class="news-title">Microsoft Patch Tuesday for June 2026 — Snort rules and prominent vulnerabilities</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-06-09 21:21</span>
-  </div>
-  <div class="news-summary">Microsoft Patch Tuesday details for June 2026.</div>
-  <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-june-2026-snort-rules-and-prominent-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
-  <div class="news-title">The June 2026 Security Update Review</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-06-09 18:12</span>
-  </div>
-  <div class="news-summary">I’ve made it through Pwn2Own Berlin, had a little vacation, and now I’m back for Patch Tuesday. Microsoft and Adobe didn’t disappoint. In fact, they have heralded my return with the largest Patch Tuesday release ever. Thanks? Take a break from your regularly scheduled activities and let’s take a loo...</div>
-  <a href="https://www.thezdi.com/blog/2026/6/9/the-june-2026-security-update-review" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-09" data-cvss="-1.0">
-  <div class="news-title">deepsec: Chasing Mythos with Open-Source LLMs</div>
-  <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-06-09 05:43</span>
-  </div>
-  <div class="news-summary">
-On April 7, Anthropic introduced Claude Mythos Preview. The announcement quickly drew attention from the AI industry, the security community, and even Wall Street.
-The framing was unusually strong: Mythos was presented as a powerful cybersecurity AI capable of finding and exploiting vulnerabilities...</div>
-  <a href="https://www.darknavy.org/blog/deepsec_chasing_mythos_with_open_source_llms/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-35272 | CVSS: 8.4 | Severity: HIGH</div>
+  <div class="news-summary">Vulnerability in the PeopleSoft Enterprise PT PeopleTools product of Oracle PeopleSoft (component: Deployment Package).  Supported versions that are affected are 8.61 and  8.62. Easily exploitable vulnerability allows unauthenticated attacker with logon to the infrastructure where PeopleSoft Enterpr...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35272" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -654,7 +665,7 @@ The framing was unusually strong: Mythos was presented as a powerful cybersecuri
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-06-23 08:02:09</div>
+      <div>Raport wygenerowano: 2026-06-24 08:02:19</div>
     </div>
   </div>
 
