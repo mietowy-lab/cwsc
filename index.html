@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-06-25</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-06-26</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-06-25</p>
+      <p class="sub">Dane z RSS i API | 2026-06-26</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,18 +136,27 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">52</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">53</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">11</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">339</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">402</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">318</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">382</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (52)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (53)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-06-23" data-cvss="-1">
+  <div class="news-title">Royal Royalties Zero-Amount ERC1155 Accounting Inflation Drain</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2026-06-23 00:00</span>
+  </div>
+  <div class="news-summary">The attacker submitted 100 duplicate tier-42 LDA IDs with zero transfer amounts, creating a false 100x custom tier balance that Royalties trusted for claims and using a flash-swap-funded deposit to extract 263,808.953900 USDC before repayment.</div>
+  <a href="https://www.darknavy.org/web3/exploits/royal-royalties-zero-amount-erc1155-accounting-inflation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-06-17" data-cvss="-1">
   <div class="news-title">Aztec Private Rollup Bridge Escape-Hatch Claim-Proof Drain</div>
   <div class="news-meta">
@@ -345,15 +354,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   <div class="news-summary">Since the Link-All LAU-G150-C Optical Network Terminal isn’t documented anywhere, I thought this was a great opportunity to practice some hardware hacking…</div>
   <a href="https://spaceraccoon.dev/getting-shell-lau-g150-c-optical-network-terminal/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-06-11" data-cvss="-1">
-  <div class="news-title">Streaming Zero-Fi Shells to Your Smart Speaker</div>
-  <div class="news-meta">
-    <span class="badge">Ret2 Systems</span>
-    <span>2025-06-11 10:00</span>
-  </div>
-  <div class="news-summary">In October 2024, RET2 participated in the “Small Office / Home Office” (SOHO) flavor of Pwn2Own, a competition which challenges top security researchers to compromise consumer-focused network devices. This includes popular smart speakers, routers, IP cameras, printers, and network-attached storage (...</div>
-  <a href="https://blog.ret2.io/2025/06/11/pwn2own-soho-2024-sonos-exploit/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -470,8 +470,36 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (339)</h3>
+      <h3>🔓 Wykryte Luki (318)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-25" data-cvss="-1.0">
+  <div class="news-title">Beyond IOCs: AI-enabled threat intelligence</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-06-25 18:00</span>
+  </div>
+  <div class="news-summary">In this week’s newsletter, Martin considers how AI will help threat intelligence by creating an easily queryable data source of intelligence reports.</div>
+  <a href="https://blog.talosintelligence.com/beyond-iocs-ai-enabled-threat-intelligence/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-25" data-cvss="-1.0">
+  <div class="news-title">Computer-Use and TOCTOU: What You Click Is Not What You Get!</div>
+  <div class="news-meta">
+    <span class="badge">Embrace The Red</span>
+    <span>2026-06-25 12:20</span>
+  </div>
+  <div class="news-summary">Last year, Jun Kokatsu disclosed an interesting vulnerability with ChatGPT Operator by exploiting a race condition. I was wondering if I could reproduce this attack chain, and this post describes the results of that research.
+I had this post drafted for months, and yesterday at the Real-world AI sec...</div>
+  <a href="https://embracethered.com/blog/posts/2026/toctou-agent-what-you-click-is-not-what-you-get/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-25" data-cvss="-1.0">
+  <div class="news-title">vtk vtk-dicom vtkDICOMItem::FindDataElementOrInsert heap-based buffer overflow vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-06-25 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2366" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-06-23" data-cvss="-1.0">
   <div class="news-title">GeoVision GV-I/O Box 4E DVRSearch CMD_IP_SET buffer overflow vulnerabilities</div>
   <div class="news-meta">
@@ -526,145 +554,107 @@ The post Strengthening supply chain security: Preparing for the next malware cam
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2382" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="5.3">
-  <div class="news-title">CVE-2026-10029 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-17" data-cvss="-1.0">
+  <div class="news-title">Introducing Session Switcher. Swap Burp Sessions with One Click!</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
+    <span class="badge">Doyensec</span>
+    <span>2026-06-17T00:00:00+02:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-10029 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Event Koi Lite – Events Calendar, Event Management, RSVP, and Tickets plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.3.13.1 via the get_events. This makes it possible for unauthenticated attackers to extract sensitive data including v...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10029" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">
+
+
+Authorization testing is one of the most repetitive, yet critical tasks in web app security testing. Checking for horizontal and vertical privilege escalation, IDORs, and other access control issues requires constantly swapping cookies and headers between different user sessions, a process that i...</div>
+  <a href="https://blog.doyensec.com/2026/06/17/session-switcher.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="4.3">
-  <div class="news-title">CVE-2026-10623 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-16" data-cvss="-1.0">
+  <div class="news-title">DIP Token Double-Transfer Reserve Manipulation Exploit</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
+    <span class="badge">Darknavy</span>
+    <span>2026-06-16 00:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-10623 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The PressPrimer Quiz – AI Quiz Maker, Exam Builder & LMS Assessment Plugin plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 2.3.0 via the 'rule_id' parameter due to missing validation on a user controlled key. This makes it possible for aut...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10623" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">The attacker abused DIP's double-transfer logic through Pancake `skim()` and `sync()` calls to collapse the AIC-DIP reserve balance, drain 29,037,659.001700876485419035 AIC, and cash out through the AIC-USDC pool.</div>
+  <a href="https://www.darknavy.org/web3/exploits/dip-token-double-transfer-reserve-manipulation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="4.9">
-  <div class="news-title">CVE-2026-10736 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
+  <div class="news-title">Thetanuts Legacy Index Vault Zero-Cost Remint Exploit</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
+    <span class="badge">Darknavy</span>
+    <span>2026-06-15 00:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-10736 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">The Tutor LMS – eLearning and online course solution plugin for WordPress is vulnerable to generic SQL Injection via the 'data' parameter in all versions up to, and including, 3.9.11 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL qu...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10736" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">The attacker flash-loaned TN-IDX-USDC-PUT, redeemed the basket once, then called mint 37 times while every basket-token transfer rounded to zero, using the unbacked shares to repay the loan and keeping the redeemed vault assets.</div>
+  <a href="https://www.darknavy.org/web3/exploits/thetanuts-legacy-index-vault-zero-cost-remint/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="4.3">
-  <div class="news-title">CVE-2026-11357 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
+  <div class="news-title">GeoVision LPC2011/LPC2211 Web Interface / ssi.cgi privilege escalation vulnerability</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
+    <span class="badge">Talos Reports</span>
+    <span>2026-06-15 00:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-11357 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Kadence Blocks — Page Builder Toolkit for Gutenberg Editor plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.7.5 via the editor_assets_variables. This makes it possible for authenticated attackers, with contributor-level access and above...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11357" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2328" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="4.4">
-  <div class="news-title">CVE-2026-11358 - MEDIUM (4.4)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
+  <div class="news-title">GeoVision LPC2011/LPC2211 Web Interface / ssi.cgi reflected cross-site scripting (XSS) vulnerabilities</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
+    <span class="badge">Talos Reports</span>
+    <span>2026-06-15 00:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-11358 | CVSS: 4.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Orbit Fox: Duplicate Page, Menu Icons, SVG Support, Cookie Notice, Custom Fonts & More plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 3.0.6 due to insufficient input sanitization and output escaping. This makes it possib...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11358" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2327" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="4.9">
-  <div class="news-title">CVE-2026-11360 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
+  <div class="news-title">GeoVision LPC2011/LPC2211 DdnsSetting.cgi OS command injection vulnerability</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
+    <span class="badge">Talos Reports</span>
+    <span>2026-06-15 00:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-11360 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">The Advanced Order Export For WooCommerce plugin for WordPress is vulnerable to generic SQL Injection via the 'sort_direction' parameter in all versions up to, and including, 4.0.10 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL que...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11360" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2326" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="6.4">
-  <div class="news-title">CVE-2026-11402 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
+  <div class="news-title">GeoVision GV-IP Device Utility Device Authentication insufficient encryption vulnerability</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
+    <span class="badge">Talos Reports</span>
+    <span>2026-06-15 00:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-11402 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Services Section Block – Showcase Service Details in Grid or Columns plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'link' Block Attribute in all versions up to, and including, 1.4.4 due to insufficient input sanitization and output escaping. This makes it possible for aut...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11402" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2322" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="4.9">
-  <div class="news-title">CVE-2026-11776 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-12" data-cvss="-1.0">
+  <div class="news-title">Why Use App-Level Auth When Every Database Has Auth? (Splunk Enterprise CVE-2026-20253 Pre-Auth RCE)</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
+    <span class="badge">Watchtowr Labs</span>
+    <span>2026-06-12 20:35</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-11776 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">The Form Maker by 10Web – Mobile-Friendly Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to generic SQL Injection via the 'groupids' parameter in all versions up to, and including, 1.15.43 due to insufficient escaping on the user supplied parameter and lack of sufficient prepara...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11776" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Three posts? In three days? Are we insane?We're home alone, there's no one to stop us, and we're up past bedtime. So, we need to talk about Splunk. On June 10th, Splunk published this CVE-2026-20253 advisory:It has everything that we</div>
+  <a href="https://labs.watchtowr.com/why-use-app-level-auth-when-every-database-has-auth-splunk-enterprise-cve-2026-20253-pre-auth-rce/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="4.9">
-  <div class="news-title">CVE-2026-11777 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-12" data-cvss="-1.0">
+  <div class="news-title">Marking Your Own Homework (Check Point Remote Access VPN IKEv1 Authentication Bypass CVE-2026-50751)</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
+    <span class="badge">Watchtowr Labs</span>
+    <span>2026-06-12 05:17</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-11777 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">The Form Maker by 10Web – Mobile-Friendly Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to generic SQL Injection via the 'name' parameter in all versions up to, and including, 1.15.43 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11777" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">It is yet another day in this parallel universe of security, where the devices we bolt onto the edge of our networks to keep the bad people out are, with remarkable consistency, the exact thing that let the bad people in.While we’ve seemingly had a breather from</div>
+  <a href="https://labs.watchtowr.com/marking-your-own-homework-check-point-remote-access-vpn-ikev1-authentication-bypass-cve-2026-50751/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="4.3">
-  <div class="news-title">CVE-2026-11784 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-11" data-cvss="-1.0">
+  <div class="news-title">From SQLi to RCE – Exploiting LangGraph’s Checkpointer</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-06-11 13:37</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-11784 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Optimole – Optimize Images | Convert WebP & AVIF | CDN & Lazy Load | Image Optimization plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 4.2.6. This is due to missing or incorrect nonce validation on the replace_file function. This makes it p...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11784" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">By Yarden Porat AI agents need memory. Frameworks like LangGraph provide it through checkpointers – persistence layers that store execution state. But what happens when that persistence layer isn’t locked down? Key Points Background LangGraph is an open-source framework for building stateful, multi-...</div>
+  <a href="https://research.checkpoint.com/2026/from-sqli-to-rce-exploiting-langgraphs-checkpointer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="5.3">
-  <div class="news-title">CVE-2026-12093 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
+  <div class="news-title">More Evidence That Words Don't Mean What We Thought They Meant (Ivanti Sentry Pre-Auth OS Command Injection CVE-2026-10520)</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
+    <span class="badge">Watchtowr Labs</span>
+    <span>2026-06-10 00:52</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-12093 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Simple Membership plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 4.7.5. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to deactivate arbitrary ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12093" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="5.3">
-  <div class="news-title">CVE-2026-12120 - MEDIUM (5.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-12120 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The FireBox Popups – Increase Sales and Grow Your Email List plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.1.7 via the 'form_id' parameter. This makes it possible for unauthenticated attackers to extract download a full CSV export of all...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12120" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-18" data-cvss="9.8">
-  <div class="news-title">CVE-2026-55740 - CRITICAL (9.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-55740 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">Nur-Alam39 bus-ticket (no released versions; latest commit 459cabdbeb99c00225b26e46e3c2c30ae1de7bad) contains an unauthenticated SQL injection vulnerability in bus_info.php. The busid parameter received via HTTP POST is concatenated directly into a MySQL query (select * from bus_info where id=$busid...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-55740" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-18" data-cvss="4.3">
-  <div class="news-title">CVE-2026-9199 - MEDIUM (4.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-06-18</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-9199 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Equalize Digital Accessibility Checker – WCAG, ADA, EAA and Section 508 compliance plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.42.1. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9199" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Today, Ivanti published an advisory.“No way?” we hear you say. "Yes way!"Today’s advisory outlines two vulnerabilities in Ivanti’s Sentry product, appealing directly to our inner desire for sophisticated server-side, pre-authenticated vulnerabilities.CVE-2026-10520An OS Command Injection</div>
+  <a href="https://labs.watchtowr.com/more-evidence-that-words-dont-mean-what-we-thought-they-meant-ivanti-sentry-pre-auth-os-command-injection-cve-2026-10520/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -672,7 +662,7 @@ The post Strengthening supply chain security: Preparing for the next malware cam
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-06-25 08:02:11</div>
+      <div>Raport wygenerowano: 2026-06-26 08:02:38</div>
     </div>
   </div>
 
