@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-06-26</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-06-27</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-06-26</p>
+      <p class="sub">Dane z RSS i API | 2026-06-27</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,18 +136,27 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">53</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">54</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">11</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">318</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">382</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">337</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">402</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (53)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (54)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-06-24" data-cvss="-1">
+  <div class="news-title">DLMC Referral-Reward Price Inflation Drain</div>
+  <div class="news-meta">
+    <span class="badge">Darknavy</span>
+    <span>2026-06-24 00:00</span>
+  </div>
+  <div class="news-summary">DLMC counted attacker-funded USDT reserves as backing while excluding most freshly minted contract-held DLMC from the circulating-supply denominator, so two large `buy()` calls plus referral reward minting pushed `livePrice` upward before an immediate `sell()` extracted roughly $222.6K net.</div>
+  <a href="https://www.darknavy.org/web3/exploits/dlmc-referral-reward-price-inflation-drain/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-06-23" data-cvss="-1">
   <div class="news-title">Royal Royalties Zero-Amount ERC1155 Accounting Inflation Drain</div>
   <div class="news-meta">
@@ -345,15 +354,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   <div class="news-summary">I recently presented at the DEF CON 33 Mainstage and the 12th Crypto & Privacy Village on weaknesses in implementations of Google’s Privacy Sandbox that subverted privacy protections and enabled deanonymization attacks.</div>
   <a href="https://spaceraccoon.dev/client-side-deanonymization-attacks-privacy-sandbox-apis/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-07-27" data-cvss="-1">
-  <div class="news-title">Getting a Shell on the LAU-G150-C Optical Network Terminal</div>
-  <div class="news-meta">
-    <span class="badge">Spaceraccoon</span>
-    <span>2025-07-27 12:00</span>
-  </div>
-  <div class="news-summary">Since the Link-All LAU-G150-C Optical Network Terminal isn’t documented anywhere, I thought this was a great opportunity to practice some hardware hacking…</div>
-  <a href="https://spaceraccoon.dev/getting-shell-lau-g150-c-optical-network-terminal/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -470,7 +470,7 @@ The post Strengthening supply chain security: Preparing for the next malware cam
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (318)</h3>
+      <h3>🔓 Wykryte Luki (337)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-06-25" data-cvss="-1.0">
   <div class="news-title">Beyond IOCs: AI-enabled threat intelligence</div>
@@ -536,125 +536,134 @@ I had this post drafted for months, and yesterday at the Real-world AI sec...</d
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2444" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-18" data-cvss="-1.0">
-  <div class="news-title">Close Encounters of the Human Kind</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-06-18 18:00</span>
-  </div>
-  <div class="news-summary">In the latest Threat Source, Hazel channels her inner Spielberg to explore why humans are delightfully irrational, reminding us that while security best practices are simple in theory, they’re a lot harder to pull off when you’re busy dealing with real life.</div>
-  <a href="https://blog.talosintelligence.com/close-encounters-of-the-human-kind/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-18" data-cvss="-1.0">
-  <div class="news-title">Internet Systems Consortium BIND DNSSEC DNSKEY Extended Flags denial of service vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-18 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2382" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-17" data-cvss="-1.0">
-  <div class="news-title">Introducing Session Switcher. Swap Burp Sessions with One Click!</div>
-  <div class="news-meta">
-    <span class="badge">Doyensec</span>
-    <span>2026-06-17T00:00:00+02:00</span>
-  </div>
-  <div class="news-summary">
-
-
-Authorization testing is one of the most repetitive, yet critical tasks in web app security testing. Checking for horizontal and vertical privilege escalation, IDORs, and other access control issues requires constantly swapping cookies and headers between different user sessions, a process that i...</div>
-  <a href="https://blog.doyensec.com/2026/06/17/session-switcher.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-16" data-cvss="-1.0">
-  <div class="news-title">DIP Token Double-Transfer Reserve Manipulation Exploit</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-21" data-cvss="-1.0">
+  <div class="news-title">Taiko Bridge Source-Signal Proof Forgery</div>
   <div class="news-meta">
     <span class="badge">Darknavy</span>
-    <span>2026-06-16 00:00</span>
+    <span>2026-06-21 00:00</span>
   </div>
-  <div class="news-summary">The attacker abused DIP's double-transfer logic through Pancake `skim()` and `sync()` calls to collapse the AIC-DIP reserve balance, drain 29,037,659.001700876485419035 AIC, and cash out through the AIC-USDC pool.</div>
-  <a href="https://www.darknavy.org/web3/exploits/dip-token-double-transfer-reserve-manipulation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Bridge delegated message authenticity to `SignalService.proveSignalReceived()` against a saved checkpoint, and the accepted checkpoint let forged source signals without legitimate Taiko `MessageSent` events mark messages valid or retriable before ERC20Vault and ETH releases.</div>
+  <a href="https://www.darknavy.org/web3/exploits/taiko-bridge-source-signal-proof-forgery/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">Thetanuts Legacy Index Vault Zero-Cost Remint Exploit</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-20" data-cvss="7.5">
+  <div class="news-title">CVE-2026-11911 - HIGH (7.5)</div>
   <div class="news-meta">
-    <span class="badge">Darknavy</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
   </div>
-  <div class="news-summary">The attacker flash-loaned TN-IDX-USDC-PUT, redeemed the basket once, then called mint 37 times while every basket-token transfer rounded to zero, using the unbacked shares to repay the loan and keeping the redeemed vault assets.</div>
-  <a href="https://www.darknavy.org/web3/exploits/thetanuts-legacy-index-vault-zero-cost-remint/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11911 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The Simple File List plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the eeSFL_DeleteFile function in all versions up to, and including, 6.3.7. This makes it possible for unauthenticated attackers to delete arbitrary files on the server, whic...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11911" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">GeoVision LPC2011/LPC2211 Web Interface / ssi.cgi privilege escalation vulnerability</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-20" data-cvss="7.5">
+  <div class="news-title">CVE-2026-11912 - HIGH (7.5)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2328" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11912 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The Simple File List plugin for WordPress is vulnerable to arbitrary file modification due to insufficient authorization checks in all versions up to, and including, 6.3.7. This makes it possible for unauthenticated attackers to delete and modify files on the serve. This vulnerability is exploitable...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11912" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">GeoVision LPC2011/LPC2211 Web Interface / ssi.cgi reflected cross-site scripting (XSS) vulnerabilities</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-20" data-cvss="6.5">
+  <div class="news-title">CVE-2026-12119 - MEDIUM (6.5)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2327" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-12119 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">The Simple File List plugin for WordPress is vulnerable to unauthorized file operations due to a missing authorization check on the 'frontmanage' shortcode attribute in all versions up to, and including, 6.3.7. This makes it possible for authenticated attackers, with contributor-level access and abo...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12119" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">GeoVision LPC2011/LPC2211 DdnsSetting.cgi OS command injection vulnerability</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-20" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-48908 - N/A (N/A)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2326" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-48908 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">A vulnerability in SP Page Builder for Joomla allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48908" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-15" data-cvss="-1.0">
-  <div class="news-title">GeoVision GV-IP Device Utility Device Authentication insufficient encryption vulnerability</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-20" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-48909 - N/A (N/A)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-06-15 00:00</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2025-2322" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-48909 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">SP LMS (com_splms) < 4.1.4 by JoomShaper deserializes user-controlled cookie data without validation, enabling an unauthenticated remote attacker to execute arbitrary code on the server.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48909" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-12" data-cvss="-1.0">
-  <div class="news-title">Why Use App-Level Auth When Every Database Has Auth? (Splunk Enterprise CVE-2026-20253 Pre-Auth RCE)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-20" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-48939 - N/A (N/A)</div>
   <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-06-12 20:35</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
   </div>
-  <div class="news-summary">Three posts? In three days? Are we insane?We're home alone, there's no one to stop us, and we're up past bedtime. So, we need to talk about Splunk. On June 10th, Splunk published this CVE-2026-20253 advisory:It has everything that we</div>
-  <a href="https://labs.watchtowr.com/why-use-app-level-auth-when-every-database-has-auth-splunk-enterprise-cve-2026-20253-pre-auth-rce/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-48939 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48939" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-12" data-cvss="-1.0">
-  <div class="news-title">Marking Your Own Homework (Check Point Remote Access VPN IKEv1 Authentication Bypass CVE-2026-50751)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-20" data-cvss="9.8">
+  <div class="news-title">CVE-2019-25763 - CRITICAL (9.8)</div>
   <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-06-12 05:17</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
   </div>
-  <div class="news-summary">It is yet another day in this parallel universe of security, where the devices we bolt onto the edge of our networks to keep the bad people out are, with remarkable consistency, the exact thing that let the bad people in.While we’ve seemingly had a breather from</div>
-  <a href="https://labs.watchtowr.com/marking-your-own-homework-check-point-remote-access-vpn-ikev1-authentication-bypass-cve-2026-50751/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2019-25763 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">WordPress Ultimate Addons for Beaver Builder 1.2.4.1 contains an authentication bypass vulnerability that allows attackers to gain unauthorized access by exploiting the social media login form functionality. Attackers can submit a POST request to the admin-ajax.php endpoint with the uabb-lf-google-s...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-25763" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-11" data-cvss="-1.0">
-  <div class="news-title">From SQLi to RCE – Exploiting LangGraph’s Checkpointer</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-20" data-cvss="7.5">
+  <div class="news-title">CVE-2020-37255 - HIGH (7.5)</div>
   <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-06-11 13:37</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
   </div>
-  <div class="news-summary">By Yarden Porat AI agents need memory. Frameworks like LangGraph provide it through checkpointers – persistence layers that store execution state. But what happens when that persistence layer isn’t locked down? Key Points Background LangGraph is an open-source framework for building stateful, multi-...</div>
-  <a href="https://research.checkpoint.com/2026/from-sqli-to-rce-exploiting-langgraphs-checkpointer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2020-37255 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">WordPress Time Capsule Plugin 1.21.16 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain administrative access by sending a crafted POST request with the IWP_JSON_PREFIX header. Attackers can exploit this flaw to obtain valid administrator session cookies a...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-37255" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-10" data-cvss="-1.0">
-  <div class="news-title">More Evidence That Words Don't Mean What We Thought They Meant (Ivanti Sentry Pre-Auth OS Command Injection CVE-2026-10520)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-20" data-cvss="9.8">
+  <div class="news-title">CVE-2022-50972 - CRITICAL (9.8)</div>
   <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-06-10 00:52</span>
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
   </div>
-  <div class="news-summary">Today, Ivanti published an advisory.“No way?” we hear you say. "Yes way!"Today’s advisory outlines two vulnerabilities in Ivanti’s Sentry product, appealing directly to our inner desire for sophisticated server-side, pre-authenticated vulnerabilities.CVE-2026-10520An OS Command Injection</div>
-  <a href="https://labs.watchtowr.com/more-evidence-that-words-dont-mean-what-we-thought-they-meant-ivanti-sentry-pre-auth-os-command-injection-cve-2026-10520/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2022-50972 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">WooCommerce 7.1.0 contains a remote code execution vulnerability that allows attackers to execute arbitrary PHP code by injecting shell commands through the product-type parameter. Attackers can send requests to the class-wc-meta-box-product-images.php endpoint with unsanitized product-type values t...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-50972" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-20" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-12673 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-12673 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Liquidfiles versions before 4.2.12 are affected by a broken access control vulnerability resulting in privilege escalation from an Admin in a secondary domain to a Sysadmin by modifying a group in their managed secondary (non-default) group.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12673" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-20" data-cvss="9.8">
+  <div class="news-title">CVE-2024-58351 - CRITICAL (9.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2024-58351 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">Flowise before 2.1.4 allows configuration to be injected into the Chainflow during execution via the overrideConfig option, supported in both the frontend web integration and the backend Prediction API. Because this feature is enabled by default with no allow-list of permitted variables and relies o...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-58351" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-20" data-cvss="6.1">
+  <div class="news-title">CVE-2025-71331 - MEDIUM (6.1)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-20</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2025-71331 | CVSS: 6.1 | Severity: MEDIUM</div>
+  <div class="news-summary">Flowise before 3.0.8 contains a cross-site scripting (XSS) vulnerability caused by insufficient input filtering in chat messages and custom agent functions. An attacker can inject malicious JavaScript by sending an iframe payload (e.g., <iframe src="javascript:alert(document.cookie)">) in a chat box...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71331" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -662,7 +671,7 @@ Authorization testing is one of the most repetitive, yet critical tasks in web a
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-06-26 08:02:38</div>
+      <div>Raport wygenerowano: 2026-06-27 08:02:07</div>
     </div>
   </div>
 
