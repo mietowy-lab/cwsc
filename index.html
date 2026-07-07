@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-07-06</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-07-07</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-07-06</p>
+      <p class="sub">Dane z RSS i API | 2026-07-07</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,9 +137,9 @@
 
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">56</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">13</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">335</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">404</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">14</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">333</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">403</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -343,8 +343,26 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (13)</h3>
+      <h3>⚠️ Nowe Zagrożenia (14)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-07-06" data-cvss="-1">
+  <div class="news-title">Cavern Manticore: Exposing Iran-Linked Modular C2 Framework</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-07-06 12:25</span>
+  </div>
+  <div class="news-summary">Key Points Introduction Since early 2026, Check Point Research (CPR) has tracked a new modular command-and-control framework used by Cavern Manticore, an Iran-nexus APT group primarily targeting Israeli organizations, with a focus on IT providers, and government sectors. Cavern Manticore is an Iran ...</div>
+  <a href="https://research.checkpoint.com/2026/cavern-manticore-exposing-iran-linked-modular-c2-framework/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item threat" data-sev="none" data-date="2026-07-06" data-cvss="-1">
+  <div class="news-title">6th July – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-07-06 12:01</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 6th July, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES River Bank & Trust, a US financial institution, has experienced a ransomware incident after an unauthorized actor accessed the network of parent company R...</div>
+  <a href="https://research.checkpoint.com/2026/6th-july-threat-intelligence-report-2/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-07-01" data-cvss="-1">
   <div class="news-title">Browser-Only Ransomware: From LLM Hallucinations to a Practical Attack Technique</div>
   <div class="news-meta">
@@ -398,15 +416,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   </div>
   <div class="news-summary">Research by: Alexey Bukhteyev Key Takeaways Introduction When we search Google for a popular piece of software, we usually click the first result, sometimes without even looking at the rest, because official project sites tend to rank highest and appear near the top of the results. After landing on ...</div>
   <a href="https://research.checkpoint.com/2026/impersonation-click-hijacking-and-tds-inside-a-malware-distribution-ecosystem/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2026-06-01" data-cvss="-1">
-  <div class="news-title">1st June – Threat Intelligence Report</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-06-01 14:43</span>
-  </div>
-  <div class="news-summary">For the latest discoveries in cyber research for the week of 1st June, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Carnival Corporation, a global cruise line operator, has confirmed a data breach affecting nearly 6 million people after attackers used social engineering...</div>
-  <a href="https://research.checkpoint.com/2026/1st-june-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2026-02-01" data-cvss="-1">
   <div class="news-title">RTCon: Context-Adaptive Function-Level Fuzzing for RTOS Kernels</div>
@@ -469,8 +478,17 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (335)</h3>
+      <h3>🔓 Wykryte Luki (333)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-06" data-cvss="-1.0">
+  <div class="news-title">Hack the Elephant One Bite at a Time: NUL byte SQL Injection in pdo_firebird and NULL Pointer Dereference in PDO via pdo_pgsql</div>
+  <div class="news-meta">
+    <span class="badge">Pt Swarm</span>
+    <span>2026-07-06 11:06</span>
+  </div>
+  <div class="news-summary">The PHP core and its bundled extensions are often viewed as a mature and well-hardened attack surface, but low-level implementation bugs can still slip through. In our earlier research article Hack the Elephant One Bite at a Time: JPEG-Related Memory-Safety Bugs in PHP, we showed memory-safety issue...</div>
+  <a href="https://swarm.ptsecurity.com/hack-the-elephant-one-bite-at-a-time-nul-byte-sql-injection-in-pdo_firebird-and-null-pointer-dereference-in-pdo-pgsql/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-07-02" data-cvss="-1.0">
   <div class="news-title">Catan and Mouse</div>
   <div class="news-meta">
@@ -619,98 +637,75 @@ Shielder, together with OSTIF and the Sovereign Tech Agency, performed a Securit
 The audit resulted in five (5) findings ranging from low to informational severity, including three (3) CVEs. All of them have been...</div>
   <a href="https://www.shielder.com/blog/2026/06/symfony-yaml-security-audit/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-29" data-cvss="-1.0">
-  <div class="news-title">Enterprise Tech In, Shell Out (Progress Kemp LoadMaster Uninitialized Heap to Pre-Auth RCE CVE-2026-8037)</div>
-  <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-06-29 19:24</span>
-  </div>
-  <div class="news-summary">Welcome back to another watchTowr Labs blog post.This time, we're looking at Progress Kemp LoadMaster, a load balancer that sits at the edge of a lot of enterprise networks. Edge appliances have a habit of becoming the way in rather than the thing keeping people out, and</div>
-  <a href="https://labs.watchtowr.com/enterprise-tech-in-shell-out-progress-kemp-loadmaster-uninitialized-heap-to-pre-auth-rce-cve-2026-8037/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-29" data-cvss="-1.0">
-  <div class="news-title">Inside the Advisory Database and what happens when vulnerability volume breaks records</div>
-  <div class="news-meta">
-    <span class="badge">Github Security Lab</span>
-    <span>2026-06-29 16:10</span>
-  </div>
-  <div class="news-summary">The GitHub Advisory Database is processing more vulnerability reports than ever before. Here's what's driving the surge, how we're responding, and how the community can help.
-The post Inside the Advisory Database and what happens when vulnerability volume breaks records appeared first on The GitHub ...</div>
-  <a href="https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-29" data-cvss="-1.0">
-  <div class="news-title">Charting your way in: Helm template injection</div>
-  <div class="news-meta">
-    <span class="badge">Synacktiv</span>
-    <span>2026-06-29 00:00</span>
-  </div>
-  <div class="news-summary">
-
-
-
- 
-
-
-
-
-
-Charting your way in: Helm template injection
-
-
-29/06/2026
-
-                   During the audit of a Kubernetes cluster, we encountered an injection in a Helm template applied through ArgoCD. To our surprise, very few resources exist regarding YAML injection in vulnerable Helm templates. ...</div>
-  <a href="https://www.synacktiv.com/en/publications/charting-your-way-in-helm-template-injection" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-29" data-cvss="6.3">
-  <div class="news-title">CVE-2026-13532 - MEDIUM (6.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-30" data-cvss="6.5">
+  <div class="news-title">CVE-2026-11367 - MEDIUM (6.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-29</span>
+    <span>2026-06-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-13532 | CVSS: 6.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A weakness has been identified in itsourcecode Hospital Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /departmentDoctor.php. This manipulation of the argument deptid causes sql injection. It is possible to initiate the attack remotely. The exploit has ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13532" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11367 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">The PixMagix – WordPress Image Editor plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.7.2 via the move_image_on_server function. This makes it possible for authenticated attackers, with author-level access and above, to write files with attacker-cont...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11367" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-29" data-cvss="5.3">
-  <div class="news-title">CVE-2026-13533 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-30" data-cvss="9.8">
+  <div class="news-title">CVE-2026-12073 - CRITICAL (9.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-29</span>
+    <span>2026-06-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-13533 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A security vulnerability has been detected in agentejo Cockpit CMS up to 0.12.2. Affected by this issue is the function Spyc::YAMLLoad of the file /config/config.yaml of the component htaccess Handler. Such manipulation leads to files or directories accessible. It is possible to launch the attack re...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13533" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-12073 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">The ProfileGrid – User Profiles, Groups and Communities plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 5.9.9.5. This is due to the plugin not validating a `user_login` on registration forms that don't contain this parameter, and ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12073" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-29" data-cvss="5.0">
-  <div class="news-title">CVE-2026-13534 - MEDIUM (5.0)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-30" data-cvss="5.3">
+  <div class="news-title">CVE-2026-12349 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-29</span>
+    <span>2026-06-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-13534 | CVSS: 5.0 | Severity: MEDIUM</div>
-  <div class="news-summary">A vulnerability was detected in CherryHQ cherry-studio up to 1.9.7. This affects the function sha256 of the file src/main/services/memory/MemoryService.ts of the component CherryIN Preload API. Performing a manipulation of the argument state results in authorization bypass. The attack can be initiat...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13534" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-12349 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The Premium Addons for KingComposer plugin for WordPress is vulnerable to unauthorized modification and loss of data in versions up to, and including, 1.1.1. This is due to missing authorization and capability checks on the add_custom_sidebar() and remove_custom_sidebar() AJAX handlers, both of whic...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12349" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-29" data-cvss="6.3">
-  <div class="news-title">CVE-2026-13535 - MEDIUM (6.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-30" data-cvss="4.4">
+  <div class="news-title">CVE-2026-12560 - MEDIUM (4.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-29</span>
+    <span>2026-06-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-13535 | CVSS: 6.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw has been found in CodeAstro Human Resource Management System 1.0. This vulnerability affects the function GetFileInfo of the file hrsystem/application/models/Employee_model.php of the component View Endpoint. Executing a manipulation of the argument ID can lead to sql injection. The attack ca...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13535" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-12560 | CVSS: 4.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The Editorial Rating – Product Review & Rating System plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'Link URL' Field in all versions up to, and including, 4.0.5 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, wit...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12560" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-29" data-cvss="4.3">
-  <div class="news-title">CVE-2026-13536 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-30" data-cvss="4.3">
+  <div class="news-title">CVE-2026-8944 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-29</span>
+    <span>2026-06-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-13536 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A vulnerability has been found in GotoHTTP up to 10.2. This issue affects some unknown processing of the file /reg.12x. The manipulation of the argument sn leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor ex...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13536" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-8944 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The Plugin for Google Analytics by IO technologies plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 1.1. This is due to missing or incorrect nonce validation on the Google Analytics settings page (ga.php). This makes it possible for unauthenticated a...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8944" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-30" data-cvss="5.9">
+  <div class="news-title">CVE-2026-11581 - MEDIUM (5.9)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-30</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-11581 | CVSS: 5.9 | Severity: MEDIUM</div>
+  <div class="news-summary">The Kali Forms — Contact Form & Drag-and-Drop Builder WordPress plugin before 2.4.13 does not sanitise a form field's caption before outputting it as a column header on the administrator form-entries screen, allowing users with Contributor-level access or above to store JavaScript that executes in a...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11581" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-30" data-cvss="8.8">
+  <div class="news-title">CVE-2026-11589 - HIGH (8.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-06-30</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-11589 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">The WP Support Plus Responsive Ticket System WordPress plugin through 9.1.2 does not properly validate uploaded files, allowing unauthenticated users to upload files containing malicious JavaScript (such as HTML or SVG) to a publicly accessible location, leading to Stored Cross-Site Scripting attack...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11589" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -718,7 +713,7 @@ Charting your way in: Helm template injection
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-07-06 08:02:06</div>
+      <div>Raport wygenerowano: 2026-07-07 08:02:07</div>
     </div>
   </div>
 
