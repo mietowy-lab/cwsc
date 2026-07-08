@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-07-07</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-07-08</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-07-07</p>
+      <p class="sub">Dane z RSS i API | 2026-07-08</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,9 +137,9 @@
 
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">56</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">14</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">15</a></div><div class="kpi-label">Zagrożenia</div></div>
         <div class="card"><div class="kpi-num"><a href="#vulnerabilities">333</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">403</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">404</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -343,8 +343,17 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (14)</h3>
+      <h3>⚠️ Nowe Zagrożenia (15)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-07-07" data-cvss="-1">
+  <div class="news-title">UAT-7810 continues building ORB networks using new malware</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-07-07 10:00</span>
+  </div>
+  <div class="news-summary">Talos’ latest findings on UAT-7810 indicate that the threat actor continues to develop their custom-made malware.</div>
+  <a href="https://blog.talosintelligence.com/uat-7810/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-07-06" data-cvss="-1">
   <div class="news-title">Cavern Manticore: Exposing Iran-Linked Modular C2 Framework</div>
   <div class="news-meta">
@@ -617,95 +626,95 @@ Pentest
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2408" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-30" data-cvss="-1.0">
-  <div class="news-title">CitrixBleed To Infinity And Beyond (Citrix NetScaler Pre-Auth Memory Overread CVE-2026-8451)</div>
-  <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-06-30 19:35</span>
-  </div>
-  <div class="news-summary">Well, well, well - once again, the cat has dragged us in and spat us out.Today, we find ourselves questioning the reality we sit within. Must it be so predictable, and why us? “But watchTowr, what do you mean?”Well, if you’re here, you likely fit</div>
-  <a href="https://labs.watchtowr.com/citrixbleed-to-infinity-and-beyond-citrix-netscaler-pre-auth-memory-overread-cve-2026-8451/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-06-30" data-cvss="-1.0">
-  <div class="news-title">Symfony YAML Security Audit</div>
-  <div class="news-meta">
-    <span class="badge">Shielder</span>
-    <span>2026-06-30 09:00</span>
-  </div>
-  <div class="news-summary">TL;DR
-Shielder, together with OSTIF and the Sovereign Tech Agency, performed a Security Audit of the Symfony YAML component, a PHP library to parse and dump YAML files.
-The audit resulted in five (5) findings ranging from low to informational severity, including three (3) CVEs. All of them have been...</div>
-  <a href="https://www.shielder.com/blog/2026/06/symfony-yaml-security-audit/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-30" data-cvss="6.5">
-  <div class="news-title">CVE-2026-11367 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-01" data-cvss="5.3">
+  <div class="news-title">CVE-2025-15666 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-30</span>
+    <span>2026-07-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-11367 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">The PixMagix – WordPress Image Editor plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.7.2 via the move_image_on_server function. This makes it possible for authenticated attackers, with author-level access and above, to write files with attacker-cont...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11367" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-15666 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A security vulnerability has been detected in Open Asset Import Library Assimp up to 5.4.3. Affected by this vulnerability is the function Assimp::SceneCombiner::Copy of the file code/Common/SceneCombiner.cpp of the component Model File Handler. Such manipulation of the argument width/height leads t...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15666" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-30" data-cvss="9.8">
-  <div class="news-title">CVE-2026-12073 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-01" data-cvss="8.1">
+  <div class="news-title">CVE-2026-10750 - HIGH (8.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-30</span>
+    <span>2026-07-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-12073 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The ProfileGrid – User Profiles, Groups and Communities plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 5.9.9.5. This is due to the plugin not validating a `user_login` on registration forms that don't contain this parameter, and ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12073" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10750 | CVSS: 8.1 | Severity: HIGH</div>
+  <div class="news-summary">The Royal MCP  WordPress plugin before 1.4.26 does not perform capability checks on the majority of its MCP tools after token authentication, allowing authenticated users with a low-privileged role such as Subscriber to read private content, enumerate all users and their roles, and create, modify, o...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10750" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-30" data-cvss="5.3">
-  <div class="news-title">CVE-2026-12349 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-01" data-cvss="4.3">
+  <div class="news-title">CVE-2026-11562 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-30</span>
+    <span>2026-07-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-12349 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Premium Addons for KingComposer plugin for WordPress is vulnerable to unauthorized modification and loss of data in versions up to, and including, 1.1.1. This is due to missing authorization and capability checks on the add_custom_sidebar() and remove_custom_sidebar() AJAX handlers, both of whic...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12349" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11562 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The WS Form LITE  WordPress plugin before 1.11.8 does not have a capability check on one of its settings-update actions, allowing authenticated users with subscriber-level access and above to modify the WS Form LITE  WordPress plugin before 1.11.8's settings.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11562" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-30" data-cvss="4.4">
-  <div class="news-title">CVE-2026-12560 - MEDIUM (4.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-01" data-cvss="7.5">
+  <div class="news-title">CVE-2026-11568 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-30</span>
+    <span>2026-07-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-12560 | CVSS: 4.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Editorial Rating – Product Review & Rating System plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'Link URL' Field in all versions up to, and including, 4.0.5 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, wit...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12560" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11568 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The Product Configurator for WooCommerce WordPress plugin before 1.7.3 does not perform any authorisation or post-status check before returning WooCommerce product data through a public AJAX action, allowing unauthenticated users to retrieve the data (title, price, weight, stock status, and configur...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11568" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-30" data-cvss="4.3">
-  <div class="news-title">CVE-2026-8944 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-01" data-cvss="4.2">
+  <div class="news-title">CVE-2026-11570 - MEDIUM (4.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-30</span>
+    <span>2026-07-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8944 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Plugin for Google Analytics by IO technologies plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 1.1. This is due to missing or incorrect nonce validation on the Google Analytics settings page (ga.php). This makes it possible for unauthenticated a...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8944" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11570 | CVSS: 4.2 | Severity: MEDIUM</div>
+  <div class="news-summary">The User Submitted Posts  WordPress plugin before 20260608 does not escape a submitted value before outputting it in an admin-configured display template, leading to a Stored Cross-Site Scripting that can be triggered by unauthenticated users when a non-default display option is enabled.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11570" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-06-30" data-cvss="5.9">
-  <div class="news-title">CVE-2026-11581 - MEDIUM (5.9)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-01" data-cvss="8.1">
+  <div class="news-title">CVE-2026-11794 - HIGH (8.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-30</span>
+    <span>2026-07-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-11581 | CVSS: 5.9 | Severity: MEDIUM</div>
-  <div class="news-summary">The Kali Forms — Contact Form & Drag-and-Drop Builder WordPress plugin before 2.4.13 does not sanitise a form field's caption before outputting it as a column header on the administrator form-entries screen, allowing users with Contributor-level access or above to store JavaScript that executes in a...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11581" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11794 | CVSS: 8.1 | Severity: HIGH</div>
+  <div class="news-summary">The Advanced Form Integration — Connect Forms to 200+ Apps WordPress plugin before 2.1.1 does not restrict the WordPress role assigned when it creates a user from a public form submission, allowing unauthenticated visitors to create an administrator account when an active integration maps the user r...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11794" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-06-30" data-cvss="8.8">
-  <div class="news-title">CVE-2026-11589 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-01" data-cvss="7.5">
+  <div class="news-title">CVE-2026-11823 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-06-30</span>
+    <span>2026-07-01</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-11589 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">The WP Support Plus Responsive Ticket System WordPress plugin through 9.1.2 does not properly validate uploaded files, allowing unauthenticated users to upload files containing malicious JavaScript (such as HTML or SVG) to a publicly accessible location, leading to Stored Cross-Site Scripting attack...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11589" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11823 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The BookingPress Appointment Booking Pro plugin for WordPress is vulnerable to SQL Injection via the 'store_service_date' parameter of the bpa_assign_staffmember_to_slots() function in versions up to and including 5.7.1. This is due to the explicit use of stripslashes_deep() on user-supplied POST da...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11823" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-01" data-cvss="3.1">
+  <div class="news-title">CVE-2026-11880 - LOW (3.1)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-01</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-11880 | CVSS: 3.1 | Severity: LOW</div>
+  <div class="news-summary">The Fluent Forms  WordPress plugin before 6.2.1 does not properly verify ownership before processing a subscription cancellation request, allowing authenticated users with a low-privilege account to cancel subscriptions belonging to other users.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11880" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-01" data-cvss="7.2">
+  <div class="news-title">CVE-2026-11883 - HIGH (7.2)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-01</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-11883 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The WebAuthn Provider for Two Factor WordPress plugin before 2.5.6 does not correctly validate the second-factor authentication response, allowing an attacker who already knows a user's password to bypass the two-factor authentication requirement by submitting a malformed request.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11883" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -713,7 +722,7 @@ The audit resulted in five (5) findings ranging from low to informational severi
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-07-07 08:02:07</div>
+      <div>Raport wygenerowano: 2026-07-08 08:02:09</div>
     </div>
   </div>
 
