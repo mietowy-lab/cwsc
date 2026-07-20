@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-07-17</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-07-20</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-07-17</p>
+      <p class="sub">Dane z RSS i API | 2026-07-20</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,17 +136,17 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">56</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">13</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">332</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">401</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">57</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">14</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">335</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">406</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (56)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (57)</h3>
       <div class="news-grid" data-grid="incidents">
 <div class="card news-item incident" data-sev="none" data-date="2026-07-13" data-cvss="-1">
   <div class="news-title">13th July – Threat Intelligence Report</div>
@@ -343,8 +343,19 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (13)</h3>
+      <h3>⚠️ Nowe Zagrożenia (14)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-07-20" data-cvss="-1">
+  <div class="news-title">Autonomous AI Intrusions Are Here: Lessons from the Hugging Face Compromise</div>
+  <div class="news-meta">
+    <span class="badge">Embrace The Red</span>
+    <span>2026-07-20 01:00</span>
+  </div>
+  <div class="news-summary">Hugging Face disclosed an intrusion that, according to them, was driven end to end by an autonomous AI agent system.
+
+Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it assesses to be an agent-driven ransomware capable of adapting in real time. The report does not identify...</div>
+  <a href="https://embracethered.com/blog/posts/2026/ai-intrusion-are-now-real/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-07-16" data-cvss="-1">
   <div class="news-title">UAT-11795 deploys novel Starland RAT and bespoke WLDR C2 implant in financially motivated campaign</div>
   <div class="news-meta">
@@ -469,8 +480,17 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (332)</h3>
+      <h3>🔓 Wykryte Luki (335)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-17" data-cvss="-1.0">
+  <div class="news-title">Rustifying Image Codecs in Chromium</div>
+  <div class="news-meta">
+    <span class="badge">Microsoft Bvr</span>
+    <span>2026-07-17 14:00</span>
+  </div>
+  <div class="news-summary">A cross-team effort to make browser image decoding safer without slowing the web down. Introduction Image decoding is on the hot path in every modern browser. Page loads, <img> tags, and favicons all require parsing bytes straight from the untrusted web. Media codecs have been a steady source of sec...</div>
+  <a href="https://microsoftedge.github.io/edgevr/posts/Rustifying-Image-Codecs-in-Chromium/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-07-17" data-cvss="-1.0">
   <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
   <div class="news-meta">
@@ -555,145 +575,105 @@ David Leadbeater originally discovered an interesting behavior in the macOS Te..
   <div class="news-summary"></div>
   <a href="https://github.com/google/security-research/security/advisories/GHSA-6hc9-758f-7r98" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-10" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-47291: Remote Code Execution in the Windows HTTP.sys</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-07-10 14:00</span>
-  </div>
-  <div class="news-summary">In this excerpt of a TrendAI Research Services vulnerability report, Yazhi Wang and Jonathan Lein of the TrendAI Research team detail a recently patched remote code execution bug in the Windows HTTP protocol stack. Successful exploitation of this vulnerability can result in a denial-of-service condi...</div>
-  <a href="https://www.thezdi.com/blog/2026/7/9/cve-2026-47291-remote-code-execution-in-the-windows-httpsys" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-10" data-cvss="6.4">
-  <div class="news-title">CVE-2026-12123 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-13" data-cvss="5.3">
+  <div class="news-title">CVE-2026-15530 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-10</span>
+    <span>2026-07-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-12123 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The All-in-One Video Gallery plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 4.8.5 via the 'vdl' parameter. This makes it possible for authenticated attackers, with subscriber-level access and above, to make web requests to arbitrary locations ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12123" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-15530 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw has been found in WuzhiCMS up to 4.1.0. Affected by this vulnerability is the function config/listimage of the file /index.php?m=attachment&f=index&v=upload of the component Attachment API. Executing a manipulation can lead to information disclosure. The attack can be launched remotely. The e...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15530" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-10" data-cvss="5.3">
-  <div class="news-title">CVE-2026-12276 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-13" data-cvss="5.3">
+  <div class="news-title">CVE-2026-15531 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-10</span>
+    <span>2026-07-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-12276 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The LA-Studio Element Kit for Elementor WordPress plugin before 1.6.1 does not check whether user registration is enabled on the site before creating an account through one of its unauthenticated AJAX actions, allowing unauthenticated attackers to register new accounts even when registration has bee...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12276" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-15531 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability has been found in yashbhalgat HashNeRF-pytorch up to 82885e698295982504eb6a26d060a6b2473e3706. Affected by this issue is the function torch.load of the file run_nerf.py of the component Checkpoint File Handler. The manipulation of the argument ckpt_path leads to deserialization. The ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15531" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-10" data-cvss="7.5">
-  <div class="news-title">CVE-2026-12685 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-13" data-cvss="2.4">
+  <div class="news-title">CVE-2026-15532 - LOW (2.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-10</span>
+    <span>2026-07-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-12685 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">The EscortWP escortwp WordPress theme through 3.6.2 was distributed with a vendor-authored, obfuscated backdoor that lets an unauthenticated attacker who supplies a hard-coded, per-build key permanently delete all of the site's content, and that covertly transmits the site URL, administrator email a...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12685" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-15532 | CVSS: 2.4 | Severity: LOW</div>
+  <div class="news-summary">A vulnerability was identified in SourceCodester Online Book Store System 1.0. This issue affects some unknown processing of the component User Management Module. Such manipulation of the argument Name/Username leads to cross site scripting. The attack can be executed remotely. The exploit is public...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15532" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-10" data-cvss="7.5">
-  <div class="news-title">CVE-2026-13347 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-13" data-cvss="4.7">
+  <div class="news-title">CVE-2026-15533 - MEDIUM (4.7)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-10</span>
+    <span>2026-07-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-13347 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">The Hide My WP Lite plugin for WordPress is vulnerable to Arbitrary File Read in versions up to and including 1.3 via the he_wrapper_js and he_wrapper_css query parameters processed by the elementor_assets_filter() function. This is due to the function concatenating user-supplied input directly onto...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13347" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-15533 | CVSS: 4.7 | Severity: MEDIUM</div>
+  <div class="news-summary">A security flaw has been discovered in DedeCMS 5.7.118. Impacted is an unknown function of the file /plus/search.php of the component Column Management. Performing a manipulation of the argument Column Name results in code injection. The attack is possible to be carried out remotely. The exploit has...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15533" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-10" data-cvss="9.8">
-  <div class="news-title">CVE-2026-28564 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-13" data-cvss="6.3">
+  <div class="news-title">CVE-2026-15535 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-10</span>
+    <span>2026-07-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-28564 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">Insufficient Session Expiration, Authentication Bypass by Capture-replay vulnerability in Apache IoTDB.
-REST Basic Authentication Accepts Stale Cached Credentials
-
-
-This issue affects Apache IoTDB: from 1.0.0 before 2.0.10.
-
-Users are recommended to upgrade to version 2.0.10, which fixes the issue.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-28564" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-15535 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was determined in AkariAsai self-rag up to 1fcdc420e48f50a7d7ab1ece5494221b93252e99. Affected by this issue is the function Indexer.deserialize_from of the file retrieval_lm/src/index.py of the component retrieval_lm. Executing a manipulation of the argument index_meta.faiss can lead...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15535" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-10" data-cvss="9.1">
-  <div class="news-title">CVE-2026-40005 - CRITICAL (9.1)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-13" data-cvss="6.1">
+  <div class="news-title">CVE-2026-10551 - MEDIUM (6.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-10</span>
+    <span>2026-07-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-40005 | CVSS: 9.1 | Severity: CRITICAL</div>
-  <div class="news-summary">Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Apache IoTDB.
-An attacker can write arbitrary files anywhere the IoTDB process has write permissions with unsafe API.
-
-
-This issue affects Apache IoTDB: from 1.0.0 before 2.0.10.
-
-Users are recommended to...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40005" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-10551 | CVSS: 6.1 | Severity: MEDIUM</div>
+  <div class="news-summary">The Breeze Cache WordPress plugin before 2.5.6 is vulnerable to unauthenticated Stored Cross-Site Scripting (XSS) due to a predictable replacement hash used during the HTML minification process and abusing a regular expression. This allows an attacker to inject arbitrary HTML attributes in the final...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10551" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-10" data-cvss="7.5">
-  <div class="news-title">CVE-2026-40006 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-13" data-cvss="8.1">
+  <div class="news-title">CVE-2026-11963 - HIGH (8.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-10</span>
+    <span>2026-07-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-40006 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">Memory Allocation with Excessive Size Value, Allocation of Resources Without Limits or Throttling, Missing Authentication for Critical Function vulnerability in Apache IoTDB.
-When pipe_air_gap_receiver_enabled=true, the IoTDB AirGap pipe receiver
-accepts raw TCP connections on port 9780 with no auth...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40006" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11963 | CVSS: 8.1 | Severity: HIGH</div>
+  <div class="news-summary">The User Registration & Membership  WordPress plugin before 5.2.2 does not perform an authorization check on a membership-upgrade action and derives the user to modify from a caller-supplied identifier instead of the current user, allowing any authenticated user such as a subscriber to change anothe...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11963" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-10" data-cvss="7.5">
-  <div class="news-title">CVE-2026-40007 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-13" data-cvss="9.1">
+  <div class="news-title">CVE-2026-11964 - CRITICAL (9.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-10</span>
+    <span>2026-07-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-40007 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">Uncontrolled Recursion, Uncontrolled Resource Consumption vulnerability in Apache IoTDB.
-When pipe_air_gap_receiver_enabled=true, the IoTDB AirGap receiver's
-readLength method calls itself recursively each time it recognises the
-E-language prefix in socket data, with no depth limit. An unauthenticat...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40007" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-11964 | CVSS: 9.1 | Severity: CRITICAL</div>
+  <div class="news-summary">The User Registration & Membership  WordPress plugin before 5.2.2 does not verify the authenticity of incoming payment-provider webhook notifications before acting on them, allowing unauthenticated attackers to forge a payment-approved event and activate a paid membership subscription without comple...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11964" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-10" data-cvss="9.8">
-  <div class="news-title">CVE-2026-40008 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-13" data-cvss="5.0">
+  <div class="news-title">CVE-2026-12081 - MEDIUM (5.0)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-10</span>
+    <span>2026-07-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-40008 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection') vulnerability in Apache IoTDB.
-The pipe processor reads a fully
-qualified Java class name and
-instantiates it using Class.forName().newInstance() without any
-validation or allowlisting.
-
-
-This issue affects Apache IoT...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40008" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-12081 | CVSS: 5.0 | Severity: MEDIUM</div>
+  <div class="news-summary">The Database for Contact Form 7, WPforms, Elementor forms WordPress plugin before 1.5.2 does not restrict the PHP classes allowed when unserializing an attacker-supplied form-field value, allowing unauthenticated users to inject arbitrary PHP objects that are instantiated when an administrator views...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12081" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-10" data-cvss="6.5">
-  <div class="news-title">CVE-2026-40009 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-13" data-cvss="5.4">
+  <div class="news-title">CVE-2026-12271 - MEDIUM (5.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-10</span>
+    <span>2026-07-13</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-40009 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">Improper Privilege Management, Improper Access Control vulnerability in Apache IoTDB.
-Authenticated users can escalate to full tree-path access by renaming
-themselves to __internal_auditor.
-
-
-This issue affects Apache IoTDB: from 2.0.8 before 2.0.10.
-
-Users are recommended to upgrade to version 2.0....</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40009" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-12271 | CVSS: 5.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The Tutor LMS  WordPress plugin before 3.9.13 does not verify ownership of the targeted quiz attempt before writing to it, allowing authenticated users with subscriber-level access and above to modify and force-complete other students' quiz attempts, overwriting their recorded marks and pass/fail re...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12271" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -701,7 +681,7 @@ Users are recommended to upgrade to version 2.0....</div>
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-07-17 08:02:28</div>
+      <div>Raport wygenerowano: 2026-07-20 08:02:12</div>
     </div>
   </div>
 
