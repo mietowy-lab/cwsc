@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-07-24</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-07-25</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-07-24</p>
+      <p class="sub">Dane z RSS i API | 2026-07-25</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,17 +136,17 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">57</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">56</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">14</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">333</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">404</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">329</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">399</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (57)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (56)</h3>
       <div class="news-grid" data-grid="incidents">
 <div class="card news-item incident" data-sev="none" data-date="2026-07-20" data-cvss="-1">
   <div class="news-title">20th July – Threat Intelligence Report</div>
@@ -480,7 +480,7 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (333)</h3>
+      <h3>🔓 Wykryte Luki (329)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-07-23" data-cvss="-1.0">
   <div class="news-title">Don’t swing at everything</div>
@@ -491,201 +491,231 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
   <div class="news-summary">Thorsten explores Q2 2026 stats, the artificial buffer zone of 2026, and why smart, prioritized patching is more critical than ever.</div>
   <a href="https://blog.talosintelligence.com/dont-swing-at-everything/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-17" data-cvss="-1.0">
-  <div class="news-title">Rustifying Image Codecs in Chromium</div>
-  <div class="news-meta">
-    <span class="badge">Microsoft Bvr</span>
-    <span>2026-07-17 14:00</span>
-  </div>
-  <div class="news-summary">A cross-team effort to make browser image decoding safer without slowing the web down. Introduction Image decoding is on the hot path in every modern browser. Page loads, <img> tags, and favicons all require parsing bytes straight from the untrusted web. Media codecs have been a steady source of sec...</div>
-  <a href="https://microsoftedge.github.io/edgevr/posts/Rustifying-Image-Codecs-in-Chromium/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-17" data-cvss="-1.0">
-  <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-07-17 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-17" data-cvss="6.1">
-  <div class="news-title">CVE-2026-15094 - MEDIUM (6.1)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-18" data-cvss="6.3">
+  <div class="news-title">CVE-2026-16076 - MEDIUM (6.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
+    <span>2026-07-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-15094 | CVSS: 6.1 | Severity: MEDIUM</div>
-  <div class="news-summary">The WP Hotel Booking plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'check_in_date' parameter in all versions up to, and including, 2.3.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15094" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-16076 | CVSS: 6.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability has been found in AstrBotDevs AstrBot up to 4.25.5. This issue affects the function OpenApiRoute.chat_send of the file astrbot/dashboard/routes/open_api.py of the component API. Such manipulation of the argument Username leads to authentication bypass by spoofing. It is possible to l...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16076" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-17" data-cvss="9.8">
-  <div class="news-title">CVE-2026-15982 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-18" data-cvss="5.3">
+  <div class="news-title">CVE-2026-16077 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
+    <span>2026-07-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-15982 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The Aimogen Pro - All-in-One AI Content Writer, Editor, ChatBot & Automation Toolkit plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.8.4. This is due to due to a missing capability check on the 'aiomatic_call_google_ai_function' function. This makes...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15982" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-16077 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was found in AstrBotDevs AstrBot up to 4.25.5. Impacted is the function _normalize_rw_path of the file astrbot/core/tools/computer_tools/fs.py of the component Filesystem Computer-Use Tool. Performing a manipulation results in link following. The attack is only possible with local ac...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16077" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-17" data-cvss="-1.0">
-  <div class="news-title">CVE-2019-25764 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-18" data-cvss="4.3">
+  <div class="news-title">CVE-2026-16081 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
+    <span>2026-07-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2019-25764 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">**UNSUPPORTED WHEN ASSIGNED**  Exposed IOCTL with Insufficient Access Control in the ASUS AURA SYNC driver allows a local user to bypass the driver's verification and invoke arbitrary IOCTLs, resulting in privilege escalation.
+  <div class="cve-info">CVE ID: CVE-2026-16081 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was determined in Sipeed PicoClaw up to 0.2.9. The affected element is an unknown function of the file web/backend/api/auth.go. Executing a manipulation can lead to cross-site request forgery. The attack can be launched remotely. The exploit has been publicly disclosed and may be uti...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16081" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-18" data-cvss="5.3">
+  <div class="news-title">CVE-2026-16082 - MEDIUM (5.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-16082 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was identified in Sipeed PicoClaw up to 0.2.9. The impacted element is the function ExecTool.executeRun of the file pkg/agent/pipeline_execute.go. The manipulation of the argument cwe leads to time-of-check time-of-use. The attack must be carried out locally. The exploit is publicly ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16082" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-18" data-cvss="5.3">
+  <div class="news-title">CVE-2026-16083 - MEDIUM (5.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-16083 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A security flaw has been discovered in Sipeed PicoClaw up to 0.2.9. This affects the function webhook.ParseRequest of the file pkg/channels/line/line.go of the component LINE Webhook. The manipulation results in authentication bypass by capture-replay. The attack may be launched remotely. The exploi...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16083" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="7.3">
+  <div class="news-title">CVE-2026-16084 - HIGH (7.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-16084 | CVSS: 7.3 | Severity: HIGH</div>
+  <div class="news-summary">A weakness has been identified in Sipeed PicoClaw up to 0.2.9. This impacts the function web_fetch of the file pkg/tools/integration/web.go. This manipulation causes server-side request forgery. Remote exploitation of the attack is possible. The exploit has been made available to the public and coul...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16084" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="9.8">
+  <div class="news-title">CVE-2026-47865 - CRITICAL (9.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47865 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">VMware Avi Load Balancer contains an authentication bypass vulnerability. A malicious user with network access may be able to access the Avi Control plane by bypassing the authentication mechanism.
 
-Refer to the 'End-of-Life Notice and Driver Update for Legacy ASUS Drive...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2019-25764" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+Affected versions:
+31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)
+30.1.1 through 30.2.6 (fixed in 30.2.7...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47865" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-17" data-cvss="6.1">
-  <div class="news-title">CVE-2026-10525 - MEDIUM (6.1)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="8.3">
+  <div class="news-title">CVE-2026-47866 - HIGH (8.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
+    <span>2026-07-18</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-10525 | CVSS: 6.1 | Severity: MEDIUM</div>
-  <div class="news-summary">The NEX-Forms  WordPress plugin before 9.2.3 does not sanitise and escape some submitted form data before storing it and outputting it back in the admin dashboard, leading to a Stored Cross-Site Scripting vulnerability which could allow unauthenticated users to perform Stored Cross-Site Scripting at...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10525" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-17" data-cvss="7.5">
-  <div class="news-title">CVE-2026-11575 - HIGH (7.5)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-11575 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">The PhonePe Payment Solutions WordPress plugin before 3.1.0 does not properly verify the authenticity of incoming payment callbacks: the secret used to validate the callback signature is empty on sites configured through the current setup flow, so the expected signature reduces to an unkeyed hash of...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11575" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-17" data-cvss="8.1">
-  <div class="news-title">CVE-2026-11961 - HIGH (8.1)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-11961 | CVSS: 8.1 | Severity: HIGH</div>
-  <div class="news-summary">The User Registration & Membership  WordPress plugin before 5.2.3 does not validate that the membership tier submitted during public registration is one of the tiers allowed by the registration form before assigning that tier's associated user role, allowing unauthenticated users to register into an...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11961" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-17" data-cvss="5.3">
-  <div class="news-title">CVE-2026-11966 - MEDIUM (5.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-11966 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The User Registration & Membership  WordPress plugin before 5.2.3 does not perform a capability check for unauthenticated callers on one of its membership payment actions and acts on a caller-supplied user identifier, allowing unauthenticated attackers to delete recently-registered, payment-pending ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-11966" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-17" data-cvss="5.4">
-  <div class="news-title">CVE-2026-12393 - MEDIUM (5.4)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-12393 | CVSS: 5.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The WPS Bookings for WooCommerce WordPress plugin before 3.11.7 does not verify that a booking order belongs to the requesting user before cancelling it, allowing any authenticated user, such as a Subscriber or Customer, to cancel and void other customers' booking orders.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12393" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-17" data-cvss="5.3">
-  <div class="news-title">CVE-2026-13402 - MEDIUM (5.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-13402 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Royal Addons for Elementor  WordPress plugin before 1.7.1063 does not check the post status of menu items or the templates they reference in one of its REST endpoints, allowing unauthenticated users to retrieve the rendered HTML content of private or draft Elementor templates linked from non-pub...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13402" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-17" data-cvss="9.8">
-  <div class="news-title">CVE-2026-9810 - CRITICAL (9.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-9810 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The AI Copilot  WordPress plugin before 1.5.4 does not bind OAuth access tokens to a WordPress user, and accepts any valid token as an administrator session, allowing unauthenticated attackers who complete the public OAuth flow to execute privileged MCP tools as an administrator, including arbitrary...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9810" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-17" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-15379 - N/A (N/A)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-15379 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">The Altiris WMI provider exposes a class (AltirisAgent_Stream) that allows any local standard user to read the contents of any file accessible to the SYSTEM account, bypassing filesystem ACLs. No admin privileges required. The provider reverts to the LocalSystem context when servicing WMI queries wi...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15379" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-17" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-15380 - N/A (N/A)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-15380 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">A non-administrator interactive user can obtain full SYSTEM code execution through a DCOM/task scheduler logic chain — no network access, no memory corruption required (ITMS 8.7.3)</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15380" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-17" data-cvss="4.3">
-  <div class="news-title">CVE-2026-9656 - MEDIUM (4.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-9656 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The HubSpot All-In-One Marketing – Forms, Popups, Live Chat plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 11.3.62 via the wp_localize_script() / window.leadinConfig JavaScript object. This makes it possible for authenticated attackers, wit...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9656" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-17" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-62764 - N/A (N/A)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-62764 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Improper Handling of Insufficient Privileges vulnerability in Apache Accumulo.
-An authenticated, but low-privileged user without system permissions may
-issue a remote command to gracefully shutdown system components
-(compaction-coordinator, compactor, gc, manager, monitor, tserver, or sserver),
-lead...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-62764" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-17" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-22104 - N/A (N/A)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-22104 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Improper access control in Hashtopolis server web-interface chunk activity component for versions prior to 0.14.8 allows any created account to read all cracked hashes of a Hashtopolis server instance.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-22104" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-17" data-cvss="6.3">
-  <div class="news-title">CVE-2026-16008 - MEDIUM (6.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-16008 | CVSS: 6.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A security vulnerability has been detected in sagold json-schema-library 11.5.0/11.5.1. This impacts the function parsePropertyDependencies of the file src/keywords/propertyDependencies.ts. The manipulation leads to improperly controlled modification of object prototype attributes. The attack can be...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16008" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-07-17" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-59252 - N/A (N/A)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-07-17</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-59252 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Improper Validation of Specified Quantity in Input in ZenHive mpp allows an unauthenticated remote client to drain the fee-payer wallet, resulting in denial of service for legitimate clients.
+  <div class="cve-info">CVE ID: CVE-2026-47866 | CVSS: 8.3 | Severity: HIGH</div>
+  <div class="news-summary">VMware Avi Load Balancer contains an authorization bypass vulnerability. A malicious actor on the network can access a limited subset of the Avi Control Plane without proper authorization.
 
-When the mpp Elixir library is configured as fee payer (fee_payer: true), the MPP.Methods.Tempo payment met...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59252" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+Affected versions:
+32.1.1 (fixed in 32.1.2)
+31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)
+30.1.1 through 30.2.6 ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47866" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="8.7">
+  <div class="news-title">CVE-2026-47867 - HIGH (8.7)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47867 | CVSS: 8.7 | Severity: HIGH</div>
+  <div class="news-summary">VMware Avi Load Balancer contains a remote code execution vulnerability. A malicious user with network access may be able to access the Avi Control plane and execute code remotely.
+
+Affected versions:
+32.1.1 (fixed in 32.1.2)
+31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)
+30.1.1 through 30.2.6 (fixed i...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47867" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="7.8">
+  <div class="news-title">CVE-2026-47868 - HIGH (7.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47868 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">VMware Avi Load Balancer contains a local privilege escalation vulnerability. A malicious user with local access may be able to escalate their privileges to run code as root.
+
+Affected versions:
+32.1.1 (fixed in 32.1.2)
+31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)
+30.1.1 through 30.2.6 (fixed in 30.2...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47868" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="8.7">
+  <div class="news-title">CVE-2026-47869 - HIGH (8.7)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47869 | CVSS: 8.7 | Severity: HIGH</div>
+  <div class="news-summary">VMware Avi Load Balancer contains a remote code execution vulnerability. A malicious authenticated user with network access may be able to inject and execute code.
+
+Affected versions:
+32.1.1 (fixed in 32.1.2)
+31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)
+30.1.1 through 30.2.6 (fixed in 30.2.7)
+22.1.1 ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47869" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="7.1">
+  <div class="news-title">CVE-2026-47870 - HIGH (7.1)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47870 | CVSS: 7.1 | Severity: HIGH</div>
+  <div class="news-summary">VMware Avi Load Balancer contains a privilege escalation vulnerability. A malicious authenticated user with network access may be able to execute remote code.
+
+Affected versions:
+32.1.1 (fixed in 32.1.2)
+31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)
+30.1.1 through 30.2.6 (fixed in 30.2.7)
+22.1.1 throu...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47870" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="8.8">
+  <div class="news-title">CVE-2026-47871 - HIGH (8.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-47871 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">VMware Avi Load Balancer contains a directory traversal vulnerability. Flaws in file path validation allow malicious, authenticated network users to perform directory traversal attacks.
+
+Affected versions:
+32.1.1 (fixed in 32.1.2)
+31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)
+30.1.1 through 30.2.6 (fi...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47871" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-18" data-cvss="5.3">
+  <div class="news-title">CVE-2026-16085 - MEDIUM (5.3)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-16085 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">A security vulnerability has been detected in Sipeed PicoClaw up to 0.2.9. Affected is the function NewContextBuilder of the file pkg/agent/context.go. Such manipulation leads to inclusion of functionality from untrusted control sphere. The attack needs to be performed locally. The exploit has been ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16085" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-07-18" data-cvss="4.7">
+  <div class="news-title">CVE-2026-16088 - MEDIUM (4.7)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-16088 | CVSS: 4.7 | Severity: MEDIUM</div>
+  <div class="news-summary">A vulnerability was detected in halo-dev halo up to 2.24.2. Affected by this vulnerability is the function Download of the file MigrationEndpoint.java of the component Files Backup Endpoint. Performing a manipulation results in path traversal. The attack is possible to be carried out remotely. The e...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16088" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="8.8">
+  <div class="news-title">CVE-2026-16095 - HIGH (8.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-16095 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A flaw has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. Affected by this issue is the function setup_conntrack of the file /sbin/rc. Executing a manipulation of the argument ct_tcp_timeout can lead to out-of-bounds write. The attack may be performed from remote. This project is supersed...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16095" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="8.8">
+  <div class="news-title">CVE-2026-16096 - HIGH (8.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-16096 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. This affects the function sub_40BB50 of the file /proc/webmon_recent_domains. The manipulation leads to stack-based buffer overflow. It is possible to initiate the attack remotely. This project is superseded by FreshTomato...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16096" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="8.8">
+  <div class="news-title">CVE-2026-16097 - HIGH (8.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-16097 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">A vulnerability was found in Shibby Tomato 1.28. This vulnerability affects the function sub_42537C of the component Scheduler Name Handler. The manipulation of the argument a1 results in stack-based buffer overflow. It is possible to launch the attack remotely. This project is superseded by FreshTo...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16097" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-07-18" data-cvss="8.7">
+  <div class="news-title">CVE-2026-15631 - HIGH (8.7)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-07-18</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-15631 | CVSS: 8.7 | Severity: HIGH</div>
+  <div class="news-summary">Impact: @fastify/http-proxy versions from 9.4.0 up to and including 11.5.0 fail to validate the resolved WebSocket destination path against the configured rewrite prefix. The WebSocket routing path in WebSocketProxy.findUpstream resolves the destination via the WHATWG URL constructor, which collapse...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15631" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -693,7 +723,7 @@ When the mpp Elixir library is configured as fee payer (fee_payer: true), the MP
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-07-24 08:02:14</div>
+      <div>Raport wygenerowano: 2026-07-25 08:02:27</div>
     </div>
   </div>
 
