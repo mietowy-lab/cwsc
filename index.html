@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-08-21</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-08-22</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-08-21</p>
+      <p class="sub">Dane z RSS i API | 2026-08-22</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,17 +136,17 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">50</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">51</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">14</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">320</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">384</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">323</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">388</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (50)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (51)</h3>
       <div class="news-grid" data-grid="incidents">
 <div class="card news-item incident" data-sev="none" data-date="2026-08-19" data-cvss="-1">
   <div class="news-title">Describing attacks with crime script analysis</div>
@@ -481,13 +481,41 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (320)</h3>
+      <h3>🔓 Wykryte Luki (323)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-21" data-cvss="-1.0">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-24" data-cvss="-1.0">
+  <div class="news-title">AWS EKS forensics: data sources and investigation tooling</div>
+  <div class="news-meta">
+    <span class="badge">Synacktiv</span>
+    <span>2026-08-24 00:00</span>
+  </div>
+  <div class="news-summary">
+
+
+
+ 
+
+
+
+
+
+AWS EKS forensics: data sources and investigation tooling
+
+
+24/08/2026
+
+
+CSIRT
+
+
+                   Investigating a compromise in Amazon EKS means piecing together evidence spread across three layers: the managed Kubernetes control plane, the worker nodes, and the surrounding AWS services...</div>
+  <a href="https://www.synacktiv.com/en/publications/aws-eks-forensics-data-sources-and-investigation-tooling" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-22" data-cvss="-1.0">
   <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
   <div class="news-meta">
     <span class="badge">Talos Reports</span>
-    <span>2026-08-21 00:00</span>
+    <span>2026-08-22 00:00</span>
   </div>
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
@@ -510,174 +538,226 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
   <div class="news-summary">The newly identified SPECTRE implant represents an evolution in commodity intrusion tooling, integrating cross-platform C2 operations, process injection, credential theft, anti-analysis protections, and kernel-level endpoint detection and response (EDR) bypass functionality.</div>
   <a href="https://blog.talosintelligence.com/uat-10147-deploys-spectre-a-cross-platform-implant-with-linux-rootkit-and-byovd-capabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-14" data-cvss="-1.0">
-  <div class="news-title">You’re Back In The Room (Citrix NetScaler Pre-Auth RCE CVE-2026-8452(?))</div>
-  <div class="news-meta">
-    <span class="badge">Watchtowr Labs</span>
-    <span>2026-08-14 07:08</span>
-  </div>
-  <div class="news-summary">Suddenly, you’re in a room. You look around - oh, you’re surrounded by other new starters at your new job. Yes, it’s Monday, and you’re being onboarded.You know the drill - it’s the typical enterprise “please don’t be</div>
-  <a href="https://labs.watchtowr.com/youre-back-in-the-room-citrix-netscaler-pre-auth-rce-cve-2026-8452/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-14" data-cvss="4.9">
-  <div class="news-title">CVE-2026-12743 - MEDIUM (4.9)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-15" data-cvss="5.3">
+  <div class="news-title">CVE-2026-14229 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-12743 | CVSS: 4.9 | Severity: MEDIUM</div>
-  <div class="news-summary">The affiliate-toolkit – Multi-Network Affiliate & Amazon Product Display plugin for WordPress is vulnerable to time-based SQL Injection via the 'orderby' parameter in all versions up to, and including, 3.8.8 due to insufficient escaping on the user supplied parameter and lack of sufficient preparati...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12743" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-14229 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The ECS  WordPress plugin before 4.3.8 does not check the post status or any capability when rendering an Elementor document requested through one of its AJAX actions, allowing unauthenticated users to retrieve the rendered content of unpublished (private, draft, pending) documents by supplying thei...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14229" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-14" data-cvss="9.8">
-  <div class="news-title">CVE-2026-12949 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-15" data-cvss="5.4">
+  <div class="news-title">CVE-2026-14230 - MEDIUM (5.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-12949 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The Wishlist Member plugin for WordPress is vulnerable to Account Takeover via Insufficient Verification of Data Authenticity in versions up to and including 3.34.1. This is due to the wpm_register() function validating the registration cookie only against the GET reg parameter while accepting the P...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12949" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-14230 | CVSS: 5.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The ECS  WordPress plugin before 4.3.8 does not perform capability or object-ownership checks on its Dynamic Repeater AJAX handlers (gated only by a capability-agnostic nonce that any edit_posts user obtains from the Elementor editor), so a Contributor can write a data-source binding into any post —...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14230" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-14" data-cvss="6.8">
-  <div class="news-title">CVE-2026-14290 - MEDIUM (6.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-15" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-16007 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-14290 | CVSS: 6.8 | Severity: MEDIUM</div>
-  <div class="news-summary">The Embed Google Photos album WordPress plugin through 2.2.1 does not escape a shortcode attribute value before outputting it inside an HTML attribute, allowing users with the Contributor role or above to inject arbitrary JavaScript that executes in the browser of any user, including administrators,...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14290" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-16007 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">AppFlowy's qcuiknote feature is affected by a SQL injection vulnerability. Authenticated users with access to the feature can inject arbitrary SQL to exfiltrate data in the underlying SQL database.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16007" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-14" data-cvss="8.6">
-  <div class="news-title">CVE-2026-15205 - HIGH (8.6)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-15" data-cvss="6.5">
+  <div class="news-title">CVE-2026-16541 - MEDIUM (6.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-15205 | CVSS: 8.6 | Severity: HIGH</div>
-  <div class="news-summary">The Paymob for WooCommerce WordPress plugin before 4.1.9 does not properly sanitise a client-supplied identifier before using it in a SQL query within its public, unauthenticated payment callback, and performs this query before verifying the payment provider's HMAC signature. This allows unauthentic...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15205" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-16541 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">The Simply Schedule Appointments WordPress plugin before 1.6.12.17 does not restrict the user records returned by some of its REST endpoints to those the requester is entitled to see, allowing users with a low-privileged staff role to disclose the names and email addresses of arbitrary registered us...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16541" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-14" data-cvss="5.9">
-  <div class="news-title">CVE-2026-16739 - MEDIUM (5.9)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-15" data-cvss="7.5">
+  <div class="news-title">CVE-2026-16611 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-16739 | CVSS: 5.9 | Severity: MEDIUM</div>
-  <div class="news-summary">The Epeken All Kurir for Woocommerce WordPress plugin through 2.1.2 does not verify that a payment-confirmation request originates from the owner of the targeted order, nor that any payment actually occurred, allowing unauthenticated attackers to mark arbitrary orders as confirmed and, in a non-defa...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16739" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-16611 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The Product Feed PRO for WooCommerce by AdTribes  WordPress plugin before 13.5.7 does not perform an authorization check on one of its REST read routes, allowing unauthenticated users to disclose a store's feed configuration (rules, filters and field mapping) and to enumerate the full product catego...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16611" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-14" data-cvss="6.5">
-  <div class="news-title">CVE-2026-16810 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-15" data-cvss="6.5">
+  <div class="news-title">CVE-2026-18216 - MEDIUM (6.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-16810 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">The Bit Form – Contact Form, Payment Forms, Multi Step Forms, Calculator & Custom Form Builder plugin for WordPress is vulnerable to generic SQL Injection via the 'data[queryCondition]' parameter in all versions up to, and including, 3.2.0 due to insufficient escaping on the user supplied parameter ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16810" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-18216 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">The Backup Migration WordPress plugin before 2.1.7 does not properly restrict a post-restore automatic login mechanism, allowing a user who administers one site of a multisite network to obtain a long-lived authenticated session as an administrator of another site in the same network, without creden...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18216" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-14" data-cvss="8.1">
-  <div class="news-title">CVE-2026-18039 - HIGH (8.1)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-15" data-cvss="4.3">
+  <div class="news-title">CVE-2026-18807 - MEDIUM (4.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-18039 | CVSS: 8.1 | Severity: HIGH</div>
-  <div class="news-summary">The Essential Addons for Elementor  WordPress plugin before 6.7.2 does not prevent user-supplied registration fields from overwriting reserved account attributes, allowing unauthenticated attackers to register an account with an arbitrary role, including administrator, on sites where a custom profil...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18039" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-18807 | CVSS: 4.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The ECS  WordPress plugin before 4.3.8 does not have capability or ownership checks on its dynamic repeater actions, relying only on a nonce available to any user who can open the page builder, allowing users with a contributor-level account or above to read, alter and delete the binding configurati...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18807" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-14" data-cvss="5.5">
-  <div class="news-title">CVE-2026-19617 - MEDIUM (5.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-15" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-68455 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-19617 | CVSS: 5.5 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw was found in libdm. A local attacker could craft a malicious Logical Volume Manager (LVM) metadata configuration with deeply nested structures. This could lead to uncontrolled recursion in the libdm configuration file parser, exhausting the stack and causing any LVM command reading the metada...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19617" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-68455 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+liveupdate: validate session type before performing operation
+
+The sessions ioctls are not applicable to all session types. PRESERVE_FD
+is only applicable to outgoing sessions. RETRIEVE_FD and FINISH are only
+valid for incoming ses...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68455" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-14" data-cvss="8.8">
-  <div class="news-title">CVE-2026-19811 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-15" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-68456 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-19811 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">A security flaw has been discovered in TOTOLINK A800R 4.1.2cu.5137_B20200730. The impacted element is the function setIpQosRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. The manipulation of the argument Comment results in stack-based buffer overflow. The attack can be executed ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19811" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-68456 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+usb: atm: ueagle-atm: wait for pre-firmware load in .disconnect()
+
+ueagle-atm uses the asynchronous request_firmware_nowait() in .probe(),
+but does not wait for its completion, not even in .disconnect(); so, if the
+device is unplug...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68456" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-14" data-cvss="7.2">
-  <div class="news-title">CVE-2026-19794 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-15" data-cvss="9.1">
+  <div class="news-title">CVE-2026-68457 - CRITICAL (9.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-19794 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">The WP-Stats plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 2.56 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenev...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19794" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-68457 | CVSS: 9.1 | Severity: CRITICAL</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+ksmbd: use opener credentials for FSCTL mutations
+
+SET_SPARSE, SET_ZERO_DATA and SET_COMPRESSION operate on an open SMB
+handle but call VFS xattr, fallocate or fileattr helpers with the current
+ksmbd worker credentials. Those helpe...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68457" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-14" data-cvss="8.8">
-  <div class="news-title">CVE-2026-19812 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-15" data-cvss="7.8">
+  <div class="news-title">CVE-2026-68458 - HIGH (7.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-19812 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">A weakness has been identified in TOTOLINK A800R 4.1.2cu.5137_B20200730. This affects the function UploadCustomModule of the file /cgi-bin/cstecgi.cgi of the component product.so. This manipulation of the argument File causes stack-based buffer overflow. The attack is possible to be carried out remo...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19812" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-68458 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+binder: cache secctx size before release zeroes it
+
+binder_transaction() bounds the scatter-gather buffer area with
+sg_buf_end_offset and subtracts the aligned LSM context size because
+the secctx is written at the tail of that area...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68458" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-14" data-cvss="8.8">
-  <div class="news-title">CVE-2026-19813 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-15" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-68459 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-19813 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">A security vulnerability has been detected in TOTOLINK A800R 4.1.2cu.5137_B20200730. This impacts the function setMacFilterRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. Such manipulation of the argument Comment leads to stack-based buffer overflow. The attack may be performed ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19813" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-68459 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+f2fs: fix potential deadlock in gc_merge path of f2fs_balance_fs()
+
+When we mount device w/ gc_merge mount option, we may suffer below
+potential deadlock:
+
+Kworker					GC trehad			Truncator
+- f2fs_write_cache_pages
+ - f2fs_write_si...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68459" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-14" data-cvss="8.8">
-  <div class="news-title">CVE-2026-19814 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-15" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-68460 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-19814 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability was detected in TOTOLINK A800R 4.1.2cu.5137_B20200730. Affected is the function setMacQos of the file /cgi-bin/cstecgi.cgi of the component firewall.so. Performing a manipulation of the argument macAddress results in stack-based buffer overflow. It is possible to initiate the attack ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19814" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-68460 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+f2fs: fix potential deadlock in f2fs_balance_fs()
+
+When the f2fs filesystem space is nearly exhausted, we encounter deadlock
+issues as below:
+
+INFO: task A:1890 blocked for more than 120 seconds.
+      Tainted: G           O       ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68460" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-14" data-cvss="8.8">
-  <div class="news-title">CVE-2026-19815 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-15" data-cvss="7.8">
+  <div class="news-title">CVE-2026-68461 - HIGH (7.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-19815 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">A flaw has been found in TOTOLINK A800R 4.1.2cu.5137_B20200730. Affected by this vulnerability is the function setParentalRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. Executing a manipulation of the argument urlKeyword can lead to stack-based buffer overflow. It is possible t...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19815" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-68461 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+device property: initialize the remaining fields of fwnode_handle in fwnode_init()
+
+If a firmware node is allocated on the stack (for instance: temporary
+software node whose life-time we control) or on the heap - but using a
+non-ze...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68461" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-14" data-cvss="8.8">
-  <div class="news-title">CVE-2026-19821 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-15" data-cvss="7.8">
+  <div class="news-title">CVE-2026-68462 - HIGH (7.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-19821 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability was determined in Tenda AC12 15.03.06.23_multi_TD01. This vulnerability affects the function formSetRebootTimer of the file /goform/SetSysAutoRebbotCfg of the component httpd web management interface. This manipulation of the argument rebootTime causes buffer overflow. The attack may...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19821" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-68462 | CVSS: 7.8 | Severity: HIGH</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+bpf: Reject negative const offsets for buffer pointers
+
+The verifier rejects variable offsets for PTR_TO_TP_BUFFER and PTR_TO_BUF
+accesses, but it currently accepts a constant negative offset produced by
+pointer arithmetic.
+
+Commit...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68462" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-14" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-71405 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-15" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-68463 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-14</span>
+    <span>2026-08-15</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-71405 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">chi versions before v5.2.2 contain an open redirect vulnerability in the RedirectSlashes middleware function that uses the Host header to construct redirect URLs. Attackers can manipulate the Host header to redirect users to arbitrary hosts, enabling phishing attacks and credential theft.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-71405" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-68463 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In the Linux kernel, the following vulnerability has been resolved:
+
+mmc: sdhci-esdhc-imx: use pm_runtime_resume_and_get() in suspend
+
+Replace pm_runtime_get_sync() with pm_runtime_resume_and_get() to
+simplify error handling. pm_runtime_resume_and_get() automatically
+drops the usage counter on failu...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68463" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -685,7 +765,7 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-08-21 08:02:08</div>
+      <div>Raport wygenerowano: 2026-08-22 08:02:27</div>
     </div>
   </div>
 
