@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-08-27</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-08-28</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-08-27</p>
+      <p class="sub">Dane z RSS i API | 2026-08-28</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,9 +137,9 @@
 
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">51</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">15</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">16</a></div><div class="kpi-label">Zagrożenia</div></div>
         <div class="card"><div class="kpi-num"><a href="#vulnerabilities">324</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">390</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">391</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -289,7 +289,7 @@ Before diving into that discussion, we’ll first outline the most common attack
     <span>2025-10-01 00:00</span>
   </div>
   <div class="news-summary"></div>
-  <a href="https://kaist-hacking.github.io/publication/kim-crossx/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <a href="https://hacking.kaist.ac.kr/publication/kim-crossx/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item incident" data-sev="none" data-date="2025-09-03" data-cvss="-1">
   <div class="news-title">Cookie Chaos: How to bypass __Host and __Secure cookie prefixes</div>
@@ -344,8 +344,17 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (15)</h3>
+      <h3>⚠️ Nowe Zagrożenia (16)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-08-27" data-cvss="-1">
+  <div class="news-title">JavaScript obfuscation: From party trick to phishing kit</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-08-27 10:00</span>
+  </div>
+  <div class="news-summary">Learn the basics of what obfuscation is, why a researcher would try to reverse it, and several ways to approach the problem.</div>
+  <a href="https://blog.talosintelligence.com/javascript-obfuscation-from-party-trick-to-phishing-kit/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-08-25" data-cvss="-1">
   <div class="news-title">What's in a tag name? JavaScript, apparently</div>
   <div class="news-meta">
@@ -436,7 +445,7 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
     <span>2026-02-01 00:00</span>
   </div>
   <div class="news-summary"></div>
-  <a href="https://kaist-hacking.github.io/publication/lee-rtcon/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <a href="https://hacking.kaist.ac.kr/publication/lee-rtcon/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2025-10-08" data-cvss="-1">
   <div class="news-title">Securing the Future: Changes to Internet Explorer Mode in Microsoft Edge</div>
@@ -492,6 +501,24 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
     <div class="section" id="vulnerabilities">
       <h3>🔓 Wykryte Luki (324)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-28" data-cvss="-1.0">
+  <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-08-28 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">“Sorry, I can’t help with that”: How your guardrails might become the attacker’s best friend</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-08-27 18:00</span>
+  </div>
+  <div class="news-summary">In his first Threat Source newsletter, David Bianco explores the critical need for operational sovereignty in customizing AI guardrails to maintain the defender’s advantage.</div>
+  <a href="https://blog.talosintelligence.com/sorry-i-cant-help-with-that-how-your-guardrails-might-become-the-attackers-best-friend/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
   <div class="news-title">Breaking Claude Code Opus 5 Auto Mode</div>
   <div class="news-meta">
@@ -502,15 +529,6 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
 
 This is interesting because a third-party evaluation commissioned by Anthropic showed a 0.00% prompt injection...</div>
   <a href="https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
-  <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-08-27 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-08-26" data-cvss="-1.0">
   <div class="news-title">I pointed an agent at a bootloader. It found bugs but not useful ones</div>
@@ -558,153 +576,147 @@ CSIRT
                    Investigating a compromise in Amazon EKS means piecing together evidence spread across three layers: the managed Kubernetes control plane, the worker nodes, and the surrounding AWS services...</div>
   <a href="https://www.synacktiv.com/en/publications/aws-eks-forensics-data-sources-and-investigation-tooling" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-20" data-cvss="-1.0">
-  <div class="news-title">BTR Reforged: Weaponizing Defender’s Remediation Driver as a Kernel Operation Primitive</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-08-20 13:07</span>
-  </div>
-  <div class="news-summary">Research by: Jiří Vinopal (@vinopaljiri) Abstract What if a trusted security component could be repurposed into an attacker-controlled kernel primitive? What if a signed Microsoft remediation driver could be instructed to execute arbitrary file and registry operations from Ring 0 – without exploits,...</div>
-  <a href="https://research.checkpoint.com/2026/btr-reforged-weaponizing-defenders-remediation-driver-as-a-kernel-operation-primitive/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-20" data-cvss="-1.0">
-  <div class="news-title">UAT-10147 deploys SPECTRE: A cross-platform implant with Linux rootkit and BYOVD capabilities</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-08-20 10:00</span>
-  </div>
-  <div class="news-summary">The newly identified SPECTRE implant represents an evolution in commodity intrusion tooling, integrating cross-platform C2 operations, process injection, credential theft, anti-analysis protections, and kernel-level endpoint detection and response (EDR) bypass functionality.</div>
-  <a href="https://blog.talosintelligence.com/uat-10147-deploys-spectre-a-cross-platform-implant-with-linux-rootkit-and-byovd-capabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-20" data-cvss="6.6">
-  <div class="news-title">CVE-2026-13405 - MEDIUM (6.6)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-21" data-cvss="5.4">
+  <div class="news-title">CVE-2025-15671 - MEDIUM (5.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-13405 | CVSS: 6.6 | Severity: MEDIUM</div>
-  <div class="news-summary">The Royal Addons for Elementor  WordPress plugin before 1.7.1066 does not correctly sanitise custom widget markup before writing it to a file that is later executed, allowing users with the manage_options capability (and, on WordPress Multisite, non-super subsite administrators who do not otherwise ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13405" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-15671 | CVSS: 5.4 | Severity: MEDIUM</div>
+  <div class="news-summary">The Welcart e-Commerce WordPress plugin before 2.12.1 does not regenerate the session identifier on authentication and sets the session identifier from a user-supplied request parameter, allowing an unauthenticated attacker to fixate a shop member's session and take over their customer account after...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15671" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-20" data-cvss="7.2">
-  <div class="news-title">CVE-2026-15049 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-21" data-cvss="5.3">
+  <div class="news-title">CVE-2026-13736 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-15049 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">The Depicter — Popup & Slider Builder WordPress plugin before 4.8.0 does not validate the type of a file uploaded through its import feature and does not remove a malformed upload, allowing users with editor-level access to write an arbitrary file (including executable PHP) into a web-accessible dir...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15049" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-13736 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The NewPath WildApricotPress Add-on  WordPress plugin through 1.0.0 does not enforce its members-only field privacy on an unauthenticated REST route, allowing anonymous visitors to read member email addresses and phone numbers that are configured to be visible to members only.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13736" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-20" data-cvss="5.3">
-  <div class="news-title">CVE-2026-17153 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-21" data-cvss="3.5">
+  <div class="news-title">CVE-2026-14325 - LOW (3.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-17153 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The AI Agent by SiteGround plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.2.7. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to upload images to...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-17153" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-14325 | CVSS: 3.5 | Severity: LOW</div>
+  <div class="news-summary">The Drag and Drop Multiple File Upload for Contact Form 7 WordPress plugin before 1.3.9.9 does not escape one of its settings before using it as an HTML tag name in front-end output, allowing users with administrator access to inject arbitrary web scripts that execute on any front-end page rendering...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14325" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-20" data-cvss="6.8">
-  <div class="news-title">CVE-2026-19615 - MEDIUM (6.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-21" data-cvss="6.8">
+  <div class="news-title">CVE-2026-14601 - MEDIUM (6.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-19615 | CVSS: 6.8 | Severity: MEDIUM</div>
-  <div class="news-summary">The Admin and Site Enhancements (ASE) WordPress plugin before 9.0.1 does not sanitise uploaded SVG files on every route it accepts them through, allowing users with a role the site owner granted upload access to store a file containing JavaScript which then executes in the browser of anyone who open...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19615" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-14601 | CVSS: 6.8 | Severity: MEDIUM</div>
+  <div class="news-summary">The Link Whisper Free WordPress plugin before 0.9.7 does not properly sanitize and escape a parameter before using it in a SQL query, allowing authenticated users with the Editor role or above to perform SQL injection attacks.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14601" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-20" data-cvss="6.8">
-  <div class="news-title">CVE-2026-19697 - MEDIUM (6.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-21" data-cvss="5.3">
+  <div class="news-title">CVE-2026-16575 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-19697 | CVSS: 6.8 | Severity: MEDIUM</div>
-  <div class="news-summary">The GutenKit  WordPress plugin before 2.5.0 does not sanitise uploaded SVG files on all of the upload paths it enables, allowing users with the file upload capability, such as Author, to upload a malicious SVG and perform Stored Cross-Site Scripting attacks against any user opening it, including adm...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19697" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-16575 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The Dokan: AI Powered WooCommerce Multivendor Marketplace Solution  WordPress plugin before 5.0.14 does not restrict access to per-vendor commission configuration returned by one of its unauthenticated store REST endpoints, allowing any unauthenticated user to disclose a vendor's commission type and...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16575" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-20" data-cvss="2.7">
-  <div class="news-title">CVE-2026-19699 - LOW (2.7)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-21" data-cvss="7.2">
+  <div class="news-title">CVE-2026-16576 - HIGH (7.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-19699 | CVSS: 2.7 | Severity: LOW</div>
-  <div class="news-summary">The GutenKit  WordPress plugin before 2.5.0 does not have a sufficient capability check on some of its REST API endpoints, allowing users with the Contributor role and above to retrieve mailing-list audience metadata from the site's connected marketing account.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19699" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-16576 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The Dokan: AI Powered WooCommerce Multivendor Marketplace Solution  WordPress plugin before 5.0.14 does not correctly check user capabilities on some of its admin REST API routes, checking only for a WooCommerce management capability instead of the Dokan: AI Powered WooCommerce Multivendor Marketpla...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16576" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-20" data-cvss="3.7">
-  <div class="news-title">CVE-2026-73542 - LOW (3.7)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-21" data-cvss="2.7">
+  <div class="news-title">CVE-2026-16577 - LOW (2.7)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-73542 | CVSS: 3.7 | Severity: LOW</div>
-  <div class="news-summary">Multiple SEIKO EPSON printers and scanners contain revoked root certificates. A man-in-the-middle attack may allow an attacker to obtain communication data transmitted by the product. As for the details of the affected products and versions, refer to the vendor's information.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-73542" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-16577 | CVSS: 2.7 | Severity: LOW</div>
+  <div class="news-summary">The Dokan: AI Powered WooCommerce Multivendor Marketplace Solution  WordPress plugin before 5.0.14 does not validate a client-supplied payment amount against the vendor's actual outstanding balance when recording a reverse-withdrawal payment, allowing a vendor to credit their reverse-withdrawal ledg...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16577" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-20" data-cvss="6.8">
-  <div class="news-title">CVE-2026-74992 - MEDIUM (6.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-21" data-cvss="6.8">
+  <div class="news-title">CVE-2026-16959 - MEDIUM (6.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-74992 | CVSS: 6.8 | Severity: MEDIUM</div>
-  <div class="news-summary">The Kirki  WordPress plugin before 6.2.3 does not properly validate the files contained in archives uploaded by users with the Editor role, and does not remove all unwanted files after extracting them, allowing such users to upload arbitrary files to a web accessible directory, leading to Stored XSS...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-74992" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-16959 | CVSS: 6.8 | Severity: MEDIUM</div>
+  <div class="news-summary">The Media Library Assistant WordPress plugin before 3.40 does not validate a search parameter before concatenating it into a SQL query in one of its media-library query handlers, allowing users with the Author role to perform SQL injection.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16959" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-20" data-cvss="9.8">
-  <div class="news-title">CVE-2026-75860 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-21" data-cvss="5.3">
+  <div class="news-title">CVE-2026-16962 - MEDIUM (5.3)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-75860 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The JSON Options WordPress plugin through 0.0.4 does not have any capability check or nonce verification on one of its actions, which runs on every request and is available to unauthenticated users, allowing them to update arbitrary WordPress options. This can be leveraged to enable user registratio...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75860" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-16962 | CVSS: 5.3 | Severity: MEDIUM</div>
+  <div class="news-summary">The Tamara Checkout WordPress plugin through 1.9.9.20 does not verify the order key, a nonce, or any capability on its public payment cancel/fail return URLs, changing a WooCommerce order's status based solely on an attacker-supplied numeric order id, so an unauthenticated attacker can cancel or fai...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16962" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-20" data-cvss="7.5">
-  <div class="news-title">CVE-2026-75963 - HIGH (7.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-21" data-cvss="8.1">
+  <div class="news-title">CVE-2026-18781 - HIGH (8.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-75963 | CVSS: 7.5 | Severity: HIGH</div>
-  <div class="news-summary">The Events Made Easy plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.2.5 via the eme_single_event_page_template function. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary ....</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75963" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-18781 | CVSS: 8.1 | Severity: HIGH</div>
+  <div class="news-summary">The Drag and Drop Multiple File Upload for Contact Form 7 WordPress plugin before 1.3.9.9 does not validate the final name of an uploaded file after stripping characters from it, allowing unauthenticated users to defeat its file type restrictions and execute arbitrary code on the server.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18781" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-20" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-14602 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-21" data-cvss="2.7">
+  <div class="news-title">CVE-2026-19085 - LOW (2.7)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-14602 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">The application generates uploaded file names using a weak and predictable method based on the request timestamp. This allows a remote attacker to accurately guess or brute-force the generated filename within a short time window. An attacker can successfully locate and access uploaded files, which c...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14602" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-19085 | CVSS: 2.7 | Severity: LOW</div>
+  <div class="news-summary">The Duplicate Post WordPress plugin before 1.5.6 does not check that a user may read the content of a post before duplicating it, allowing users with a delegated role to republish another user's password-protected post as publicly readable.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19085" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-20" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-14163 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-21" data-cvss="2.7">
+  <div class="news-title">CVE-2026-19435 - LOW (2.7)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-14163 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">In affected versions of Octopus Server under certain circumstances it is possible for sensitive variables to be printed in the deployment variable snapshot in clear-text.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14163" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-19435 | CVSS: 2.7 | Severity: LOW</div>
+  <div class="news-summary">The Duplicate Post WordPress plugin before 1.5.6 does not check the user's capabilities before returning post data, allowing users with a delegated role to read the content, metadata and passwords of posts they are not allowed to access, including other users' private and draft content.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19435" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-20" data-cvss="6.1">
-  <div class="news-title">CVE-2026-71368 - MEDIUM (6.1)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-21" data-cvss="7.2">
+  <div class="news-title">CVE-2026-75796 - HIGH (7.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-20</span>
+    <span>2026-08-21</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-71368 | CVSS: 6.1 | Severity: MEDIUM</div>
-  <div class="news-summary">F-RevoCRM contains a cross-site scripting vulnerability. If a user views a crafted page while logged in to the affected product, unintended operations may be performed.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-71368" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-75796 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The AI Engine  WordPress plugin before 3.6.1 does not verify that the requesting user is authorized to act on the targeted account before performing privileged user management operations, allowing users with the Administrator role on a Multisite sub-site to take over any account on the network, incl...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75796" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-21" data-cvss="7.5">
+  <div class="news-title">CVE-2026-16323 - HIGH (7.5)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-08-21</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-16323 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">Execution after redirect (EAR) vulnerability in FuyaWeb Internet and Informatics Services ArchitectPanel Web Admin Panel allows Authentication Bypass.
+
+This issue affects ArchitectPanel Web Admin Panel: through 28072026.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16323" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -712,7 +724,7 @@ CSIRT
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-08-27 08:02:13</div>
+      <div>Raport wygenerowano: 2026-08-28 08:02:12</div>
     </div>
   </div>
 
