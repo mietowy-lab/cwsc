@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-09-01</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-09-03</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-09-01</p>
+      <p class="sub">Dane z RSS i API | 2026-09-03</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,9 +137,9 @@
 
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">51</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">16</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">324</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">391</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">17</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">322</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">390</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -344,8 +344,17 @@ The post Red Teaming with ServiceNow appeared first on MDSec.</div>
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (16)</h3>
+      <h3>⚠️ Nowe Zagrożenia (17)</h3>
       <div class="news-grid" data-grid="threats">
+<div class="card news-item threat" data-sev="none" data-date="2026-09-02" data-cvss="-1">
+  <div class="news-title">Gaming the system: how a Chinese-speaking actor turned Brazilian government sites into an SEO weapon</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-09-02 10:16</span>
+  </div>
+  <div class="news-summary">Research by: Amit Yardeni Key Points Introduction Since mid-2025, Check Point Research has tracked a sustained campaign against Brazilian organizations. The tradecraft points to a Chinese-speaking cybercrime group connected to Earth Berberoka, an actor first documented targeting gambling sites acros...</div>
+  <a href="https://research.checkpoint.com/2026/gaming-the-system-how-a-chinese-speaking-actor-turned-brazilian-government-sites-into-an-seo-weapon/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item threat" data-sev="none" data-date="2026-08-31" data-cvss="-1">
   <div class="news-title">Breaking the Seal: Static Deobfuscation of JSCeal’s Compiled V8 Bytecode</div>
   <div class="news-meta">
@@ -499,13 +508,13 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (324)</h3>
+      <h3>🔓 Wykryte Luki (322)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-01" data-cvss="-1.0">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-03" data-cvss="-1.0">
   <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
   <div class="news-meta">
     <span class="badge">Talos Reports</span>
-    <span>2026-09-01 00:00</span>
+    <span>2026-09-03 00:00</span>
   </div>
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
@@ -558,163 +567,165 @@ Pentest
 This is interesting because a third-party evaluation commissioned by Anthropic showed a 0.00% prompt injection...</div>
   <a href="https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-26" data-cvss="-1.0">
-  <div class="news-title">I pointed an agent at a bootloader. It found bugs but not useful ones</div>
-  <div class="news-meta">
-    <span class="badge">Low Level Adventures</span>
-    <span>2026-08-26 11:02</span>
-  </div>
-  <div class="news-summary">Now that we're past the sensational headline, let's be real. This is the first post in a series about using AI/LLMs to do security work. I know, I know. Everybody and their grandma is using AI for this nowadays. Every time I'm opening</div>
-  <a href="https://0x434b.dev/i-pointed-an-agent-at-a-bootloader-it-found-bugs-but-not-useful-ones/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-26" data-cvss="-1.0">
-  <div class="news-title">Adobe Photoshop Installation privilege escalation vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-08-26 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2360" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-25" data-cvss="-1.0">
-  <div class="news-title">CVE-2025-41741 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22289 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-41741 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41741" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22289 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22289" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-25" data-cvss="4.3">
-  <div class="news-title">CVE-2026-78466 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22328 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-78466 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Fluent Boards Pro plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 2.0.11 due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with Subscriber-level access and above, to perform an unau...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-78466" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22328 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22328" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-25" data-cvss="4.3">
-  <div class="news-title">CVE-2026-78467 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22343 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-78467 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Fluent Support Pro plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on a function in all versions up to, and including, 2.3.1. This makes it possible for authenticated attackers, with Subscriber-level access and above, to perform an unauthorized action.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-78467" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22343 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22343" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-25" data-cvss="6.5">
-  <div class="news-title">CVE-2026-78470 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22352 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-78470 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">The WP Project Manager Pro plugin for WordPress is vulnerable to SQL Injection in all versions up to, and including, 4.0.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for authenticated attackers, wi...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-78470" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22352 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22352" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-25" data-cvss="9.8">
-  <div class="news-title">CVE-2026-78477 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22364 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-78477 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The Jawn theme for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.4.2. This makes it possible for unauthenticated attackers to elevate their privileges to that of an administrator.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-78477" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22364 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22364" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-25" data-cvss="8.1">
-  <div class="news-title">CVE-2026-78478 - HIGH (8.1)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22420 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-78478 | CVSS: 8.1 | Severity: HIGH</div>
-  <div class="news-summary">The Mane theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.7. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass a...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-78478" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22420 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22420" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-25" data-cvss="3.3">
-  <div class="news-title">CVE-2026-78638 - LOW (3.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22423 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-78638 | CVSS: 3.3 | Severity: LOW</div>
-  <div class="news-summary">A flaw has been found in peerigon unzip-crx and unzip-crx-3 up to 0.2.0. This affects the function unzip of the file dist/index.js of the component Archive Extraction. Executing a manipulation of the argument destination can lead to path traversal. The attack can only be executed locally. The exploi...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-78638" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22423 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22423" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-25" data-cvss="7.3">
-  <div class="news-title">CVE-2026-78654 - HIGH (7.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22426 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-78654 | CVSS: 7.3 | Severity: HIGH</div>
-  <div class="news-summary">A vulnerability has been found in cleverbrush framework and deep up to 4.4.0. This impacts the function deepExtend of the file libs/deep/src/deepExtend.ts. The manipulation leads to improperly controlled modification of object prototype attributes. Remote exploitation of the attack is possible. The ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-78654" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22426 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-25" data-cvss="7.8">
-  <div class="news-title">CVE-2026-66109 - HIGH (7.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22430 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-66109 | CVSS: 7.8 | Severity: HIGH</div>
-  <div class="news-summary">A missing authorization vulnerability exists in SKYSEA Client View and SKYMEC IT Manager. If this vulnerability is exploited, an attacker who can log in to the Windows system on which the affected product is installed may execute arbitrary code with SYSTEM privilege.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-66109" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22430 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22430" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-25" data-cvss="8.5">
-  <div class="news-title">CVE-2026-68062 - HIGH (8.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22433 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-68062 | CVSS: 8.5 | Severity: HIGH</div>
-  <div class="news-summary">SKYSEA Client View and SKYMEC IT Manager contain a path traversal vulnerability. If this vulnerability is exploited, an attacker who can log in to a Windows system on which the affected product is installed may be able to execute arbitrary code on another Windows system that has the affected product...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68062" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22433 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22433" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-25" data-cvss="8.5">
-  <div class="news-title">CVE-2026-68959 - HIGH (8.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22434 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-68959 | CVSS: 8.5 | Severity: HIGH</div>
-  <div class="news-summary">SKYSEA Client View and SKYMEC IT Manager contain a path traversal vulnerability. If this vulnerability is exploited, an attacker who can log in to a Windows system on which the affected product is installed may be able to execute arbitrary code on another Windows system that has the affected product...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68959" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22434 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22434" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-25" data-cvss="8.5">
-  <div class="news-title">CVE-2026-68960 - HIGH (8.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22437 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-68960 | CVSS: 8.5 | Severity: HIGH</div>
-  <div class="news-summary">A stack-based buffer overflow vulnerability exists in SKYSEA Client View and SKYMEC IT Manager. If this vulnerability is exploited, an attacker who can log in to a Windows system on which the affected product is installed may be able to execute arbitrary code on another Windows system that has the a...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68960" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22437 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22437" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-08-25" data-cvss="7.8">
-  <div class="news-title">CVE-2026-69665 - HIGH (7.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22445 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-69665 | CVSS: 7.8 | Severity: HIGH</div>
-  <div class="news-summary">SKYSEA Client View and SKYMEC IT Manager contain an issue with incorrect default permissions. If this vulnerability is exploited, an attacker who can log in to a Windows system on which the affected product is installed may execute arbitrary code with SYSTEM privilege.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-69665" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22445 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22445" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-08-25" data-cvss="6.3">
-  <div class="news-title">CVE-2026-78656 - MEDIUM (6.3)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-22446 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-08-25</span>
+    <span>2026-08-27</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-78656 | CVSS: 6.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A vulnerability was found in itsourcecode Sales and Inventory System 1.0. Affected is an unknown function of the file /pages/cust_del.php. The manipulation of the argument ID results in sql injection. The attack can be executed remotely. The exploit has been made public and could be used.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-78656" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2023-22446 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22446" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-23544 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-08-27</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2023-23544 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-23544" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">CVE-2023-27503 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-08-27</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2023-27503 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority because it is Unused</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-27503" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -722,7 +733,7 @@ This is interesting because a third-party evaluation commissioned by Anthropic s
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-09-01 08:02:11</div>
+      <div>Raport wygenerowano: 2026-09-03 08:02:51</div>
     </div>
   </div>
 
