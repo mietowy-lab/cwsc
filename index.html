@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-09-12</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-09-15</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-09-12</p>
+      <p class="sub">Dane z RSS i API | 2026-09-15</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,8 +136,8 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">53</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">16</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">54</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">15</a></div><div class="kpi-label">Zagrożenia</div></div>
         <div class="card"><div class="kpi-num"><a href="#vulnerabilities">323</a></div><div class="kpi-label">Luki</div></div>
         <div class="card"><div class="kpi-num"><a href="#top">392</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
@@ -146,8 +146,17 @@
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (53)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (54)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-09-14" data-cvss="-1">
+  <div class="news-title">14th September – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-09-14 12:22</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 14th Setpember, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES IDScan.net, a US identity verification provider, has disclosed a data breach after detecting unauthorized access on September 1. Exposed data includ...</div>
+  <a href="https://research.checkpoint.com/2026/14th-september-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-09-10" data-cvss="-1">
   <div class="news-title">PuzzleMask: Abusing Plain Prose as a Covert AI Attack Vector</div>
   <div class="news-meta">
@@ -327,15 +336,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   <div class="news-summary">I recently presented at the DEF CON 33 Mainstage and the 12th Crypto & Privacy Village on weaknesses in implementations of Google’s Privacy Sandbox that subverted privacy protections and enabled deanonymization attacks.</div>
   <a href="https://spaceraccoon.dev/client-side-deanonymization-attacks-privacy-sandbox-apis/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-07-27" data-cvss="-1">
-  <div class="news-title">Getting a Shell on the LAU-G150-C Optical Network Terminal</div>
-  <div class="news-meta">
-    <span class="badge">Spaceraccoon</span>
-    <span>2025-07-27 12:00</span>
-  </div>
-  <div class="news-summary">Since the Link-All LAU-G150-C Optical Network Terminal isn’t documented anywhere, I thought this was a great opportunity to practice some hardware hacking…</div>
-  <a href="https://spaceraccoon.dev/getting-shell-lau-g150-c-optical-network-terminal/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -343,7 +343,7 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (16)</h3>
+      <h3>⚠️ Nowe Zagrożenia (15)</h3>
       <div class="news-grid" data-grid="threats">
 <div class="card news-item threat" data-sev="none" data-date="2026-09-08" data-cvss="-1">
   <div class="news-title">ClearFake WebDAV infection chain delivers Amatera stealer, ZigCryptoStealer, and NetSupport Manager</div>
@@ -407,15 +407,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   </div>
   <div class="news-summary">Research by: Jaromír Hořejší (@JaromirHorejsi) Key points Introduction We first noticed a ransomware family called StopAndProtect in the middle of May 2026. Further analysis of the infrastructure reveals that the infection chain starts with a ClickFix social-engineering technique, which prompts vict...</div>
   <a href="https://research.checkpoint.com/2026/thousands-of-hacked-wordpress-sites-one-operation-unmasking-stopandprotect/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2026-08-17" data-cvss="-1">
-  <div class="news-title">17th August – Threat Intelligence Report</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-08-17 13:37</span>
-  </div>
-  <div class="news-summary">For the latest discoveries in cyber research for the week of 17th August, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Colombia’s Ministry of Justice has experienced a ransomware attack that affected part of its technology infrastructure and disrupted public services re...</div>
-  <a href="https://research.checkpoint.com/2026/17th-august-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2026-07-20" data-cvss="-1">
   <div class="news-title">Autonomous AI Intrusions Are Here: Lessons from the Hugging Face Compromise</div>
@@ -509,20 +500,20 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
   <div class="news-summary"></div>
   <a href="https://hacking.kaist.ac.kr/publication/kim-patchisland/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-12" data-cvss="-1.0">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-15" data-cvss="-1.0">
   <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
   <div class="news-meta">
     <span class="badge">Talos Reports</span>
-    <span>2026-09-12 00:00</span>
+    <span>2026-09-15 00:00</span>
   </div>
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-12" data-cvss="-1.0">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-15" data-cvss="-1.0">
   <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamPrepareRequestForMoreProcessing Type Confusion vulnerability</div>
   <div class="news-meta">
     <span class="badge">Talos Reports</span>
-    <span>2026-09-12 00:00</span>
+    <span>2026-09-15 00:00</span>
   </div>
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2445" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
@@ -584,115 +575,129 @@ We believe responsible disclosure g...</div>
   <div class="news-summary">Many security bugs are race conditions, where multi-threaded execution has to occur with the right interleaving for a negative effect to appear. This creates challenges for several use cases: Confirming bug candidates that have been discovered manually or through static analysis. Regression tests: A...</div>
   <a href="https://projectzero.google/2026/09/maccconc-race-condition.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-05" data-cvss="5.4">
-  <div class="news-title">CVE-2025-14945 - MEDIUM (5.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-08" data-cvss="7.5">
+  <div class="news-title">CVE-2026-48888 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-09-05</span>
+    <span>2026-09-08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-14945 | CVSS: 5.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Events Manager - Calendar, Bookings, Tickets, and more! plugin for WordPress is vulnerable to Stored Cross-Site Scripting via event attribute values in all versions up to, and including, 7.3.3. This is due to insufficient input sanitization when storing attribute values (using only `wp_unslash()...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-14945" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-48888 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">Allocation of Resources Without Limits or Throttling vulnerability in Automattic WooCommerce allows HTTP DoS.
+
+This issue affects WooCommerce: from n/a before 11.1.0.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48888" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-05" data-cvss="9.8">
-  <div class="news-title">CVE-2026-13447 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-08" data-cvss="9.8">
+  <div class="news-title">CVE-2026-71374 - CRITICAL (9.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-09-05</span>
+    <span>2026-09-08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-13447 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The Mstore Api plugin for WordPress is vulnerable to Authentication Bypass via JWT Forgery in versions up to, and including, 4.20.0 This is due to missing cryptographic signature verification in the FirebasePhoneAuthHelper::verify_id_token() function, which decodes and validates Firebase ID token cl...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13447" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-71374 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">Deserialization of untrusted data vulnerability in Cosminexus Component Container.
+
+This issue affects Cosminexus Component Container: from 11-70-01 before 11-70-03, from 11-60 before 11-60-03, from 11-50 through 11-50-03, from 11-40 through 11-40-03, from 11-30 through 11-30-08, from 11-20 before 1...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-71374" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-05" data-cvss="6.4">
-  <div class="news-title">CVE-2026-18404 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-08" data-cvss="7.4">
+  <div class="news-title">CVE-2026-71375 - HIGH (7.4)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-09-05</span>
+    <span>2026-09-08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-18404 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Social Chat – Click To Chat App Button plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'consent_message' JSON Attribute in .qlwapp data-box in all versions up to, and including, 8.6.2 due to insufficient input sanitization and output escaping. This makes it possible for aut...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18404" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-71375 | CVSS: 7.4 | Severity: HIGH</div>
+  <div class="news-summary">Improper restriction of XML external entity reference vulnerability in Cosminexus Component Container.
+
+This issue affects Cosminexus Component Container: from 11-70-01 before 11-70-03, from 11-60 before 11-60-03, from 11-50 through 11-50-03, from 11-40 through 11-40-03, from 11-30 through 11-30-08,...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-71375" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-05" data-cvss="7.2">
-  <div class="news-title">CVE-2026-77233 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-08" data-cvss="7.2">
+  <div class="news-title">CVE-2026-76561 - HIGH (7.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-09-05</span>
+    <span>2026-09-08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-77233 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">The iubenda | All-in-one Compliance for GDPR / CCPA Cookie Consent + more plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Comment Content via AdSense Regex Rewrite in all versions up to, and including, 3.13.4 due to insufficient input sanitization and output escaping. This make...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-77233" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-76561 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">A flaw was found in Dogtag PKI, as used by FreeIPA's certificate authority component. The certificate profile import functionality does not fully validate uploaded profile content beyond the profile ID. An authenticated user with CA Administrator privileges can exploit Dogtag's ExternalProcessConstr...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76561" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-05" data-cvss="7.2">
-  <div class="news-title">CVE-2026-77263 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-08" data-cvss="7.1">
+  <div class="news-title">CVE-2026-81781 - HIGH (7.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-09-05</span>
+    <span>2026-09-08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-77263 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">The iubenda | All-in-one Compliance for GDPR / CCPA Cookie Consent + more plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Comment Content in all versions up to, and including, 3.13.4 due to insufficient input sanitization and output escaping. This makes it possible for unauthen...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-77263" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-81781 | CVSS: 7.1 | Severity: HIGH</div>
+  <div class="news-summary">Missing Authorization vulnerability in Unbounce Unbounce Landing Pages unbounce allows Exploiting Incorrectly Configured Access Control Security Levels.
+
+This issue affects Unbounce Landing Pages: from n/a through 1.1.4.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81781" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-05" data-cvss="9.8">
-  <div class="news-title">CVE-2026-83627 - CRITICAL (9.8)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-08" data-cvss="7.5">
+  <div class="news-title">CVE-2026-81790 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-09-05</span>
+    <span>2026-09-08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-83627 | CVSS: 9.8 | Severity: CRITICAL</div>
-  <div class="news-summary">The Hummingbird – Speed Optimization, Caching, Minify, Compress & CDN plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3.21.0 via the log_msg() function in core/modules/class-page-cache.php. The page-cache debug log is written to wp-content/wphb-logs/...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83627" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-81790 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">Missing Authorization vulnerability in Viszt Péter Csomagpontok és szállítási címkék WooCommerce-hez allows Exploiting Incorrectly Configured Access Control Security Levels.
+
+This issue affects Csomagpontok és szállítási címkék WooCommerce-hez: from n/a before 4.2.8.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81790" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-05" data-cvss="4.3">
-  <div class="news-title">CVE-2026-83628 - MEDIUM (4.3)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-08" data-cvss="6.5">
+  <div class="news-title">CVE-2026-81792 - MEDIUM (6.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-09-05</span>
+    <span>2026-09-08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-83628 | CVSS: 4.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Theme My Login plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 7.1.15 on Multisite installations. This is due to the `tml_ms_signup_handler()` function's `gimmeanotherblog` branch failing to enforce the network's `active_signup` registration policy, ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83628" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-81792 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Unauthenticated Privilege Escalation in Product Catalog Enquiry for WooCommerce by MultiVendorX <= 6.1.4 versions.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81792" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-05" data-cvss="8.2">
-  <div class="news-title">CVE-2026-86145 - HIGH (8.2)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-08" data-cvss="7.1">
+  <div class="news-title">CVE-2026-81798 - HIGH (7.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-09-05</span>
+    <span>2026-09-08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-86145 | CVSS: 8.2 | Severity: HIGH</div>
-  <div class="news-summary">PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regul...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-86145" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-81798 | CVSS: 7.1 | Severity: HIGH</div>
+  <div class="news-summary">Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Easy Appointments allows DOM-Based XSS.
+
+This issue affects Easy Appointments: from n/a through 4.0.2.1.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81798" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-05" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8623 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-08" data-cvss="6.5">
+  <div class="news-title">CVE-2026-81802 - MEDIUM (6.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-09-05</span>
+    <span>2026-09-08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8623 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Dear Flipbook – PDF Flipbook, 3D Flipbook, PDF embed, PDF viewer plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'post_content (class attribute of .dvcss element)' parameter in all versions up to, and including, 2.4.30 due to insufficient input sanitization and output e...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8623" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-81802 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">Unauthenticated Insecure Direct Object References (IDOR) in WpEvently <= 5.6.0 versions.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81802" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-05" data-cvss="6.4">
-  <div class="news-title">CVE-2026-8625 - MEDIUM (6.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-08" data-cvss="7.2">
+  <div class="news-title">CVE-2026-81806 - HIGH (7.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-09-05</span>
+    <span>2026-09-08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-8625 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Dear Flipbook – PDF Flipbook, 3D Flipbook, PDF embed, PDF viewer plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'post_content (Custom HTML block inner HTML)' parameter in all versions up to, and including, 2.4.30 due to insufficient input sanitization and output escapi...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8625" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-81806 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">Server-Side Request Forgery (SSRF) vulnerability in John Darrel Hide My WP Ghost allows Server Side Request Forgery.
+
+This issue affects Hide My WP Ghost: from n/a through 7.0.09.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81806" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-05" data-cvss="2.7">
-  <div class="news-title">CVE-2025-15693 - LOW (2.7)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-08" data-cvss="7.1">
+  <div class="news-title">CVE-2026-84817 - HIGH (7.1)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-09-05</span>
+    <span>2026-09-08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2025-15693 | CVSS: 2.7 | Severity: LOW</div>
-  <div class="news-summary">The JCH Optimize WordPress plugin before 5.0.1 does not properly restrict a directory path provided to one of its administrative image-browsing features to within the site, allowing high-privilege users, administrators on single-site and sub-site administrators on multisite, to enumerate directories...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-15693" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-84817 | CVSS: 7.1 | Severity: HIGH</div>
+  <div class="news-summary">Unauthenticated Cross Site Scripting (XSS) in JetFormBuilder <= 3.6.5.1 versions.</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84817" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -700,7 +705,7 @@ We believe responsible disclosure g...</div>
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-09-12 08:02:11</div>
+      <div>Raport wygenerowano: 2026-09-15 08:02:11</div>
     </div>
   </div>
 
