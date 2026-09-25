@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-09-23</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-09-25</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-09-23</p>
+      <p class="sub">Dane z RSS i API | 2026-09-25</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -137,9 +137,9 @@
 
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">56</a></div><div class="kpi-label">Incydenty</div></div>
-        <div class="card"><div class="kpi-num"><a href="#threats">16</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">323</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">395</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#threats">14</a></div><div class="kpi-label">Zagrożenia</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">295</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">365</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -148,6 +148,15 @@
     <div class="section" id="incidents">
       <h3>🚨 Incydenty Bezpieczeństwa (56)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-09-23" data-cvss="-1">
+  <div class="news-title">Beyond Images: Bringing Rust Brotli to Edge Network Stack</div>
+  <div class="news-meta">
+    <span class="badge">Microsoft Bvr</span>
+    <span>2026-09-23 14:00</span>
+  </div>
+  <div class="news-summary">Introduction In our previous post we described how the Edge Security team turned the Rust PNG proof point into a repeatable rustification model and applied it to attacker-facing image formats such as BMP and ICO. We chose image codecs as our first target because they have clean dependency boundaries...</div>
+  <a href="https://microsoftedge.github.io/edgevr/posts/Beyond-Images-Bringing-Rust-Brotli-to-Edge-Network-Stack/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-09-21" data-cvss="-1">
   <div class="news-title">21st September – Threat Intelligence Report</div>
   <div class="news-meta">
@@ -327,15 +336,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   <div class="news-summary">Welcome to the Top 10 Web Hacking Techniques of 2025, the 19th edition of our annual community-powered effort to identify the most innovative must-read web security research published in the last year</div>
   <a href="https://portswigger.net/research/top-10-web-hacking-techniques-of-2025" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2025-10-01" data-cvss="-1">
-  <div class="news-title">CROSS-X: Generalized and Stable Cross-Cache Attack on the Linux Kernel</div>
-  <div class="news-meta">
-    <span class="badge">Kaist Hacking Lab</span>
-    <span>2025-10-01 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://hacking.kaist.ac.kr/publication/kim-crossx/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -343,7 +343,7 @@ Before diving into that discussion, we’ll first outline the most common attack
     <div class="divider"></div>
 
     <div class="section" id="threats">
-      <h3>⚠️ Nowe Zagrożenia (16)</h3>
+      <h3>⚠️ Nowe Zagrożenia (14)</h3>
       <div class="news-grid" data-grid="threats">
 <div class="card news-item threat" data-sev="none" data-date="2026-09-22" data-cvss="-1">
   <div class="news-title">The Closed Quorum: Inside the first reported autonomous AI C2 implant</div>
@@ -380,15 +380,6 @@ Before diving into that discussion, we’ll first outline the most common attack
   </div>
   <div class="news-summary">We assess with moderate confidence that the attacks are not targeted at a particular organization, but are a part of a cryptocurrency and credentials-stealing operation using the Amatera stealer as the primary payload.</div>
   <a href="https://blog.talosintelligence.com/clearfake-webdav-infection-chain/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item threat" data-sev="none" data-date="2026-09-08" data-cvss="-1">
-  <div class="news-title">ClickFix moves into the browser: Cryptocurrency theft with Google-hosted C2</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-09-08 10:00</span>
-  </div>
-  <div class="news-summary">Cisco Talos is tracking a cryptocurrency-stealing campaign that abuses the Google Visualization API for command and control (C2), retrieving obfuscated JavaScript from a publicly published Google Sheets document and injecting it into the victim's browser session.</div>
-  <a href="https://blog.talosintelligence.com/clickfix-moves-into-the-browser/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item threat" data-sev="none" data-date="2026-09-02" data-cvss="-1">
   <div class="news-title">Gaming the system: how a Chinese-speaking actor turned Brazilian government sites into an SEO weapon</div>
@@ -446,15 +437,6 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
   <div class="news-summary"></div>
   <a href="https://hacking.kaist.ac.kr/publication/lee-rtcon/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item threat" data-sev="none" data-date="2025-10-08" data-cvss="-1">
-  <div class="news-title">Securing the Future: Changes to Internet Explorer Mode in Microsoft Edge</div>
-  <div class="news-meta">
-    <span class="badge">Microsoft Bvr</span>
-    <span>2025-10-08 15:00</span>
-  </div>
-  <div class="news-summary">Introduction The digital threat landscape is in a constant state of flux, with attackers perpetually seeking new avenues to compromise users and corporate environments. As a result, the Edge browser security team must remain vigilant, adapting to both emerging and evolving threats. The team recently...</div>
-  <a href="https://microsoftedge.github.io/edgevr/posts/Changes-to-Internet-Explorer-Mode-in-Microsoft-Edge/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
 <div class="card news-item threat" data-sev="none" data-date="2022-01-03" data-cvss="-1">
   <div class="news-title">IRQLs Close Encounters of the Rootkit Kind</div>
   <div class="news-meta">
@@ -498,7 +480,7 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (323)</h3>
+      <h3>🔓 Wykryte Luki (295)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-12-01" data-cvss="-1.0">
   <div class="news-title">PatchIsland: Orchestration of LLM Agents for Continuous Vulnerability Repair (to appear)</div>
@@ -509,23 +491,68 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
   <div class="news-summary"></div>
   <a href="https://hacking.kaist.ac.kr/publication/kim-patchisland/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-23" data-cvss="-1.0">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-25" data-cvss="-1.0">
   <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
   <div class="news-meta">
     <span class="badge">Talos Reports</span>
-    <span>2026-09-23 00:00</span>
+    <span>2026-09-25 00:00</span>
   </div>
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-23" data-cvss="-1.0">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-25" data-cvss="-1.0">
   <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamPrepareRequestForMoreProcessing Type Confusion vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-09-25 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2445" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-24" data-cvss="-1.0">
+  <div class="news-title">Trust and the enticing consultancy offer</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-09-24 18:00</span>
+  </div>
+  <div class="news-summary">In this week’s newsletter Martin muses over a very suspicious elicitation over social media and the true value of trust within the cyber ecosystem. Hubris might be the real vulnerability that the cyber industry must worry about.</div>
+  <a href="https://blog.talosintelligence.com/trust-and-the-enticing-consultancy-offer/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-23" data-cvss="-1.0">
+  <div class="news-title">Is This A Joke? In The Auth Header? (F5 BIG-IP UnAuth Heap-Overflow to RCE CVE-2026-94127)</div>
+  <div class="news-meta">
+    <span class="badge">Watchtowr Labs</span>
+    <span>2026-09-23 23:19</span>
+  </div>
+  <div class="news-summary">Well, well, well, well, well, well, well, well, well, well, well, well, well, well, well. We're back. Sorry.We've been watching the onslaught of vulnerabilities flood the internet. Every man, dog, and their grandmas (apparently?) are now using LLMs to find and reproduce vulnerabilities - it’</div>
+  <a href="https://labs.watchtowr.com/is-this-a-joke-in-the-auth-header-f5-big-ip-unauth-heap-overflow-to-rce-cve-2026-94127/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-23" data-cvss="-1.0">
+  <div class="news-title">HTTP/3 in Burp Suite - it’s time to find a bigger wordlist</div>
+  <div class="news-meta">
+    <span class="badge">Portswigger</span>
+    <span>2026-09-23 14:00</span>
+  </div>
+  <div class="news-summary">How many bugs have you missed because you didn’t send quite enough HTTP requests? Turbo Intruder now supports HTTP/3, can comfortably exceed 100,000 requests per second over Wi-Fi, and auto-tunes for</div>
+  <a href="https://portswigger.net/research/http3-in-burp-suite" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-23" data-cvss="-1.0">
+  <div class="news-title">Apple macOS CoreWLAN information disclosure vulnerability</div>
   <div class="news-meta">
     <span class="badge">Talos Reports</span>
     <span>2026-09-23 00:00</span>
   </div>
   <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2445" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2376" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-23" data-cvss="-1.0">
+  <div class="news-title">Foxit Reader Array resetForm Use-After-Free Vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-09-23 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2446" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-09-21" data-cvss="-1.0">
   <div class="news-title">Windows Exploitation Techniques: Dangling COM Object Registrations</div>
@@ -555,15 +582,6 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
   <a href="https://blog.talosintelligence.com/should-you-care-about-an-ai-slowdown/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-09-16" data-cvss="-1.0">
-  <div class="news-title">The Apple Security Update Review for September 2026</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-09-16 19:58</span>
-  </div>
-  <div class="news-summary">Welcome back to our monthly look at Apple security patches. This release shows Apple is not immune to the new normal of AI-assisted vulnerability discovery as they release patches for 273 total CVEs.For the September 2026 release, Apple released 273 unique CVEs across macOS 27 (Golden Gate), macOS S...</div>
-  <a href="https://www.thezdi.com/blog/2026/9/16/the-apple-security-update-review-for-september-2026" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-16" data-cvss="-1.0">
   <div class="news-title">Securing the unpatchable in an age of AI-driven vulnerabilities</div>
   <div class="news-meta">
     <span class="badge">Cisco Talos</span>
@@ -572,125 +590,101 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
   <div class="news-summary">Advances in AI technology will continue to identify vulnerabilities that in some circumstances are difficult, or effectively impossible, to patch. Appropriate network segmentation, rigorous visibility, and the deployment of NGFW/IPS combinations can provide a powerful compensatory layer.</div>
   <a href="https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-16" data-cvss="-1.0">
-  <div class="news-title">CVE-2026-61396 - N/A (N/A)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-15" data-cvss="-1.0">
+  <div class="news-title">Multiple Vulnerabilities in Frappe LMS Leading to Remote Code Execution</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
+    <span class="badge">Rhino Security Labs</span>
+    <span>2026-09-15 15:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-61396 | CVSS: N/A | Severity: N/A</div>
-  <div class="news-summary">Rejected reason: Did not need CVE ID</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-61396" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">The post Multiple Vulnerabilities in Frappe LMS Leading to Remote Code Execution appeared first on Rhino Security Labs.</div>
+  <a href="https://rhinosecuritylabs.com/research/multiple-vulnerabilities-in-frappe-lms-leading-to-remote-code-execution/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-16" data-cvss="7.1">
-  <div class="news-title">CVE-2026-74926 - HIGH (7.1)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-10" data-cvss="-1.0">
+  <div class="news-title">Preinstalled but Not Safe. OnePlus OEM App Session Takeover Vulnerability</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
+    <span class="badge">Doyensec</span>
+    <span>2026-09-10T00:00:00+02:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-74926 | CVSS: 7.1 | Severity: HIGH</div>
-  <div class="news-summary">The MultiVendorX  WordPress plugin before 5.0.16 does not verify that a user owns the store they are acting on in one of its REST API routes, allowing any authenticated user, such as a subscriber, to overwrite any store's details and payout settings and to replace the record of who owns it.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-74926" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Change of Plan
+9+ months. One unresolved vulnerability. One disclosure published today.
+Following a last-minute request from the affected vendor, we’ve temporarily taken the technical details offline and agreed to provide one final, limited window for remediation.
+We believe responsible disclosure g...</div>
+  <a href="https://blog.doyensec.com/2026/09/10/oneplus-session-takeover.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-16" data-cvss="7.2">
-  <div class="news-title">CVE-2026-76550 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-10" data-cvss="-1.0">
+  <div class="news-title">We've got one word for it, and it's usually the wrong one</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
+    <span class="badge">Cisco Talos</span>
+    <span>2026-09-10 18:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-76550 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">The WP Import Export Lite WordPress plugin before 3.9.34 does not validate a user-supplied output path when writing export files, allowing users granted its export permission to write files with arbitrary names to arbitrary locations on the server, leading to remote code execution.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76550" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">In this week's Threat Source newsletter, Joe explores why the word "burnout" often fails to capture the true toll of working in the cybersecurity industry and why we need better language to address it.</div>
+  <a href="https://blog.talosintelligence.com/weve-got-one-word-for-it-and-its-usually-the-wrong-one/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-16" data-cvss="7.2">
-  <div class="news-title">CVE-2026-76551 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-09" data-cvss="-1.0">
+  <div class="news-title">Active exploitation of Cisco Secure Firewall Management Center vulnerabilities</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
+    <span class="badge">Cisco Talos</span>
+    <span>2026-09-09 16:08</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-76551 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">The WP Import Export Lite WordPress plugin before 3.9.33 does not restrict which PHP function may be applied to exported field values, allowing users granted its export permission to have arbitrary functions invoked on values they control, leading to remote code execution.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76551" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Cisco Talos is actively tracking the exploitation of two vulnerabilities in Cisco’s Secure Firewall Management Center (FMC) Software.</div>
+  <a href="https://blog.talosintelligence.com/fmc-ongoing-exploitation/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-09-16" data-cvss="8.8">
-  <div class="news-title">CVE-2026-76552 - HIGH (8.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-08" data-cvss="-1.0">
+  <div class="news-title">Microsoft Patch Tuesday for September 2026 — Snort rules and prominent vulnerabilities</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
+    <span class="badge">Cisco Talos</span>
+    <span>2026-09-08 22:16</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-76552 | CVSS: 8.8 | Severity: HIGH</div>
-  <div class="news-summary">The WP Import Export Lite WordPress plugin before 3.9.33 does not validate the type, extension or content of files it retrieves from a user-supplied URL during import, allowing users granted its import permission to store arbitrary files, including executable ones, on the server and achieve remote c...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76552" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Microsoft has released its monthly security update for September 2026, which includes 973 vulnerabilities affecting a range of products, including 113 that Microsoft marked as "critical."</div>
+  <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-september-2026/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-16" data-cvss="6.5">
-  <div class="news-title">CVE-2026-76553 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-09-08" data-cvss="-1.0">
+  <div class="news-title">Testing race conditions with memory access tracing and stack-based delay injection</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
+    <span class="badge">Project Zero</span>
+    <span>2026-09-08 07:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-76553 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">The WP Import Export Lite WordPress plugin before 3.9.33 does not validate a path taken from stored, user-supplied data before recursively deleting the directory it resolves to, allowing users to whom an administrator has delegated a WP Import Export Lite WordPress plugin before 3.9.33 capability to...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76553" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Many security bugs are race conditions, where multi-threaded execution has to occur with the right interleaving for a negative effect to appear. This creates challenges for several use cases: Confirming bug candidates that have been discovered manually or through static analysis. Regression tests: A...</div>
+  <a href="https://projectzero.google/2026/09/maccconc-race-condition.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-16" data-cvss="6.8">
-  <div class="news-title">CVE-2026-76555 - MEDIUM (6.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-31" data-cvss="-1.0">
+  <div class="news-title">Simulating legitimate Active Directory services on the network: the case of GPO exploitation</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
+    <span class="badge">Synacktiv</span>
+    <span>2026-08-31 00:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-76555 | CVSS: 6.8 | Severity: MEDIUM</div>
-  <div class="news-summary">The WP Import Export Lite WordPress plugin before 3.9.33 does not validate a user-supplied file path before reading it and copying it into a publicly accessible directory, allowing any user whose role an administrator has granted the WP Import Export Lite WordPress plugin before 3.9.33's import perm...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76555" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">
+
+
+
+ 
+
+
+
+
+
+Simulating legitimate Active Directory services on the network: the case of GPO exploitation
+
+
+31/08/2026
+
+
+Pentest
+
+
+                   Simulating legitimate Active Directory services on an internal network is a powerful and versatile capability that can be leveraged in various contexts....</div>
+  <a href="https://www.synacktiv.com/en/publications/simulating-legitimate-active-directory-services-on-the-network-the-case-of-gpo" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-16" data-cvss="6.8">
-  <div class="news-title">CVE-2026-76556 - MEDIUM (6.8)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-08-27" data-cvss="-1.0">
+  <div class="news-title">Breaking Claude Code Opus 5 Auto Mode</div>
   <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
+    <span class="badge">Embrace The Red</span>
+    <span>2026-08-27 04:00</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-76556 | CVSS: 6.8 | Severity: MEDIUM</div>
-  <div class="news-summary">The WP Import Export Lite WordPress plugin before 3.9.33 does not properly sanitise and escape some export filter values before using them in SQL statements, allowing users holding its export permission, which administrators have by default and may also grant to lower roles, to perform SQL injection...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76556" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-16" data-cvss="6.8">
-  <div class="news-title">CVE-2026-76557 - MEDIUM (6.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-76557 | CVSS: 6.8 | Severity: MEDIUM</div>
-  <div class="news-summary">The WP Import Export Lite WordPress plugin before 3.9.33 does not properly sanitise and escape some import configuration values before using them in SQL statements, allowing users whose role an administrator has granted the WP Import Export Lite WordPress plugin before 3.9.33's import permission to ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76557" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-16" data-cvss="6.8">
-  <div class="news-title">CVE-2026-76558 - MEDIUM (6.8)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-76558 | CVSS: 6.8 | Severity: MEDIUM</div>
-  <div class="news-summary">The WP Import Export Lite WordPress plugin before 3.9.33 does not escape custom field names retrieved from the database before inserting them into the DOM of one of its administration screens, allowing users with a role as low as contributor to perform Stored XSS attacks which will trigger in the br...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76558" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-16" data-cvss="4.1">
-  <div class="news-title">CVE-2026-76559 - MEDIUM (4.1)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-76559 | CVSS: 4.1 | Severity: MEDIUM</div>
-  <div class="news-summary">The WP Import Export Lite WordPress plugin before 3.9.33 does not properly validate URLs before requesting them during the import process, allowing users with the import capability, which administrators hold by default, to make the site issue requests to internal hosts and services and read their re...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76559" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-09-16" data-cvss="5.3">
-  <div class="news-title">CVE-2026-77702 - MEDIUM (5.3)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-09-16</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-77702 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">The Eventin  WordPress plugin before 4.1.24 does not prevent the token issued to a guest at checkout from being used to change that order's tickets afterwards, allowing unauthenticated users to replace a paid ticket with a free one and complete the order at no charge.</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-77702" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">In this post, we explore how a simple website summary request hijacks Claude Code Opus 5 in Auto Mode and achieves code execution with 60-80% attack success rate using a small sample size.
+
+This is interesting because a third-party evaluation commissioned by Anthropic showed a 0.00% prompt injection...</div>
+  <a href="https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -698,7 +692,7 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-09-23 08:02:11</div>
+      <div>Raport wygenerowano: 2026-09-25 08:02:26</div>
     </div>
   </div>
 
