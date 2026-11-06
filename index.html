@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-11-05</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-11-06</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-11-05</p>
+      <p class="sub">Dane z RSS i API | 2026-11-06</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -136,18 +136,27 @@
       </div>
 
       <div class="stats">
-        <div class="card"><div class="kpi-num"><a href="#incidents">48</a></div><div class="kpi-label">Incydenty</div></div>
+        <div class="card"><div class="kpi-num"><a href="#incidents">49</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">12</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">318</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">378</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">319</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">380</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="section" id="incidents">
-      <h3>🚨 Incydenty Bezpieczeństwa (48)</h3>
+      <h3>🚨 Incydenty Bezpieczeństwa (49)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-11-05" data-cvss="-1">
+  <div class="news-title">Bring a tent, I've got the coffee: Lessons from it-sa</div>
+  <div class="news-meta">
+    <span class="badge">Cisco Talos</span>
+    <span>2026-11-05 19:00</span>
+  </div>
+  <div class="news-summary">Thorsten may have had to camp out in Nuremberg to attend it-sa, but the real story is the initiative to add a formal IT Security apprenticeship program in Germany for the thousands of young hackers ready to join our side.</div>
+  <a href="https://blog.talosintelligence.com/bring-a-tent-ive-got-the-coffee-lessons-from-it-sa/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-11-02" data-cvss="-1">
   <div class="news-title">2nd November – Threat Intelligence Report</div>
   <div class="news-meta">
@@ -321,15 +330,6 @@ testing platforms: Aikido’s Attack AI Pentest and XBOW’s Lightspeed in order
   <div class="news-summary">The article is informative and intended for security specialists conducting testing within the scope of a contract. The author is not responsible for any damage caused by the application of the provided information. The distribution of malicious programs, disruption of system operation, and violatio...</div>
   <a href="https://blog.slonser.info/posts/why-protocol-matters/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item incident" data-sev="none" data-date="2024-09-20" data-cvss="-1">
-  <div class="news-title">Hacking Kia: Remotely Controlling Cars With Just a License Plate</div>
-  <div class="news-meta">
-    <span class="badge">Sam Curry</span>
-    <span>2024-09-20 00:00</span>
-  </div>
-  <div class="news-summary">On June 11th, 2024, we discovered a set of vulnerabilities in Kia vehicles that allowed remote control over key functions using only a license plate. These attacks could be executed remotely on any hardware-equipped vehicle in about 30 seconds, regardless of whether it had an active Kia Connect subs...</div>
-  <a href="https://samcurry.net/hacking-kia" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
     </div>
@@ -456,7 +456,7 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (318)</h3>
+      <h3>🔓 Wykryte Luki (319)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-12-01" data-cvss="-1.0">
   <div class="news-title">PatchIsland: Orchestration of LLM Agents for Continuous Vulnerability Repair (to appear)</div>
@@ -467,23 +467,54 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
   <div class="news-summary"></div>
   <a href="https://hacking.kaist.ac.kr/publication/kim-patchisland/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-05" data-cvss="-1.0">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-06" data-cvss="-1.0">
+  <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-11-06 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-06" data-cvss="-1.0">
   <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamPrepareRequestForMoreProcessing Type Confusion vulnerability</div>
   <div class="news-meta">
     <span class="badge">Talos Reports</span>
-    <span>2026-11-05 00:00</span>
+    <span>2026-11-06 00:00</span>
   </div>
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2445" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-11-05" data-cvss="-1.0">
-  <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
+  <div class="news-title">Barracuda Networks is your new best friend (Barracuda Email Security Gateway Pre-Auth Remote Root RCE CVE-2026-116606 / CVE-2026-111560)</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-11-05 00:00</span>
+    <span class="badge">Watchtowr Labs</span>
+    <span>2026-11-05 21:19</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Yes, that's right! Today we're at the aquarium.Welcome back to yet another watchTowr Labs blog post. You can begin preparing your comments now.
+
+
+
+What Is A Barracuda, And Why? Must We?Barracuda’s Email Security Gateway solution (ESG) is no stranger to love, for</div>
+  <a href="https://labs.watchtowr.com/barracuda-networks-is-your-new-best-friend-barracuda-email-security-gateway-pre-auth-remote-root-rce-cve-2026-116606-cve-2026-111560/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-05" data-cvss="-1.0">
+  <div class="news-title">Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-11-05 17:22</span>
+  </div>
+  <div class="news-summary">Key Points Introduction ARTEX is a Chinese open-source, AI-powered penetration testing platform designed to help security teams assess systems they own or are authorized to test. It uses large language models (LLMs) to coordinate multiple AI agents that plan tests, run security tools, and record evi...</div>
+  <a href="https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-05" data-cvss="-1.0">
+  <div class="news-title">ChatGPT Lockdown Mode Bypass: Phishing, Malware Delivery, and Silent Data Exfiltration</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-11-05 14:00</span>
+  </div>
+  <div class="news-summary">Research by: Alexey Bukhteyev Key Takeaways Introduction Earlier this year, Check Point Research disclosed a security flaw in ChatGPT’s code-execution runtime that allowed sensitive conversation data to be silently exfiltrated to an attacker-controlled server through DNS tunneling, a hidden outbound...</div>
+  <a href="https://research.checkpoint.com/2026/chatgpt-lockdown-mode-bypass-phishing-malware-delivery-and-silent-data-exfiltration/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-11-04" data-cvss="-1.0">
   <div class="news-title">Making HTTP header injection critical with one prompt</div>
@@ -503,145 +534,125 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
   <div class="news-summary">Several months ago, I discovered and fixed an interesting Linux kernel vulnerability CVE-2026-31695, which was caused by a logical bug in network device management. This vulnerability had been present in the kernel code for nearly 5 years. In this article, I will describe the exploit for this vulner...</div>
   <a href="https://a13xp0p0v.tech/2026/11/02/CVE-2026-31695.html" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-10-29" data-cvss="-1.0">
-  <div class="news-title">A quiet week in infosec <.<</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-10-29 18:00</span>
-  </div>
-  <div class="news-summary">In this edition of the Threat Source newsletter, William explores how PHP has taken over the conversation, Node.js has joined in, but underneath it all, there are still good people doing good work.</div>
-  <a href="https://blog.talosintelligence.com/a-quiet-week-in-infosec/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-10-29" data-cvss="-1.0">
-  <div class="news-title">IR trends Q3 2026: Actors impersonate IT help desks in vishing attacks as ransomware activity increases</div>
-  <div class="news-meta">
-    <span class="badge">Cisco Talos</span>
-    <span>2026-10-29 14:00</span>
-  </div>
-  <div class="news-summary">Phishing remained the leading initial access technique, while percentage of ransomware and pre-ransomware cases increased. Finance and public administration tied as the top-targeted industries.</div>
-  <a href="https://blog.talosintelligence.com/ir-trends-q3-2026/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-10-29" data-cvss="-1.0">
-  <div class="news-title">vtk vtkPNGReader::ExecuteInformation invalid pointer dereference vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-10-29 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2412" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-10-29" data-cvss="-1.0">
-  <div class="news-title">vtk vtkPNGReader::vtkPNGReaderUpdate2 invalid pointer dereference vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-10-29 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2413" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-10-29" data-cvss="-1.0">
-  <div class="news-title">VTK vtkDEMReader ReadProfiles memory corruption vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-10-29 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2421" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-10-29" data-cvss="-1.0">
-  <div class="news-title">VTK vtkChacoReader InputGraph2 out-of-bounds read vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-10-29 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2423" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-10-29" data-cvss="-1.0">
-  <div class="news-title">VTK vtkBMPReader ExecuteDataWithInformation memory corruption vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-10-29 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2422" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-10-29" data-cvss="-1.0">
-  <div class="news-title">VTK vtkWindBladeReader FindVariableOffsets heap-based buffer overflow vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-10-29 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2424" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-10-29" data-cvss="-1.0">
-  <div class="news-title">frangoteam FUXA /nodered/fuxa/scripts information disclosure vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-10-29 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2418" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-10-29" data-cvss="-1.0">
-  <div class="news-title">frangoteam FUXA /api/runscript authorization bypass vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-10-29 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2417" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-10-29" data-cvss="6.5">
-  <div class="news-title">CVE-2026-117548 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-10-30" data-cvss="9.8">
+  <div class="news-title">CVE-2026-103039 - CRITICAL (9.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-10-29</span>
+    <span>2026-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-117548 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">A NULL pointer dereference flaw was found in 389-ds-base. This flaw occurs when a ModifyDN (rename) operation uses an attribute's schema alias name (such as "commonName") instead of its canonical name (such as "cn") as the new relative distinguished name. An authenticated attacker with the ModifyDN ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-117548" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-103039 | CVSS: 9.8 | Severity: CRITICAL</div>
+  <div class="news-summary">The Gravity Forms plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.1.2 via a Post Custom Field whose input type is List. This is due to GFFormsModel::create_post() passing the submitted value to WordPress' unrestricted global maybe_unserialize() rath...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-103039" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-10-29" data-cvss="5.4">
-  <div class="news-title">CVE-2026-117627 - MEDIUM (5.4)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-10-30" data-cvss="7.5">
+  <div class="news-title">CVE-2026-110732 - HIGH (7.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-10-29</span>
+    <span>2026-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-117627 | CVSS: 5.4 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw was found in the JWT Authorization Grant implementation of the keycloak-services component. When an OIDC or Google identity provider is configured with specific login restrictions, such as claim filtering, these checks are correctly applied during standard browser logins but are skipped durin...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-117627" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-110732 | CVSS: 7.5 | Severity: HIGH</div>
+  <div class="news-summary">The AI Engine – The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 3.8.6 This is due to the MCP module's OAuth 2.1 Dynamic Client Registration endpoint (/wp-json/mcp/v1/oauth/register) being registered with ...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-110732" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-10-29" data-cvss="5.3">
-  <div class="news-title">CVE-2026-117688 - MEDIUM (5.3)</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-10-30" data-cvss="7.2">
+  <div class="news-title">CVE-2026-116622 - HIGH (7.2)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-10-29</span>
+    <span>2026-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-117688 | CVSS: 5.3 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw was found in the client registration component of Keycloak, an open-source identity and access management solution. When a vault provider is used to store sensitive information, an authenticated client owner can use a specially crafted reference to trick the system into revealing secrets. By ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-117688" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-116622 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The Food Store – Online Food Delivery & Pickup plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'service_time' parameter in all versions up to, and including, 1.5.5 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attacke...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116622" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-10-29" data-cvss="5.4">
-  <div class="news-title">CVE-2026-117859 - MEDIUM (5.4)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-10-30" data-cvss="5.9">
+  <div class="news-title">CVE-2026-118593 - MEDIUM (5.9)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-10-29</span>
+    <span>2026-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-117859 | CVSS: 5.4 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw was found in the Pushed Authorization Request PAR implementation of the keycloak-services component. The issue occurs when an authentication flow is restarted, which incorrectly clears the internal markers used to track PAR consumption while leaving the request active. This allows an attacker...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-117859" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-118593 | CVSS: 5.9 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw was found in Red Hat Enterprise Linux 9 kernel builds. An incomplete backport of the CVE-2026-46099 fix in RHEL 9.6 through 9.10 left a local_bh imbalance in seg6_input_core(), where the drop path returns with bottom halves still disabled. This can lead to softirq starvation and denial of ser...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118593" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-10-29" data-cvss="4.2">
-  <div class="news-title">CVE-2026-118030 - MEDIUM (4.2)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-10-30" data-cvss="6.5">
+  <div class="news-title">CVE-2026-118952 - MEDIUM (6.5)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-10-29</span>
+    <span>2026-10-30</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-118030 | CVSS: 4.2 | Severity: MEDIUM</div>
-  <div class="news-summary">A flaw was found in the HOTP authentication mechanism of the keycloak-services component, which provides identity and access management services. The issue occurs because the system validates a one-time password and updates its internal counter in two separate steps without proper locking. An attack...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118030" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-118952 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw was found in the Kroxylicious ACL authorizer. Its prefix-matching logic may apply a rule to a principal of a different type, or fail to check a broader matching rule when prefixes overlap. Depending on the ACL configuration, this may allow an authenticated Kafka client to access a resource (s...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118952" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-10-30" data-cvss="8.8">
+  <div class="news-title">CVE-2026-89435 - HIGH (8.8)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-10-30</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-89435 | CVSS: 8.8 | Severity: HIGH</div>
+  <div class="news-summary">The Formidable Forms – WordPress Form Builder for Contact Forms, Calculators, Quizzes & More plugin for WordPress is vulnerable to Arbitrary Plugin Installation in all versions up to, and including, 6.35 via the 'file_url' parameter parameter. This is due to insufficient URL prefix validation in val...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-89435" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-10-30" data-cvss="7.2">
+  <div class="news-title">CVE-2026-90437 - HIGH (7.2)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-10-30</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-90437 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Post Excerpt / Post Custom Field / Rich-Text Paragraph Field Values in all versions up to, and including, 3.1.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticat...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-90437" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="high" data-date="2026-10-30" data-cvss="7.2">
+  <div class="news-title">CVE-2026-97645 - HIGH (7.2)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-10-30</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-97645 | CVSS: 7.2 | Severity: HIGH</div>
+  <div class="news-summary">The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via List Field in all versions up to, and including, 3.1.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages tha...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-97645" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-10-30" data-cvss="6.2">
+  <div class="news-title">CVE-2026-114690 - MEDIUM (6.2)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-10-30</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-114690 | CVSS: 6.2 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw was found in GCC. An out-of-bounds memory access vulnerability exists in the libstdc++ parallel search implementation due to an undersized internal buffer. A local attacker can exploit this flaw by providing crafted search data to an application compiled with parallel mode, causing the proces...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-114690" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-10-30" data-cvss="5.9">
+  <div class="news-title">CVE-2026-114691 - MEDIUM (5.9)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-10-30</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-114691 | CVSS: 5.9 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw was found in the libstdc++ component of GCC. An attacker who can provide an excessively large element count to a boolean vector (std::vector<bool>) constructor can trigger an integer wrap during internal memory calculations. This issue leaves the container in an inconsistent state, leading to...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-114691" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-10-30" data-cvss="6.5">
+  <div class="news-title">CVE-2026-115455 - MEDIUM (6.5)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-10-30</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-115455 | CVSS: 6.5 | Severity: MEDIUM</div>
+  <div class="news-summary">A flaw was found in GCC libstdc++. When an application extracts data into a bitset from a wide-character stream, internal stack memory allocation fails to properly account for character size and alignment. An attacker capable of supplying crafted input to an affected application could trigger a stac...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-115455" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-10-30" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-82104 - N/A (N/A)</div>
+  <div class="news-meta">
+    <span class="badge">NVD (NIST)</span>
+    <span>2026-10-30</span>
+  </div>
+  <div class="cve-info">CVE ID: CVE-2026-82104 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In Teltonika Networks RUTOS devices running versions from 7.22 through 7.24.2 and TSWOS devices running versions 1.9 through 1.10, a vulnerability exists whereby an unauthenticated user can directly call LUA functions, bypassing validations that might be called under normal API requests. Due to thos...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82104" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -649,7 +660,7 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-11-05 08:02:38</div>
+      <div>Raport wygenerowano: 2026-11-06 08:02:31</div>
     </div>
   </div>
 
