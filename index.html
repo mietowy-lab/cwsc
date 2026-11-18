@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Raport Cyberbezpieczeństwa — 2026-11-14</title>
+  <title>Raport Cyberbezpieczeństwa — 2026-11-18</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -118,7 +118,7 @@
   <div class="container">
     <div class="hero">
       <h2>🛡️ Raport Cyberbezpieczeństwa</h2>
-      <p class="sub">Dane z RSS i API | 2026-11-14</p>
+      <p class="sub">Dane z RSS i API | 2026-11-18</p>
 
       <div class="controls">
         <label class="chip"><input type="checkbox" id="filterHigh" checked> High</label>
@@ -138,8 +138,8 @@
       <div class="stats">
         <div class="card"><div class="kpi-num"><a href="#incidents">46</a></div><div class="kpi-label">Incydenty</div></div>
         <div class="card"><div class="kpi-num"><a href="#threats">11</a></div><div class="kpi-label">Zagrożenia</div></div>
-        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">325</a></div><div class="kpi-label">Luki</div></div>
-        <div class="card"><div class="kpi-num"><a href="#top">382</a></div><div class="kpi-label">Łącznie</div></div>
+        <div class="card"><div class="kpi-num"><a href="#vulnerabilities">328</a></div><div class="kpi-label">Luki</div></div>
+        <div class="card"><div class="kpi-num"><a href="#top">385</a></div><div class="kpi-label">Łącznie</div></div>
       </div>
     </div>
 
@@ -148,6 +148,15 @@
     <div class="section" id="incidents">
       <h3>🚨 Incydenty Bezpieczeństwa (46)</h3>
       <div class="news-grid" data-grid="incidents">
+<div class="card news-item incident" data-sev="none" data-date="2026-11-16" data-cvss="-1">
+  <div class="news-title">16th November – Threat Intelligence Report</div>
+  <div class="news-meta">
+    <span class="badge">Checkpoint Research</span>
+    <span>2026-11-16 14:44</span>
+  </div>
+  <div class="news-summary">For the latest discoveries in cyber research for the week of 16th November, please download our Threat Intelligence Bulletin.  TOP ATTACKS AND BREACHES TSMC, a major Taiwanese semiconductor manufacturer, has confirmed a data breach at an unnamed cloud provider that exposed information about current ...</div>
+  <a href="https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
 <div class="card news-item incident" data-sev="none" data-date="2026-11-05" data-cvss="-1">
   <div class="news-title">Bring a tent, I've got the coffee: Lessons from it-sa</div>
   <div class="news-meta">
@@ -165,15 +174,6 @@
   </div>
   <div class="news-summary">For the latest discoveries in cyber research for the week of 2nd November, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Binance, a global cryptocurrency exchange, has suffered a cyberattack resulting in the theft of approximately $6.3 billion in digital assets. Attacker...</div>
   <a href="https://research.checkpoint.com/2026/2nd-november-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item incident" data-sev="none" data-date="2026-10-26" data-cvss="-1">
-  <div class="news-title">26th October – Threat Intelligence Report</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-10-26 16:12</span>
-  </div>
-  <div class="news-summary">For the latest discoveries in cyber research for the week of 26th October, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Japanese cloud hosting provider Onamae Desktop Cloud has confirmed a cyberattack in which intruders compromised its infrastructure and installed malwa...</div>
-  <a href="https://research.checkpoint.com/2026/26th-october-threat-intelligence-report/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item incident" data-sev="none" data-date="2026-09-23" data-cvss="-1">
   <div class="news-title">Beyond Images: Bringing Rust Brotli to Edge Network Stack</div>
@@ -447,7 +447,7 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
     <div class="divider"></div>
 
     <div class="section" id="vulnerabilities">
-      <h3>🔓 Wykryte Luki (325)</h3>
+      <h3>🔓 Wykryte Luki (328)</h3>
       <div class="news-grid" data-grid="vulnerabilities">
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-12-01" data-cvss="-1.0">
   <div class="news-title">PatchIsland: Orchestration of LLM Agents for Continuous Vulnerability Repair (to appear)</div>
@@ -458,41 +458,105 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
   <div class="news-summary"></div>
   <a href="https://hacking.kaist.ac.kr/publication/kim-patchisland/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-14" data-cvss="-1.0">
-  <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-18" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-114938: Critical vulnerability in OpenJDK JAVA</div>
   <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-11-14 00:00</span>
+    <span class="badge">Cisco Talos</span>
+    <span>2026-11-18 01:53</span>
   </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="news-summary">Cisco Talos is tracking the disclosure of a critical vulnerability in OpenJDK Java (CVE-2026-114938), dubbed “Java4Shell,” with a CVSS 4.0 score of 9.2 that may lead to unauthenticated remote code execution (RCE).</div>
+  <a href="https://blog.talosintelligence.com/java4shell/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-14" data-cvss="-1.0">
-  <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamPrepareRequestForMoreProcessing Type Confusion vulnerability</div>
-  <div class="news-meta">
-    <span class="badge">Talos Reports</span>
-    <span>2026-11-14 00:00</span>
-  </div>
-  <div class="news-summary"></div>
-  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2445" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-14" data-cvss="-1.0">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-18" data-cvss="-1.0">
   <div class="news-title">mackron dr_libs dr_mp3 drmp3_init_internal out-of-bounds read vulnerability</div>
   <div class="news-meta">
     <span class="badge">Talos Reports</span>
-    <span>2026-11-14 00:00</span>
+    <span>2026-11-18 00:00</span>
   </div>
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2441" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-14" data-cvss="-1.0">
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-18" data-cvss="-1.0">
+  <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamCompleteRequest use-after-free vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-11-18 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2426" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-18" data-cvss="-1.0">
   <div class="news-title">mackron dr_libs dr_wav drwav__read_cue_to_metadata_obj out-of-bounds write vulnerability</div>
   <div class="news-meta">
     <span class="badge">Talos Reports</span>
-    <span>2026-11-14 00:00</span>
+    <span>2026-11-18 00:00</span>
   </div>
   <div class="news-summary"></div>
   <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2442" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-18" data-cvss="-1.0">
+  <div class="news-title">Microsoft Windows Cloud Files Mini Filter Driver CldiStreamPrepareRequestForMoreProcessing Type Confusion vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-11-18 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2445" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-17" data-cvss="-1.0">
+  <div class="news-title">Maintainers don’t need more AI bug reports. They need fixes.</div>
+  <div class="news-meta">
+    <span class="badge">Github Security Lab</span>
+    <span>2026-11-17 18:29</span>
+  </div>
+  <div class="news-summary">In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more than half.
+The post Maintainers don’t need more AI bug reports. They need fixes.  ...</div>
+  <a href="https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-17" data-cvss="-1.0">
+  <div class="news-title">Zen 1 PSP bootrom exploit</div>
+  <div class="news-meta">
+    <span class="badge">Google Security Research Advisories</span>
+    <span>2026-11-17 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://github.com/google/security-research/security/advisories/GHSA-7g3h-59cw-27vf" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-16" data-cvss="-1.0">
+  <div class="news-title">VideoLan VLC Interplay MVE File Uninitialized Variable Memory Corruption Vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-11-16 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2372" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-16" data-cvss="-1.0">
+  <div class="news-title">VideoLan VLC  NUV File keyframe Out-Of-Bounds Read Vulnerability</div>
+  <div class="news-meta">
+    <span class="badge">Talos Reports</span>
+    <span>2026-11-16 00:00</span>
+  </div>
+  <div class="news-summary"></div>
+  <a href="https://talosintelligence.com/vulnerability_reports/TALOS-2026-2416" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-15" data-cvss="-1.0">
+  <div class="news-title">Race Against the (Mac)hine: Local Privilege Escalation in Microsoft Defender for macOS</div>
+  <div class="news-meta">
+    <span class="badge">Spaceraccoon</span>
+    <span>2026-11-15 12:00</span>
+  </div>
+  <div class="news-summary">Patching a vulnerability in cross-platform software can be tricky. At BlueHat Asia in September, I presented on two LPEs I found in Microsoft Defender that arose from differences in operating system-level security and filesystem APIs that broke critical security assumptions (CVE-2026-50657, CVE-2026...</div>
+  <a href="https://spaceraccoon.dev/race-against-the-machine-defender-macos-lpe/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-14" data-cvss="-1.0">
+  <div class="news-title">Reducing the Opportunity for Exploitation with Edge Lockdown Mode</div>
+  <div class="news-meta">
+    <span class="badge">Microsoft Bvr</span>
+    <span>2026-11-14 00:00</span>
+  </div>
+  <div class="news-summary">In a previous blog post, I discussed how artificial intelligence is changing the economics of vulnerability discovery and exploitation. In that post, I shared threat intelligence from Microsoft and its partners showing attackers targeting Edge and Chrome users by weaponising known vulnerabilities di...</div>
+  <a href="https://microsoftedge.github.io/edgevr/posts/Lockdown-Mode/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
 <div class="card news-item vulnerability" data-sev="low" data-date="2026-11-13" data-cvss="-1.0">
   <div class="news-title">ARTEX and beyond: AI-enabled penetration testing platforms</div>
@@ -540,121 +604,35 @@ Along similar lines, Sysdig recently published a blog on JADEPUFFER, which it as
 Out of 60 "critical" vulnerabilities, 45 are remote code execution (RCE) vulnerabilities.</div>
   <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-10" data-cvss="-1.0">
-  <div class="news-title">The November 2026 Security Update Review</div>
-  <div class="news-meta">
-    <span class="badge">Zdi</span>
-    <span>2026-11-10 19:02</span>
-  </div>
-  <div class="news-summary">The penultimate month of 2026 bring with it the usual storm of patches from Microsoft and Adobe. I’ve been prototyping some new ways to display this data, but as always, I’m open to suggestions. Seriously – hit me up on Bluesky if you have any ideas.If you’d rather watch the full video recap coverin...</div>
-  <a href="https://www.thezdi.com/blog/2026/11/10/the-november-2026-security-update-review" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-10" data-cvss="-1.0">
-  <div class="news-title">Not All That Glitters Is Gold: Tracking CopperDragon’s Sparrow Framework Around the Globe</div>
-  <div class="news-meta">
-    <span class="badge">Checkpoint Research</span>
-    <span>2026-11-10 14:01</span>
-  </div>
-  <div class="news-summary">Key Points Introduction Over the past year, Check Point Research investigated a series of intrusion campaigns targeting several dozens of high-profile organizations across Latin America, Asia, and Europe. These campaigns initially appeared to be independent operations, each using different backdoors...</div>
-  <a href="https://research.checkpoint.com/2026/not-all-that-glitters-is-gold-tracking-copperdragons-sparrow-framework-around-the-globe/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-09" data-cvss="-1.0">
-  <div class="news-title">From Bug Hunting to Bug Prevention with Rust and Verus</div>
-  <div class="news-meta">
-    <span class="badge">Microsoft Bvr</span>
-    <span>2026-11-09 08:00</span>
-  </div>
-  <div class="news-summary">Rewriting existing software in Rust brings memory safety, and the cleanup that comes with a rewrite often clears out years of accrued clutter. AI is making that conversion faster, and we’ve already shared our framework for building a compatible Rust implementation. This moves the bottleneck to valid...</div>
-  <a href="https://microsoftedge.github.io/edgevr/posts/From-Bug-Hunting-to-Bug-Prevention-with-Rust-and-Verus/" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-09" data-cvss="-1.0">
-  <div class="news-title">Star Wars Episode I: Racer</div>
-  <div class="news-meta">
-    <span class="badge">Synacktiv</span>
-    <span>2026-11-09 00:00</span>
-  </div>
-  <div class="news-summary">
-
-
-
- 
-
-
-
-
-
-Star Wars Episode I: Racer
-
-
-09/11/2026
-
-
-Development
-Exploit
-Reverse-engineering
-
-
-                   Star Wars Episode I: Racer is a racing video game published by LucasArts. The player pilots a podracer, just like in the movie Star Wars: Episode I – The Phantom Menace. This article det...</div>
-  <a href="https://www.synacktiv.com/en/publications/star-wars-episode-i-racer" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-07" data-cvss="-1.0">
-  <div class="news-title">Hacking Two Automakers: ForgeRock Path Confusion, RCE, and Remote Vehicle Access</div>
-  <div class="news-meta">
-    <span class="badge">Sam Curry</span>
-    <span>2026-11-07 00:00</span>
-  </div>
-  <div class="news-summary">Shubham Shah and Sam Curry chained a ForgeRock WAF bypass into code execution on the identity systems of two automakers, then demonstrated remote vehicle control in the US.</div>
-  <a href="https://samcurry.net/forgerock" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-11-07" data-cvss="6.5">
-  <div class="news-title">CVE-2026-103917 - MEDIUM (6.5)</div>
+<div class="card news-item vulnerability" data-sev="low" data-date="2026-11-11" data-cvss="-1.0">
+  <div class="news-title">CVE-2026-96414 - N/A (N/A)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-11-07</span>
+    <span>2026-11-11</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-103917 | CVSS: 6.5 | Severity: MEDIUM</div>
-  <div class="news-summary">The The Quiz and Survey Master (QSM) – Quiz Maker & Survey Maker plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 11.2.7. This is due to the software allowing users to execute an action that does not properly validate a value before running do...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-103917" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2026-96414 | CVSS: N/A | Severity: N/A</div>
+  <div class="news-summary">In affected versions of Octopus Server, insufficient integrity protection of authentication cookies, combined with incorrect validation of permissions assigned to a user that allowed them to view users or audit events, could result in the user escalating their privileges to those of an Administrator...</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-96414" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-11-07" data-cvss="7.2">
-  <div class="news-title">CVE-2026-115811 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-11-11" data-cvss="6.8">
+  <div class="news-title">CVE-2025-59847 - MEDIUM (6.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-11-07</span>
+    <span>2026-11-11</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-115811 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">The Strong Testimonials plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'star_rating' parameter in all versions up to, and including, 3.3.16 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-115811" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-59847 | CVSS: 6.8 | Severity: MEDIUM</div>
+  <div class="news-summary">HCL Domino Leap is vulnerable to Stored XSS through malicious application titles in Manage page dialogs, allowing an attacker to take over a user's session</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59847" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
-<div class="card news-item vulnerability" data-sev="high" data-date="2026-11-07" data-cvss="7.2">
-  <div class="news-title">CVE-2026-116558 - HIGH (7.2)</div>
+<div class="card news-item vulnerability" data-sev="medium" data-date="2026-11-11" data-cvss="6.8">
+  <div class="news-title">CVE-2025-59848 - MEDIUM (6.8)</div>
   <div class="news-meta">
     <span class="badge">NVD (NIST)</span>
-    <span>2026-11-07</span>
+    <span>2026-11-11</span>
   </div>
-  <div class="cve-info">CVE ID: CVE-2026-116558 | CVSS: 7.2 | Severity: HIGH</div>
-  <div class="news-summary">The Unlimited Elements for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the '<title>/<description> inside the attacker-controlled RSS feed body' parameter in all versions up to, and including, 2.0.26 due to insufficient input sanitization and output escaping. This ...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116558" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-11-07" data-cvss="6.4">
-  <div class="news-title">CVE-2026-116621 - MEDIUM (6.4)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-11-07</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-116621 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The Ultimate Member – User Profile, Registration, Login, Member Directory, Content Restriction & Membership Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'pm_note (any custom Textarea metakey with html disabled)' parameter in all versions up to, and including, 2.14...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116621" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
-</div>
-<div class="card news-item vulnerability" data-sev="medium" data-date="2026-11-07" data-cvss="6.4">
-  <div class="news-title">CVE-2026-118048 - MEDIUM (6.4)</div>
-  <div class="news-meta">
-    <span class="badge">NVD (NIST)</span>
-    <span>2026-11-07</span>
-  </div>
-  <div class="cve-info">CVE ID: CVE-2026-118048 | CVSS: 6.4 | Severity: MEDIUM</div>
-  <div class="news-summary">The WP Data Access plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Simple Form autocomplete lookup label in versions up to, and including, 5.5.89 This is due to insufficient output escaping on the value returned by WPDA_Autocomplete::autocomplete_lookup() when it is emitted...</div>
-  <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118048" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
+  <div class="cve-info">CVE ID: CVE-2025-59848 | CVSS: 6.8 | Severity: MEDIUM</div>
+  <div class="news-summary">HCL Leap is vulnerable to Stored XSS through malicious application titles in the Manage page dialogs, allowing an attacker to take over a user's session</div>
+  <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-59848" class="news-link" target="_blank" rel="noopener">Czytaj więcej →</a>
 </div>
       </div>
       <a href="#top" class="back-top">⬆ Powrót na górę</a>
@@ -662,7 +640,7 @@ Reverse-engineering
 
     <div class="footer">
       <div><strong>Źródła:</strong> RSS + API (NVD, opcjonalnie: VirusTotal, Shodan, AlienVault OTX)</div>
-      <div>Raport wygenerowano: 2026-11-14 08:02:37</div>
+      <div>Raport wygenerowano: 2026-11-18 08:02:47</div>
     </div>
   </div>
 
